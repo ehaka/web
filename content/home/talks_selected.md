@@ -2,7 +2,7 @@
 # Selected Talks widget.
 widget = "talks_selected"
 active = false
-date = 2016-04-20T00:00:00
+date = 2019-01-09T00:00:00
 
 title = "Selected Talks"
 subtitle = ""
@@ -13,6 +13,6 @@ weight = 29
 # List format.
 #   0 = Simple
 #   1 = Detailed
-#   3 = Stream
-list_format = 0
+#   2 = Stream
+list_format = 2
 +++

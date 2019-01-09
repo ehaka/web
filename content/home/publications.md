@@ -3,9 +3,9 @@
 # This widget displays recent publications from `content/publication/`.
 widget = "publications"
 active = true
-date = 2016-04-20T00:00:00
+date = 2019-01-09T00:00:00
 
-title = "Recent Publications"
+title = "Publications"
 subtitle = ""
 
 # Order that this section will appear in.
@@ -25,8 +25,8 @@ list_format = 4
 # Filter by publication type.
 # -1: Any
 #  0: Uncategorized
-#  1: Conference proceedings
-#  2: Journal
+#  1: Journal
+#  2: Preprint
 #  3: Work in progress
 #  4: Technical report
 #  5: Book

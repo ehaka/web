@@ -2,7 +2,7 @@
 # About/Biography widget.
 widget = "about"
 active = true
-date = 2016-04-20T00:00:00
+date = 2019-01-09T00:00:00
 
 # Order that this section will appear in.
 weight = 5
@@ -10,31 +10,31 @@ weight = 5
 # List your academic interests.
 [interests]
   interests = [
-    "Artificial Intelligence",
-    "Computational Linguistics",
-    "Information Retrieval"
+    "Sub-Riemannian geometry",
+    "Metric geometry",
+    "Lie groups",
+    "Computer assisted mathematics"
   ]
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "PhD in Artificial Intelligence"
-  institution = "Stanford University"
-  year = 2012
+  course = "Pedagogical studies in education (Mathematics subject teacher)"
+  institution = "University of Jyväskylä"
+  year = 2016
 
 [[education.courses]]
-  course = "MEng in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
-  year = 2009
+  course = "Master of science"
+  institution = "University of Jyväskylä"
+  year = 2015
 
 [[education.courses]]
-  course = "BSc in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
-  year = 2008
+  course = "Bachelor of science"
+  institution = "University of Jyväskylä"
+  year = 2013
  
 +++
 
 # Biography
 
-Lena Smith is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. 
+I am a mathematics PhD student at the University of Jyväskylä under the supervision of Associate Professor <a href='https://sites.google.com/site/enricoledonne/'>Enrico Le Donne</a> since April 2015.
+My thesis work is to study the regularity of geodesics and the Sard problem in sub-Riemannian geometry, with a particular focus on the case of sub-Riemannian Carnot groups.
