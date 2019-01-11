@@ -63,7 +63,7 @@ enableGitInfo = false
   avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
 
   # Details for the Contact Widget
-  email = "eero.j.hakavuori@jyu.fi"
+  email = "eero.hakavuori@gmail.com"
   address = "Room: MaD237"
   office_hours = ""
   phone = ""
@@ -259,7 +259,7 @@ enableGitInfo = false
   [[params.social]]
     icon = "envelope"
     icon_pack = "fas"
-    link = "mailto:eero.j.hakavuori@jyu.fi"  # For a direct email link, use "mailto:test@example.org".
+    link = "mailto:eero.hakavuori@gmail.com"  # For a direct email link, use "mailto:test@example.org".
 
   # Link to a PDF of your resume/CV from the About widget.
   # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
