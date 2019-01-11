@@ -13,6 +13,8 @@ weight = 5
     "Sub-Riemannian geometry",
     "Metric geometry",
     "Lie groups",
+    "Geometric measure theory",
+    "Control theory",
     "Computer assisted mathematics"
   ]
 
@@ -38,3 +40,4 @@ weight = 5
 
 I am a mathematics PhD student at the University of Jyväskylä under the supervision of Associate Professor <a href='https://sites.google.com/site/enricoledonne/'>Enrico Le Donne</a> since April 2015.
 My thesis work is to study the regularity of geodesics and the Sard problem in sub-Riemannian geometry, with a particular focus on the case of sub-Riemannian Carnot groups.
+
