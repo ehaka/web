@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-05-08T14:44:37+03:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Affinity of isometric embeddings</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.11/pretext.js"></script><script src="https://pretextbook.org/js/0.11/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.11;
+</script>
+</head>
+<body id="hakavuori-igs2" class="mathbook-article has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\newcommand{\RR}{\mathbb{R}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\HH}{\mathbb{H}}
+\newcommand{\Lloc}{\mathrm{L}^2_{\text{loc}}}
+\newcommand{\abs}[1]{\left\lvert#1\right\rvert}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\restr}[2]{\left.#1\right|_{#2}}
+\newcommand{\dilationfactor}{h}
+\newcommand{\intavg}{\mathop{\mathchoice{\,\rlap{-}\!\!\int}{\rlap{\raise.05em{\scriptstyle -}}\kern-.2em\int}{\rlap{\raise.09em{\scriptscriptstyle -}}\!\int}{\rlap{-}\!\int}}\nolimits}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="step2_infinite_geodesics.html"><span class="title">Infinite geodesics and isometric embeddings in Carnot groups of step 2</span></a></h1>
+<p class="byline">Eero Hakavuori</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-infinite-geodesics-proof-conclusion.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="step2_infinite_geodesics.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-infinite-geodesics-proof-conclusion.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="step2_infinite_geodesics.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link">
+<a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a><ul><li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1">Acknowledgements</a></li></ul>
+</li>
+<li class="link">
+<a href="section-introduction.html" data-scroll="section-introduction"><span class="codenumber">1</span> <span class="title">Introduction</span></a><ul><li><a href="section-introduction.html#subsection-1" data-scroll="subsection-1">Structure of the paper</a></li></ul>
+</li>
+<li class="link">
+<a href="sec-definitions.html" data-scroll="sec-definitions"><span class="codenumber">2</span> <span class="title">Preliminaries</span></a><ul>
+<li><a href="sec-definitions.html#subsection-2" data-scroll="subsection-2">Stratified groups and homogeneous distances</a></li>
+<li><a href="sec-definitions.html#subsection-3" data-scroll="subsection-3">The projection norm</a></li>
+<li><a href="sec-definitions.html#subsection-4" data-scroll="subsection-4">Length structures and sub-Finsler Carnot groups</a></li>
+<li><a href="sec-definitions.html#subsection-5" data-scroll="subsection-5">Geodesics and blowdowns</a></li>
+<li><a href="sec-definitions.html#subsec-subdifferentials" data-scroll="subsec-subdifferentials">Subdifferentials</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="sec-pmp.html" data-scroll="sec-pmp"><span class="codenumber">3</span> <span class="title">Step 2 sub-Finsler Pontryagin Maximum Principle</span></a><ul>
+<li><a href="sec-pmp.html#subsection-7" data-scroll="subsection-7">General statement of the PMP</a></li>
+<li><a href="sec-pmp.html#subsection-8" data-scroll="subsection-8">The normality/abnormality condition</a></li>
+<li><a href="sec-pmp.html#sec-hamiltonian-ode" data-scroll="sec-hamiltonian-ode">The Hamiltonian ODE in left-trivialized coordinates</a></li>
+<li><a href="sec-pmp.html#subsection-10" data-scroll="subsection-10">Conclusion of the step 2 sub-Finsler PMP</a></li>
+</ul>
+</li>
+<li class="link"><a href="sec-asymptotics.html" data-scroll="sec-asymptotics"><span class="codenumber">4</span> <span class="title">Asymptotic behavior of controls</span></a></li>
+<li class="link">
+<a href="sec-infinite-geodesics-proof-conclusion.html" data-scroll="sec-infinite-geodesics-proof-conclusion"><span class="codenumber">5</span> <span class="title">Affinity of infinite geodesics</span></a><ul>
+<li><a href="sec-infinite-geodesics-proof-conclusion.html#subsection-11" data-scroll="subsection-11">Sub-Finsler Carnot groups</a></li>
+<li><a href="sec-infinite-geodesics-proof-conclusion.html#subsection-12" data-scroll="subsection-12">Arbitrary homogeneous distances</a></li>
+</ul>
+</li>
+<li class="link active"><a href="sec-isometric-embeddings.html" data-scroll="sec-isometric-embeddings"><span class="codenumber">6</span> <span class="title">Affinity of isometric embeddings</span></a></li>
+<li class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="appendix-1.html" data-scroll="appendix-1"><span class="codenumber">A</span> <span class="title">Notation</span></a></li>
+<li class="link"><a href="references-section.html" data-scroll="references-section"><span class="title">References</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-isometric-embeddings"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">6</span> <span class="title">Affinity of isometric embeddings</span>
+</h2>
+<a href="sec-isometric-embeddings.html" class="permalink">¶</a><p id="p-111"><a data-knowl="./knowl/thm-isometric-embeddings.html" title="Theorem 1.3">Theorem 1.3</a> about isometric embeddings being affine follows from <a data-knowl="./knowl/cor-homogeneous-group-geodesics-are-lines.html" title="Corollary 1.2">Corollary 1.2</a> by an abstraction of the argument of Theorem 4.1 of <a data-knowl="./knowl/Balogh-Fassler-Sobrino-2018-embeddings_into_heisenberg.html" title="Bibliographic Entry 5: Isometric embeddings into Heisenberg groups">[5]</a>. The key link between the metric and algebraic properties is the following simple lemma stating that the distance between two lines grows sublinearly if and only if the lines are parallel.</p>
+<article class="theorem-like" id="lemma-sublinear-geodesics"><h6 class="heading">
+<span class="type">Lemma</span> <span class="codenumber">6.1</span>.</h6>
+<p id="p-112">Let \((G,d)\) be a <a data-knowl="./knowl/def-stratified-group.html" title="Definition 2.1">stratified group</a> with a <a data-knowl="./knowl/def-homogeneous-distance.html" title="Definition 2.3">homogeneous distance</a>. Then for all points \(g,h\in G\) and all vectors \(X,Y\in V_1\)</p>
+<div class="displaymath">
+\begin{equation*}
+d(g\exp(tX),h\exp(tY)) = o(t)\text{ as }t\to \infty \iff X=Y\text{.}
+\end{equation*}
+</div></article><article class="hiddenproof" id="proof-17"><a data-knowl="" class="id-ref" data-refid="hk-proof-17"><h6 class="heading"><span class="type">Proof.</span></h6></a></article><div id="hk-proof-17" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-113">Consider <a data-knowl="./knowl/def-dilation.html" title="Definition 2.2">dilations</a> by \(1/t\text{.}\) Since dilations are homomorphisms, continuity of the distance gives the limit</p>
+<div class="displaymath">
+\begin{align*}
+\lim\limits_{t\to\infty}\frac{d(g\exp(tX),h\exp(tY))}{t}
+\amp= \lim\limits_{t\to\infty}d(\delta_{1/t}(g)\exp(X),\delta_{1/t}(h)\exp(Y))\\
+\amp=d(\exp(X),\exp(Y))\text{.}
+\end{align*}
+</div></article></div>
+<article class="hiddenproof" id="proof-thm-isometric-embeddings"><a data-knowl="" class="id-ref" data-refid="hk-proof-thm-isometric-embeddings"><h6 class="heading"><span class="title">Proof of Theorem 1.3.</span></h6></a></article><div id="hk-proof-thm-isometric-embeddings" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-114">Let \(\varphi\colon (H,d_H)\hookrightarrow (G,d_G)\) be an isometric embedding. Since left-translations are isometries, it suffices to consider the case when the map \(\varphi\) preserves the identity element, and prove that such an isometric embedding is a homomorphism.</p>
+<p id="p-115">Consider an arbitrary point \(h\in H\) and a horizontal vector \(X\in V_1^H\text{.}\) The horizontal line \(t\mapsto h\exp(tX)\) is an infinite geodesic with speed \(\norm{X}_H\) through the point \(h\in H\text{.}\) The image of the line under the isometric embedding \(\varphi\) is an infinite geodesic in the group \(G\) through the point \(\varphi(h)\) with exactly the same speed. By <a data-knowl="./knowl/cor-homogeneous-group-geodesics-are-lines.html" title="Corollary 1.2">Corollary 1.2</a> all infinite geodesics in the group \(G\) are horizontal lines, so there exists some vector \(Y\in V_1^G\) (a priori depending on the point \(h\) and the vector \(X\)) with \(\norm{X}_H=\norm{Y}_G\) such that</p>
+<div class="displaymath">
+\begin{equation*}
+\varphi(h\exp(tX)) = \varphi(h)\exp(tY)\quad\forall t\in\RR\text{.}
+\end{equation*}
+</div>
+<p id="p-116">Consider then the two parallel infinite geodesics \(t\mapsto \exp(tX)\) and \(t\mapsto h\exp(tX)\) with speed \(\norm{X}_H\text{.}\) Repeating the previous consideration, since the map \(\varphi\) was assumed to preserve the identity, there exists another horizontal direction \(Z\in V_1^G\) such that \(\varphi(\exp(tX))= \exp(tZ)\text{.}\) By <a data-knowl="./knowl/lemma-sublinear-geodesics.html" title="Lemma 6.1">Lemma 6.1</a>, the distance between the two lines in the group \(H\) grows sublinearly. Since the map \(\varphi\) is an isometric embedding, also the distance between the image lines in the group \(G\) grows sublinearly. Hence applying <a data-knowl="./knowl/lemma-sublinear-geodesics.html" title="Lemma 6.1">Lemma 6.1</a> in the converse direction implies that \(Y=Z\text{.}\) That is, the vector \(Y\in V_1^G\) does not depend on the point \(h\in H\text{,}\) only on the vector \(X\in V_1^H\text{.}\)</p>
+<p id="p-117">The above shows that there is a well defined map \(\varphi_*\colon V_1^H\to V_1^G\) such that \(\varphi(h\exp(X)) = \varphi(h)\exp(\varphi_* X)\text{.}\) In particular,</p>
+<div class="displaymath">
+\begin{equation}
+\varphi(h_1h_2) = \varphi(h_1)\varphi(h_2)\quad \forall h_1\in H\;\forall h_2\in\exp(V_1^H)\text{.}\label{eq-partial-homomorphism}\tag{6.1}
+\end{equation}
+</div>
+<p>Since the group \(H\) is stratified, the subset \(\exp(V_1^H)\) generates the entire group \(H\text{.}\) That is, any element \(h\in H\) can be written as a finite product of elements in \(\exp(V_1^H)\text{.}\) Applying the identity <a data-knowl="./knowl/eq-partial-homomorphism.html" title="Equation 6.1">(6.1)</a> repeatedly using such decompositions shows that the map \(\varphi\) is a homomorphism.</p></article></div></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.11/login.js"></script>
+</body>
+</html>

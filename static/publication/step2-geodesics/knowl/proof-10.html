@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-05-08T14:48:46+03:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<article class="hiddenproof"><h6 class="heading"><span class="title">Proof of Proposition 3.1.</span></h6>
+<p>The curve \(a\colon[0,T]\to V_1^*\) will be given by restricting the linear map</p>
+<div class="displaymath">
+\begin{equation}
+a(t) := (L_{\gamma(t)})^*\lambda(t)\colon \mathfrak{g}\to\RR\tag{3.13}
+\end{equation}
+</div>
+<p>to \(V_1\text{.}\) The skew-symmetric bilinear form \(B\colon V_1\times V_1\to\RR\) will be given by</p>
+<div class="displaymath">
+\begin{equation}
+B(X,Y) = a(t)[X,Y]\text{.}\tag{3.14}
+\end{equation}
+</div>
+<p>In order to see that the above expressions are well defined and have the desired properties, express the curve \(\lambda(t)\) in left-trivialized coordinates as</p>
+<div class="displaymath">
+\begin{equation*}
+\lambda(t) = \sum_{i=1}^na_i(t)\theta_i(\gamma(t))\text{.}
+\end{equation*}
+</div>
+<p>The curve \(a(t)\) of <a data-knowl="./knowl/eq-subdifferential-curve-defn.html" title="Equation 3.13">(3.13)</a> has the same coefficients as the curve \(\lambda(t)\text{,}\) i.e., it is given by \(a(t) = \sum_{i=1}^na_i(t)\theta_i(e)\text{.}\) Using the explicit expression for the normal Hamiltonian vector field from <a data-knowl="./knowl/lemma-hamiltonian-vector-field.html" title="Lemma 3.3">Lemma 3.3</a>, the normal Hamiltonian ODE \(\dot{\lambda} = \vec{h}_{u(t),-1}(\lambda)\) implies that the components of the curve \(a\) have the derivatives</p>
+<div class="displaymath">
+\begin{equation}
+\begin{cases}
+\dot{a}_i(t) = a(t)[u(t),X_i], \amp i\in\{ 1,\ldots, r\}\\
+\dot{a}_i(t) = 0, \amp i\in\{ r+1,\ldots, n\}
+\end{cases}\tag{3.15}
+\end{equation}
+</div>
+<p>Observe that the vertical coefficients \(a_{r+1},\dots,a_n\) are all constant, and that \(\theta_i([X,Y])=0\) for \(i=1,\ldots,r\text{.}\) Therefore \(a(t)[X,Y] = \sum_{i=r+1}^{n}a_i\theta_i([X,Y])\) is constant in \(t\text{,}\) so <a data-knowl="./knowl/eq-bilinear-form-defn.html" title="Equation 3.14">(3.14)</a> defines a unique bilinear form \(B\) independent from \(t\text{.}\) Moreover, the non-trivial equations of the system <a data-knowl="./knowl/eq-coordinate-ode.html" title="Equation 3.15">(3.15)</a> are then exactly</p>
+<div class="displaymath">
+\begin{equation*}
+\dot{a}_i(t) = a(t)[u(t),X_i]
+= B(u(t),X_i),\quad i\in\{1,\ldots,r\}\text{.}
+\end{equation*}
+</div>
+<p>Writing an arbitrary vector \(Y\in V_1\) in the basis \(X_1,\ldots,X_r\) as \(Y=y_1X_1+\dots+y_rX_r\text{,}\) the derivative condition <a data-knowl="./knowl/prop-step-2-PMP.html" title="Proposition 3.1: Step 2 sub-Finsler PMP">3.1</a><a data-knowl="./knowl/prop-step-2-PMP-ode.html" title="Item i">i</a> follows by linearity:</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{d}{dt}a(t)Y = \frac{d}{dt}\sum_{i=1}^na_i(t)y_i
+= \sum_{i=1}^nB(u(t),X_i)y_i
+= B(u(t),Y)\text{.}
+\end{equation*}
+</div>
+<p>The subdifferential condition <a data-knowl="./knowl/prop-step-2-PMP.html" title="Proposition 3.1: Step 2 sub-Finsler PMP">3.1</a><a data-knowl="./knowl/prop-step-2-PMP-subdiff.html" title="Item ii">ii</a> for the linear functions \(a(t)\) follows from rephrasing the maximality condition <a data-knowl="./knowl/PMP-subdifferential.html" title="Equation 3.4">(3.4)</a>. Namely, expanding out the explicit expressions of the normal Hamiltonians \(h_{u(t),-1}\) and \(h_{v,-1}\) from <a data-knowl="./knowl/eq-hamiltonian.html" title="Equation 3.1">(3.1)</a> and reorganizing terms, the maximality condition <a data-knowl="./knowl/PMP-subdifferential.html" title="Equation 3.4">(3.4)</a> is equivalently stated as</p>
+<div class="displaymath">
+\begin{equation*}
+a(t)v - a(t)u(t) \leq \frac{1}{2}\norm{v}^2-\frac{1}{2}\norm{u(t)}^2
+\quad\forall v\in V_1\quad\text{a.e. }t\in[0,T]\text{.}
+\end{equation*}
+</div>
+<p>This is exactly <a data-knowl="./knowl/def-subdifferential.html" title="Definition 2.16">Definition 2.16</a> for the linear function \(a(t)\) being a subdifferential of the squared norm \(\frac{1}{2}\norm{\cdot}^2\) at the point \(u(t)\in V_1\text{.}\)</p></article><span class="incontext"><a href="sec-pmp.html#proof-10">in-context</a></span>
+</body>
+</html>

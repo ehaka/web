@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-04-25T17:00:18+03:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Infinite geodesics for arbitrary homogeneous distances</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.11/pretext.js"></script><script src="https://pretextbook.org/js/0.11/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.11;
+</script>
+</head>
+<body id="hakavuori-igs2" class="mathbook-article has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\newcommand{\RR}{\mathbb{R}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\HH}{\mathbb{H}}
+\newcommand{\Lloc}{\mathrm{L}^2_{\text{loc}}}
+\newcommand{\abs}[1]{\left\lvert#1\right\rvert}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\restr}[2]{\left.#1\right|_{#2}}
+\newcommand{\ad}{\operatorname{ad}}
+\newcommand{\ima}{\operatorname{im}}
+\newcommand{\Aut}{\mathrm{Aut}}
+\newcommand{\intavg}{\mathop{\,\rlap{-}\!\!\int}\nolimits}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="step2_infinite_geodesics.html"><span class="title">Infinite geodesics and isometric embeddings in Carnot groups of step 2</span></a></h1>
+<p class="byline">Eero Hakavuori</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-infinite-geodesics-proof-conclusion.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="step2_infinite_geodesics.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-isometric-embeddings.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-infinite-geodesics-proof-conclusion.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="step2_infinite_geodesics.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-isometric-embeddings.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="section-introduction.html" data-scroll="section-introduction"><span class="codenumber">1</span> <span class="title">Introduction</span></a><ul>
+<li><a href="section-introduction.html#subsection-1" data-scroll="subsection-1">Main results</a></li>
+<li><a href="section-introduction.html#subsection-2" data-scroll="subsection-2">Structure of the paper</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="sec-definitions.html" data-scroll="sec-definitions"><span class="codenumber">2</span> <span class="title">Preliminaries</span></a><ul>
+<li><a href="sec-definitions.html#subsection-3" data-scroll="subsection-3">Stratified groups and homogeneous distances</a></li>
+<li><a href="sec-definitions.html#subsection-4" data-scroll="subsection-4">The projection norm</a></li>
+<li><a href="sec-definitions.html#subsection-5" data-scroll="subsection-5">Length structures and sub-Finsler Carnot groups</a></li>
+<li><a href="sec-definitions.html#subsection-6" data-scroll="subsection-6">Geodesics and blowdowns</a></li>
+<li><a href="sec-definitions.html#subsec-subdifferentials" data-scroll="subsec-subdifferentials">Subdifferentials</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="sec-pmp.html" data-scroll="sec-pmp"><span class="codenumber">3</span> <span class="title">Step 2 sub-Finsler Pontryagin maximum principle</span></a><ul>
+<li><a href="sec-pmp.html#subsection-8" data-scroll="subsection-8">General statement of the PMP</a></li>
+<li><a href="sec-pmp.html#subsection-9" data-scroll="subsection-9">The normality/abnormality condition</a></li>
+<li><a href="sec-pmp.html#sec-hamiltonian-ode" data-scroll="sec-hamiltonian-ode">The Hamiltonian ODE in left-trivialized coordinates</a></li>
+<li><a href="sec-pmp.html#subsection-11" data-scroll="subsection-11">Conclusion of the step 2 sub-Finsler PMP</a></li>
+</ul>
+</li>
+<li class="link"><a href="sec-asymptotics.html" data-scroll="sec-asymptotics"><span class="codenumber">4</span> <span class="title">Asymptotic behavior of controls</span></a></li>
+<li class="link"><a href="sec-infinite-geodesics-proof-conclusion.html" data-scroll="sec-infinite-geodesics-proof-conclusion"><span class="codenumber">5</span> <span class="title">Infinite geodesics in sub-Finsler Carnot groups</span></a></li>
+<li class="link active"><a href="sec-homogeneous-distances.html" data-scroll="sec-homogeneous-distances"><span class="codenumber">6</span> <span class="title">Infinite geodesics for arbitrary homogeneous distances</span></a></li>
+<li class="link"><a href="sec-isometric-embeddings.html" data-scroll="sec-isometric-embeddings"><span class="codenumber">7</span> <span class="title">Isometric embeddings</span></a></li>
+<li class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="references-section.html" data-scroll="references-section"><span class="title">References</span></a></li>
+<li class="link"><a href="appendix-1.html" data-scroll="appendix-1"><span class="codenumber">A</span> <span class="title">Notation</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-homogeneous-distances"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">6</span> <span class="title">Infinite geodesics for arbitrary homogeneous distances</span>
+</h2>
+<a href="sec-homogeneous-distances.html" class="permalink">¶</a><p id="p-99">This section covers the proof of <a data-knowl="./knowl/cor-homogeneous-group-geodesics-are-lines.html" title="Corollary 1.2">Corollary 1.2</a> about infinite geodesics in stratified groups with arbitrary homogeneous norms, and the remark about necessity of the strict convexity assumption. The proof of <a data-knowl="./knowl/cor-homogeneous-group-geodesics-are-lines.html" title="Corollary 1.2">Corollary 1.2</a> is simply the combination of the following observations:</p>
+<ol class="decimal">
+<li id="li-5">Passing to the length metric preserves geodesics.</li>
+<li id="li-6">The length metric associated to a homogeneous distance is a sub-Finsler metric.</li>
+</ol>
+<p>These statements are made precise by the next lemma.</p>
+<article class="theorem-like" id="lemma-length-metric-of-homogeneous-distance-is-subfinsler"><h6 class="heading">
+<span class="type">Lemma</span> <span class="codenumber">6.1</span>.</h6>
+<p id="p-100">Let \((G,d)\) be a stratified group of step 2 equipped with a homogeneous distance \(d\) and let \(d_\ell\) be the length metric of \(d\text{.}\) Then</p>
+<ol class="lower-roman">
+<li id="lemma-length-subfinsler">\((G,d_\ell)\) is a sub-Finsler Carnot group.</li>
+<li id="lemma-length-geodesics">All geodesics of \((G,d)\) are also geodesics of \((G,d_\ell)\text{.}\)</li>
+<li id="lemma-length-subfinsler-norm">The projection norm of \(d\) is the sub-Finsler norm of \(d_\ell\text{.}\)</li>
+</ol></article><article class="hiddenproof" id="proof-14"><a data-knowl="" class="id-ref" data-refid="hk-proof-14"><h6 class="heading"><span class="type">Proof.</span></h6></a></article><div id="hk-proof-14" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><article class="case" id="case-3"><h6 class="heading">(i).</h6>
+<p id="p-101">In Theorem 1.1 of <a data-knowl="./knowl/Le_Donne-2015-metric_characterization.html" title="Bibliographic Entry 9: A metric characterization of Carnot groups">[9]</a> sub-Finsler Carnot groups are characterized as the only geodesic metric spaces that are locally compact, isometrically homogeneous, and admit a dilation. Therefore it suffices to verify that the length metric associated to a homogeneous distance satisfies these properties.</p>
+<p id="p-102">The claims of isometric homogeneity and admitting a dilation follow directly from the corresponding properties of the metric \(d\text{.}\) Namely, since left-translations are isometries of the metric \(d\text{,}\) they preserve the length of curves, and hence are also isometries of the length metric \(d_\ell\text{.}\) Similarly since dilations scale the length of curves linearly, they are dilations for the length metric \(d_\ell\text{.}\)</p>
+<p id="p-103">Finiteness of the length metric \(d_\ell\) follows from the stratification assumption: each element \(g\in G\) can be written as a product of elements in \(\exp(V_1)\) and the horizontal lines \(t\mapsto \exp(tX)\) are all geodesics. Therefore concatenation of suitable horizontal line segments defines a finite length curve from the identity \(e\) to any desired point \(g\text{.}\) It follows that the length metric \(d_\ell\) determines a well defined homogeneous distance on \(G\text{,}\) so by  Proposition 3.5 of <a data-knowl="./knowl/Le_Donne-2017-carnot_primer.html" title="Bibliographic Entry 10: A primer on Carnot groups: homogenous groups, Carnot-Carathéodory spaces, and regularity of their isometries">[10]</a> it induces the manifold topology of \(G\text{.}\) In particular \((G,d_\ell)\) is a boundedly compact length space, so it is a geodesic metric space (see  Corollary 2.5.20 of <a data-knowl="./knowl/Burago-Burago-Ivanov-2001-metric_geometry.html" title="Bibliographic Entry 4: A course in metric  geometry">[4]</a>). Applying  Theorem 1.1 of <a data-knowl="./knowl/Le_Donne-2015-metric_characterization.html" title="Bibliographic Entry 9: A metric characterization of Carnot groups">[9]</a> shows that \((G,d_\ell)\) is a sub-Finsler Carnot group.</p></article><article class="case" id="case-4"><h6 class="heading">(ii).</h6>
+<p id="p-104">The lengths of all rectifiable curves in the original metric \(d\) and its associated length metric \(d_\ell\) always agree (see  Proposition 2.3.12 of <a data-knowl="./knowl/Burago-Burago-Ivanov-2001-metric_geometry.html" title="Bibliographic Entry 4: A course in metric  geometry">[4]</a>). In particular, the claim that the geodesics of \((G,d)\) are geodesics of \((G,d_\ell)\) follows.</p></article><article class="case" id="case-5"><h6 class="heading">(iii).</h6>
+<p id="p-105">The horizontal projection \(\pi\colon (G,d)\to V_1\) is a submetry both for the sub-Finsler norm \(\norm{\cdot}_{SF}\) (by definition) and for the projection norm \(\norm{\cdot}_d\) (by <a data-knowl="./knowl/lemma-projection-is-submetry.html" title="Lemma 2.5">Lemma 2.5</a>). Hence the norms \(\norm{\cdot}_{SF}\) and \(\norm{\cdot}_d\) have exactly the same balls, so \(\norm{\cdot}_{SF} = \norm{\cdot}_d\text{.}\)</p></article></article></div>
+<article class="hiddenproof" id="proof-cor-homogeneous-group-geodesics"><a data-knowl="" class="id-ref" data-refid="hk-proof-cor-homogeneous-group-geodesics"><h6 class="heading"><span class="title">Proof of Corollary 1.2.</span></h6></a></article><div id="hk-proof-cor-homogeneous-group-geodesics" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-106">Let \((G,d)\) be a stratified group of step 2 equipped with a homogeneous distance \(d\) whose projection norm is strictly convex, and let \(\gamma\colon[0,\infty)\to (G,d)\) be an infinite geodesic.</p>
+<p id="p-107">Let \(d_\ell\) be the length-metric associated to \(d\text{.}\) By <a data-knowl="./knowl/lemma-length-metric-of-homogeneous-distance-is-subfinsler.html" title="Lemma 6.1">Lemma 6.1</a><a data-knowl="./knowl/lemma-length-subfinsler.html" title="Item i">i</a> and <a data-knowl="./knowl/lemma-length-geodesics.html" title="Item ii">ii</a>, the curve \(\gamma\) is also a geodesic of \((G,\norm{\cdot})\text{,}\) where \(\norm{\cdot}\colon V_1\to\RR\) is the sub-Finsler norm of the sub-Finsler metric \(d_\ell\text{.}\) Moreover by <a data-knowl="./knowl/lemma-length-metric-of-homogeneous-distance-is-subfinsler.html" title="Lemma 6.1">Lemma 6.1</a><a data-knowl="./knowl/lemma-length-subfinsler-norm.html" title="Item iii">iii</a> the norm \(\norm{\cdot}=\norm{\cdot}_d\) is by assumption strictly convex.</p>
+<p id="p-108">Consequently by <a data-knowl="./knowl/thm-infinite-geodesics-are-lines.html" title="Theorem 1.1">Theorem 1.1</a>, the geodesic \(\gamma\) is a line.</p></article></div>
+<p id="p-109">The necessity of the strict convexity assumption is an immediate consequence of the classical case of normed spaces by the following simple lifting argument.</p>
+<article class="theorem-like" id="prop-existence-of-non-line-infinite-geodesic"><h6 class="heading">
+<span class="type">Proposition</span> <span class="codenumber">6.2</span>.</h6>
+<p id="p-110">Let \(G\) be a stratified group of step 2 equipped with an arbitrary homogeneous distance \(d\text{.}\) If the projection norm of \(d\) is not strictly convex, then there exist an infinite geodesic \(\gamma\colon\RR\to G\) which is not a line.</p></article><article class="hiddenproof" id="proof-16"><a data-knowl="" class="id-ref" data-refid="hk-proof-16"><h6 class="heading"><span class="type">Proof.</span></h6></a></article><div id="hk-proof-16" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-111">If the projection norm \(\norm{\cdot}_d\colon V_1\to\RR\) is not strictly convex, then there exists a non-linear geodesic \(\beta\colon\RR \to V_1\text{.}\) For example, if the norm \(\norm{X+cY}_d\) is constant for \(-\epsilon\leq c\leq \epsilon\text{,}\) then the curve \(\beta(t) = tX+\epsilon\sin(t)Y\) is an infinite geodesic.</p>
+<p id="p-112">By <a data-knowl="./knowl/lemma-projection-is-submetry.html" title="Lemma 2.5">Lemma 2.5</a>, the projection \(\pi\colon (G,d)\to (V_1,\norm{\cdot})\) is a submetry. Hence the geodesic \(\beta\colon \RR\to V_1\) lifts to an infinite geodesic \(\gamma\colon \RR\to G\text{,}\) which is not a line.</p></article></div></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.11/login.js"></script>
+</body>
+</html>

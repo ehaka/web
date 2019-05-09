@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-05-08T14:48:46+03:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<h6 class="heading"><span class="type">Paragraph</span></h6>
+<p>Define the left-trivialized Hamiltonian</p>
+<div class="displaymath">
+\begin{equation}
+h\colon V_1\times\RR\times\mathfrak{g}^*\to\RR,\quad h(u,\xi,\lambda) = \lambda(u) + \frac{1}{2}\xi\norm{u}^2\text{.}\tag{3.1}
+\end{equation}
+</div>
+<p>By the Pontryagin Maximum Principle as presented in Theorem 12.10 of <a data-knowl="./knowl/Agrachev-Sachkov-2004-control_theory_geometric_viewpoint.html" title="Bibliographic Entry 2: Control theory from the geometric viewpoint">[2]</a>, the control \(u\colon[0,T]\to V_1\) can minimize the energy \(\frac{1}{2}\int_{0}^{T}\norm{u(t)}^2\,dt\) only if there is an almost everywhere non-zero absolutely continuous dual curve \(t\mapsto (\xi,\lambda(t))\in \RR\times T^*_{\gamma(t)}G\) such that</p>
+<div class="displaymath">
+\begin{align}
+\xi \amp\leq 0\tag{3.2}\\
+\dot{\lambda} \amp= \vec{h}_{u(t),\xi}(\lambda)\quad\text{a.e. }t\in[0,T],\tag{3.3}\\
+h_{u(t),\xi}(\lambda(t)) \amp\geq h_{v,\xi}(\lambda(t))\quad\forall v\in V_1\quad\text{a.e. }t\in[0,T].\tag{3.4}
+\end{align}
+</div>
+<p>Here \(h_{v,\xi}\) and \(\vec{h}_{v,\xi}\text{,}\) for \(v\in V_1\text{,}\) are the left-invariant Hamiltonian and the associated Hamiltonian vector field respectively.</p>
+<span class="incontext"><a href="sec-pmp.html#p-64">in-context</a></span>
+</body>
+</html>

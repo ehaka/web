@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-05-08T14:48:46+03:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<article class="hiddenproof"><h6 class="heading"><span class="type">Proof</span></h6>
+<p>Let</p>
+<div class="displaymath">
+\begin{equation}
+F(v,\lambda) := \sum_{1\leq i\leq r}\lambda((L_{\pi(\lambda)})_*[v,X_i])\partial a_i + (L_{\pi(\lambda)})_*v\tag{3.7}
+\end{equation}
+</div>
+<p>be the expression on the right-hand side of the claimed formula for the normal Hamiltonian \(\vec{h}_{v,-1}\text{.}\) By the definition of a Hamiltonian vector field, it suffices to verify that the vector field \(\lambda\mapsto F(v,\lambda)\) satisfies the duality <a data-knowl="./knowl/eq-hamiltonian-vecfield-duality.html" title="Equation 3.6">(3.6)</a>, i.e., that</p>
+<div class="displaymath">
+\begin{equation}
+\omega(w,F(v,\lambda)) = dh_{v,-1}(w)\quad\forall w\in T_\lambda(T^*G)\text{.}\tag{3.8}
+\end{equation}
+</div>
+<p>The differential on the right-hand side of <a data-knowl="./knowl/eq-hamiltonian-claimed-duality.html" title="Equation 3.8">(3.8)</a> is easily computed. The normal Hamiltonian \(h_{v,-1}\colon T^*G\to \RR\) defined by <a data-knowl="./knowl/eq-cotangent-hamiltonian.html" title="Equation 3.5">(3.5)</a> is left-invariant and linear on fibers. Therefore in left-trivialized coordinates, the differential has the expression</p>
+<div class="displaymath">
+\begin{equation}
+dh_{v,-1} = \sum_{i=1}^nv_ida_i\text{.}\tag{3.9}
+\end{equation}
+</div>
+<p>The expression for the symplectic form is more intricate. By definition the canonical symplectic form \(\omega\) on the cotangent bundle \(T^*G\) is the differential of the tautological one-form \(\sum_{i=1}^n a_i\theta_i\text{.}\) That is, in left-trivialized coordinates, the symplectic form has the expression (see e.g. Section 4.2 of <a data-knowl="./knowl/Agrachev-Barilari-Boscain-2018-subriemannian_book.html" title="Bibliographic Entry 1: A comprehensive introduction to sub-riemannian geometry">[1]</a> for more details)</p>
+<div class="displaymath">
+\begin{equation}
+\omega = \sum_{i=1}^nda_i\wedge \theta_i + \sum_{i=1}^na_id\theta_i. \tag{3.10}
+\end{equation}
+</div>
+<p>The differentials \(d\theta_i\) can be evaluated along vector fields \(X,Y\in\Gamma(TG)\) by the classical formula</p>
+<div class="displaymath">
+\begin{equation*}
+d\theta_i(X,Y) = X\theta_i(Y)-Y\theta_i(X)-\theta_i([X,Y])\text{.}
+\end{equation*}
+</div>
+<p>For left-invariant vector fields this reduces to \(d\theta_i(X,Y)=-\theta_i([X,Y])\text{.}\)</p>
+<p>Let \(W\) and \(Z\) be vector fields on the cotangent \(T^*G\) such that the projections \(X:=\pi_*W\) and \(Y:=\pi_*Z\) are left invariant. Writing the vector fields in left-trivialized coordinates as \(W=\sum_{i=1}^nw_i\partial_{a_i}+X\) and \(Z=\sum_{i=1}^nz_i\partial_{a_i}+Y\text{,}\) the identity <a data-knowl="./knowl/eq-symplectic-form-in-coords.html" title="Equation 3.10">(3.10)</a> gives the expression</p>
+<div class="displaymath">
+\begin{equation}
+\omega(W,Z) = \sum_{i=1}^nw_i\theta_i(Y) - \sum_{i=1}^nz_i\theta_i(X) - \sum_{i=1}^na_i\theta_i([X,Y])\text{.}\tag{3.11}
+\end{equation}
+</div>
+<p>The duality <a data-knowl="./knowl/eq-hamiltonian-claimed-duality.html" title="Equation 3.8">(3.8)</a> will now be deduced by comparing the expressions <a data-knowl="./knowl/eq-hamiltonian-differential.html" title="Equation 3.9">(3.9)</a> and <a data-knowl="./knowl/eq-symplectic-form-evaluation.html" title="Equation 3.11">(3.11)</a>. For an arbitrary vector \(w\in T_\lambda(T^*G)\text{,}\) let \(W\) be the left-invariant extension to a vector field on the cotangent \(T^*G\text{.}\) That is, the vector field \(W\) has a constant coefficient coordinate expression</p>
+<div class="displaymath">
+\begin{equation}
+W=\sum_{i=1}^nw_i\partial a_i + \sum_{i=1}^nx_iX_i\text{.}\tag{3.12}
+\end{equation}
+</div>
+<p>Denote by \(X:=\pi_*W\) and \(Y := \pi_* F(v,\cdot)\) the projection vector fields on the group \(G\) of the vector fields \(W\) and \(\lambda\mapsto F(v,\lambda)\text{.}\) Substituting the expressions <a data-knowl="./knowl/eq-test-vector.html" title="Equation 3.12">(3.12)</a> of \(W\) and <a data-knowl="./knowl/eq-hamiltonian-vector-field.html" title="Equation 3.7">(3.7)</a> of \(F(v,\cdot)\) into the expression <a data-knowl="./knowl/eq-symplectic-form-evaluation.html" title="Equation 3.11">(3.11)</a> for \(\omega(W,Z)\) with \(Z=F(v,\lambda)\) gives the three sums</p>
+<div class="displaymath">
+\begin{align*}
+\sum_{i=1}^nw_i\theta_i((L_{\pi(\lambda)})_*v)
+\amp=\sum_{i=1}^nw_iv_i,\\
+\sum_{i=1}^n\lambda((L_{\pi(\lambda)})_*[v,X_i])\theta_i(X)
+\amp=\lambda([V,X])\quad\text{and}\\
+\sum_{i=1}^na_i\theta_i([X,V])
+\amp=\lambda([X,V])\text{.}
+\end{align*}
+</div>
+<p>By anti-commutativity of the Lie bracket, the last two sums cancel out, so \(\omega(W,F(v,\lambda)) = \sum_{i=1}^nw_iv_i\text{.}\) Since the expression <a data-knowl="./knowl/eq-hamiltonian-differential.html" title="Equation 3.9">(3.9)</a> of the differential also gives \(dh_{v,-1}(W)=\sum_{i=1}^nw_iv_i\text{,}\) the vector field \(\lambda\mapsto F(v,\lambda)\) indeed satisfies the duality <a data-knowl="./knowl/eq-hamiltonian-claimed-duality.html" title="Equation 3.8">(3.8)</a>.</p></article><span class="incontext"><a href="sec-pmp.html#proof-9">in-context</a></span>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-05-08T14:48:46+03:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><article class="hiddenproof"><p>By the Lebesgue differentiation theorem it suffices to prove that \(\intavg_{a}^b\tilde{u}(t)\,dt\in \ker B\) for any \(0\leq a\lt b\lt \infty\text{.}\)</p>
+<p>Fix \(0\leq a\lt b\lt \infty\text{.}\) By assumption \(u_{\dilationfactor_k}\to \tilde{u}\) in \(\mathrm{L}^2([a,b];V_1)\text{,}\) so there exists some error term \(\epsilon\colon \NN\to V_1\) with \(\lim\limits_{k\to\infty}\epsilon(k)=0\) such that</p>
+<div class="displaymath">
+\begin{equation}
+\intavg_{a}^b\tilde{u}(t)\,dt
+= \intavg_a^bu(\dilationfactor_kt)\,dt +\epsilon(k)
+= \intavg_{a\dilationfactor_k}^{b\dilationfactor_k}u(t)\,dt+\epsilon(k)\text{.}\tag{4.3}
+\end{equation}
+</div>
+<p>The right-hand integral average can further be expressed as a difference of integral averages as</p>
+<div class="displaymath">
+\begin{equation}
+\intavg_{a\dilationfactor_k}^{b\dilationfactor_k}u(t)\,dt
+= \frac{b}{b-a}\cdot\intavg_{0}^{b\dilationfactor_k}u(t)\,dt-\frac{a}{b-a}\cdot\intavg_{0}^{a\dilationfactor_k}u(t)\,dt\text{.}\tag{4.4}
+\end{equation}
+</div>
+<p><a data-knowl="./knowl/lemma-limit-average-in-kernel.html" title="Lemma 4.1">Lemma 4.1</a> implies that for any \(X\in V_1\)</p>
+<div class="displaymath">
+\begin{equation*}
+\lim\limits_{k\to\infty}B\left(\intavg_{0}^{b\dilationfactor_k}u(t)\,dt,X\right) = \lim\limits_{k\to\infty}B\left(\intavg_{0}^{a\dilationfactor_k}u(t)\,dt,X\right) = 0
+\end{equation*}
+</div>
+<p>Combining the identities <a data-knowl="./knowl/eq-limit-intavg.html" title="Equation 4.3">(4.3)</a> and <a data-knowl="./knowl/eq-difference-of-intavg.html" title="Equation 4.4">(4.4)</a> and using bilinearity of \(B\) then implies that \(B\left(\intavg_a^b\tilde{u}(t)\,dt,X\right)=0\text{.}\) Since the vector \(X\in V_1\) was arbitrary, this proves the desired claim that \(\intavg_{a}^b\tilde{u}(t)\,dt\in\ker B\text{.}\)</p></article></body>
+</html>

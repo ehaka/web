@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-05-08T14:44:37+03:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Step 2 sub-Finsler Pontryagin Maximum Principle</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.11/pretext.js"></script><script src="https://pretextbook.org/js/0.11/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.11;
+</script>
+</head>
+<body id="hakavuori-igs2" class="mathbook-article has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\newcommand{\RR}{\mathbb{R}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\HH}{\mathbb{H}}
+\newcommand{\Lloc}{\mathrm{L}^2_{\text{loc}}}
+\newcommand{\abs}[1]{\left\lvert#1\right\rvert}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\restr}[2]{\left.#1\right|_{#2}}
+\newcommand{\dilationfactor}{h}
+\newcommand{\intavg}{\mathop{\mathchoice{\,\rlap{-}\!\!\int}{\rlap{\raise.05em{\scriptstyle -}}\kern-.2em\int}{\rlap{\raise.09em{\scriptscriptstyle -}}\!\int}{\rlap{-}\!\int}}\nolimits}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="step2_infinite_geodesics.html"><span class="title">Infinite geodesics and isometric embeddings in Carnot groups of step 2</span></a></h1>
+<p class="byline">Eero Hakavuori</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-definitions.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="step2_infinite_geodesics.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec-asymptotics.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-definitions.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="step2_infinite_geodesics.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec-asymptotics.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link">
+<a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a><ul><li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1">Acknowledgements</a></li></ul>
+</li>
+<li class="link">
+<a href="section-introduction.html" data-scroll="section-introduction"><span class="codenumber">1</span> <span class="title">Introduction</span></a><ul><li><a href="section-introduction.html#subsection-1" data-scroll="subsection-1">Structure of the paper</a></li></ul>
+</li>
+<li class="link">
+<a href="sec-definitions.html" data-scroll="sec-definitions"><span class="codenumber">2</span> <span class="title">Preliminaries</span></a><ul>
+<li><a href="sec-definitions.html#subsection-2" data-scroll="subsection-2">Stratified groups and homogeneous distances</a></li>
+<li><a href="sec-definitions.html#subsection-3" data-scroll="subsection-3">The projection norm</a></li>
+<li><a href="sec-definitions.html#subsection-4" data-scroll="subsection-4">Length structures and sub-Finsler Carnot groups</a></li>
+<li><a href="sec-definitions.html#subsection-5" data-scroll="subsection-5">Geodesics and blowdowns</a></li>
+<li><a href="sec-definitions.html#subsec-subdifferentials" data-scroll="subsec-subdifferentials">Subdifferentials</a></li>
+</ul>
+</li>
+<li class="link active">
+<a href="sec-pmp.html" data-scroll="sec-pmp"><span class="codenumber">3</span> <span class="title">Step 2 sub-Finsler Pontryagin Maximum Principle</span></a><ul>
+<li><a href="sec-pmp.html#subsection-7" data-scroll="subsection-7">General statement of the PMP</a></li>
+<li><a href="sec-pmp.html#subsection-8" data-scroll="subsection-8">The normality/abnormality condition</a></li>
+<li><a href="sec-pmp.html#sec-hamiltonian-ode" data-scroll="sec-hamiltonian-ode">The Hamiltonian ODE in left-trivialized coordinates</a></li>
+<li><a href="sec-pmp.html#subsection-10" data-scroll="subsection-10">Conclusion of the step 2 sub-Finsler PMP</a></li>
+</ul>
+</li>
+<li class="link"><a href="sec-asymptotics.html" data-scroll="sec-asymptotics"><span class="codenumber">4</span> <span class="title">Asymptotic behavior of controls</span></a></li>
+<li class="link">
+<a href="sec-infinite-geodesics-proof-conclusion.html" data-scroll="sec-infinite-geodesics-proof-conclusion"><span class="codenumber">5</span> <span class="title">Affinity of infinite geodesics</span></a><ul>
+<li><a href="sec-infinite-geodesics-proof-conclusion.html#subsection-11" data-scroll="subsection-11">Sub-Finsler Carnot groups</a></li>
+<li><a href="sec-infinite-geodesics-proof-conclusion.html#subsection-12" data-scroll="subsection-12">Arbitrary homogeneous distances</a></li>
+</ul>
+</li>
+<li class="link"><a href="sec-isometric-embeddings.html" data-scroll="sec-isometric-embeddings"><span class="codenumber">6</span> <span class="title">Affinity of isometric embeddings</span></a></li>
+<li class="link"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="appendix-1.html" data-scroll="appendix-1"><span class="codenumber">A</span> <span class="title">Notation</span></a></li>
+<li class="link"><a href="references-section.html" data-scroll="references-section"><span class="title">References</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-pmp"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3</span> <span class="title">Step 2 sub-Finsler Pontryagin Maximum Principle</span>
+</h2>
+<a href="sec-pmp.html" class="permalink">¶</a><section class="introduction" id="introduction-2"><p id="p-59">In this section, the Pontryagin Maximum Principle will be rephrased in a convenient form for the purposes of <a data-knowl="./knowl/thm-infinite-geodesics-are-lines.html" title="Theorem 1.1">Theorem 1.1</a>. The precise statement to be proved is the following:</p>
+<article class="theorem-like" id="prop-step-2-PMP"><h6 class="heading">
+<span class="type">Proposition</span> <span class="codenumber">3.1</span>. <span class="title">Step 2 sub-Finsler PMP.</span>
+</h6>
+<p id="p-60">Let \(G\) be a step 2 <a data-knowl="./knowl/def-subfinsler.html" title="Definition 2.9">sub-Finsler Carnot group</a> with an arbitrary norm \(\norm{\cdot}\colon V_1\to\RR\) and let \(0\leq T\leq \infty\text{.}\) If \(u\colon [0,T]\to V_1\) is the <a data-knowl="./knowl/def-control.html" title="Definition 2.8">control</a> of a <a data-knowl="./knowl/def-geodesic.html" title="Definition 2.10">geodesic</a>, then there exists an absolutely continuous curve \(a\colon [0,T]\to V_1^*\) and a skew-symmetric bilinear form \(B\colon V_1\times V_1\to\RR\) such that</p>
+<ol class="lower-roman">
+<li id="prop-step-2-PMP-ode">At almost every \(t\in[0,T]\text{,}\) the curve \(a\) has the derivative<div class="displaymath">
+\begin{equation*}
+\frac{d}{dt}a(t)Y = B(u(t),Y)\quad\forall Y\in V_1\text{.}
+\end{equation*}
+</div>
+</li>
+<li id="prop-step-2-PMP-subdiff">At almost every \(t\in[0,T]\text{,}\) the linear map \(a(t)\colon V_1\to\RR\) is a <a data-knowl="./knowl/def-subdifferential.html" title="Definition 2.16">subdifferential</a> of the squared norm \(\frac{1}{2}\norm{\cdot}^2\) at the point \(u(t)\in V_1\text{.}\)</li>
+</ol></article><article class="remark-like" id="remark-2"><h6 class="heading">
+<span class="type">Remark</span> <span class="codenumber">3.2</span>.</h6>
+<p id="p-61">In the sub-Riemannian case, the the squared norm \(\frac{1}{2}\norm{\cdot}^2\) is differentiable at every point, and the unique subdifferential is the inner product \(a(t) = \left\lt u(t),\cdot\right\gt\text{.}\) The derivative condition <a data-knowl="./knowl/prop-step-2-PMP-ode.html" title="Item i">i</a> then gives the usual linear ODE of controls in implicit form</p>
+<div class="displaymath">
+\begin{equation*}
+\left\lt \dot{u}(t),Y\right\gt = \frac{d}{dt}\left\lt u(t),Y\right\gt = B(u(t),Y)\quad\forall Y\in V_1\text{.}
+\end{equation*}
+</div></article></section><section class="subsection" id="subsection-7"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.1</span> <span class="title">General statement of the PMP</span>
+</h3>
+<p id="p-62">For the rest of <a href="sec-pmp.html" class="internal" title="Section 3: Step 2 sub-Finsler Pontryagin Maximum Principle">Section 3</a>, let \(G\) be a fixed <a data-knowl="./knowl/def-subfinsler.html" title="Definition 2.9">sub-Finsler Carnot group</a>of step 2 with a generic norm \(\norm{\cdot}\colon V_1\to\RR\text{,}\) and let \(u\colon[0,T]\to V_1\) be the <a data-knowl="./knowl/def-control.html" title="Definition 2.8">control</a> of a geodesic \(\gamma\colon [0,T]\to G\text{.}\)</p>
+<p id="p-63">Consider first the finite time \(T\lt \infty\) case. By <a data-knowl="./knowl/def-subfinsler.html" title="Definition 2.9">Definition 2.9</a> of the sub-Finsler distance, the control \(u\) minimizes the length functional \(\int_{0}^{T}\norm{u(t)}\,dt\) among all controls defining curves with the same endpoints as \(\gamma\text{.}\) Since a geodesic has by definition constant speed, it follows that \(u\) is also a minimizer of the energy functional \(\frac{1}{2}\int_{0}^{T}\norm{u(t)}^2\,dt\text{.}\)</p>
+<p id="p-64">Define the left-trivialized Hamiltonian</p>
+<div class="displaymath">
+\begin{equation}
+h\colon V_1\times\RR\times\mathfrak{g}^*\to\RR,\quad h(u,\xi,\lambda) = \lambda(u) + \frac{1}{2}\xi\norm{u}^2\text{.}\label{eq-hamiltonian}\tag{3.1}
+\end{equation}
+</div>
+<p>By the Pontryagin Maximum Principle as presented in Theorem 12.10 of <a data-knowl="./knowl/Agrachev-Sachkov-2004-control_theory_geometric_viewpoint.html" title="Bibliographic Entry 2: Control theory from the geometric viewpoint">[2]</a>, the control \(u\colon[0,T]\to V_1\) can minimize the energy \(\frac{1}{2}\int_{0}^{T}\norm{u(t)}^2\,dt\) only if there is an almost everywhere non-zero absolutely continuous dual curve \(t\mapsto (\xi,\lambda(t))\in \RR\times T^*_{\gamma(t)}G\) such that</p>
+<div class="displaymath">
+\begin{align}
+\xi \amp\leq 0\label{PMP-normality}\tag{3.2}\\
+\dot{\lambda} \amp= \vec{h}_{u(t),\xi}(\lambda)\quad\text{a.e. }t\in[0,T],\label{PMP-hamiltonian-flow}\tag{3.3}\\
+h_{u(t),\xi}(\lambda(t)) \amp\geq h_{v,\xi}(\lambda(t))\quad\forall v\in V_1\quad\text{a.e. }t\in[0,T].\label{PMP-subdifferential}\tag{3.4}
+\end{align}
+</div>
+<p>Here \(h_{v,\xi}\) and \(\vec{h}_{v,\xi}\text{,}\) for \(v\in V_1\text{,}\) are the left-invariant Hamiltonian and the associated Hamiltonian vector field respectively.</p>
+<p id="p-65">More explicitly, \(h_{v,\xi}\colon T^*G\to\RR\) is the function defined from the left-trivialized Hamiltonian <a data-knowl="./knowl/eq-hamiltonian.html" title="Equation 3.1">(3.1)</a> in the natural way by</p>
+<div class="displaymath">
+\begin{equation}
+h_{v,\xi}(\lambda)=h(v,\xi,L_{g}^*\lambda),\quad \forall \lambda\in T^*_gG\text{,}\label{eq-cotangent-hamiltonian}\tag{3.5}
+\end{equation}
+</div>
+<p>and \(\vec{h}_{v,\xi}\) is the Hamiltonian vector field associated to the left-invariant Hamiltonian \(h_{v,\xi}\) and the canonical symplectic form \(\omega\) on the cotangent bundle \(T^*G\) by the duality</p>
+<div class="displaymath">
+\begin{equation}
+\omega(w, \vec{h}_{v,\xi}(\lambda)) = dh_{v,\xi}(w)\quad\forall w\in T_\lambda(T^*G)\text{.}\label{eq-hamiltonian-vecfield-duality}\tag{3.6}
+\end{equation}
+</div>
+<p id="p-66">Observe that if \((\xi,\lambda(t))\) is a dual curve satisfying the conditions <a data-knowl="./knowl/PMP-normality.html" title="Equation 3.2">(3.2)–(3.4)</a> of the PMP, then also any scalar multiple \((C\xi,C\lambda(t))\) for any \(C\gt 0\) satisfies the conditions <a data-knowl="./knowl/PMP-normality.html" title="Equation 3.2">(3.2)–(3.4)</a> of the PMP. This observation allows the infinite time case \(T=\infty\) to be handled as a limit of the finite time case. Namely, if \(u\colon [0,\infty)\to V_1\) is the control of a geodesic, then all its finite restrictions \(\restr{u}{[0,k]}\colon [0,k]\to V_1\) for \(k\in\NN\) are also controls of geodesics, so by the above they have corresponding dual curves \(t\mapsto (\xi_k,\lambda_k(t))\text{.}\) By taking suitable rescalings of the \((\xi_k,\lambda_k)\text{,}\) there exists a non-zero limit \((\xi_\infty,\lambda_\infty)\text{,}\) which then satisfies the conditions <a data-knowl="./knowl/PMP-normality.html" title="Equation 3.2">(3.2)–(3.4)</a> of the PMP on the entire interval \([0,\infty)\text{.}\)</p></section><section class="subsection" id="subsection-8"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.2</span> <span class="title">The normality/abnormality condition</span>
+</h3>
+<p id="p-67">Condition <a data-knowl="./knowl/PMP-normality.html" title="Equation 3.2">(3.2)</a> is a binary condition \(\xi=0\) or \(\xi\neq 0\text{.}\) The case \(\xi=0\) is the case of an abnormal control \(u\text{,}\) and may be ignored in the step 2 setting.</p>
+<p id="p-68">Indeed, suppose to the contrary that there does not exist a dual curve \((\xi,\lambda)\) with \(\xi\neq 0\text{,}\) but only some dual curve with \(\xi = 0\text{.}\) In this case, the maximality condition <a data-knowl="./knowl/PMP-subdifferential.html" title="Equation 3.4">(3.4)</a> states that</p>
+<div class="displaymath">
+\begin{equation*}
+\lambda(t) ( (L_{\gamma(t)})_*u(t) ) \geq \lambda(t) ( (L_{\gamma(t)})_*v )\quad\forall v\in V_1\quad\text{a.e. }t\in[0,T]\text{,}
+\end{equation*}
+</div>
+<p>which is only possible when \((L_{\gamma(t)})_*V_1\subset\ker\lambda(t)\text{.}\) Moreover, second order optimality conditions from Section 20 of <a data-knowl="./knowl/Agrachev-Sachkov-2004-control_theory_geometric_viewpoint.html" title="Bibliographic Entry 2: Control theory from the geometric viewpoint">[2]</a> further imply that (possibly changing the dual curve \(\lambda\)) the Goh condition</p>
+<div class="displaymath">
+\begin{equation*}
+\lambda(t) ((L_{\gamma(t)})_*[v,w])=0,\quad \forall v,w\in V_1\quad\text{a.e. }t\in[0,T]
+\end{equation*}
+</div>
+<p>is also satisfied. Since the group \(G\) has step 2, its Lie algebra has the decomposition \(\mathfrak{g}=V_1\oplus[V_1,V_1]\text{.}\) The above would then imply that \(\lambda(t)= 0\) almost everywhere, which would contradict the assumption that \((\xi,\lambda)\) is almost everywhere non-zero.</p>
+<p id="p-69">Therefore without loss of generality it suffices to consider the normal case \(\xi\lt 0\text{.}\) By rescaling \((\xi,\lambda)\) it further suffices to consider the case \(\xi=-1\text{.}\)</p></section><section class="subsection" id="sec-hamiltonian-ode"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.3</span> <span class="title">The Hamiltonian ODE in left-trivialized coordinates</span>
+</h3>
+<a href="sec-pmp.html#sec-hamiltonian-ode" class="permalink">¶</a><p id="p-70">The normal Hamiltonian vector field \(\vec{h}_{u(t),-1}(\lambda)\) appearing in the ODE <a data-knowl="./knowl/PMP-hamiltonian-flow.html" title="Equation 3.3">(3.3)</a> is straight-forward to compute in left-trivialized coordinates on \(T^*G\text{.}\) The explicit expression will be given in <a data-knowl="./knowl/lemma-hamiltonian-vector-field.html" title="Lemma 3.3">Lemma 3.3</a>.</p>
+<p id="p-71">Let \(X_1,\ldots,X_r\) be a basis of \(V_1\text{.}\) Fix a basis \(X_{r+1},\ldots,X_n\) for \(V_2=[V_1,V_1]\) by choosing a maximal linearly independent subset of the Lie brackets \(\{[X_i,X_j]: 1\leq i\lt j\leq r\}\text{.}\) By an abuse of notation, denote also by \(X_1,\ldots,X_n\text{,}\) the corresponding left-invariant frame of \(TG\text{.}\) Let \(\theta_1,\ldots,\theta_n\) be the dual left-invariant frame of \(T^*G\text{.}\) Any covector \(\lambda\in T_g^*G\) can be written in the frame as</p>
+<div class="displaymath">
+\begin{equation*}
+\lambda = \sum_{i=1}^na_i(\lambda)\theta_i(g)\text{.}
+\end{equation*}
+</div>
+<p>The functions \(a_i\colon T^*G\to\RR\) together with coordinates \(g\in G\) define left-trivialized coordinates on \(T^*G\text{.}\)</p>
+<article class="theorem-like" id="lemma-hamiltonian-vector-field"><h6 class="heading">
+<span class="type">Lemma</span> <span class="codenumber">3.3</span>.</h6>
+<p id="p-72">For any vector \(v\in V_1\text{,}\) the Hamiltonian vector field of the normal left-invariant Hamiltonian \(h_{v,-1}\) has in left-trivialized coordinates the expression</p>
+<div class="displaymath">
+\begin{equation*}
+\vec{h}_{v,-1}(\lambda) = \sum_{1\leq i\leq r}\lambda((L_{\pi(\lambda)})_*[v,X_i])\partial a_i + (L_{\pi(\lambda)})_*v\in T_\lambda(T^*G)\text{.}
+\end{equation*}
+</div></article><article class="hiddenproof" id="proof-9"><a data-knowl="" class="id-ref" data-refid="hk-proof-9"><h6 class="heading"><span class="type">Proof.</span></h6></a></article><div id="hk-proof-9" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-73">Let</p>
+<div class="displaymath">
+\begin{equation}
+F(v,\lambda) := \sum_{1\leq i\leq r}\lambda((L_{\pi(\lambda)})_*[v,X_i])\partial a_i + (L_{\pi(\lambda)})_*v\label{eq-hamiltonian-vector-field}\tag{3.7}
+\end{equation}
+</div>
+<p>be the expression on the right-hand side of the claimed formula for the normal Hamiltonian \(\vec{h}_{v,-1}\text{.}\) By the definition of a Hamiltonian vector field, it suffices to verify that the vector field \(\lambda\mapsto F(v,\lambda)\) satisfies the duality <a data-knowl="./knowl/eq-hamiltonian-vecfield-duality.html" title="Equation 3.6">(3.6)</a>, i.e., that</p>
+<div class="displaymath">
+\begin{equation}
+\omega(w,F(v,\lambda)) = dh_{v,-1}(w)\quad\forall w\in T_\lambda(T^*G)\text{.}\label{eq-hamiltonian-claimed-duality}\tag{3.8}
+\end{equation}
+</div>
+<p id="p-74">The differential on the right-hand side of <a data-knowl="./knowl/eq-hamiltonian-claimed-duality.html" title="Equation 3.8">(3.8)</a> is easily computed. The normal Hamiltonian \(h_{v,-1}\colon T^*G\to \RR\) defined by <a data-knowl="./knowl/eq-cotangent-hamiltonian.html" title="Equation 3.5">(3.5)</a> is left-invariant and linear on fibers. Therefore in left-trivialized coordinates, the differential has the expression</p>
+<div class="displaymath">
+\begin{equation}
+dh_{v,-1} = \sum_{i=1}^nv_ida_i\text{.}\label{eq-hamiltonian-differential}\tag{3.9}
+\end{equation}
+</div>
+<p id="p-75">The expression for the symplectic form is more intricate. By definition the canonical symplectic form \(\omega\) on the cotangent bundle \(T^*G\) is the differential of the tautological one-form \(\sum_{i=1}^n a_i\theta_i\text{.}\) That is, in left-trivialized coordinates, the symplectic form has the expression (see e.g. Section 4.2 of <a data-knowl="./knowl/Agrachev-Barilari-Boscain-2018-subriemannian_book.html" title="Bibliographic Entry 1: A comprehensive introduction to sub-riemannian geometry">[1]</a> for more details)</p>
+<div class="displaymath">
+\begin{equation}
+\omega = \sum_{i=1}^nda_i\wedge \theta_i + \sum_{i=1}^na_id\theta_i. \label{eq-symplectic-form-in-coords}\tag{3.10}
+\end{equation}
+</div>
+<p>The differentials \(d\theta_i\) can be evaluated along vector fields \(X,Y\in\Gamma(TG)\) by the classical formula</p>
+<div class="displaymath">
+\begin{equation*}
+d\theta_i(X,Y) = X\theta_i(Y)-Y\theta_i(X)-\theta_i([X,Y])\text{.}
+\end{equation*}
+</div>
+<p>For left-invariant vector fields this reduces to \(d\theta_i(X,Y)=-\theta_i([X,Y])\text{.}\)</p>
+<p id="p-76">Let \(W\) and \(Z\) be vector fields on the cotangent \(T^*G\) such that the projections \(X:=\pi_*W\) and \(Y:=\pi_*Z\) are left invariant. Writing the vector fields in left-trivialized coordinates as \(W=\sum_{i=1}^nw_i\partial_{a_i}+X\) and \(Z=\sum_{i=1}^nz_i\partial_{a_i}+Y\text{,}\) the identity <a data-knowl="./knowl/eq-symplectic-form-in-coords.html" title="Equation 3.10">(3.10)</a> gives the expression</p>
+<div class="displaymath">
+\begin{equation}
+\omega(W,Z) = \sum_{i=1}^nw_i\theta_i(Y) - \sum_{i=1}^nz_i\theta_i(X) - \sum_{i=1}^na_i\theta_i([X,Y])\text{.}\label{eq-symplectic-form-evaluation}\tag{3.11}
+\end{equation}
+</div>
+<p id="p-77">The duality <a data-knowl="./knowl/eq-hamiltonian-claimed-duality.html" title="Equation 3.8">(3.8)</a> will now be deduced by comparing the expressions <a data-knowl="./knowl/eq-hamiltonian-differential.html" title="Equation 3.9">(3.9)</a> and <a data-knowl="./knowl/eq-symplectic-form-evaluation.html" title="Equation 3.11">(3.11)</a>. For an arbitrary vector \(w\in T_\lambda(T^*G)\text{,}\) let \(W\) be the left-invariant extension to a vector field on the cotangent \(T^*G\text{.}\) That is, the vector field \(W\) has a constant coefficient coordinate expression</p>
+<div class="displaymath">
+\begin{equation}
+W=\sum_{i=1}^nw_i\partial a_i + \sum_{i=1}^nx_iX_i\text{.}\label{eq-test-vector}\tag{3.12}
+\end{equation}
+</div>
+<p id="p-78">Denote by \(X:=\pi_*W\) and \(Y := \pi_* F(v,\cdot)\) the projection vector fields on the group \(G\) of the vector fields \(W\) and \(\lambda\mapsto F(v,\lambda)\text{.}\) Substituting the expressions <a data-knowl="./knowl/eq-test-vector.html" title="Equation 3.12">(3.12)</a> of \(W\) and <a data-knowl="./knowl/eq-hamiltonian-vector-field.html" title="Equation 3.7">(3.7)</a> of \(F(v,\cdot)\) into the expression <a data-knowl="./knowl/eq-symplectic-form-evaluation.html" title="Equation 3.11">(3.11)</a> for \(\omega(W,Z)\) with \(Z=F(v,\lambda)\) gives the three sums</p>
+<div class="displaymath">
+\begin{align*}
+\sum_{i=1}^nw_i\theta_i((L_{\pi(\lambda)})_*v)
+\amp=\sum_{i=1}^nw_iv_i,\\
+\sum_{i=1}^n\lambda((L_{\pi(\lambda)})_*[v,X_i])\theta_i(X)
+\amp=\lambda([V,X])\quad\text{and}\\
+\sum_{i=1}^na_i\theta_i([X,V])
+\amp=\lambda([X,V])\text{.}
+\end{align*}
+</div>
+<p id="p-79">By anti-commutativity of the Lie bracket, the last two sums cancel out, so \(\omega(W,F(v,\lambda)) = \sum_{i=1}^nw_iv_i\text{.}\) Since the expression <a data-knowl="./knowl/eq-hamiltonian-differential.html" title="Equation 3.9">(3.9)</a> of the differential also gives \(dh_{v,-1}(W)=\sum_{i=1}^nw_iv_i\text{,}\) the vector field \(\lambda\mapsto F(v,\lambda)\) indeed satisfies the duality <a data-knowl="./knowl/eq-hamiltonian-claimed-duality.html" title="Equation 3.8">(3.8)</a>.</p></article></div></section><section class="subsection" id="subsection-10"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.4</span> <span class="title">Conclusion of the step 2 sub-Finsler PMP</span>
+</h3>
+<article class="hiddenproof" id="proof-10"><a data-knowl="" class="id-ref" data-refid="hk-proof-10"><h6 class="heading"><span class="title">Proof of Proposition 3.1.</span></h6></a></article><div id="hk-proof-10" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-80">The curve \(a\colon[0,T]\to V_1^*\) will be given by restricting the linear map</p>
+<div class="displaymath">
+\begin{equation}
+a(t) := (L_{\gamma(t)})^*\lambda(t)\colon \mathfrak{g}\to\RR\label{eq-subdifferential-curve-defn}\tag{3.13}
+\end{equation}
+</div>
+<p>to \(V_1\text{.}\) The skew-symmetric bilinear form \(B\colon V_1\times V_1\to\RR\) will be given by</p>
+<div class="displaymath">
+\begin{equation}
+B(X,Y) = a(t)[X,Y]\text{.}\label{eq-bilinear-form-defn}\tag{3.14}
+\end{equation}
+</div>
+<p id="p-81">In order to see that the above expressions are well defined and have the desired properties, express the curve \(\lambda(t)\) in left-trivialized coordinates as</p>
+<div class="displaymath">
+\begin{equation*}
+\lambda(t) = \sum_{i=1}^na_i(t)\theta_i(\gamma(t))\text{.}
+\end{equation*}
+</div>
+<p>The curve \(a(t)\) of <a data-knowl="./knowl/eq-subdifferential-curve-defn.html" title="Equation 3.13">(3.13)</a> has the same coefficients as the curve \(\lambda(t)\text{,}\) i.e., it is given by \(a(t) = \sum_{i=1}^na_i(t)\theta_i(e)\text{.}\) Using the explicit expression for the normal Hamiltonian vector field from <a data-knowl="./knowl/lemma-hamiltonian-vector-field.html" title="Lemma 3.3">Lemma 3.3</a>, the normal Hamiltonian ODE \(\dot{\lambda} = \vec{h}_{u(t),-1}(\lambda)\) implies that the components of the curve \(a\) have the derivatives</p>
+<div class="displaymath">
+\begin{equation}
+\begin{cases}
+\dot{a}_i(t) = a(t)[u(t),X_i], \amp i\in\{ 1,\ldots, r\}\\
+\dot{a}_i(t) = 0, \amp i\in\{ r+1,\ldots, n\}
+\end{cases}\label{eq-coordinate-ode}\tag{3.15}
+\end{equation}
+</div>
+<p id="p-82">Observe that the vertical coefficients \(a_{r+1},\dots,a_n\) are all constant, and that \(\theta_i([X,Y])=0\) for \(i=1,\ldots,r\text{.}\) Therefore \(a(t)[X,Y] = \sum_{i=r+1}^{n}a_i\theta_i([X,Y])\) is constant in \(t\text{,}\) so <a data-knowl="./knowl/eq-bilinear-form-defn.html" title="Equation 3.14">(3.14)</a> defines a unique bilinear form \(B\) independent from \(t\text{.}\) Moreover, the non-trivial equations of the system <a data-knowl="./knowl/eq-coordinate-ode.html" title="Equation 3.15">(3.15)</a> are then exactly</p>
+<div class="displaymath">
+\begin{equation*}
+\dot{a}_i(t) = a(t)[u(t),X_i]
+= B(u(t),X_i),\quad i\in\{1,\ldots,r\}\text{.}
+\end{equation*}
+</div>
+<p>Writing an arbitrary vector \(Y\in V_1\) in the basis \(X_1,\ldots,X_r\) as \(Y=y_1X_1+\dots+y_rX_r\text{,}\) the derivative condition <a data-knowl="./knowl/prop-step-2-PMP.html" title="Proposition 3.1: Step 2 sub-Finsler PMP">3.1</a><a data-knowl="./knowl/prop-step-2-PMP-ode.html" title="Item i">i</a> follows by linearity:</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{d}{dt}a(t)Y = \frac{d}{dt}\sum_{i=1}^na_i(t)y_i
+= \sum_{i=1}^nB(u(t),X_i)y_i
+= B(u(t),Y)\text{.}
+\end{equation*}
+</div>
+<p id="p-83">The subdifferential condition <a data-knowl="./knowl/prop-step-2-PMP.html" title="Proposition 3.1: Step 2 sub-Finsler PMP">3.1</a><a data-knowl="./knowl/prop-step-2-PMP-subdiff.html" title="Item ii">ii</a> for the linear functions \(a(t)\) follows from rephrasing the maximality condition <a data-knowl="./knowl/PMP-subdifferential.html" title="Equation 3.4">(3.4)</a>. Namely, expanding out the explicit expressions of the normal Hamiltonians \(h_{u(t),-1}\) and \(h_{v,-1}\) from <a data-knowl="./knowl/eq-hamiltonian.html" title="Equation 3.1">(3.1)</a> and reorganizing terms, the maximality condition <a data-knowl="./knowl/PMP-subdifferential.html" title="Equation 3.4">(3.4)</a> is equivalently stated as</p>
+<div class="displaymath">
+\begin{equation*}
+a(t)v - a(t)u(t) \leq \frac{1}{2}\norm{v}^2-\frac{1}{2}\norm{u(t)}^2
+\quad\forall v\in V_1\quad\text{a.e. }t\in[0,T]\text{.}
+\end{equation*}
+</div>
+<p>This is exactly <a data-knowl="./knowl/def-subdifferential.html" title="Definition 2.16">Definition 2.16</a> for the linear function \(a(t)\) being a subdifferential of the squared norm \(\frac{1}{2}\norm{\cdot}^2\) at the point \(u(t)\in V_1\text{.}\)</p></article></div></section></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.11/login.js"></script>
+</body>
+</html>
