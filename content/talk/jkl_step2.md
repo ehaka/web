@@ -28,7 +28,7 @@ image:
 links:
 url_code: ""
 url_pdf: ""
-url_slides: ""
+url_slides: "talk/step2-geodesics.pdf"
 url_video: ""
 
 # Markdown Slides (optional).
