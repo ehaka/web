@@ -10,12 +10,12 @@ authors:
 superuser: true
 
 # Role/position
-role: PhD student
+#role: "Postdoc researcher"
 
 # Organizations/Affiliations
-organizations:
-- name: University of Jyväskylä
-  url: ""
+#organizations:
+#- name: "SISSA"
+#  url: "https://www.math.sissa.it/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: ""
@@ -30,7 +30,10 @@ interests:
 
 education:
   courses:
-  - course: "Pedagogical studies in education (Mathematics subject teacher)"
+  - course: "Doctor of philosophy"
+    institution: "University of Jyväskylä"
+    year: 2019
+  - course: "Pedagogical studies in education (mathematics subject teacher)"
     institution: "University of Jyväskylä"
     year: 2016
   - course: "Master of science"
@@ -47,12 +50,15 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: 'mailto:eero.hakavuori@gmail.com'  # For a direct email link, use "mailto:test@example.org".
+  link: 'mailto:eero.hakavuori@gmail.com'
+- icon: orcid
+  icon_pack: ai
+  link: 'https://orcid.org/0000-0002-0091-2646'
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.  
-# - icon: cv
-#   icon_pack: ai
-#   link: cv.pdf
+- icon: cv
+  icon_pack: ai
+  link: cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
@@ -62,5 +68,5 @@ email: ""
 # user_groups:
 ---
 
-I am a mathematics PhD student at the University of Jyväskylä under the supervision of Associate Professor [Enrico Le Donne](https://sites.google.com/site/enricoledonne/) since April 2015.
-My thesis work is to study the regularity of geodesics and the Sard problem in sub-Riemannian geometry, with a particular focus on the case of sub-Riemannian Carnot groups.
+Starting October 2019, I will be working as a postdoc at [SISSA](https://www.math.sissa.it/). I completed my PhD in August 2019 at the [University of Jyväskylä](https://www.jyu.fi/science/en/maths) under the supervision of Associate Professor [Enrico Le Donne](https://sites.google.com/site/enricoledonne/).
+My work mainly revolves around the regularity of geodesics and the Sard problem in sub-Riemannian geometry, with a particular focus on the case of sub-Riemannian and sub-Finsler Carnot groups.
