@@ -10,12 +10,12 @@ authors:
 superuser: true
 
 # Role/position
-#role: "Postdoc researcher"
+role: "Postdoc researcher"
 
 # Organizations/Affiliations
-#organizations:
-#- name: "SISSA"
-#  url: "https://www.math.sissa.it/"
+organizations:
+- name: "SISSA"
+  url: "https://www.math.sissa.it/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: ""
@@ -68,5 +68,5 @@ email: ""
 # user_groups:
 ---
 
-Starting October 2019, I will be working as a postdoc at [SISSA](https://www.math.sissa.it/). I completed my PhD in August 2019 at the [University of Jyväskylä](https://www.jyu.fi/science/en/maths) under the supervision of Associate Professor [Enrico Le Donne](https://sites.google.com/site/enricoledonne/).
+I am a postdoc researcher at [SISSA](https://www.math.sissa.it/). I completed my PhD in August 2019 at the [University of Jyväskylä](https://www.jyu.fi/science/en/maths) under the supervision of [Enrico Le Donne](https://sites.google.com/site/enricoledonne/).
 My work mainly revolves around the regularity of geodesics and the Sard problem in sub-Riemannian geometry, with a particular focus on the case of sub-Riemannian and sub-Finsler Carnot groups.
