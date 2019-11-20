@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-05-08T14:48:46+03:00    *-->
+<!--*    on 2019-11-20T08:24:09+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,13 +13,27 @@
 </head>
 <body>
 <article class="hiddenproof"><h6 class="heading"><span class="type">Proof</span></h6>
-<p>For \(E(X)\leq E(Y)\text{,}\) the <a data-knowl="./knowl/def-subdifferential.html" title="Definition 2.16">subdifferential</a> condition \(a\in \partial E(Y)\) gives the bound</p>
+<p>For any points \(X,Y\in V\) and any \(\epsilon&gt;0\text{,}\) the subdifferential condition \(a\in\partial E(Y)\) implies that</p>
 <div class="displaymath">
-\begin{equation}
-a(X)-a(Y) = a(X-Y) \leq E(X)-E(Y) \leq 0\text{,}\tag{2.1}
-\end{equation}
+\begin{align*}
+\epsilon a(X)
+&amp;= a(Y+\epsilon X - Y)
+\leq E(Y+\epsilon X) - E(Y)\\
+&amp;\leq\frac{1}{2}\Big((\norm{Y}+\epsilon\norm{X})^2 - \norm{Y}^2\Big)
+= \epsilon \norm{X}\norm{Y} + \frac{1}{2}\epsilon ^2\norm{X}^2\text{.}
+\end{align*}
 </div>
-<p>proving maximality of \(Y\text{.}\)</p>
-<p>Let \(X\in V\) be another maximum. That is, suppose \(a(X)=a(Y)\) and \(E(X)\leq E(Y)\text{,}\) so the bound <a data-knowl="./knowl/eq-a-maximum.html" title="Equation 2.1">(2.1)</a> implies that necessarily \(E(X)=E(Y)\text{.}\) By linearity also \(a((X+Y)/2)=a(Y)\text{,}\) so the bound <a data-knowl="./knowl/eq-a-maximum.html" title="Equation 2.1">(2.1)</a> further implies that also \(E(X)=E((X+Y)/2)=E(Y)\text{.}\) By strict convexity, this is only possible if \(X=Y\text{,}\) proving uniqueness of the maximizer \(Y\text{.}\)</p></article><span class="incontext"><a href="sec-definitions.html#proof-7">in-context</a></span>
+<p>Letting \(\epsilon\to 0\) proves the bound \(a(X)\leq \norm{X}\norm{Y}\text{.}\) Repeating the same consideration for \(-X\text{,}\) gives the opposite bound \(-a(X)\leq \norm{X}\norm{Y}\text{.}\)</p>
+<p>For the equality \(a(Y)=\norm{Y}^2\text{,}\) let \(\epsilon&gt;0\text{,}\) and observe that a similar computation as before shows that</p>
+<div class="displaymath">
+\begin{align*}
+-\epsilon a(Y) &amp;=
+a((1-\epsilon)Y-Y)
+\leq E((1-\epsilon)Y)-E(Y)\\
+&amp;= \frac{1}{2}((1-\epsilon)^2-1)\norm{Y}^2
+= (-\epsilon+\frac{1}{2}\epsilon^2)\norm{Y}^2\text{.}
+\end{align*}
+</div>
+<p>That is, \(a(Y)\geq (1 - \frac{1}{2}\epsilon)\norm{Y}^2\text{.}\) The limit as \(\epsilon\to 0\) and the previous upper bound prove the claim.</p></article><span class="incontext"><a href="sec-definitions.html#proof-7">in-context</a></span>
 </body>
 </html>

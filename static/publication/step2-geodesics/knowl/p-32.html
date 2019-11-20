@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-05-08T14:48:46+03:00    *-->
+<!--*    on 2019-11-20T08:24:09+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,10 +13,16 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Let \(G\) be a <a data-knowl="./knowl/def-stratified-group.html" title="Definition 2.1">stratified group</a>. Denote by \(L_g\colon G\to G\) the left-translation \(L_g(h)=gh\text{.}\) An absolutely continuous curve \(\gamma\colon [0,T]\to G\) is a <dfn class="terminology">horizontal curve</dfn> if \((L_{\gamma(t)^{-1}})_*\dot{\gamma}(t) \in V_1\) for almost every \(t\in [0,T]\text{.}\) The <dfn class="terminology">control</dfn> of a horizontal curve \(\gamma\) is its left-trivialized derivative, i.e., the map</p>
+<p>Positivity and homogeneity of the <a data-knowl="./knowl/def-projection-norm.html" title="Definition 2.4">projection norm</a> \(\norm{\cdot}_d\) follow immediately from positivity and homogeneity of the <a data-knowl="./knowl/def-homogeneous-distance.html" title="Definition 2.3">homogeneous distance</a> \(d\text{.}\) For the triangle inequality, let \(X,X'\in V_1\) and let \(Y\in [\mathfrak{g},\mathfrak{g}]\) be the element given by the Baker-Campbell-Hausdorff formula such that</p>
 <div class="displaymath">
 \begin{equation*}
-u\colon [0,T]\to V_1,\quad u(t) = (L_{\gamma(t)^{-1}})_*\dot{\gamma}(t)\text{.}
+\exp(X)\exp(X') = \exp(X+X'+Y)\text{.}
+\end{equation*}
+</div>
+<p><a data-knowl="./knowl/lemma-projection-is-submetry.html" title="Lemma 2.5">Lemma 2.5</a> gives the bound \(\norm{X+X'}_d\leq d(e,\exp(X+X'+Y))\text{.}\) By the choice of \(Y\text{,}\) the left-invariance and triangle inequality of \(d\) conclude the claim:</p>
+<div class="displaymath">
+\begin{equation*}
+d(e,\exp(X+X'+Y))= d(e,\exp(X)\exp(X'))\leq \norm{X}_d+\norm{X'}_d\text{.}
 \end{equation*}
 </div>
 <span class="incontext"><a href="sec-definitions.html#p-32">in-context</a></span>

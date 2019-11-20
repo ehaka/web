@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-05-08T14:48:46+03:00    *-->
+<!--*    on 2019-11-20T08:24:10+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -11,27 +11,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body><article class="hiddenproof"><p>By the Lebesgue differentiation theorem it suffices to prove that \(\intavg_{a}^b\tilde{u}(t)\,dt\in \ker B\) for any \(0\leq a\lt b\lt \infty\text{.}\)</p>
-<p>Fix \(0\leq a\lt b\lt \infty\text{.}\) By assumption \(u_{\dilationfactor_k}\to \tilde{u}\) in \(\mathrm{L}^2([a,b];V_1)\text{,}\) so there exists some error term \(\epsilon\colon \NN\to V_1\) with \(\lim\limits_{k\to\infty}\epsilon(k)=0\) such that</p>
-<div class="displaymath">
-\begin{equation}
-\intavg_{a}^b\tilde{u}(t)\,dt
-= \intavg_a^bu(\dilationfactor_kt)\,dt +\epsilon(k)
-= \intavg_{a\dilationfactor_k}^{b\dilationfactor_k}u(t)\,dt+\epsilon(k)\text{.}\tag{4.3}
-\end{equation}
-</div>
-<p>The right-hand integral average can further be expressed as a difference of integral averages as</p>
-<div class="displaymath">
-\begin{equation}
-\intavg_{a\dilationfactor_k}^{b\dilationfactor_k}u(t)\,dt
-= \frac{b}{b-a}\cdot\intavg_{0}^{b\dilationfactor_k}u(t)\,dt-\frac{a}{b-a}\cdot\intavg_{0}^{a\dilationfactor_k}u(t)\,dt\text{.}\tag{4.4}
-\end{equation}
-</div>
-<p><a data-knowl="./knowl/lemma-limit-average-in-kernel.html" title="Lemma 4.1">Lemma 4.1</a> implies that for any \(X\in V_1\)</p>
-<div class="displaymath">
-\begin{equation*}
-\lim\limits_{k\to\infty}B\left(\intavg_{0}^{b\dilationfactor_k}u(t)\,dt,X\right) = \lim\limits_{k\to\infty}B\left(\intavg_{0}^{a\dilationfactor_k}u(t)\,dt,X\right) = 0
-\end{equation*}
-</div>
-<p>Combining the identities <a data-knowl="./knowl/eq-limit-intavg.html" title="Equation 4.3">(4.3)</a> and <a data-knowl="./knowl/eq-difference-of-intavg.html" title="Equation 4.4">(4.4)</a> and using bilinearity of \(B\) then implies that \(B\left(\intavg_a^b\tilde{u}(t)\,dt,X\right)=0\text{.}\) Since the vector \(X\in V_1\) was arbitrary, this proves the desired claim that \(\intavg_{a}^b\tilde{u}(t)\,dt\in\ker B\text{.}\)</p></article></body>
+<body><article class="hiddenproof"><article class="case"><h6 class="heading">(i).</h6>
+<p>In Theorem 1.1 of <a data-knowl="./knowl/Le_Donne-2015-metric_characterization.html" title="Bibliographic Entry 15: A metric characterization of Carnot groups">[15]</a> sub-Finsler Carnot groups are characterized as the only <a data-knowl="./knowl/def-geodesic.html" title="Definition 2.11">geodesic</a> metric spaces that are locally compact, isometrically homogeneous, and admit a dilation. Therefore it suffices to verify that the <a data-knowl="./knowl/def-length-metric.html" title="Definition 2.8">length metric</a> associated with a <a data-knowl="./knowl/def-homogeneous-distance.html" title="Definition 2.3">homogeneous distance</a> satisfies these properties.</p>
+<p>The claims of isometric homogeneity and admitting a dilation follow directly from the corresponding properties of the <a data-knowl="./knowl/def-homogeneous-distance.html" title="Definition 2.3">metric</a> \(d\text{.}\) Namely, since <a data-knowl="./knowl/def-control.html" title="Definition 2.9">left-translations</a> are isometries of the metric \(d\text{,}\) they preserve the length of curves, and hence are also isometries of the <a data-knowl="./knowl/def-length-metric.html" title="Definition 2.8">length metric</a> \(d_\ell\text{.}\) Similarly since <a data-knowl="./knowl/def-dilation.html" title="Definition 2.2">dilations</a> scale the length of curves linearly, they are dilations for the length metric \(d_\ell\text{.}\)</p>
+<p>Finiteness of the <a data-knowl="./knowl/def-length-metric.html" title="Definition 2.8">length metric</a> \(d_\ell\) follows from the <a data-knowl="./knowl/def-stratified-group.html" title="Definition 2.1">stratification</a> assumption: each element \(g\in G\) can be written as a product of elements in \(\exp(V_1)\) and the <a data-knowl="./knowl/def-control.html" title="Definition 2.9">horizontal</a> lines \(t\mapsto \exp(tX)\) are all <a data-knowl="./knowl/def-geodesic.html" title="Definition 2.11">geodesics</a>. Therefore concatenation of suitable horizontal line segments defines a finite length curve from the identity \(e\) to any desired point \(g\text{.}\) It follows that the length metric \(d_\ell\) determines a well defined <a data-knowl="./knowl/def-homogeneous-distance.html" title="Definition 2.3">homogeneous distance</a> on \(G\text{,}\) so by  Proposition 2.26 of <a data-knowl="./knowl/Le_Donne-Rigot-2019-besicovitch-covering_on_graded_groups.html" title="Bibliographic Entry 17: Besicovitch covering property on graded groups and applications to measure differentiation">[17]</a> it induces the manifold topology of \(G\text{.}\) In particular \((G,d_\ell)\) is a boundedly compact length space, so it is a geodesic metric space (see  Corollary 2.5.20 of <a data-knowl="./knowl/Burago-Burago-Ivanov-2001-metric_geometry.html" title="Bibliographic Entry 10: A course in metric geometry">[10]</a>). Applying  Theorem 1.1 of <a data-knowl="./knowl/Le_Donne-2015-metric_characterization.html" title="Bibliographic Entry 15: A metric characterization of Carnot groups">[15]</a> shows that \((G,d_\ell)\) is a <a data-knowl="./knowl/def-subfinsler.html" title="Definition 2.10">sub-Finsler Carnot group</a>.</p></article><article class="case"><h6 class="heading">(ii).</h6>
+<p>The lengths of all rectifiable curves in the original metric \(d\) and its associated <a data-knowl="./knowl/def-length-metric.html" title="Definition 2.8">length metric</a> \(d_\ell\) always agree (see  Proposition 2.3.12 of <a data-knowl="./knowl/Burago-Burago-Ivanov-2001-metric_geometry.html" title="Bibliographic Entry 10: A course in metric geometry">[10]</a>). In particular, the claim that the <a data-knowl="./knowl/def-geodesic.html" title="Definition 2.11">geodesics</a> of \((G,d)\) are geodesics of \((G,d_\ell)\) follows.</p></article><article class="case"><h6 class="heading">(iii).</h6>
+<p>The horizontal projection \(\pi\colon (G,d)\to V_1\) is a submetry both for the <a data-knowl="./knowl/def-subfinsler.html" title="Definition 2.10">sub-Finsler</a> norm \(\norm{\cdot}_{SF}\) (by definition) and for the <a data-knowl="./knowl/def-projection-norm.html" title="Definition 2.4">projection norm</a> \(\norm{\cdot}_d\) (by <a data-knowl="./knowl/lemma-projection-is-submetry.html" title="Lemma 2.5">Lemma 2.5</a>). Hence the norms \(\norm{\cdot}_{SF}\) and \(\norm{\cdot}_d\) have exactly the same balls, so \(\norm{\cdot}_{SF} = \norm{\cdot}_d\text{.}\)</p></article></article></body>
 </html>

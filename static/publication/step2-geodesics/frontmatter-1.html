@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-05-08T14:44:36+03:00    *-->
+<!--*    on 2019-11-20T08:24:08+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -41,19 +41,20 @@ MathJax.Hub.Config({
         mtextFontInherit: true,
     },
 });
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.11/pretext.js"></script><script src="https://pretextbook.org/js/0.11/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.12/pretext.js"></script><script src="https://pretextbook.org/js/0.12/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
 <script>var logged_in = false;
 var role = 'student';
 var guest_access = true;
 var login_required = false;
-var js_version = 0.11;
+var js_version = 0.12;
 </script>
 </head>
 <body id="hakavuori-igs2" class="mathbook-article has-toc has-sidebar-left">
@@ -64,7 +65,7 @@ var js_version = 0.11;
 \newcommand{\abs}[1]{\left\lvert#1\right\rvert}
 \newcommand{\norm}[1]{\left\lVert#1\right\rVert}
 \newcommand{\restr}[2]{\left.#1\right|_{#2}}
-\newcommand{\dilationfactor}{h}
+\newcommand{\dilationfactor}{\lambda}
 \newcommand{\intavg}{\mathop{\mathchoice{\,\rlap{-}\!\!\int}{\rlap{\raise.05em{\scriptstyle -}}\kern-.2em\int}{\rlap{\raise.09em{\scriptscriptstyle -}}\!\int}{\rlap{-}\!\int}}\nolimits}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
@@ -104,16 +105,14 @@ var js_version = 0.11;
 <li class="link">
 <a href="sec-pmp.html" data-scroll="sec-pmp"><span class="codenumber">3</span> <span class="title">Step 2 sub-Finsler Pontryagin Maximum Principle</span></a><ul>
 <li><a href="sec-pmp.html#subsection-7" data-scroll="subsection-7">General statement of the PMP</a></li>
-<li><a href="sec-pmp.html#subsection-8" data-scroll="subsection-8">The normality/abnormality condition</a></li>
-<li><a href="sec-pmp.html#sec-hamiltonian-ode" data-scroll="sec-hamiltonian-ode">The Hamiltonian ODE in left-trivialized coordinates</a></li>
-<li><a href="sec-pmp.html#subsection-10" data-scroll="subsection-10">Conclusion of the step 2 sub-Finsler PMP</a></li>
+<li><a href="sec-pmp.html#subsection-8" data-scroll="subsection-8">The PMP in left-trivialized coordinates</a></li>
 </ul>
 </li>
 <li class="link"><a href="sec-asymptotics.html" data-scroll="sec-asymptotics"><span class="codenumber">4</span> <span class="title">Asymptotic behavior of controls</span></a></li>
 <li class="link">
 <a href="sec-infinite-geodesics-proof-conclusion.html" data-scroll="sec-infinite-geodesics-proof-conclusion"><span class="codenumber">5</span> <span class="title">Affinity of infinite geodesics</span></a><ul>
-<li><a href="sec-infinite-geodesics-proof-conclusion.html#subsection-11" data-scroll="subsection-11">Sub-Finsler Carnot groups</a></li>
-<li><a href="sec-infinite-geodesics-proof-conclusion.html#subsection-12" data-scroll="subsection-12">Arbitrary homogeneous distances</a></li>
+<li><a href="sec-infinite-geodesics-proof-conclusion.html#subsection-9" data-scroll="subsection-9">Sub-Finsler Carnot groups</a></li>
+<li><a href="sec-infinite-geodesics-proof-conclusion.html#subsection-10" data-scroll="subsection-10">Arbitrary homogeneous distances</a></li>
 </ul>
 </li>
 <li class="link"><a href="sec-isometric-embeddings.html" data-scroll="sec-isometric-embeddings"><span class="codenumber">6</span> <span class="title">Affinity of isometric embeddings</span></a></li>
@@ -125,18 +124,18 @@ var js_version = 0.11;
 <main class="main"><div id="content" class="pretext-content"><section class="frontmatter" id="frontmatter-1"><h2 class="heading"><span class="title">Infinite geodesics and isometric embeddings in Carnot groups of step 2</span></h2>
 <div class="author">
 <div class="author-name">Eero Hakavuori</div>
-<div class="author-info">University of Jyväskylä<br><a href="mailto:eero.j.hakavuori@jyu.fi">eero.j.hakavuori@jyu.fi</a>
+<div class="author-info">SISSA, Trieste<br><a href="mailto:eero.hakavuori@sissa.it">eero.hakavuori@sissa.it</a>
 </div>
 </div>
-<div class="date">May 8, 2019</div>
-<p id="p-1">In the setting of step 2 sub-Finsler Carnot groups with strictly convex norms, we prove that all infinite geodesics are lines. It follows that for any other homogeneous distance, all geodesics are lines exactly when the induced norm on the horizontal space is strictly convex. As a further consequence, we show that all isometric embeddings between such homogeneous groups are affine.</p>
+<div class="date">November 20, 2019</div>
+<p id="p-1">In the setting of step 2 sub-Finsler Carnot groups with strictly convex norms, we prove that all infinite geodesics are lines. It follows that for any other homogeneous distance, all geodesics are lines exactly when the induced norm on the horizontal space is strictly convex. As a further consequence, we show that all isometric embeddings between such homogeneous groups are affine. The core of the proof is an asymptotic study of the extremals given by the Pontryagin Maximum Principle.</p>
 <section class="acknowledgement" id="acknowledgement-1"><h3 class="heading hide-type">
 <span class="type">Acknowledgements</span> <span class="codenumber"></span> <span class="title">Acknowledgements</span>
 </h3>
-<p id="p-2">The author was has been partially supported by the Vilho, Yrjö and Kalle Väisälä Foundation, by the Academy of Finland (grant 288501 “Geometry of subRiemannian groups”), and by the European Research Council (ERC Starting Grant 713998 GeoMeG “Geometry of Metric Groups”).</p>
+<p id="p-2">The author has been partially supported by the Vilho, Yrjö and Kalle Väisälä Foundation, by the Academy of Finland (grant 288501 “Geometry of subRiemannian groups”), and by the European Research Council (ERC Starting Grant 713998 GeoMeG “Geometry of Metric Groups”).</p>
 <p id="p-3">The author wishes to thank Enrico Le Donne and Yuri Sachkov for helpful discussions on the control viewpoint to infinite geodesics that paved the way to the conclusion of the main proof. The author also wishes to thank Ville Kivioja for his help during the outset of the project in the study of the known results and their abstractions.</p></section></section></div></main>
 </div>
 <div class="login-link"><span id="loginlogout" class="login">login</span></div>
-<script src="https://pretextbook.org/js/0.11/login.js"></script>
+<script src="https://pretextbook.org/js/0.12/login.js"></script>
 </body>
 </html>

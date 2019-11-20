@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-05-08T14:48:46+03:00    *-->
+<!--*    on 2019-11-20T08:24:09+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,13 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Suppose the map \(E\) is strictly convex and let \(a\in \partial E(Y)\text{.}\) Then the point \(Y\) is the unique maximizer of the linear function \(a\) in the sublevel set \(\{X\in V: E(X)\leq E(Y) \}\text{.}\)</p>
+<p>Theorem 24.7 of <a data-knowl="./knowl/Rockafellar-1970-convex_analysis.html" title="Bibliographic Entry 21: Convex analysis">[21]</a> shows (among other things) that since the set of points \(\mathcal{S}=\{Y_i: i\in\NN\}\cup \{Y\}\) is compact, the family of <a data-knowl="./knowl/def-subdifferential.html" title="Definition 2.17">subdifferentials</a></p>
+<div class="displaymath">
+\begin{equation*}
+\partial E(\mathcal{S}):= \bigcup_{X\in \mathcal{S}}\{a\in \partial E(X) \}
+\end{equation*}
+</div>
+<p>is also compact. Hence there exists a converging subsequence \(a_k\to a\in\partial E(\mathcal{S})\text{.}\) The claim is concluded by Theorem 24.4 of <a data-knowl="./knowl/Rockafellar-1970-convex_analysis.html" title="Bibliographic Entry 21: Convex analysis">[21]</a>, which shows that the convergences \(Y_k\to Y\) and \(a_k\to a\) with \(a_k\in\partial E(Y_k)\) imply that \(a\in\partial E(Y)\text{.}\)</p>
 <span class="incontext"><a href="sec-definitions.html#p-53">in-context</a></span>
 </body>
 </html>

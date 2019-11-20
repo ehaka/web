@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-05-08T14:48:46+03:00    *-->
+<!--*    on 2019-11-20T08:24:09+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,7 +13,19 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Therefore without loss of generality it suffices to consider the normal case \(\xi\lt 0\text{.}\) By rescaling \((\xi,\lambda)\) it further suffices to consider the case \(\xi=-1\text{.}\)</p>
+<p>Let \(X_1,\ldots,X_r\) be a basis of \(V_1\text{.}\) Fix a basis \(X_{r+1},\ldots,X_n\) for \(V_2=[V_1,V_1]\) by choosing a maximal linearly independent subset of the Lie brackets \(\{[X_i,X_j]: 1\leq i\lt j\leq r\}\text{.}\) By an abuse of notation, denote also by \(X_1,\ldots,X_n\text{,}\) the corresponding left-invariant frame of \(TG\text{.}\) Let \(\theta_1,\ldots,\theta_n\) be the dual left-invariant frame of \(T^*G\text{.}\) Writing the curve \(\lambda(t)\) in left-trivialized coordinates as</p>
+<div class="displaymath">
+\begin{equation*}
+\lambda(t) = \sum_{i=1}^n\lambda_i(t)\theta_i(\gamma(t))\text{,}
+\end{equation*}
+</div>
+<p>the Hamiltonian ODE <a data-knowl="./knowl/PMP-hamiltonian-flow.html" title="Equation 3.3">(3.3)</a> in the normal case \(\xi=-1\) takes the simpler form</p>
+<div class="displaymath">
+\begin{equation}
+\dot{\lambda}_i(t) = \lambda(t)\Big(\Big[\sum_{j=1}^ru_j(t)X_j, X_i\Big](\gamma(t))\Big),\quad i=1,\dots,n\text{,}\tag{3.5}
+\end{equation}
+</div>
+<p>see Section 18.3 of <a data-knowl="./knowl/Agrachev-Sachkov-2004-control_theory_geometric_viewpoint.html" title="Bibliographic Entry 2: Control theory from the geometric viewpoint">[2]</a> for the explicit computation.</p>
 <span class="incontext"><a href="sec-pmp.html#p-69">in-context</a></span>
 </body>
 </html>

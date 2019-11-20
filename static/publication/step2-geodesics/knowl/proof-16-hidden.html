@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-05-08T14:48:47+03:00    *-->
+<!--*    on 2019-11-20T08:24:10+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -11,6 +11,19 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body><article class="hiddenproof"><p>If the projection norm \(\norm{\cdot}_d\colon V_1\to\RR\) is not strictly convex, then there exists a non-linear geodesic \(\beta\colon\RR \to V_1\text{.}\) For example, if the norm \(\norm{X+cY}_d\) is constant for \(-\epsilon\leq c\leq \epsilon\text{,}\) then the curve \(\beta(t) = tX+\epsilon\sin(t)Y\) is an infinite geodesic.</p>
-<p>By <a data-knowl="./knowl/lemma-projection-is-submetry.html" title="Lemma 2.5">Lemma 2.5</a>, the projection \(\pi\colon (G,d)\to (V_1,\norm{\cdot})\) is a submetry, so the geodesic \(\beta\colon \RR\to V_1\) lifts to an infinite geodesic \(\gamma\colon \RR\to G\text{.}\) Since the projection is a homomorphism and the geodesic \(\beta\) is not affine, neither is the geodesic \(\gamma\text{.}\)</p></article></body>
+<body><article class="hiddenproof"><p>Let \(\varphi\colon (H,d_H)\hookrightarrow (G,d_G)\) be an isometric embedding. Since left-translations are isometries, it suffices to consider the case when the map \(\varphi\) preserves the identity element, and prove that such an isometric embedding is a homomorphism.</p>
+<p>Consider an arbitrary point \(h\in H\) and a horizontal vector \(X\in V_1^H\text{.}\) The horizontal line \(t\mapsto h\exp(tX)\) is an infinite geodesic with speed \(\norm{X}_H\) through the point \(h\in H\text{.}\) The image of the line under the isometric embedding \(\varphi\) is an infinite geodesic in the group \(G\) through the point \(\varphi(h)\) with exactly the same speed. By assumption all infinite geodesics in the group \(G\) are horizontal lines, so there exists some vector \(Y\in V_1^G\) (a priori depending on the point \(h\) and the vector \(X\)) with \(\norm{X}_H=\norm{Y}_G\) such that</p>
+<div class="displaymath">
+\begin{equation*}
+\varphi(h\exp(tX)) = \varphi(h)\exp(tY)\quad\forall t\in\RR\text{.}
+\end{equation*}
+</div>
+<p>Consider then the two parallel infinite geodesics \(t\mapsto \exp(tX)\) and \(t\mapsto h\exp(tX)\) with speed \(\norm{X}_H\text{.}\) Repeating the previous consideration, since the map \(\varphi\) was assumed to preserve the identity, there exists another horizontal direction \(Z\in V_1^G\) such that \(\varphi(\exp(tX))= \exp(tZ)\text{.}\) By <a data-knowl="./knowl/lemma-sublinear-geodesics.html" title="Lemma 6.1">Lemma 6.1</a>, the distance between the two lines in the group \(H\) grows sublinearly. Since the map \(\varphi\) is an isometric embedding, also the distance between the image lines in the group \(G\) grows sublinearly. Hence applying <a data-knowl="./knowl/lemma-sublinear-geodesics.html" title="Lemma 6.1">Lemma 6.1</a> in the converse direction implies that \(Y=Z\text{.}\) That is, the vector \(Y\in V_1^G\) does not depend on the point \(h\in H\text{,}\) only on the vector \(X\in V_1^H\text{.}\)</p>
+<p>The above shows that there is a well defined map \(\varphi_*\colon V_1^H\to V_1^G\) such that \(\varphi(h\exp(X)) = \varphi(h)\exp(\varphi_* X)\text{.}\) In particular,</p>
+<div class="displaymath">
+\begin{equation}
+\varphi(h_1h_2) = \varphi(h_1)\varphi(h_2)\quad \forall h_1\in H\;\forall h_2\in\exp(V_1^H)\text{.}\tag{6.1}
+\end{equation}
+</div>
+<p>Since the group \(H\) is <a data-knowl="./knowl/def-stratified-group.html" title="Definition 2.1">stratified</a>, the subset \(\exp(V_1^H)\) generates the entire group \(H\text{.}\) That is, any element \(h\in H\) can be written as a finite product of elements in \(\exp(V_1^H)\text{.}\) Applying the identity <a data-knowl="./knowl/eq-partial-homomorphism.html" title="Equation 6.1">(6.1)</a> repeatedly using such decompositions shows that the map \(\varphi\) is a homomorphism.</p></article></body>
 </html>

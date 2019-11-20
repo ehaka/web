@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-05-08T14:44:37+03:00    *-->
+<!--*    on 2019-11-20T08:24:09+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -41,19 +41,20 @@ MathJax.Hub.Config({
         mtextFontInherit: true,
     },
 });
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.11/pretext.js"></script><script src="https://pretextbook.org/js/0.11/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.12/pretext.js"></script><script src="https://pretextbook.org/js/0.12/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
 <script>var logged_in = false;
 var role = 'student';
 var guest_access = true;
 var login_required = false;
-var js_version = 0.11;
+var js_version = 0.12;
 </script>
 </head>
 <body id="hakavuori-igs2" class="mathbook-article has-toc has-sidebar-left">
@@ -64,7 +65,7 @@ var js_version = 0.11;
 \newcommand{\abs}[1]{\left\lvert#1\right\rvert}
 \newcommand{\norm}[1]{\left\lVert#1\right\rVert}
 \newcommand{\restr}[2]{\left.#1\right|_{#2}}
-\newcommand{\dilationfactor}{h}
+\newcommand{\dilationfactor}{\lambda}
 \newcommand{\intavg}{\mathop{\mathchoice{\,\rlap{-}\!\!\int}{\rlap{\raise.05em{\scriptstyle -}}\kern-.2em\int}{\rlap{\raise.09em{\scriptscriptstyle -}}\!\int}{\rlap{-}\!\int}}\nolimits}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
@@ -104,16 +105,14 @@ var js_version = 0.11;
 <li class="link">
 <a href="sec-pmp.html" data-scroll="sec-pmp"><span class="codenumber">3</span> <span class="title">Step 2 sub-Finsler Pontryagin Maximum Principle</span></a><ul>
 <li><a href="sec-pmp.html#subsection-7" data-scroll="subsection-7">General statement of the PMP</a></li>
-<li><a href="sec-pmp.html#subsection-8" data-scroll="subsection-8">The normality/abnormality condition</a></li>
-<li><a href="sec-pmp.html#sec-hamiltonian-ode" data-scroll="sec-hamiltonian-ode">The Hamiltonian ODE in left-trivialized coordinates</a></li>
-<li><a href="sec-pmp.html#subsection-10" data-scroll="subsection-10">Conclusion of the step 2 sub-Finsler PMP</a></li>
+<li><a href="sec-pmp.html#subsection-8" data-scroll="subsection-8">The PMP in left-trivialized coordinates</a></li>
 </ul>
 </li>
 <li class="link"><a href="sec-asymptotics.html" data-scroll="sec-asymptotics"><span class="codenumber">4</span> <span class="title">Asymptotic behavior of controls</span></a></li>
 <li class="link">
 <a href="sec-infinite-geodesics-proof-conclusion.html" data-scroll="sec-infinite-geodesics-proof-conclusion"><span class="codenumber">5</span> <span class="title">Affinity of infinite geodesics</span></a><ul>
-<li><a href="sec-infinite-geodesics-proof-conclusion.html#subsection-11" data-scroll="subsection-11">Sub-Finsler Carnot groups</a></li>
-<li><a href="sec-infinite-geodesics-proof-conclusion.html#subsection-12" data-scroll="subsection-12">Arbitrary homogeneous distances</a></li>
+<li><a href="sec-infinite-geodesics-proof-conclusion.html#subsection-9" data-scroll="subsection-9">Sub-Finsler Carnot groups</a></li>
+<li><a href="sec-infinite-geodesics-proof-conclusion.html#subsection-10" data-scroll="subsection-10">Arbitrary homogeneous distances</a></li>
 </ul>
 </li>
 <li class="link"><a href="sec-isometric-embeddings.html" data-scroll="sec-isometric-embeddings"><span class="codenumber">6</span> <span class="title">Affinity of isometric embeddings</span></a></li>
@@ -153,32 +152,32 @@ var js_version = 0.11;
 </tr>
 <tr>
 <td>\(\norm{\cdot}_d\)</td>
-<td>projection norm associated to a homogeneous distance</td>
+<td>projection norm associated with a homogeneous distance</td>
 <td><a data-knowl="./knowl/def-projection-norm.html" title="Definition 2.4">Definition 2.4</a></td>
 </tr>
 <tr>
 <td>\(L_g\)</td>
 <td>left-translation by a group element \(g\in G\)</td>
-<td><a data-knowl="./knowl/def-control.html" title="Definition 2.8">Definition 2.8</a></td>
+<td><a data-knowl="./knowl/def-control.html" title="Definition 2.9">Definition 2.9</a></td>
 </tr>
 <tr>
 <td>\(u\)</td>
 <td>control of a horizontal curve</td>
-<td><a data-knowl="./knowl/def-control.html" title="Definition 2.8">Definition 2.8</a></td>
+<td><a data-knowl="./knowl/def-control.html" title="Definition 2.9">Definition 2.9</a></td>
 </tr>
 <tr>
 <td>\(\gamma_\dilationfactor\)</td>
 <td>a curve dilated and reparametrized by a factor \(\dilationfactor&gt;0\)</td>
-<td><a data-knowl="./knowl/lemma-rescaled-control.html" title="Lemma 2.11">Lemma 2.11</a></td>
+<td><a data-knowl="./knowl/lemma-rescaled-control.html" title="Lemma 2.12">Lemma 2.12</a></td>
 </tr>
 <tr>
 <td>\(\partial E(Y)\)</td>
 <td>family of subdifferentials of a function \(E\) at a point \(Y\)</td>
-<td><a data-knowl="./knowl/def-subdifferential.html" title="Definition 2.16">Definition 2.16</a></td>
+<td><a data-knowl="./knowl/def-subdifferential.html" title="Definition 2.17">Definition 2.17</a></td>
 </tr>
 </table></section></div></main>
 </div>
 <div class="login-link"><span id="loginlogout" class="login">login</span></div>
-<script src="https://pretextbook.org/js/0.11/login.js"></script>
+<script src="https://pretextbook.org/js/0.12/login.js"></script>
 </body>
 </html>

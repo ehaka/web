@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-05-08T14:48:46+03:00    *-->
+<!--*    on 2019-11-20T08:24:09+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,13 +13,12 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Let \(X_1,\ldots,X_r\) be a basis of \(V_1\text{.}\) Fix a basis \(X_{r+1},\ldots,X_n\) for \(V_2=[V_1,V_1]\) by choosing a maximal linearly independent subset of the Lie brackets \(\{[X_i,X_j]: 1\leq i\lt j\leq r\}\text{.}\) By an abuse of notation, denote also by \(X_1,\ldots,X_n\text{,}\) the corresponding left-invariant frame of \(TG\text{.}\) Let \(\theta_1,\ldots,\theta_n\) be the dual left-invariant frame of \(T^*G\text{.}\) Any covector \(\lambda\in T_g^*G\) can be written in the frame as</p>
+<p>The curve \(a(t)\) of <a data-knowl="./knowl/eq-subdifferential-curve-defn.html" title="Equation 3.6">(3.6)</a> has in the left-invariant frame the same coefficients as the curve \(\lambda(t)\text{,}\) i.e., the coefficients of \(a(t) = \sum_{i=1}^na_i(t)\theta_i(e)\) are exactly \(a_i=\lambda_i\text{.}\) Left-translating the Hamiltonian ODE <a data-knowl="./knowl/eq-left-trivialized-hamiltonian-flow.html" title="Equation 3.5">(3.5)</a> to the identity shows that for almost every \(t\in[0,T]\text{,}\) the components of the curve have the derivatives</p>
 <div class="displaymath">
-\begin{equation*}
-\lambda = \sum_{i=1}^na_i(\lambda)\theta_i(g)\text{.}
-\end{equation*}
+\begin{equation}
+\dot{a}_i(t) = \frac{d}{dt}\lambda_i(t) = a(t)[u(t),X_i],\quad i=1,\ldots,n\text{.}\tag{3.8}
+\end{equation}
 </div>
-<p>The functions \(a_i\colon T^*G\to\RR\) together with coordinates \(g\in G\) define left-trivialized coordinates on \(T^*G\text{.}\)</p>
 <span class="incontext"><a href="sec-pmp.html#p-71">in-context</a></span>
 </body>
 </html>

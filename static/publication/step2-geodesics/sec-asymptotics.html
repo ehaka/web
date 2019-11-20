@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-05-08T14:44:37+03:00    *-->
+<!--*    on 2019-11-20T08:24:08+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -41,19 +41,20 @@ MathJax.Hub.Config({
         mtextFontInherit: true,
     },
 });
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.11/pretext.js"></script><script src="https://pretextbook.org/js/0.11/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.12/pretext.js"></script><script src="https://pretextbook.org/js/0.12/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
 <script>var logged_in = false;
 var role = 'student';
 var guest_access = true;
 var login_required = false;
-var js_version = 0.11;
+var js_version = 0.12;
 </script>
 </head>
 <body id="hakavuori-igs2" class="mathbook-article has-toc has-sidebar-left">
@@ -64,7 +65,7 @@ var js_version = 0.11;
 \newcommand{\abs}[1]{\left\lvert#1\right\rvert}
 \newcommand{\norm}[1]{\left\lVert#1\right\rVert}
 \newcommand{\restr}[2]{\left.#1\right|_{#2}}
-\newcommand{\dilationfactor}{h}
+\newcommand{\dilationfactor}{\lambda}
 \newcommand{\intavg}{\mathop{\mathchoice{\,\rlap{-}\!\!\int}{\rlap{\raise.05em{\scriptstyle -}}\kern-.2em\int}{\rlap{\raise.09em{\scriptscriptstyle -}}\!\int}{\rlap{-}\!\int}}\nolimits}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
@@ -104,16 +105,14 @@ var js_version = 0.11;
 <li class="link">
 <a href="sec-pmp.html" data-scroll="sec-pmp"><span class="codenumber">3</span> <span class="title">Step 2 sub-Finsler Pontryagin Maximum Principle</span></a><ul>
 <li><a href="sec-pmp.html#subsection-7" data-scroll="subsection-7">General statement of the PMP</a></li>
-<li><a href="sec-pmp.html#subsection-8" data-scroll="subsection-8">The normality/abnormality condition</a></li>
-<li><a href="sec-pmp.html#sec-hamiltonian-ode" data-scroll="sec-hamiltonian-ode">The Hamiltonian ODE in left-trivialized coordinates</a></li>
-<li><a href="sec-pmp.html#subsection-10" data-scroll="subsection-10">Conclusion of the step 2 sub-Finsler PMP</a></li>
+<li><a href="sec-pmp.html#subsection-8" data-scroll="subsection-8">The PMP in left-trivialized coordinates</a></li>
 </ul>
 </li>
 <li class="link active"><a href="sec-asymptotics.html" data-scroll="sec-asymptotics"><span class="codenumber">4</span> <span class="title">Asymptotic behavior of controls</span></a></li>
 <li class="link">
 <a href="sec-infinite-geodesics-proof-conclusion.html" data-scroll="sec-infinite-geodesics-proof-conclusion"><span class="codenumber">5</span> <span class="title">Affinity of infinite geodesics</span></a><ul>
-<li><a href="sec-infinite-geodesics-proof-conclusion.html#subsection-11" data-scroll="subsection-11">Sub-Finsler Carnot groups</a></li>
-<li><a href="sec-infinite-geodesics-proof-conclusion.html#subsection-12" data-scroll="subsection-12">Arbitrary homogeneous distances</a></li>
+<li><a href="sec-infinite-geodesics-proof-conclusion.html#subsection-9" data-scroll="subsection-9">Sub-Finsler Carnot groups</a></li>
+<li><a href="sec-infinite-geodesics-proof-conclusion.html#subsection-10" data-scroll="subsection-10">Arbitrary homogeneous distances</a></li>
 </ul>
 </li>
 <li class="link"><a href="sec-isometric-embeddings.html" data-scroll="sec-isometric-embeddings"><span class="codenumber">6</span> <span class="title">Affinity of isometric embeddings</span></a></li>
@@ -125,22 +124,22 @@ var js_version = 0.11;
 <main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-asymptotics"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">4</span> <span class="title">Asymptotic behavior of controls</span>
 </h2>
-<a href="sec-asymptotics.html" class="permalink">¶</a><p id="p-84">In this section, let \(u\colon [0,\infty)\to V_1\) be a fixed <a data-knowl="./knowl/def-control.html" title="Definition 2.8">control</a> satisfying the PMP <a data-knowl="./knowl/prop-step-2-PMP.html" title="Proposition 3.1: Step 2 sub-Finsler PMP">3.1</a>. Let \(a\colon[0,\infty)\to V_1^*\) be the associated curve of subdifferentials and let \(B\colon V_1\times V_1\to\RR\) be the associated bilinear form.</p>
+<a href="sec-asymptotics.html" class="permalink">¶</a><p id="p-75">In this section, let \(u\colon [0,\infty)\to V_1\) be a fixed <a data-knowl="./knowl/def-control.html" title="Definition 2.9">control</a> satisfying the <a data-knowl="./knowl/prop-step-2-PMP.html" title="Proposition 3.1: Step 2 sub-Finsler PMP">PMP 3.1</a>. Let \(a\colon[0,\infty)\to V_1^*\) be the associated curve of <a data-knowl="./knowl/def-subdifferential.html" title="Definition 2.17">subdifferentials</a> and let \(B\colon V_1\times V_1\to\RR\) be the associated bilinear form.</p>
 <article class="theorem-like" id="lemma-limit-average-in-kernel"><h6 class="heading">
 <span class="type">Lemma</span> <span class="codenumber">4.1</span>.</h6>
-<p id="p-85">For every vector \(X\in V_1\text{,}\)</p>
+<p id="p-76">For every vector \(X\in V_1\text{,}\)</p>
 <div class="displaymath">
 \begin{equation*}
 \lim\limits_{T\to\infty}B\left(\intavg_{0}^Tu(t)\,dt,X\right) = 0\text{.}
 \end{equation*}
-</div></article><article class="hiddenproof" id="proof-11"><a data-knowl="" class="id-ref" data-refid="hk-proof-11"><h6 class="heading"><span class="type">Proof.</span></h6></a></article><div id="hk-proof-11" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-86">Fix an arbitrary vector \(X\in V_1\text{.}\) Bilinearity of the map \(B\) implies that</p>
+</div></article><article class="hiddenproof" id="proof-9"><a data-knowl="" class="id-ref" data-refid="hk-proof-9"><h6 class="heading"><span class="type">Proof.</span></h6></a></article><div id="hk-proof-9" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-77">Fix an arbitrary vector \(X\in V_1\text{.}\) Bilinearity of the map \(B\) implies that</p>
 <div class="displaymath">
 \begin{equation}
 B\left(\intavg_{0}^Tu(t)\,dt,X\right)
 = \frac{1}{T}\int_{0}^TB\left(u(t),X\right)\,dt\text{.}\label{eq-B-integral-average}\tag{4.1}
 \end{equation}
 </div>
-<p>Since the curve \(a\) is absolutely continuous, the derivative condition PMP <a data-knowl="./knowl/prop-step-2-PMP.html" title="Proposition 3.1: Step 2 sub-Finsler PMP">3.1</a><a data-knowl="./knowl/prop-step-2-PMP-ode.html" title="Item i">i</a> implies that</p>
+<p>Since the curve \(a\) is absolutely continuous, the derivative condition <a data-knowl="./knowl/prop-step-2-PMP.html" title="Proposition 3.1: Step 2 sub-Finsler PMP">PMP 3.1</a><a data-knowl="./knowl/prop-step-2-PMP-ode.html" title="Item i">i</a> implies that</p>
 <div class="displaymath">
 \begin{equation}
 \int_{0}^{T}B(u(t),X)
@@ -148,7 +147,7 @@ B\left(\intavg_{0}^Tu(t)\,dt,X\right)
 = a(T)X-a(0)X\text{.}\label{eq-B-integral-bound-in-T}\tag{4.2}
 \end{equation}
 </div>
-<p id="p-87">For almost every \(t\text{,}\) the linear map \(a(t)\) is a subdifferential of the squared norm \(\frac{1}{2}\norm{\cdot}^2\) at the point \(u(t)\text{.}\) Since \(\norm{u(t)}\equiv 1\) is constant, continuity of the curve \(a\) and <a data-knowl="./knowl/lemma-subdifferential-of-norm.html" title="Lemma 2.19">Lemma 2.19</a> imply the bound \(\abs{a(t)X} \leq \norm{X}\) for every \(t\in[0,T]\text{.}\) The identities <a data-knowl="./knowl/eq-B-integral-average.html" title="Equation 4.1">(4.1)</a> and <a data-knowl="./knowl/eq-B-integral-bound-in-T.html" title="Equation 4.2">(4.2)</a> then imply the desired conclusion that</p>
+<p id="p-78">By the subdifferential condition <a data-knowl="./knowl/prop-step-2-PMP.html" title="Proposition 3.1: Step 2 sub-Finsler PMP">PMP 3.1</a><a data-knowl="./knowl/prop-step-2-PMP-subdiff.html" title="Item ii">ii</a>, for almost every \(T\text{,}\) the linear map \(a(T)\) is a <a data-knowl="./knowl/def-subdifferential.html" title="Definition 2.17">subdifferential</a> of the squared norm \(\frac{1}{2}\norm{\cdot}^2\) at the point \(u(T)\text{.}\) Since \(\norm{u(T)}\equiv 1\) is constant, continuity of the curve \(a\) and <a data-knowl="./knowl/lemma-subdifferential-of-norm.html" title="Lemma 2.19">Lemma 2.19</a> imply the bound \(\abs{a(T)X} \leq \norm{X}\) for every \(T\in[0,\infty)\text{.}\) The identities <a data-knowl="./knowl/eq-B-integral-average.html" title="Equation 4.1">(4.1)</a> and <a data-knowl="./knowl/eq-B-integral-bound-in-T.html" title="Equation 4.2">(4.2)</a> then imply the desired conclusion that</p>
 <div class="displaymath">
 \begin{equation*}
 \lim\limits_{T\to\infty}\abs{B\left(\intavg_{0}^Tu(t)\,dt,X\right)}
@@ -158,8 +157,8 @@ B\left(\intavg_{0}^Tu(t)\,dt,X\right)
 </div></article></div>
 <article class="theorem-like" id="lemma-asymptotic-cone-control-in-kernel"><h6 class="heading">
 <span class="type">Lemma</span> <span class="codenumber">4.2</span>.</h6>
-<p id="p-88">Let \(\dilationfactor_k\to \infty\) be a diverging sequence and let \(u_{\dilationfactor_k}(t)=u(\dilationfactor_kt)\) be the corresponding <a data-knowl="./knowl/lemma-rescaled-control.html" title="Lemma 2.11">dilated controls</a>. If \(u_{\dilationfactor_k}\to \tilde{u}\) in \(\Lloc([0,\infty);V_1)\text{,}\) then \(\tilde{u}(t)\in\ker B\) for almost every \(t\in[0,\infty)\text{.}\)</p></article><article class="hiddenproof" id="proof-12"><a data-knowl="" class="id-ref" data-refid="hk-proof-12"><h6 class="heading"><span class="type">Proof.</span></h6></a></article><div id="hk-proof-12" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-89">By the Lebesgue differentiation theorem it suffices to prove that \(\intavg_{a}^b\tilde{u}(t)\,dt\in \ker B\) for any \(0\leq a\lt b\lt \infty\text{.}\)</p>
-<p id="p-90">Fix \(0\leq a\lt b\lt \infty\text{.}\) By assumption \(u_{\dilationfactor_k}\to \tilde{u}\) in \(\mathrm{L}^2([a,b];V_1)\text{,}\) so there exists some error term \(\epsilon\colon \NN\to V_1\) with \(\lim\limits_{k\to\infty}\epsilon(k)=0\) such that</p>
+<p id="p-79">Let \(\dilationfactor_k\to \infty\) be a diverging sequence and let \(u_{\dilationfactor_k}(t)=u(\dilationfactor_kt)\) be the corresponding <a data-knowl="./knowl/lemma-rescaled-control.html" title="Lemma 2.12">dilated controls</a>. If \(u_{\dilationfactor_k}\to \tilde{u}\) in \(\Lloc([0,\infty);V_1)\text{,}\) then \(\tilde{u}(t)\in\ker B\) for almost every \(t\in[0,\infty)\text{.}\)</p></article><article class="hiddenproof" id="proof-10"><a data-knowl="" class="id-ref" data-refid="hk-proof-10"><h6 class="heading"><span class="type">Proof.</span></h6></a></article><div id="hk-proof-10" class="hidden-content tex2jax_ignore"><article class="hiddenproof"><p id="p-80">By the Lebesgue differentiation theorem it suffices to prove that \(\intavg_{a}^b\tilde{u}(t)\,dt\in \ker B\) for any \(0\leq a\lt b\lt \infty\text{.}\)</p>
+<p id="p-81">Fix \(0\leq a\lt b\lt \infty\text{.}\) By assumption \(u_{\dilationfactor_k}\to \tilde{u}\) in \(\mathrm{L}^2([a,b];V_1)\text{,}\) so there exists some error term \(\epsilon\colon \NN\to V_1\) with \(\lim\limits_{k\to\infty}\epsilon(k)=0\) such that</p>
 <div class="displaymath">
 \begin{equation}
 \intavg_{a}^b\tilde{u}(t)\,dt
@@ -174,15 +173,15 @@ B\left(\intavg_{0}^Tu(t)\,dt,X\right)
 = \frac{b}{b-a}\cdot\intavg_{0}^{b\dilationfactor_k}u(t)\,dt-\frac{a}{b-a}\cdot\intavg_{0}^{a\dilationfactor_k}u(t)\,dt\text{.}\label{eq-difference-of-intavg}\tag{4.4}
 \end{equation}
 </div>
-<p id="p-91"><a data-knowl="./knowl/lemma-limit-average-in-kernel.html" title="Lemma 4.1">Lemma 4.1</a> implies that for any \(X\in V_1\)</p>
+<p id="p-82"><a data-knowl="./knowl/lemma-limit-average-in-kernel.html" title="Lemma 4.1">Lemma 4.1</a> implies that for any \(X\in V_1\)</p>
 <div class="displaymath">
 \begin{equation*}
-\lim\limits_{k\to\infty}B\left(\intavg_{0}^{b\dilationfactor_k}u(t)\,dt,X\right) = \lim\limits_{k\to\infty}B\left(\intavg_{0}^{a\dilationfactor_k}u(t)\,dt,X\right) = 0
+\lim\limits_{k\to\infty}B\left(\intavg_{0}^{b\dilationfactor_k}u(t)\,dt,X\right) = \lim\limits_{k\to\infty}B\left(\intavg_{0}^{a\dilationfactor_k}u(t)\,dt,X\right) = 0\text{.}
 \end{equation*}
 </div>
 <p>Combining the identities <a data-knowl="./knowl/eq-limit-intavg.html" title="Equation 4.3">(4.3)</a> and <a data-knowl="./knowl/eq-difference-of-intavg.html" title="Equation 4.4">(4.4)</a> and using bilinearity of \(B\) then implies that \(B\left(\intavg_a^b\tilde{u}(t)\,dt,X\right)=0\text{.}\) Since the vector \(X\in V_1\) was arbitrary, this proves the desired claim that \(\intavg_{a}^b\tilde{u}(t)\,dt\in\ker B\text{.}\)</p></article></div></section></div></main>
 </div>
 <div class="login-link"><span id="loginlogout" class="login">login</span></div>
-<script src="https://pretextbook.org/js/0.11/login.js"></script>
+<script src="https://pretextbook.org/js/0.12/login.js"></script>
 </body>
 </html>

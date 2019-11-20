@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-05-08T14:48:47+03:00    *-->
+<!--*    on 2019-11-20T08:24:09+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -11,19 +11,26 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body><article class="hiddenproof"><p>Let \(\gamma\colon[0,\infty)\to G\) be an infinite <a data-knowl="./knowl/def-geodesic.html" title="Definition 2.10">geodesic</a> and let \(u\colon[0,\infty)\to V_1\) be its <a data-knowl="./knowl/def-control.html" title="Definition 2.8">control</a>. Let \(a\colon[0,\infty)\to V_1^*\) be the curve of subdifferentials of the squared norm \(\frac{1}{2}\norm{\cdot}^2\) and let \(B\colon V_1\times V_1\to\RR\) be the skew-symmetric bilinear form given by the <a data-knowl="./knowl/prop-step-2-PMP.html" title="Proposition 3.1: Step 2 sub-Finsler PMP">PMP 3.1</a>.</p>
-<p>By <a data-knowl="./knowl/lemma-existence-of-blowdown-line.html" title="Lemma 2.15">Lemma 2.15</a>, there exists a sequence \(\dilationfactor_k\to\infty\) such that the <a data-knowl="./knowl/def-blowdown.html" title="Definition 2.12">blowdown</a> \(\tilde{\gamma}=\lim\limits_{k\to\infty}\delta_{1/\dilationfactor_k}\circ\gamma\circ\delta_{\dilationfactor_k}\colon [0,\infty)\to G\) is affine. By <a data-knowl="./knowl/lemma-blowdown-properties.html" title="Lemma 2.14">Lemma 2.14</a>, taking a subsequence if necessary, the <a data-knowl="./knowl/lemma-rescaled-control.html" title="Lemma 2.11">dilated controls</a> \(u_{\dilationfactor_k}(t) = u(\dilationfactor_kt)\) converge in \(\Lloc([0,\infty);V_1)\) to the control \(\tilde{u}\) of the curve \(\tilde{\gamma}\text{.}\) Since the curve \(\tilde{\gamma}\) is affine, the control \(\tilde{u}\) is constant. That is, there exists a constant vector \(Y\in V_1\text{,}\) which for almost every \(t\in[0,\infty)\) is the limit</p>
+<body><article class="hiddenproof"><p>Let \(\gamma\colon[0,\infty)\to G\) be an infinite <a data-knowl="./knowl/def-geodesic.html" title="Definition 2.11">geodesic</a> and let \(u\colon[0,\infty)\to V_1\) be its <a data-knowl="./knowl/def-control.html" title="Definition 2.9">control</a>. Let \(a\colon[0,\infty)\to V_1^*\) be the curve of <a data-knowl="./knowl/def-subdifferential.html" title="Definition 2.17">subdifferentials</a> of the squared norm \(\frac{1}{2}\norm{\cdot}^2\) and let \(B\colon V_1\times V_1\to\RR\) be the skew-symmetric bilinear form given by the <a data-knowl="./knowl/prop-step-2-PMP.html" title="Proposition 3.1: Step 2 sub-Finsler PMP">PMP 3.1</a>.</p>
+<p>By <a data-knowl="./knowl/lemma-existence-of-blowdown-line.html" title="Lemma 2.16">Lemma 2.16</a>, there exists a sequence \(\dilationfactor_k\to\infty\) such that the <a data-knowl="./knowl/def-blowdown.html" title="Definition 2.13">blowdown</a> \(\tilde{\gamma}=\lim\limits_{k\to\infty}\delta_{1/\dilationfactor_k}\circ\gamma\circ\delta_{\dilationfactor_k}\colon [0,\infty)\to G\) is affine, i.e., a left translation of a one parameter subgroup. By <a data-knowl="./knowl/lemma-blowdown-properties.html" title="Lemma 2.15">Lemma 2.15</a>, taking a subsequence if necessary, the <a data-knowl="./knowl/lemma-rescaled-control.html" title="Lemma 2.12">dilated controls</a> \(u_{\dilationfactor_k}(t) = u(\dilationfactor_kt)\) converge in \(\Lloc([0,\infty);V_1)\) to the control \(\tilde{u}\) of the curve \(\tilde{\gamma}\text{.}\) Since the curve \(\tilde{\gamma}\) is affine, the control \(\tilde{u}\) is constant. That is, there exists a constant vector \(Y\in V_1\text{,}\) which for almost every \(t\in[0,\infty)\) is the limit</p>
 <div class="displaymath">
 \begin{equation}
 Y = \tilde{u}(t) = \lim\limits_{k\to\infty}u(\dilationfactor_k t)\text{.}\tag{5.1}
 \end{equation}
 </div>
 <p>By <a data-knowl="./knowl/lemma-asymptotic-cone-control-in-kernel.html" title="Lemma 4.2">Lemma 4.2</a>, \(Y\in\ker B\text{,}\) so the derivative condition <a data-knowl="./knowl/prop-step-2-PMP.html" title="Proposition 3.1: Step 2 sub-Finsler PMP">PMP 3.1</a><a data-knowl="./knowl/prop-step-2-PMP-ode.html" title="Item i">i</a> implies that the curve \(t\mapsto a(t)Y\) is constant \(a(t)Y\equiv: C\text{.}\)</p>
-<p>Fix any \(t\in[0,\infty)\) such that the limit <a data-knowl="./knowl/eq-Y-as-limit.html" title="Equation 5.1">(5.1)</a> holds. By <a data-knowl="./knowl/lemma-continuity-of-subdifferentials.html" title="Lemma 2.17">Lemma 2.17</a>, up to taking a further subsequence, the subdifferentials \(a(\dilationfactor_k t)\) of the squared norm \(\frac{1}{2}\norm{\cdot}^2\) at the points \(u(\dilationfactor_k t)\) converge to a subdifferential \(\tilde{a}\colon V_1\to\RR\) of the squared norm \(\frac{1}{2}\norm{\cdot}^2\) at the point \(Y\text{.}\) Moreover, since \(a(t)Y\equiv C\) is constant, also the limit evaluates to \(\tilde{a}Y = C\text{.}\) Applying <a data-knowl="./knowl/lemma-subdifferential-of-norm.html" title="Lemma 2.19">Lemma 2.19</a> for the subdifferential \(\tilde{a}\) shows that \(C = \tilde{a}Y = \norm{Y}^2\text{.}\) Similarly applying <a data-knowl="./knowl/lemma-subdifferential-of-norm.html" title="Lemma 2.19">Lemma 2.19</a> for the subdifferential \(a(t)\) shows that \(a(t)u(t) = \norm{u(t)}^2\text{.}\) Since the curves \(\gamma\) and \(\tilde{\gamma}\) are both geodesics, \(\norm{u(t)} = 1 = \norm{Y}\text{,}\) so combining all of the above gives the equality</p>
+<p>Fix any \(t\in[0,\infty)\) such that the limit <a data-knowl="./knowl/eq-Y-as-limit.html" title="Equation 5.1">(5.1)</a> holds. By <a data-knowl="./knowl/lemma-continuity-of-subdifferentials.html" title="Lemma 2.18">Lemma 2.18</a>, up to taking a further subsequence, the subdifferentials \(a(\dilationfactor_k t)\) of the squared norm \(\frac{1}{2}\norm{\cdot}^2\) at the points \(u(\dilationfactor_k t)\) converge to a subdifferential \(\tilde{a}\colon V_1\to\RR\) of the squared norm \(\frac{1}{2}\norm{\cdot}^2\) at the point \(Y\text{.}\) Moreover, since \(a(t)Y\equiv C\) is constant, also the limit evaluates to \(\tilde{a}Y = C\text{.}\) Applying <a data-knowl="./knowl/lemma-subdifferential-of-norm.html" title="Lemma 2.19">Lemma 2.19</a> for the subdifferential \(\tilde{a}\) shows that \(C = \tilde{a}Y = \norm{Y}^2\text{.}\) Similarly applying <a data-knowl="./knowl/lemma-subdifferential-of-norm.html" title="Lemma 2.19">Lemma 2.19</a> for the subdifferential \(a(t)\) shows that \(a(t)u(t) = \norm{u(t)}^2\text{.}\) Since the curves \(\gamma\) and \(\tilde{\gamma}\) are both geodesics, \(\norm{u(t)} = 1 = \norm{Y}\text{,}\) so combining all of the above gives the equality</p>
 <div class="displaymath">
-\begin{equation}
-a(t)Y = 1 = a(t)u(t)\text{.}\tag{5.2}
-\end{equation}
+\begin{equation*}
+a(t)Y = 1 = a(t)u(t)\text{.}
+\end{equation*}
 </div>
-<p>The norm \(\norm{\cdot}\) is by assumption strictly convex and the map \(x\mapsto \frac{1}{2}x^2\) is strictly increasing and convex on \([0,\infty)\text{,}\) so also the squared norm \(\frac{1}{2}\norm{\cdot}^2\) is strictly convex. Then by <a data-knowl="./knowl/lemma-subdifferential-maximum.html" title="Lemma 2.18">Lemma 2.18</a>, the point \(u(t)\) is the unique maximizer for the linear map \(a(t)\) in the corresponding sublevel set, so the equality <a data-knowl="./knowl/eq-maximizer-of-a.html" title="Equation 5.2">(5.2)</a> implies that \(u(t)=Y\text{.}\) Repeating the same argument at all the times \(t\) satisfying the limit <a data-knowl="./knowl/eq-Y-as-limit.html" title="Equation 5.1">(5.1)</a>, it follows that \(u(t)=Y\) for almost every \(t\in[0,\infty)\text{,}\) so the geodesic \(\gamma\) is itself affine.</p></article></body>
+<p>Consequently for any convex combination \(X\in V_1\) of \(u(t)\) and \(Y\text{,}\) <a data-knowl="./knowl/lemma-subdifferential-of-norm.html" title="Lemma 2.19">Lemma 2.19</a> implies that</p>
+<div class="displaymath">
+\begin{equation*}
+1 = a(t)X \leq \norm{X}\norm{u(t)} = \norm{X}\text{.}
+\end{equation*}
+</div>
+<p>By strict convexity of the norm this is only possible when \(u(t)=Y\text{.}\)</p>
+<p>Repeating the same argument at all the times \(t\) satisfying the limit <a data-knowl="./knowl/eq-Y-as-limit.html" title="Equation 5.1">(5.1)</a>, it follows that \(u(t)=Y\) for almost every \(t\in[0,\infty)\text{,}\) so the geodesic \(\gamma\) is affine.</p></article></body>
 </html>

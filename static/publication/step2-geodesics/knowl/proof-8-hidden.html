@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-05-08T14:48:46+03:00    *-->
+<!--*    on 2019-11-20T08:24:09+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -11,26 +11,46 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body><article class="hiddenproof"><p>For any points \(X,Y\in V\) and any \(\epsilon&gt;0\text{,}\) the subdifferential condition \(a\in\partial E(Y)\) implies that</p>
+<body><article class="hiddenproof"><p>The curve \(a\colon[0,T]\to V_1^*\) will be given by restricting the linear map</p>
 <div class="displaymath">
-\begin{align*}
-\epsilon a(X)
-\amp= a(Y+\epsilon X - Y)
-\leq E(Y+\epsilon X) - E(Y)\\
-\amp\leq\frac{1}{2}\Big((\norm{Y}+\epsilon\norm{X})^2 - \norm{Y}^2\Big)
-= \epsilon \norm{X}\norm{Y} + \frac{1}{2}\epsilon ^2\norm{X}^2\text{.}
-\end{align*}
+\begin{equation}
+a(t) := (L_{\gamma(t)})^*\lambda(t)\colon \mathfrak{g}\to\RR\tag{3.6}
+\end{equation}
 </div>
-<p>Letting \(\epsilon\to 0\) proves the bound \(a(X)\leq \norm{X}\norm{Y}\text{.}\) Repeating the same consideration for \(-X\text{,}\) gives the opposite bound \(-a(X)\leq \norm{X}\norm{Y}\text{.}\)</p>
-<p>For the equality \(a(Y)=\norm{Y}^2\text{,}\) let \(\epsilon&gt;0\text{,}\) and observe that a similar computation as before shows that</p>
+<p>to \(V_1\text{.}\) The skew-symmetric bilinear form \(B\colon V_1\times V_1\to\RR\) will be given by</p>
 <div class="displaymath">
-\begin{align*}
--\epsilon a(Y) \amp=
-a((1-\epsilon)Y-Y)
-\leq E((1-\epsilon)Y)-E(Y)\\
-\amp= \frac{1}{2}((1-\epsilon)^2-1)\norm{Y}^2
-= (-\epsilon+\frac{1}{2}\epsilon^2)\norm{Y}^2\text{.}
-\end{align*}
+\begin{equation}
+B(X,Y) := a(t)[X,Y]\text{.}\tag{3.7}
+\end{equation}
 </div>
-<p>That is, \(a(Y)\geq (1 - \frac{1}{2}\epsilon)\norm{Y}^2\text{.}\) The limit as \(\epsilon\to 0\) and the previous upper bound prove the claim.</p></article></body>
+<p>The curve \(a(t)\) of <a data-knowl="./knowl/eq-subdifferential-curve-defn.html" title="Equation 3.6">(3.6)</a> has in the left-invariant frame the same coefficients as the curve \(\lambda(t)\text{,}\) i.e., the coefficients of \(a(t) = \sum_{i=1}^na_i(t)\theta_i(e)\) are exactly \(a_i=\lambda_i\text{.}\) Left-translating the Hamiltonian ODE <a data-knowl="./knowl/eq-left-trivialized-hamiltonian-flow.html" title="Equation 3.5">(3.5)</a> to the identity shows that for almost every \(t\in[0,T]\text{,}\) the components of the curve have the derivatives</p>
+<div class="displaymath">
+\begin{equation}
+\dot{a}_i(t) = \frac{d}{dt}\lambda_i(t) = a(t)[u(t),X_i],\quad i=1,\ldots,n\text{.}\tag{3.8}
+\end{equation}
+</div>
+<p>By the step 2 assumption, \([u(t),X_i]=0\) for all the vertical components \(i=r+1,\dots,n\text{,}\) so the vertical coefficients \(a_{r+1},\dots,a_n\) are all constant. Therefore \(a(t)[X,Y] = \sum_{i=r+1}^{n}a_i\theta_i([X,Y])\) is constant in \(t\text{.}\) That is, the expression <a data-knowl="./knowl/eq-bilinear-form-defn.html" title="Equation 3.7">(3.7)</a> defines a unique bilinear form \(B\) independent from \(t\text{.}\)</p>
+<p>Writing the system <a data-knowl="./knowl/eq-coordinate-ode.html" title="Equation 3.8">(3.8)</a> in terms of the bilinear form \(B\text{,}\) the remaining non-trivial equations are exactly</p>
+<div class="displaymath">
+\begin{equation*}
+\dot{a}_i(t) = a(t)[u(t),X_i]
+= B(u(t),X_i),\quad i=1,\ldots,r\text{.}
+\end{equation*}
+</div>
+<p>The derivative condition <a data-knowl="./knowl/prop-step-2-PMP.html" title="Proposition 3.1: Step 2 sub-Finsler PMP">3.1</a><a data-knowl="./knowl/prop-step-2-PMP-ode.html" title="Item i">i</a> follows by linearity, as for an arbitrary vector \(Y=y_1X_1+\dots+y_rX_r\in V_1\text{,}\) the above implies that</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{d}{dt}a(t)Y = \frac{d}{dt}\sum_{i=1}^na_i(t)y_i
+= \sum_{i=1}^nB(u(t),X_i)y_i
+= B(u(t),Y)\text{.}
+\end{equation*}
+</div>
+<p>The subdifferential condition <a data-knowl="./knowl/prop-step-2-PMP.html" title="Proposition 3.1: Step 2 sub-Finsler PMP">3.1</a><a data-knowl="./knowl/prop-step-2-PMP-subdiff.html" title="Item ii">ii</a> for the linear functions \(a(t)\) follows from rephrasing the maximality condition <a data-knowl="./knowl/PMP-subdifferential.html" title="Equation 3.4">(3.4)</a>. Namely, expanding out the explicit expressions of the normal Hamiltonians \(h_{u(t),-1}\) and \(h_{v,-1}\) from <a data-knowl="./knowl/eq-hamiltonian.html" title="Equation 3.1">(3.1)</a> and reorganizing terms, the maximality condition <a data-knowl="./knowl/PMP-subdifferential.html" title="Equation 3.4">(3.4)</a> is equivalently stated as</p>
+<div class="displaymath">
+\begin{equation*}
+a(t)v - a(t)u(t) \leq \frac{1}{2}\norm{v}^2-\frac{1}{2}\norm{u(t)}^2
+\quad\forall v\in V_1\quad\text{a.e. }t\in[0,T]\text{.}
+\end{equation*}
+</div>
+<p>This is exactly <a data-knowl="./knowl/def-subdifferential.html" title="Definition 2.17">Definition 2.17</a> stating that the linear function \(a(t)\) is a subdifferential of the squared norm \(\frac{1}{2}\norm{\cdot}^2\) at the point \(u(t)\in V_1\text{.}\)</p></article></body>
 </html>

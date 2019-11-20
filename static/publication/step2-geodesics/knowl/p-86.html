@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-05-08T14:48:46+03:00    *-->
+<!--*    on 2019-11-20T08:24:09+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,21 +13,19 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Fix an arbitrary vector \(X\in V_1\text{.}\) Bilinearity of the map \(B\) implies that</p>
+<p>Fix any \(t\in[0,\infty)\) such that the limit <a data-knowl="./knowl/eq-Y-as-limit.html" title="Equation 5.1">(5.1)</a> holds. By <a data-knowl="./knowl/lemma-continuity-of-subdifferentials.html" title="Lemma 2.18">Lemma 2.18</a>, up to taking a further subsequence, the subdifferentials \(a(\dilationfactor_k t)\) of the squared norm \(\frac{1}{2}\norm{\cdot}^2\) at the points \(u(\dilationfactor_k t)\) converge to a subdifferential \(\tilde{a}\colon V_1\to\RR\) of the squared norm \(\frac{1}{2}\norm{\cdot}^2\) at the point \(Y\text{.}\) Moreover, since \(a(t)Y\equiv C\) is constant, also the limit evaluates to \(\tilde{a}Y = C\text{.}\) Applying <a data-knowl="./knowl/lemma-subdifferential-of-norm.html" title="Lemma 2.19">Lemma 2.19</a> for the subdifferential \(\tilde{a}\) shows that \(C = \tilde{a}Y = \norm{Y}^2\text{.}\) Similarly applying <a data-knowl="./knowl/lemma-subdifferential-of-norm.html" title="Lemma 2.19">Lemma 2.19</a> for the subdifferential \(a(t)\) shows that \(a(t)u(t) = \norm{u(t)}^2\text{.}\) Since the curves \(\gamma\) and \(\tilde{\gamma}\) are both geodesics, \(\norm{u(t)} = 1 = \norm{Y}\text{,}\) so combining all of the above gives the equality</p>
 <div class="displaymath">
-\begin{equation}
-B\left(\intavg_{0}^Tu(t)\,dt,X\right)
-= \frac{1}{T}\int_{0}^TB\left(u(t),X\right)\,dt\text{.}\tag{4.1}
-\end{equation}
+\begin{equation*}
+a(t)Y = 1 = a(t)u(t)\text{.}
+\end{equation*}
 </div>
-<p>Since the curve \(a\) is absolutely continuous, the derivative condition PMP <a data-knowl="./knowl/prop-step-2-PMP.html" title="Proposition 3.1: Step 2 sub-Finsler PMP">3.1</a><a data-knowl="./knowl/prop-step-2-PMP-ode.html" title="Item i">i</a> implies that</p>
+<p>Consequently for any convex combination \(X\in V_1\) of \(u(t)\) and \(Y\text{,}\) <a data-knowl="./knowl/lemma-subdifferential-of-norm.html" title="Lemma 2.19">Lemma 2.19</a> implies that</p>
 <div class="displaymath">
-\begin{equation}
-\int_{0}^{T}B(u(t),X)
-= \int_{0}^{T}\frac{d}{dt}a(t)X
-= a(T)X-a(0)X\text{.}\tag{4.2}
-\end{equation}
+\begin{equation*}
+1 = a(t)X \leq \norm{X}\norm{u(t)} = \norm{X}\text{.}
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec-asymptotics.html#p-86">in-context</a></span>
+<p>By strict convexity of the norm this is only possible when \(u(t)=Y\text{.}\)</p>
+<span class="incontext"><a href="sec-infinite-geodesics-proof-conclusion.html#p-86">in-context</a></span>
 </body>
 </html>

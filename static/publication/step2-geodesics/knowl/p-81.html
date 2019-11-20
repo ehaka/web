@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-05-08T14:48:46+03:00    *-->
+<!--*    on 2019-11-20T08:24:09+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -13,21 +13,21 @@
 </head>
 <body>
 <h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>In order to see that the above expressions are well defined and have the desired properties, express the curve \(\lambda(t)\) in left-trivialized coordinates as</p>
-<div class="displaymath">
-\begin{equation*}
-\lambda(t) = \sum_{i=1}^na_i(t)\theta_i(\gamma(t))\text{.}
-\end{equation*}
-</div>
-<p>The curve \(a(t)\) of <a data-knowl="./knowl/eq-subdifferential-curve-defn.html" title="Equation 3.13">(3.13)</a> has the same coefficients as the curve \(\lambda(t)\text{,}\) i.e., it is given by \(a(t) = \sum_{i=1}^na_i(t)\theta_i(e)\text{.}\) Using the explicit expression for the normal Hamiltonian vector field from <a data-knowl="./knowl/lemma-hamiltonian-vector-field.html" title="Lemma 3.3">Lemma 3.3</a>, the normal Hamiltonian ODE \(\dot{\lambda} = \vec{h}_{u(t),-1}(\lambda)\) implies that the components of the curve \(a\) have the derivatives</p>
+<p>Fix \(0\leq a\lt b\lt \infty\text{.}\) By assumption \(u_{\dilationfactor_k}\to \tilde{u}\) in \(\mathrm{L}^2([a,b];V_1)\text{,}\) so there exists some error term \(\epsilon\colon \NN\to V_1\) with \(\lim\limits_{k\to\infty}\epsilon(k)=0\) such that</p>
 <div class="displaymath">
 \begin{equation}
-\begin{cases}
-\dot{a}_i(t) = a(t)[u(t),X_i], \amp i\in\{ 1,\ldots, r\}\\
-\dot{a}_i(t) = 0, \amp i\in\{ r+1,\ldots, n\}
-\end{cases}\tag{3.15}
+\intavg_{a}^b\tilde{u}(t)\,dt
+= \intavg_a^bu(\dilationfactor_kt)\,dt +\epsilon(k)
+= \intavg_{a\dilationfactor_k}^{b\dilationfactor_k}u(t)\,dt+\epsilon(k)\text{.}\tag{4.3}
 \end{equation}
 </div>
-<span class="incontext"><a href="sec-pmp.html#p-81">in-context</a></span>
+<p>The right-hand integral average can further be expressed as a difference of integral averages as</p>
+<div class="displaymath">
+\begin{equation}
+\intavg_{a\dilationfactor_k}^{b\dilationfactor_k}u(t)\,dt
+= \frac{b}{b-a}\cdot\intavg_{0}^{b\dilationfactor_k}u(t)\,dt-\frac{a}{b-a}\cdot\intavg_{0}^{a\dilationfactor_k}u(t)\,dt\text{.}\tag{4.4}
+\end{equation}
+</div>
+<span class="incontext"><a href="sec-asymptotics.html#p-81">in-context</a></span>
 </body>
 </html>

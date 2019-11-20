@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--**************************************-->
 <!--*    Generated from PreTeXt source   *-->
-<!--*    on 2019-05-08T14:44:37+03:00    *-->
+<!--*    on 2019-11-20T08:24:09+01:00    *-->
 <!--*                                    *-->
 <!--*      https://pretextbook.org       *-->
 <!--*                                    *-->
@@ -41,19 +41,20 @@ MathJax.Hub.Config({
         mtextFontInherit: true,
     },
 });
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.11/pretext.js"></script><script src="https://pretextbook.org/js/0.11/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.12/pretext.js"></script><script src="https://pretextbook.org/js/0.12/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
 <script>var logged_in = false;
 var role = 'student';
 var guest_access = true;
 var login_required = false;
-var js_version = 0.11;
+var js_version = 0.12;
 </script>
 </head>
 <body id="hakavuori-igs2" class="mathbook-article has-toc has-sidebar-left">
@@ -64,7 +65,7 @@ var js_version = 0.11;
 \newcommand{\abs}[1]{\left\lvert#1\right\rvert}
 \newcommand{\norm}[1]{\left\lVert#1\right\rVert}
 \newcommand{\restr}[2]{\left.#1\right|_{#2}}
-\newcommand{\dilationfactor}{h}
+\newcommand{\dilationfactor}{\lambda}
 \newcommand{\intavg}{\mathop{\mathchoice{\,\rlap{-}\!\!\int}{\rlap{\raise.05em{\scriptstyle -}}\kern-.2em\int}{\rlap{\raise.09em{\scriptscriptstyle -}}\!\int}{\rlap{-}\!\int}}\nolimits}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
@@ -104,16 +105,14 @@ var js_version = 0.11;
 <li class="link">
 <a href="sec-pmp.html" data-scroll="sec-pmp"><span class="codenumber">3</span> <span class="title">Step 2 sub-Finsler Pontryagin Maximum Principle</span></a><ul>
 <li><a href="sec-pmp.html#subsection-7" data-scroll="subsection-7">General statement of the PMP</a></li>
-<li><a href="sec-pmp.html#subsection-8" data-scroll="subsection-8">The normality/abnormality condition</a></li>
-<li><a href="sec-pmp.html#sec-hamiltonian-ode" data-scroll="sec-hamiltonian-ode">The Hamiltonian ODE in left-trivialized coordinates</a></li>
-<li><a href="sec-pmp.html#subsection-10" data-scroll="subsection-10">Conclusion of the step 2 sub-Finsler PMP</a></li>
+<li><a href="sec-pmp.html#subsection-8" data-scroll="subsection-8">The PMP in left-trivialized coordinates</a></li>
 </ul>
 </li>
 <li class="link"><a href="sec-asymptotics.html" data-scroll="sec-asymptotics"><span class="codenumber">4</span> <span class="title">Asymptotic behavior of controls</span></a></li>
 <li class="link">
 <a href="sec-infinite-geodesics-proof-conclusion.html" data-scroll="sec-infinite-geodesics-proof-conclusion"><span class="codenumber">5</span> <span class="title">Affinity of infinite geodesics</span></a><ul>
-<li><a href="sec-infinite-geodesics-proof-conclusion.html#subsection-11" data-scroll="subsection-11">Sub-Finsler Carnot groups</a></li>
-<li><a href="sec-infinite-geodesics-proof-conclusion.html#subsection-12" data-scroll="subsection-12">Arbitrary homogeneous distances</a></li>
+<li><a href="sec-infinite-geodesics-proof-conclusion.html#subsection-9" data-scroll="subsection-9">Sub-Finsler Carnot groups</a></li>
+<li><a href="sec-infinite-geodesics-proof-conclusion.html#subsection-10" data-scroll="subsection-10">Arbitrary homogeneous distances</a></li>
 </ul>
 </li>
 <li class="link"><a href="sec-isometric-embeddings.html" data-scroll="sec-isometric-embeddings"><span class="codenumber">6</span> <span class="title">Affinity of isometric embeddings</span></a></li>
@@ -123,25 +122,31 @@ var js_version = 0.11;
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section class="references" id="references-section"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber"></span> <span class="title">References</span>
+<span class="type">References</span> <span class="codenumber"></span> <span class="title">References</span>
 </h2>
-<a href="references-section.html" class="permalink">¶</a><article class="bib" id="Agrachev-Barilari-Boscain-2018-subriemannian_book"><div class="bibitem">[1]</div>  <div class="bibentry">Andrei Agrachev, Davide Barilari, and Ugo Boscain, <i>A comprehensive introduction to sub-riemannian geometry</i>, (2019), p. 643. <a class="external" href="https://webusers.imj-prg.fr/~davide.barilari/Notes.php" target="_blank">webusers.imj-prg.fr/~davide.barilari/Notes.php</a>
+<a href="references-section.html" class="permalink">¶</a><article class="bib" id="Agrachev-Barilari-Boscain-2019-subriemannian_book"><div class="bibitem">[1]</div>  <div class="bibentry">Andrei Agrachev, Davide Barilari, and Ugo Boscain, <i>A comprehensive introduction to sub-riemannian geometry</i>, (2019), p. 643. <a class="external" href="https://webusers.imj-prg.fr/~davide.barilari/Notes.php" target="_blank">webusers.imj-prg.fr/~davide.barilari/Notes.php</a>
 </div></article><article class="bib" id="Agrachev-Sachkov-2004-control_theory_geometric_viewpoint"><div class="bibitem">[2]</div>  <div class="bibentry">Andrei A. Agrachev and Yuri L. Sachkov, <i>Control theory from the geometric viewpoint</i>, Encyclopaedia of Mathematical Sciences, <b>vol. 87</b>, Springer-Verlag, Berlin, (2004), Control Theory and Optimization, II. <a class="external" href="https://doi.org/10.1007/978-3-662-06404-7" target="_blank">doi.org/10.1007/978-3-662-06404-7</a>
-</div></article><article class="bib" id="Ardentov-Sachkov-2015-Engel_cut_time"><div class="bibitem">[3]</div>  <div class="bibentry">A. A. Ardentov and Yu. L. Sachkov, <i>Cut time in sub-Riemannian problem on Engel group</i>, ESAIM Control Optim. Calc. Var. <b>21</b> (2015), no. 4, 958–988. <a class="external" href="https://doi.org/10.1051/cocv/2015027" target="_blank">doi.org/10.1051/cocv/2015027</a>
-</div></article><article class="bib" id="Balogh-Calogero-2018-infinite_heisenberg_geodesics"><div class="bibitem">[4]</div>  <div class="bibentry">Z. M. Balogh and A. Calogero, <i>Infinite geodesics of sub-Finsler distances in the Heisenberg groups</i>, ArXiv e-prints (2018), <a class="external" href="https://arxiv.org/abs/1807.10369" target="_blank">arXiv:1807.10369</a>
-</div></article><article class="bib" id="Balogh-Fassler-Sobrino-2018-embeddings_into_heisenberg"><div class="bibitem">[5]</div>  <div class="bibentry">Zoltán M. Balogh, Katrin Fässler, and Hernando Sobrino, <i>Isometric embeddings into Heisenberg groups</i>, Geom. Dedicata <b>195</b> (2018), 163–192. <a class="external" href="https://doi.org/10.1007/s10711-017-0282-5" target="_blank">doi.org/10.1007/s10711-017-0282-5</a>
-</div></article><article class="bib" id="Burago-Burago-Ivanov-2001-metric_geometry"><div class="bibitem">[6]</div>  <div class="bibentry">Dmitri Burago, Yuri Burago, and Sergei Ivanov, <i>A course in metric geometry</i>, Graduate Studies in Mathematics, <b>vol. 33</b>, American Mathematical Society, Providence, RI, (2001). <a class="external" href="https://doi.org/10.1090/gsm/033" target="_blank">doi.org/10.1090/gsm/033</a>
-</div></article><article class="bib" id="Hakavuori-Le_Donne-2018-cones"><div class="bibitem">[7]</div>  <div class="bibentry">Eero Hakavuori and Enrico Le Donne, <i>Blowups and blowdowns of geodesics in Carnot groups</i>, ArXiv e-prints (2018), <a class="external" href="https://arxiv.org/abs/1806.09375" target="_blank">arXiv:1806.09375</a>
-</div></article><article class="bib" id="Kishimoto-2003-carnot-geodesics-and-isometries"><div class="bibitem">[8]</div>  <div class="bibentry">Iwao Kishimoto, <i>Geodesics and isometries of Carnot groups</i>, J. Math. Kyoto Univ. <b>43</b> (2003), no. 3, 509–522. <a class="external" href="https://doi.org/10.1215/kjm/1250283693" target="_blank">doi.org/10.1215/kjm/1250283693</a>
-</div></article><article class="bib" id="Kivioja-Le_Donne-2017-nilpotent_isometries"><div class="bibitem">[9]</div>  <div class="bibentry">Ville Kivioja and Enrico Le Donne, <i>Isometries of nilpotent metric groups</i>, J. Éc. polytech. Math. <b>4</b> (2017), 473–482. <a class="external" href="https://doi.org/10.5802/jep.48" target="_blank">doi.org/10.5802/jep.48</a>
-</div></article><article class="bib" id="Le_Donne-2015-metric_characterization"><div class="bibitem">[10]</div>  <div class="bibentry">Enrico Le Donne, <i>A metric characterization of Carnot groups</i>, Proc. Amer. Math. Soc. <b>143</b> (2015), no. 2, 845–849. <a class="external" href="https://doi.org/10.1090/S0002-9939-2014-12244-1" target="_blank">doi.org/10.1090/S0002-9939-2014-12244-1</a>
-</div></article><article class="bib" id="Le_Donne-2017-carnot_primer"><div class="bibitem">[11]</div>  <div class="bibentry">Enrico Le Donne, <i>A primer on Carnot groups: homogenous groups, Carnot-Carathéodory spaces, and regularity of their isometries</i>, Anal. Geom. Metr. Spaces <b>5</b> (2017), no. 1, 116–137. <a class="external" href="https://doi.org/10.1515/agms-2017-0007" target="_blank">doi.org/10.1515/agms-2017-0007</a>
-</div></article><article class="bib" id="Le_Donne-Ottazzi-2017-carnot_isometries"><div class="bibitem">[12]</div>  <div class="bibentry">Enrico Le Donne and Alessandro Ottazzi, <i>Isometries of Carnot groups and sub-Finsler homogeneous manifolds</i>, J. Geom. Anal. <b>26</b> (2016), no. 1, 330–345. <a class="external" href="https://doi.org/10.1007/s12220-014-9552-8" target="_blank">doi.org/10.1007/s12220-014-9552-8</a>
-</div></article><article class="bib" id="Monti-Pigati-Vittone-2018-tangent_cones"><div class="bibitem">[13]</div>  <div class="bibentry">Roberto Monti, Alessandro Pigati, and Davide Vittone, <i>On tangent cones to length minimizers in Carnot-Carathéodory spaces</i>, SIAM J. Control Optim. <b>56</b> (2018), no. 5, 3351–3369. <a class="external" href="https://doi.org/10.1137/17M114056X" target="_blank">doi.org/10.1137/17M114056X</a>
-</div></article><article class="bib" id="Pansu-1989-metriques_et_quasiisometries"><div class="bibitem">[14]</div>  <div class="bibentry">Pierre Pansu, <i>Métriques de Carnot-Carathéodory et quasiisométries des espaces symétriques de rang un</i>, Ann. of Math. (2) <b>129</b> (1989), no. 1, 1–60. <a class="external" href="https://doi.org/10.2307/1971484" target="_blank">doi.org/10.2307/1971484</a>
-</div></article><article class="bib" id="Rockafellar-1970-convex_analysis"><div class="bibitem">[15]</div>  <div class="bibentry">R. Tyrrell Rockafellar, <i>Convex analysis</i>, Princeton Mathematical Series, no. 28, Princeton University Press, Princeton, N.J. (1970).</div></article></section></div></main>
+</div></article><article class="bib" id="Ardentov-Le_Donne-Sachkov-2019-subfinsler_cartan"><div class="bibitem">[3]</div>  <div class="bibentry">Andrei A. Ardentov, Enrico Le Donne, and Yuri L. Sachkov, <i>Sub-Finsler geodesics on the Cartan group</i>, Regul. Chaotic Dyn. <b>24</b> (2019), no. 1, 36–60. <a class="external" href="https://doi.org/10.1134/S1560354719010027" target="_blank">doi.org/10.1134/S1560354719010027</a>
+</div></article><article class="bib" id="Ardentov-Sachkov-2015-Engel_cut_time"><div class="bibitem">[4]</div>  <div class="bibentry">A. A. Ardentov and Yu. L. Sachkov, <i>Cut time in sub-Riemannian problem on Engel group</i>, ESAIM Control Optim. Calc. Var. <b>21</b> (2015), no. 4, 958–988. <a class="external" href="https://doi.org/10.1051/cocv/2015027" target="_blank">doi.org/10.1051/cocv/2015027</a>
+</div></article><article class="bib" id="Balogh-Calogero-2018-infinite_heisenberg_geodesics"><div class="bibitem">[5]</div>  <div class="bibentry">Z. M. Balogh and A. Calogero, <i>Infinite geodesics of sub-Finsler distances in the Heisenberg groups</i>, ArXiv e-prints (2018), <a class="external" href="https://arxiv.org/abs/1807.10369" target="_blank">arXiv:1807.10369</a>
+</div></article><article class="bib" id="Balogh-Fassler-Sobrino-2018-embeddings_into_heisenberg"><div class="bibitem">[6]</div>  <div class="bibentry">Zoltán M. Balogh, Katrin Fässler, and Hernando Sobrino, <i>Isometric embeddings into Heisenberg groups</i>, Geom. Dedicata <b>195</b> (2018), 163–192. <a class="external" href="https://doi.org/10.1007/s10711-017-0282-5" target="_blank">doi.org/10.1007/s10711-017-0282-5</a>
+</div></article><article class="bib" id="BBLDS-2017-sub-finsler-control-viewpoint"><div class="bibitem">[7]</div>  <div class="bibentry">Davide Barilari, Ugo Boscain, Enrico Le Donne, and Mario Sigalotti, <i>Sub-Finsler structures from the time-optimal control viewpoint for some nilpotent distributions</i>, J. Dyn. Control Syst. <b>23</b> (2017), no. 3, 547–575. <a class="external" href="https://doi.org/10.1007/s10883-016-9341-8" target="_blank">doi.org/10.1007/s10883-016-9341-8</a>
+</div></article><article class="bib" id="BCJPS-2018-rank_2_abnormals"><div class="bibitem">[8]</div>  <div class="bibentry">D. Barilari, Y. Chitour, F. Jean, D. Prandi, and M. Sigalotti, <i>On the regularity of abnormal minimizers for rank 2 sub-Riemannian structures</i>, ArXiv e-prints (2018). <a class="external" href="https://arxiv.org/abs/1804.00971" target="_blank">arXiv:1804.00971</a>
+</div></article><article class="bib" id="BFPR-2018-3d_Sard"><div class="bibitem">[9]</div>  <div class="bibentry">André Belotto da Silva, Alessio Figalli, Adam Parusiński, and Ludovic Rifford, <i>Strong Sard Conjecture and regularity of singular minimizing geodesics for analytic sub-Riemannian structures in dimension 3</i>, ArXiv e-prints (2018). <a class="external" href="https://arxiv.org/abs/1810.03347" target="_blank">arXiv:1810.03347</a>
+</div></article><article class="bib" id="Burago-Burago-Ivanov-2001-metric_geometry"><div class="bibitem">[10]</div>  <div class="bibentry">Dmitri Burago, Yuri Burago, and Sergei Ivanov, <i>A course in metric geometry</i>, Graduate Studies in Mathematics, <b>vol. 33</b>, American Mathematical Society, Providence, RI, (2001). <a class="external" href="https://doi.org/10.1090/gsm/033" target="_blank">doi.org/10.1090/gsm/033</a>
+</div></article><article class="bib" id="Hakavuori-Le_Donne-2016-corners"><div class="bibitem">[11]</div>  <div class="bibentry">Eero Hakavuori and Enrico Le Donne, <i>Non-minimality of corners in subriemannian geometry</i>, Invent. Math. <b>206</b> (2016), no. 3, 693–704. <a class="external" href="https://doi.org/10.1007/s00222-016-0661-9" target="_blank">doi.org/10.1007/s00222-016-0661-9</a>
+</div></article><article class="bib" id="Hakavuori-Le_Donne-2018-cones"><div class="bibitem">[12]</div>  <div class="bibentry">Eero Hakavuori and Enrico Le Donne, <i>Blowups and blowdowns of geodesics in Carnot groups</i>, ArXiv e-prints (2018). <a class="external" href="https://arxiv.org/abs/1806.09375" target="_blank">arXiv:1806.09375</a>
+</div></article><article class="bib" id="Kishimoto-2003-carnot-geodesics-and-isometries"><div class="bibitem">[13]</div>  <div class="bibentry">Iwao Kishimoto, <i>Geodesics and isometries of Carnot groups</i>, J. Math. Kyoto Univ. <b>43</b> (2003), no. 3, 509–522. <a class="external" href="https://doi.org/10.1215/kjm/1250283693" target="_blank">doi.org/10.1215/kjm/1250283693</a>
+</div></article><article class="bib" id="Kivioja-Le_Donne-2017-nilpotent_isometries"><div class="bibitem">[14]</div>  <div class="bibentry">Ville Kivioja and Enrico Le Donne, <i>Isometries of nilpotent metric groups</i>, J. Éc. polytech. Math. <b>4</b> (2017), 473–482. <a class="external" href="https://doi.org/10.5802/jep.48" target="_blank">doi.org/10.5802/jep.48</a>
+</div></article><article class="bib" id="Le_Donne-2015-metric_characterization"><div class="bibitem">[15]</div>  <div class="bibentry">Enrico Le Donne, <i>A metric characterization of Carnot groups</i>, Proc. Amer. Math. Soc. <b>143</b> (2015), no. 2, 845–849. <a class="external" href="https://doi.org/10.1090/S0002-9939-2014-12244-1" target="_blank">doi.org/10.1090/S0002-9939-2014-12244-1</a>
+</div></article><article class="bib" id="Le_Donne-Ottazzi-2017-carnot_isometries"><div class="bibitem">[16]</div>  <div class="bibentry">Enrico Le Donne and Alessandro Ottazzi, <i>Isometries of Carnot groups and sub-Finsler homogeneous manifolds</i>, J. Geom. Anal. <b>26</b> (2016), no. 1, 330–345. <a class="external" href="https://doi.org/10.1007/s12220-014-9552-8" target="_blank">doi.org/10.1007/s12220-014-9552-8</a>
+</div></article><article class="bib" id="Le_Donne-Rigot-2019-besicovitch-covering_on_graded_groups"><div class="bibitem">[17]</div>  <div class="bibentry">Enrico Le Donne and Séverine Rigot, <i>Besicovitch covering property on graded groups and applications to measure differentiation</i>, J. Reine Angew. Math. <b>750</b> (2019), 241–297. <a class="external" href="https://doi.org/10.1515/crelle-2016-0051" target="_blank">doi.org/10.1515/crelle-2016-0051</a>
+</div></article><article class="bib" id="Monti-Pigati-Vittone-2018-existence_of_tangent_lines"><div class="bibitem">[18]</div>  <div class="bibentry">Roberto Monti, Alessandro Pigati, and Davide Vittone, <i>Existence of tangent lines to Carnot-Carathéodory geodesics</i>, Calc. Var. Partial Differential Equations <b>57</b> (2018), no. 3, Art. 75, 18. <a class="external" href="https://doi.org/10.1007/s00526-018-1361-7" target="_blank">doi.org/10.1007/s00526-018-1361-7</a>
+</div></article><article class="bib" id="Monti-Pigati-Vittone-2018-tangent_cones"><div class="bibitem">[19]</div>  <div class="bibentry">Roberto Monti, Alessandro Pigati, and Davide Vittone, <i>On tangent cones to length minimizers in Carnot-Carathéodory spaces</i>, SIAM J. Control Optim. <b>56</b> (2018), no. 5, 3351–3369. <a class="external" href="https://doi.org/10.1137/17M114056X" target="_blank">doi.org/10.1137/17M114056X</a>
+</div></article><article class="bib" id="Pansu-1989-metriques_et_quasiisometries"><div class="bibitem">[20]</div>  <div class="bibentry">Pierre Pansu, <i>Métriques de Carnot-Carathéodory et quasiisométries des espaces symétriques de rang un</i>, Ann. of Math. (2) <b>129</b> (1989), no. 1, 1–60. <a class="external" href="https://doi.org/10.2307/1971484" target="_blank">doi.org/10.2307/1971484</a>
+</div></article><article class="bib" id="Rockafellar-1970-convex_analysis"><div class="bibitem">[21]</div>  <div class="bibentry">R. Tyrrell Rockafellar, <i>Convex analysis</i>, Princeton Mathematical Series, no. 28, Princeton University Press, Princeton, N.J. (1970).</div></article></section></div></main>
 </div>
 <div class="login-link"><span id="loginlogout" class="login">login</span></div>
-<script src="https://pretextbook.org/js/0.11/login.js"></script>
+<script src="https://pretextbook.org/js/0.12/login.js"></script>
 </body>
 </html>
