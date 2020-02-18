@@ -2,7 +2,7 @@
 title: "Infinite geodesics and isometric embeddings in Carnot groups of step 2"
 authors:
 - Eero Hakavuori
-date: "2019-11-19T00:00:00Z"
+date: "2020-02-12T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -15,8 +15,8 @@ publishDate: "2019-11-20T00:00:00Z"
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "To appear in *SIAM Journal on Control and Optimization*"
-publication_short: "To appear in *SIAM J. Control Optim.*"
+publication: "In *SIAM Journal on Control and Optimization*"
+publication_short: "In *SIAM J. Control Optim.*"
 
 abstract: In the setting of step 2 sub-Finsler Carnot groups with strictly convex norms, we prove that all infinite geodesics are lines. It follows that for any other homogeneous distance, all geodesics are lines exactly when the induced norm on the horizontal space is strictly convex. As a further consequence, we show that all isometric embeddings between such homogeneous groups are affine. The core of the proof is an asymptotic study of the extremals given by the Pontryagin Maximum Principle.
 
@@ -29,6 +29,8 @@ featured: false
 links:
 # - name: ""
 #   url: ""
+- name: "SIAM Journal on Control and Optimization"
+  url: "https://doi.org/10.1137/19M1271166"
 - name: "Online"
   url: "publication/step2-geodesics/step2_infinite_geodesics.html"
 - name: "arXiv"
