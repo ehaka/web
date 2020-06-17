@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-06-17T11:42:41+02:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<h6 class="heading"><span class="type">Paragraph</span></h6>
+<p>By <a class="xref" data-knowl="./knowl/lemma-poincare-series-for-monomials-of-bounded-degree.html" title="Lemma 2.19">Lemma 2.19</a>, the Poincaré series for the number of monomials in the variables of degrees \(1,\ldots,m-1\) is</p>
+<div class="displaymath">
+\begin{equation*}
+\poincare(t) = 1/\prod_{k=1}^{m-1}(1-t^k)^{\dim\freelielayer{r}{k}} =: \sum_{k=0}N_kt^k\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">In terms of the series coefficients \(N_k\text{,}\) the number of equations is at most</p>
+<div class="displaymath">
+\begin{equation*}
+E_s := (d-1)\sum_{k=0}^{s-m}N_k = \sum_{k=m}^s(d-1)N_{k-m}
+\end{equation*}
+</div>
+<p data-braille="continuation">and the number of variables is</p>
+<div class="displaymath">
+\begin{equation*}
+V_s := d\sum_{k=0}^{s-m-q}N_k = \sum_{k=m+q}^sdN_{k-m-q}\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">A telescoping argument gives the identities</p>
+<div class="displaymath">
+\begin{equation*}
+(d-1)t^m\poincare(t) = \sum_{k=m}^\infty (d-1)N_{k-m}t^{k} = \sum_{k=0}^\infty (E_{k}-E_{k-1})t^{k}
+\end{equation*}
+</div>
+<p data-braille="continuation">and</p>
+<div class="displaymath">
+\begin{equation*}
+dt^{m+q}\poincare(t) = \sum_{k=m+q}^\infty dN_{k-m-q}t^{k} = \sum_{k=0}^\infty (V_{k}-V_{k-1})t^{k}.
+\end{equation*}
+</div>
+<p data-braille="continuation">That is, the difference \(V_s-E_s\) is the partial sum \(\sum_{k=0}^s\differenceinteger{k}\) of the coefficients of the series</p>
+<div class="displaymath">
+\begin{align*}
+\Delta(t) = \sum_{k=0}^\infty \differenceinteger{k}t^k \amp := dt^{m+q}\poincare(t)-(d-1)t^m\poincare(t)\\
+\amp = t^m\poincare(t) - dt^m(1-t^q)\poincare(t)\text{.}
+\end{align*}
+</div>
+<span class="incontext"><a href="section-abnormality-of-ode-trajectories.html#p-91">in-context</a></span>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-06-17T11:42:41+02:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><article class="hiddenproof"><p>Let \(r\) be the rank of \(G\) and let \(s\) be the nilpotency step of \(G\text{.}\) Since the abnormal curves in \(G\) lift to the free Carnot group \(\freecarnot{r,s}\) of rank \(r\) and step \(s\text{,}\) replacing \(G\) with \(\freecarnot{r,s}\) if necessary, there is no loss of generality in assuming that \(G\) is <a class="xref" data-knowl="./knowl/definition-carnot-group-compatible-with-hall-basis.html" title="Definition 2.11">compatible</a> with the <a class="xref" data-knowl="./knowl/definition-deg-left-right-hall-set.html" title="Definition 2.8">deg-left-right Hall set</a> \(\hallset\text{.}\)</p>
+<p> Let \(\alpha\colon[a,b]\to G\) and \(\beta\colon[c,d]\to G\) be two abnormal curves. The concatenation \(\alpha\star\beta\colon[a,b-c+d]\to G\) in the group \(G\) is defined by translating \(\beta(c)\) to \(\alpha(b)\) and then concatenating curves in the usual way. Since abnormality is preserved by left translation and reparametrization, it suffices to consider the case \([a,b]=[-1,0]\text{,}\) \([c,d]=[0,1]\text{,}\) and \(\alpha(0)=\beta(0)=\identity{G}\text{.}\) Then the concatenation \(\alpha\star\beta\colon[-1,1]\to G\) is defined by</p>
+<div class="displaymath">
+\begin{equation*}
+\alpha\star\beta(t) = \begin{cases}\alpha(t),\amp t\leq 0\\\beta(t),\amp t\geq 0,\end{cases}\text{.}
+\end{equation*}
+</div>
+<p>By the characterization of <a class="xref" data-knowl="./knowl/lemma-curves-in-abnormal-variety-are-abnormal.html" title="Lemma 2.2">Lemma 2.2</a>, abnormality means that there exist nonzero covectors \(\covector_\alpha,\covector_\beta\in\mathfrak{g}^*\) such that \(\abnormalpolynomial{X}{\covector_\alpha}\circ\alpha\equiv 0\) and \(\abnormalpolynomial{X}{\covector_\beta}\circ\beta\equiv 0\) for all horizontal vectors \(X\in\lielayer{\mathfrak{g}}{1}\text{.}\)</p>
+<p>Let \(X,Y\in\lielayer{\mathfrak{g}}{1}\) be such that the abnormal polynomials \(\abnormalpolynomial{X}{\covector_\alpha}\) and \(\abnormalpolynomial{Y}{\covector_\beta}\) are nonzero, and let \(Q:= \abnormalpolynomial{X}{\covector_\alpha}\abnormalpolynomial{Y}{\covector_\beta}\) be the product of the two. By <a class="xref" data-knowl="./knowl/proposition-existence-of-polynomial-factor.html" title="Proposition 3.6">Proposition 3.6</a> there exists a step \(s_2\geq s\) and a covector \(\covectorb\in\freelie{r,s_2}^*\) such that \(Q\) is a common factor of all the abnormal polynomials \(\abnormalpolynomial{Z}{\covectorb}\) for \(Z\in\freelielayer{r,s_2}{s}\text{.}\) By construction \(Q\circ(\alpha\star\beta)\equiv 0\text{,}\) so <a class="xref" data-knowl="./knowl/lemma-curves-annihilating-higher-order-abnormal-polynomials.html" title="Lemma 3.2">Lemma 3.2</a> then implies that the concatenation \(\alpha\star\beta\) has an abnormal lift in the free Carnot group \(F=\freecarnot{r,s_2}\text{.}\)</p>
+<p>By <a class="xref" data-knowl="./knowl/proposition-existence-of-polynomial-factor.html" title="Proposition 3.6">Proposition 3.6</a> the step \(s_2\) depends only on the variables and degree of \(Q\in\polyring{\hallset}\text{.}\) Since the step of the Carnot group \(G\) is \(s\text{,}\) the polynomials \(\abnormalpolynomial{X}{\covector_\alpha}\) and \(\abnormalpolynomial{X}{\covector_\beta}\) have (weighted) degree at most \(s-1\) and hence \(Q\) has degree at most \(2s-2\) regardless of the specific covectors \(\covector_\alpha\) and \(\covector_\beta\text{.}\) Since the variables are necessarily some subset of the variables of the group \(G\text{,}\) it follows that the step \(s_2\) has an upper bound that depends only on the group \(G\text{,}\) and not on the individual curves \(\alpha\) and \(\beta\text{.}\)</p></article></body>
+</html>

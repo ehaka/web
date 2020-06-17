@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-06-17T11:42:40+02:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Examples</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body id="hakavuori-ode" class="mathbook-article has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+
+\newcommand{\freecarnot}[1]{F_{#1}}
+\newcommand{\freelie}[1]{\mathfrak{f}_{#1}}
+\newcommand{\lielayer}[2]{#1^{[#2]}}
+\newcommand{\freelielayer}[2]{\lielayer{\freelie{#1}}{#2}}
+\newcommand{\lowercentralseriesterm}[2]{\lielayer{#1}{\geq #2}}
+
+\newcommand{\abnormalpolynomial}[2]{P_{#1}^{#2}}
+\newcommand{\Ad}[1]{\operatorname{Ad}_{#1}}
+\newcommand{\ad}[1]{\operatorname{ad}_{#1}}
+\newcommand{\abs}[1]{\left\vert #1\right\vert}
+\newcommand{\freelieaction}{D}
+\newcommand{\acts}{\curvearrowright}
+\newcommand{\into}{\hookrightarrow}
+\newcommand{\identity}[1]{e}
+
+\newcommand{\hallset}{\mathcal{H}}
+\newcommand{\polyring}[1]{\RR[#1]}
+\newcommand{\fractionfield}[1]{\RR(#1)}
+\newcommand{\polyringextended}[2]{\fractionfield{#1}[#2]}
+
+\newcommand{\covector}{\lambda}
+\newcommand{\covectorb}{\eta}
+\newcommand{\differenceinteger}[1]{C_{#1}}
+\newcommand{\poincare}{P}
+\newcommand{\vectorparam}[1]{\boldsymbol{#1}}
+\newcommand{\freeparam}{\alpha}
+\newcommand{\factorpolynomial}[1]{S^{#1}}
+\newcommand{\factorcoefficient}[1]{\nu_{#1}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="ode_abnormals.html"><span class="title">ODE trajectories as abnormal curves in Carnot groups</span></a></h1>
+<p class="byline">Eero Hakavuori</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-main-proofs.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ode_abnormals.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-main-proofs.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ode_abnormals.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter-1.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="section-introduction.html" data-scroll="section-introduction"><span class="codenumber">1</span> <span class="title">Introduction</span></a><ul><li><a href="section-introduction.html#subsection-1" data-scroll="subsection-1">Structure of the paper</a></li></ul>
+</li>
+<li class="link">
+<a href="section-abnormal-polynomials.html" data-scroll="section-abnormal-polynomials"><span class="codenumber">2</span> <span class="title">Abnormal polynomials</span></a><ul>
+<li><a href="section-abnormal-polynomials.html#subsection-abnormal-polynomials" data-scroll="subsection-abnormal-polynomials">Abnormal curves and polynomials</a></li>
+<li><a href="section-abnormal-polynomials.html#subsection-hall-sets" data-scroll="subsection-hall-sets">Hall sets</a></li>
+<li><a href="section-abnormal-polynomials.html#subsection-polynomials-in-free-lie-algebras" data-scroll="subsection-polynomials-in-free-lie-algebras">Polynomials in free Lie algebras</a></li>
+<li><a href="section-abnormal-polynomials.html#subsection-poincare-series" data-scroll="subsection-poincare-series">Poincaré series</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="section-abnormality-of-ode-trajectories.html" data-scroll="section-abnormality-of-ode-trajectories"><span class="codenumber">3</span> <span class="title">Common factors of abnormal polynomials</span></a><ul>
+<li><a href="section-abnormality-of-ode-trajectories.html#subsection-reduction-to-searching-polynomial-factors" data-scroll="subsection-reduction-to-searching-polynomial-factors">Link between ODEs and polynomial factors</a></li>
+<li><a href="section-abnormality-of-ode-trajectories.html#subsection-a-quotient-eliminating-higher-degree-variables" data-scroll="subsection-a-quotient-eliminating-higher-degree-variables">A quotient eliminating higher degree variables</a></li>
+<li><a href="section-abnormality-of-ode-trajectories.html#subsection-existence-of-arbitrary-polynomial-factors" data-scroll="subsection-existence-of-arbitrary-polynomial-factors">The linear system for abnormal polynomial factors</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="section-main-proofs.html" data-scroll="section-main-proofs"><span class="codenumber">4</span> <span class="title">Proofs of the main theorems</span></a><ul>
+<li><a href="section-main-proofs.html#subsection-conclusion-of-the-proof-of-abnormality" data-scroll="subsection-conclusion-of-the-proof-of-abnormality">Abnormality of ODE trajectories</a></li>
+<li><a href="section-main-proofs.html#subsection-concatenation-of-abnormals" data-scroll="subsection-concatenation-of-abnormals">Concatenation of abnormals</a></li>
+</ul>
+</li>
+<li class="link active">
+<a href="section-examples.html" data-scroll="section-examples"><span class="codenumber">5</span> <span class="title">Examples</span></a><ul>
+<li><a href="section-examples.html#example-rank-2-spirals" data-scroll="example-rank-2-spirals">A logarithmic spiral (r2s7)</a></li>
+<li><a href="section-examples.html#example-parametric-families-of-odes" data-scroll="example-parametric-families-of-odes">Planar linear ODEs (r2s7)</a></li>
+<li><a href="section-examples.html#example-the-hawaiian-earring" data-scroll="example-the-hawaiian-earring">The Hawaiian earring (r2s13)</a></li>
+<li><a href="section-examples.html#example-lorenz-butterfly" data-scroll="example-lorenz-butterfly">The Lorenz butterfly (r3s13)</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="appendix-1.html" data-scroll="appendix-1"><span class="codenumber">A</span> <span class="title">Notation</span></a></li>
+<li class="link"><a href="section-references.html" data-scroll="section-references"><span class="title">References</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-examples"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">5</span> <span class="title">Examples</span>
+</h2>
+<section class="introduction" id="examples-introduction"><p id="p-110">The proof of <a class="xref" data-knowl="./knowl/theorem-every-ode-trajectory-is-abnormal-quantified.html" title="Theorem 4.1">Theorem 4.1</a> of abnormality of ODE trajectories gives a constructive method to find any polynomial ODE trajectory as an abnormal curve. This section covers the method more concretely, showing how the correct Carnot group and covector is found for some specific examples. The practical version of the proof of <a class="xref" data-knowl="./knowl/theorem-every-ode-trajectory-is-abnormal-quantified.html" title="Theorem 4.1">Theorem 4.1</a> is the following algorithm.</p>
+<article class="algorithm theorem-like" id="algorithm-abnormal-trajectory"><h6 class="heading">
+<span class="type">Algorithm</span><span class="space"> </span><span class="codenumber">5.1</span><span class="period">.</span>
+</h6>
+<p id="p-111">Input: a polynomial ODE \(\dot{x}=P(x)\) as a vector of polynomials \((P_1,\ldots,P_r)\text{.}\) Output: a step \(s\) and a covector \(\covector\) such that trajectories of the ODE through the identity are abnormal with covector \(\covector\) in the free Carnot group \(\freecarnot{r,s}\) of rank \(r\) and step \(s\text{.}\)</p>
+<ol class="decimal">
+<li id="algorithm-1-orthogonal-poly">Choose a nonzero vector of polynomials \((Q_{1},\ldots,Q_{r})\) orthogonal to \((P_1,\ldots,P_r)\text{.}\) Let \(Q\in\polyring{\hallset}\) be an (abstract) polynomial such that \(X_iQ=Q_{i}\text{.}\)</li>
+<li id="algorithm-2-nonzero-derivatives">Compute all nonzero higher order derivatives \(X_{w_{i}}Q\) for <a class="xref" data-knowl="./knowl/definition-deg-left-right-hall-set.html" title="Definition 2.8">deg-left-right Hall words</a> \(w_{i}\) of degree \(\geq 2\text{.}\)</li>
+<li id="algorithm-3-pde-integration">Solve the resulting PDE for the polynomial \(Q\) by sequentially integrating in each variable \(x_{w_{i}}\) in decreasing deg-left-right Hall order. Let \(m\geq 2\) be such that \(Q\) only contains variables \(x_{w}\) of degrees at most \(m-1\text{.}\)</li>
+<li id="algorithm-4-sufficient-step">Find a step \(s\geq m\) such that \(\sum_{k=0}^{s}\differenceinteger{k} \geq 1\text{,}\) where the integers \(\differenceinteger{k}\) are determined by the generating function<div class="displaymath">
+\begin{equation*}
+\Delta(t) = \sum_{k=0}^\infty \differenceinteger{k}t^k = \frac{\Big(1-(\dim \freelielayer{r}{m})(1-t^{\deg(Q)})\Big)t^m}{\prod_{k=1}^{m-1}(1-t^k)^{\dim\freelielayer{r}{k}}}\text{.}
+\end{equation*}
+</div>
+</li>
+<li id="algorithm-5-abnormal-polys">
+<p id="p-112">Compute the polynomials \(R_i := \abnormalpolynomial{w_{i}}{\covector}-\factorpolynomial{\factorcoefficient{i}}Q\text{,}\) where</p>
+<ul class="disc">
+<li id="li-18">\(w_{1},\ldots,w_{\dim \freelielayer{r}{m}}\) are all the deg-left-right Hall words of degree \(m\text{,}\)</li>
+<li id="li-19">\(\covector\in\mathfrak{g}^*\) is a covector in the dual of the quotient \(\mathfrak{g} = \freelie{r,s}/[\lowercentralseriesterm{\freelie{r,s}}{m},\lowercentralseriesterm{\freelie{r,s}}{m}]\) with indeterminate coefficients \(\covector_{w}\text{,}\) and</li>
+<li id="li-20">\(\factorpolynomial{\factorcoefficient{i}}\) are generic polynomials of degree \(s-m-\deg(Q)\) whose coefficients are indeterminates \(\factorcoefficient{i,I}.\)</li>
+</ul>
+</li>
+<li id="algorithm-6-linear-system">Solve the linear system \(R_i=0\text{,}\) \(i=1,\ldots,\dim \freelielayer{r}{m}\) in the variables \(\covector,\factorcoefficient{}\text{.}\) The \(\covector\) component of any solution  is a covector for which trajectories reaching zero of the ODE \(\dot{x}=P(x)\) lift to abnormals in the free Carnot group \(\freecarnot{r,s}\text{.}\)</li>
+</ol></article><p id="p-113">An implementation of <a class="xref" data-knowl="./knowl/algorithm-abnormal-trajectory.html" title="Algorithm 5.1">Algorithm 5.1</a> using the SageMath computer algebra system <a class="xref" data-knowl="./knowl/sagemath-9-0.html" title="Bibliographic Entry 23: SageMath, the Sage Mathematics Software System (Version 9.0)">[23]</a> is available in <a class="xref" data-knowl="./knowl/software-ode_abnormals.html" title="Bibliographic Entry 11: ehaka/ode-abnormals: v1.0">[11]</a>.</p>
+<article class="remark remark-like" id="remark-algorithm-nonsharp"><h6 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">5.2</span><span class="period">.</span>
+</h6>
+<p id="p-114">The naive upper bound computed in step <a class="xref" data-knowl="./knowl/algorithm-4-sufficient-step.html" title="Item 4">4</a> of <a class="xref" data-knowl="./knowl/algorithm-abnormal-trajectory.html" title="Algorithm 5.1">Algorithm 5.1</a> for the nilpotency step \(s\) as a function of the rank and degree of the polynomials is in general horribly inefficient, see the explosive growth already for the smallest ranks \(r\) and degrees \(d\) listed in <a class="xref" data-knowl="./knowl/table-nilpotency-step-bounds.html" title="Figure 5.3">Figure 5.3</a>. In practice, solutions are found in much smaller nilpotency steps, see <a href="section-examples.html#example-lorenz-butterfly" class="internal" title="Subsection 5.4: The Lorenz butterfly (r3s13)">Subsection 5.4</a> for a particularly egregious example where the a priori upper bound is \(s=724\text{,}\) but the system has nontrivial solutions already for \(s=13\text{.}\) For practical computations it is more efficient to form the linear system in smaller steps \(s'\leq s\) and increase \(s'\) one by one until a nontrivial solution is found.</p>
+<p id="p-115">In fact, computations suggest that there exists a much more refined bound \(s=s(d)\) independent from the rank \(r\text{.}\) Linear ODEs with randomly chosen coefficients in ranks 2, 3, and 4 always had solutions in step \(s=7\text{,}\) despite the a priori bounds for \(s\) being 11, 89, and 386 respectively. Similarly the quadratic ODEs of <a href="section-examples.html#example-the-hawaiian-earring" class="internal" title="Subsection 5.3: The Hawaiian earring (r2s13)">Subsection 5.3</a> and <a href="section-examples.html#example-lorenz-butterfly" class="internal" title="Subsection 5.4: The Lorenz butterfly (r3s13)">Subsection 5.4</a> in ranks 2 and 3 both have solutions in step \(s=13\) despite the increase of the a priori bound from \(s=38\) to \(s=724\text{.}\)</p></article><figure class="figure figure-like" id="table-nilpotency-step-bounds"><table>
+<tr>
+<td class="r m b1 r1 l0 t0 lines">\(r\)\\(d\)</td>
+<td class="r m b1 r0 l0 t0 lines">1</td>
+<td class="r m b1 r0 l0 t0 lines">2</td>
+<td class="r m b1 r0 l0 t0 lines">3</td>
+<td class="r m b1 r0 l0 t0 lines">4</td>
+<td class="r m b1 r0 l0 t0 lines" data-braille="last-cell">5</td>
+</tr>
+<tr>
+<td class="r m b0 r1 l0 t0 lines">2</td>
+<td class="r m b0 r0 l0 t0 lines">11</td>
+<td class="r m b0 r0 l0 t0 lines">38</td>
+<td class="r m b0 r0 l0 t0 lines">172</td>
+<td class="r m b0 r0 l0 t0 lines">577</td>
+<td class="r m b0 r0 l0 t0 lines" data-braille="last-cell">2372</td>
+</tr>
+<tr>
+<td class="r m b0 r1 l0 t0 lines">3</td>
+<td class="r m b0 r0 l0 t0 lines">89</td>
+<td class="r m b0 r0 l0 t0 lines">724</td>
+<td class="r m b0 r0 l0 t0 lines">6034</td>
+<td class="r m b0 r0 l0 t0 lines">46036</td>
+<td class="r m b0 r0 l0 t0 lines" data-braille="last-cell">365813</td>
+</tr>
+<tr>
+<td class="r m b0 r1 l0 t0 lines">4</td>
+<td class="r m b0 r0 l0 t0 lines">386</td>
+<td class="r m b0 r0 l0 t0 lines">5322</td>
+<td class="r m b0 r0 l0 t0 lines">73109</td>
+<td class="r m b0 r0 l0 t0 lines">983505</td>
+<td class="r m b0 r0 l0 t0 lines" data-braille="last-cell">13529000</td>
+</tr>
+</table>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.3<span class="period">.</span></span><span class="space"> </span>Some values for \(s=s(r,d)\) of <a class="xref" data-knowl="./knowl/theorem-every-ode-trajectory-is-abnormal-quantified.html" title="Theorem 4.1">Theorem 4.1</a>.</figcaption></figure></section><section class="subsection" id="example-rank-2-spirals"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.1</span> <span class="title">A logarithmic spiral (r2s7)</span>
+</h3>
+<figure class="figure figure-like" id="figure-logarithmic-spiral"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="images/logarithmic-spiral.svg" style="width: 100%; height: auto;" alt="A logarithmic spiral"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.4<span class="period">.</span></span><span class="space"> </span>The logarithmic spiral \(e^{-t/4}(\cos t,\sin t)\)</figcaption></figure><p id="p-116">The logarithmic spiral</p>
+<div class="displaymath">
+\begin{equation*}
+\gamma\colon [0,\infty)\to\RR^2,\quad \gamma(t) = e^{-t}(\cos t,\sin t)
+\end{equation*}
+</div>
+<p data-braille="continuation">is a trajectory of the linear ODE</p>
+<div class="displaymath">
+\begin{align*}
+\dot{x}_1 \amp= P_1(x) = -x_1-x_2\\
+\dot{x}_2 \amp= P_2(x) = x_1-x_2
+\end{align*}
+</div>
+<p data-braille="continuation">with \(\lim\limits_{t\to\infty}\gamma(t)=0\text{.}\) The construction of <a class="xref" data-knowl="./knowl/algorithm-abnormal-trajectory.html" title="Algorithm 5.1">Algorithm 5.1</a> will show that the logarithmic spiral \(\gamma\) lifts to an abnormal curve in the free Carnot group of rank 2 and step 7.</p>
+<p id="p-117">Step <a class="xref" data-knowl="./knowl/algorithm-1-orthogonal-poly.html" title="Item 1">1</a> Define polynomials \(Q_{1}:=x_1-x_2\) and \(Q_{2}:=x_1+x_2\) so that \((Q_{1},Q_{2})\) is orthogonal to the ODE vector \((P_1,P_2)\text{.}\)</p>
+<p id="p-118">Step <a class="xref" data-knowl="./knowl/algorithm-2-nonzero-derivatives.html" title="Item 2">2</a> Suppose \(Q\in\polyring{\hallset}\) is a polynomial such that \(X_1Q = Q_{1}\) and \(X_2Q = Q_{2}\) and compute the higher order derivatives. The restricted <a class="xref" data-knowl="./knowl/definition-free-lie-action-on-polynomials.html" title="Definition 2.15">action</a> \(\freelie{2}\acts\polyring{x_1,x_2}\) is defined by \(X_1=\partial_1\) and \(X_2=\partial_2\text{,}\) as can be seen by considering the coordinate expressions of the left-invariant horizontal vector fields in any rank 2 Carnot group. Since \(\deg(X_1Q)=\deg(X_2Q)=1\text{,}\) the only nontrivial derivative is</p>
+<div class="displaymath">
+\begin{equation*}
+X_{12}Q = [X_1,X_2]Q = X_1(X_2Q)-X_2(X_1Q) = 2\text{,}
+\end{equation*}
+</div>
+<p data-braille="continuation">and all the higher order derivatives are zero.</p>
+<p id="p-119">Step <a class="xref" data-knowl="./knowl/algorithm-3-pde-integration.html" title="Item 3">3</a> In the <a class="xref" data-knowl="./knowl/definition-free-lie-action-on-polynomials.html" title="Definition 2.15">action</a> \(\freelie{2}\acts\polyring{\hallset}\text{,}\) each Hall basis element acts by \(X_{w}=\partial_{w}+\rho_{w}\text{,}\) with \(\rho_{w}\) some derivation whose kernel contains all polynomials in the variables of degree equal or lower than \(w\text{.}\) Hence the nonzero partial derivatives determine the variables of the polynomial \(Q\text{,}\) which in this case means that \(Q\in\polyring{x_1,x_2,x_{12}}\text{.}\) The action \(\freelie{2}\acts\polyring{x_1,x_2,x_{12}}\) is then determined by exponential coordinates <a class="xref" data-knowl="./knowl/definition-hall-exponential-coordinates.html" title="Definition 2.12">adapted</a> to the <a class="xref" data-knowl="./knowl/definition-deg-left-right-hall-set.html" title="Definition 2.8">deg-left-right Hall set</a> on any rank 2 Carnot group of step at least \(2\text{,}\) the prototypical example being the Heisenberg group. Explicitly, the derivations are</p>
+<div class="displaymath">
+\begin{align*}
+X_1 \amp= \partial_1\amp
+X_2 \amp= \partial_2+x_1\partial_{12}\amp
+X_{12} \amp= \partial_{12}\text{.}
+\end{align*}
+</div>
+<p id="p-120">Integrating in the maximal variable \(x_{12}\) gives</p>
+<div class="displaymath">
+\begin{equation*}
+Q = 2x_{12} + Q^{(2)}
+\end{equation*}
+</div>
+<p data-braille="continuation">for some polynomial \(Q^{(2)}\in\polyring{x_1,x_2}\text{.}\) The remainder \(Q^{(2)}\) satisfies the PDE</p>
+<div class="displaymath">
+\begin{align*}
+\partial_1Q^{(2)} \amp= X_1(Q-2x_{12}) = X_1Q = x_1-x_2\\
+\partial_2Q^{(2)} \amp= X_2(Q-2x_{12}) = X_2Q - 2x_1 = -x_1+x_2\text{.}
+\end{align*}
+</div>
+<p data-braille="continuation">Integrating in the variables \(x_2,x_1\text{,}\) a solution is \(Q^{(2)} = \frac{1}{2}x_1^2-x_1x_2+\frac{1}{2}x_2^2\text{,}\) so the full solution is</p>
+<div class="displaymath">
+\begin{equation}
+Q = \frac{1}{2}x_1^2-x_1x_2+\frac{1}{2}x_2^2 + 2x_{12}\text{.}\label{eq-Q}\tag{5.1}
+\end{equation}
+</div>
+<p id="p-121">Step <a class="xref" data-knowl="./knowl/algorithm-4-sufficient-step.html" title="Item 4">4</a> The polynomial \(Q\) contains variables of degrees \(1\) and \(2\text{,}\) so \(m=3\text{.}\) The dimensions of the layers \(1,2,3\) of the free Lie algebra of rank 2 are \(2,1,2\text{,}\) respectively. To determine a sufficient nilpotency step, the generating function to consider is</p>
+<div class="displaymath">
+\begin{equation*}
+\Delta(t) = \frac{(1-2(1-t^2))t^3}{(1-t)^2(1-t^2)}\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">The first few terms of its series expansion are</p>
+<div class="displaymath">
+\begin{equation*}
+\Delta(t) = - t^{3} -2 t^{4} -2 t^{5} -2 t^{6} - t^{7} + 2 t^{9} + 4 t^{10} + 7 t^{11} + \cdots\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">Since \(-1-2-2-2-1+2+4+7 = 5\geq 1\text{,}\) the logarithmic spiral will have an abnormal lift at least in step \(11\text{.}\)</p>
+<p id="p-122">Step <a class="xref" data-knowl="./knowl/algorithm-5-abnormal-polys.html" title="Item 5">5</a> Let \(\mathfrak{g}=\freelie{2,11}/[\lowercentralseriesterm{\freelie{2,11}}{3},\lowercentralseriesterm{\freelie{2,11}}{3}]\) be the quotient eliminating variables of degree \(\geq 3\) from the <a class="xref" data-knowl="./knowl/definition-abnormal-polynomial.html" title="Definition 2.1">abnormal polynomials</a> \(\abnormalpolynomial{112}{\covector}\) and \(\abnormalpolynomial{212}{\covector}\text{,}\) which in nilpotency step 11 are polynomials of degree 8. By <a class="xref" data-knowl="./knowl/lemma-free-abnormal-polynomial.html" title="Lemma 3.5">Lemma 3.5</a>, the abnormal polynomial \(\abnormalpolynomial{112}{\covector}\) has the simple expression</p>
+<div class="displaymath">
+\begin{equation}
+\abnormalpolynomial{112}{\covector}(x_1,x_2,x_{12}) = \sum_{a+b+2c\leq 8}\frac{\covector_{(12)^c(2)^b(1)^{a+2}2}}{a!b!c!}x_1^ax_2^bx_{12}^c\text{.}\label{eq-P112}\tag{5.2}
+\end{equation}
+</div>
+<p id="p-123">The abnormal polynomial \(\abnormalpolynomial{212}{\covector}\) is not as simple, since the Lie bracket \(\ad{X_{12}}^c\ad{X_2}^b\ad{X_1}^aX_{212}\) is a <a class="xref" data-knowl="./knowl/definition-deg-left-right-hall-set.html" title="Definition 2.8">deg-left-right Hall tree</a> only when \(a=0\) by the characterization of <a class="xref" data-knowl="./knowl/lemma-hall-words-for-deg-left-right-order.html" title="Lemma 2.9">Lemma 2.9</a>. For \(a\gt 0\text{,}\) a normal form may be computed by considering the restricted adjoint representation \(\ad{}\colon\mathfrak{g}\to\mathfrak{gl}(\lowercentralseriesterm{\mathfrak{g}}{3})\text{.}\) By the construction of the quotient \(\mathfrak{g}\text{,}\) the only nontrivial commutator in \(\mathfrak{gl}(\lowercentralseriesterm{\mathfrak{g}}{3})\) is \([\ad{X_1},\ad{X_2}] = \ad{X_{12}}\text{.}\) That is, a normal form may be computed using only the relation</p>
+<div class="displaymath">
+\begin{equation*}
+\ad{X_1}\ad{X_2} = \ad{X_2}\ad{X_1} + \ad{X_{12}}\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">Applying the above \(a\) times, the resulting normal form for \(a\gt 0\) is</p>
+<div class="displaymath">
+\begin{align*}
+\ad{X_{12}}^c\ad{X_2}^b\ad{X_1}^aX_{212} \amp= \ad{X_{12}}^c\ad{X_2}^b\ad{X_1}^a\ad{X_2}X_{12}\\
+\amp= \ad{X_{12}}^c\ad{X_2}^{b+1}\ad{X_1}^aX_{12} + (a-1)\ad{X_{12}}^{c+1}\ad{X_2}^{b}\ad{X_1}^{a-1}X_{12}\text{.}
+\end{align*}
+</div>
+<p data-braille="continuation"><a class="xref" data-knowl="./knowl/lemma-abnormal-polynomials-in-exponential-coordinates.html" title="Lemma 2.5">Lemma 2.5</a> then gives the explicit expression</p>
+<div class="displaymath">
+\begin{align}
+\abnormalpolynomial{212}{\covector}\amp(x_1,x_2,x_{12})
+= \sum_{b+2c\leq 8}\frac{\covector_{(12)^c(2)^{b+1}12}}{b!c!}x_2^bx_{12}^c\label{eq-P212}\tag{5.3}\\
+\amp+ \sum_{\substack{a+b+2c\leq 8\\a\geq 1}}\frac{\covector_{(12)^c(2)^{b+1}(1)^{a+1}2}+(a-1)\covector_{(12)^{c+1}(2)^b(1)^a2}}{a!b!c!}x_1^ax_2^bx_{12}^c\text{.}\notag
+\end{align}
+</div>
+<p id="p-124">For \(i=1,2\text{,}\) define polynomials</p>
+<div class="displaymath">
+\begin{equation}
+\factorpolynomial{\factorcoefficient{i}}(x_1,x_2,x_{12}) := \sum_{a+b+2c\leq 6}\factorcoefficient{i,a,b,c}x_1^ax_2^bx_{12}^c\label{eq-factorpoly}\tag{5.4}
+\end{equation}
+</div>
+<p data-braille="continuation">and compute for \(w_{1}=112\) and \(w_{2}=212\) the difference polynomials</p>
+<div class="displaymath">
+\begin{equation}
+R_i = \sum_{a+b+2c\leq 8}R_{i,a,b,c}(\covector,\factorcoefficient{i})x_1^ax_2^bx_{12}^c := \abnormalpolynomial{w_{i}}{\covector}-\factorpolynomial{\factorcoefficient{i}}Q\label{eq-Ri}\tag{5.5}
+\end{equation}
+</div>
+<p data-braille="continuation">using the explicit expressions <a class="xref" data-knowl="./knowl/eq-Q.html" title="Equation 5.1">(5.1)</a>–<a class="xref" data-knowl="./knowl/eq-factorpoly.html" title="Equation 5.4">(5.4)</a>.</p>
+<p id="p-125">Step <a class="xref" data-knowl="./knowl/algorithm-6-linear-system.html" title="Item 6">6</a> Consider the linear system</p>
+<div class="displaymath">
+\begin{equation*}
+R_{i,a,b,c}(\covector,\factorcoefficient{i}) = 0,\quad i=1,2, \quad a+b+2c\leq 8\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">In the full set of \((\covector,\factorcoefficient{})\) variables, there are 190 equations and 220 variables: 120 variables \(\covector_{112},\covector_{212},\ldots\) and 100 variables \(\factorcoefficient{i,a,b,c}\text{.}\) Reducing to a system in only the \(\factorcoefficient{}\) variables as in the proof of <a class="xref" data-knowl="./knowl/proposition-existence-of-polynomial-factor.html" title="Proposition 3.6">Proposition 3.6</a> leaves a system of 95 equations and 100 variables. The solution space is however much bigger than the difference: there is a 38 dimensional space of solutions \((\covector,\factorcoefficient{})\text{,}\) all with a nonzero \(\factorcoefficient{}\) component.</p>
+<p id="p-126">One of the simplest solutions gives a degree 7 covector</p>
+<div class="displaymath">
+\begin{align*}
+\covector\amp= 3 \covector_{1111112}  - 3 \covector_{2211112}  + 6 \covector_{2221112}  - 9 \covector_{2222112}  + 18 \covector_{2222212} \\
+\amp + 2 \covector_{1211112}  - 2 \covector_{1222112}  + 8 \covector_{1222212}  + 4 \covector_{1212112}  + 8 \covector_{1212212}
+\end{align*}
+</div>
+<p data-braille="continuation">Substituting the above solution \(\covector\) into the formulas <a class="xref" data-knowl="./knowl/eq-P112.html" title="Equation 5.2">(5.2)</a> and <a class="xref" data-knowl="./knowl/eq-P212.html" title="Equation 5.3">(5.3)</a> and factoring gives the abnormal polynomials</p>
+<div class="displaymath">
+\begin{align*}
+\abnormalpolynomial{112}{\covector} \amp = \frac{1}{4} (x_{1}^{2} + 2 x_{1} x_{2} - 3 x_{2}^{2} + 4 x_{12})Q\\
+\abnormalpolynomial{212}{\covector} \amp = \frac{1}{2}(x_{1}^{2} + 3 x_{2}^{2} + 4 x_{12})Q
+\end{align*}
+</div>
+<p data-braille="continuation">The conclusion is that the logarithmic spiral \(\gamma(t)=e^{-t}(\cos t,\sin t)\) lifts to an abnormal curve in the free Carnot group of rank 2 and step 7.</p></section><section class="subsection" id="example-parametric-families-of-odes"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.2</span> <span class="title">Planar linear ODEs (r2s7)</span>
+</h3>
+<figure class="figure figure-like" id="figure-planar-phase-portraits"><div class="sidebyside"><div class="sbsrow" style="margin-left:1.666666666666667%;margin-right:1.666666666666667%;">
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:center;"><img src="images/radial-trajectory.svg" style="width: 100%; height: auto;" alt="Radial trajectories"></div>
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:center;"><img src="images/spiral-trajectory.svg" style="width: 100%; height: auto;" alt="Spiraling trajectories"></div>
+<div class="sbspanel" style="width:31.0344827586207%;justify-content:center;"><img src="images/dominating-trajectory.svg" style="width: 100%; height: auto;" alt="Trajectories with a common tangent direction"></div>
+</div></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.5<span class="period">.</span></span><span class="space"> </span>Some trajectories of planar linear ODEs</figcaption></figure><p id="p-127">The technique of <a class="xref" data-knowl="./knowl/algorithm-abnormal-trajectory.html" title="Algorithm 5.1">Algorithm 5.1</a> can be applied to ODEs depending on free parameters \(\freeparam_1,\ldots,\freeparam_k\in\RR\) by replacing all the considerations over the field \(\RR\) with the polynomial ring \(\polyring{\freeparam_1,\ldots,\freeparam_k}\) or the fraction field \(\fractionfield{\freeparam_1,\ldots,\freeparam_k}\) where necessary. Solving the linear system in step <a class="xref" data-knowl="./knowl/algorithm-6-linear-system.html" title="Item 6">6</a> is where the only difference appears. The difference is that solving a linear system with coefficients in \(\fractionfield{\freeparam_1,\ldots,\freeparam_k}\) does not yield a universal solution, since the resulting nonzero covector may vanish for specific choices of parameters. Accounting for the vanishing leads to a semialgebraic description of the covector with finitely many different expressions depending on the parameters \(\freeparam_1,\ldots,\freeparam_k\text{.}\)</p>
+<p id="p-128">Consider a generic homogeneous planar linear ODE</p>
+<div class="displaymath">
+\begin{align}
+\dot{x}_1 \amp = \freeparam_{11}x_1 + \freeparam_{12}x_2\label{eq-linear-ode}\tag{5.6}\\
+\dot{x}_2 \amp = \freeparam_{21}x_1 + \freeparam_{22}x_2\notag
+\end{align}
+</div>
+<p data-braille="continuation">with parameters \(\freeparam_{11},\freeparam_{12},\freeparam_{21},\freeparam_{22}\in\RR\text{.}\) As in <a href="section-examples.html#example-rank-2-spirals" class="internal" title="Subsection 5.1: A logarithmic spiral (r2s7)">Subsection 5.1</a> for a logarithmic spiral, following <a class="xref" data-knowl="./knowl/algorithm-abnormal-trajectory.html" title="Algorithm 5.1">Algorithm 5.1</a> will show that for any such ODE all trajectories whose closures meet the origin lift to abnormals in the free Carnot group of rank 2 and step 7.</p>
+<p id="p-129">Step <a class="xref" data-knowl="./knowl/algorithm-1-orthogonal-poly.html" title="Item 1">1</a> Let \(\fractionfield{\vectorparam{\freeparam}}:=\fractionfield{\freeparam_{11},\freeparam_{12},\freeparam_{21},\freeparam_{22}}\) be the fraction field with the parameters as indeterminates. Suppose \(Q\in\polyringextended{\vectorparam{\freeparam}}{\hallset}\) is a polynomial with coefficients in the fraction field such that \(X_1Q=\freeparam_{21}x_1 + \freeparam_{22}x_2\) and \(X_2Q=-\freeparam_{11}x_1 - \freeparam_{12}x_2\text{.}\)</p>
+<p id="p-130">Steps <a class="xref" data-knowl="./knowl/algorithm-2-nonzero-derivatives.html" title="Item 2">2</a>–<a class="xref" data-knowl="./knowl/algorithm-5-abnormal-polys.html" title="Item 5">5</a> proceed exactly as in <a href="section-examples.html#example-rank-2-spirals" class="internal" title="Subsection 5.1: A logarithmic spiral (r2s7)">Subsection 5.1</a>, since the <a class="xref" data-knowl="./knowl/definition-free-lie-action-on-polynomials.html" title="Definition 2.15">action</a> \(\freelie{2}\acts\polyring{\hallset}\text{,}\) the <a class="xref" data-knowl="./knowl/definition-poincare-series.html" title="Definition 2.18">Poincaré series</a>, and the <a class="xref" data-knowl="./knowl/definition-abnormal-polynomial.html" title="Definition 2.1">abnormal polynomials</a> are all essentially uneffected by the field extension \(\RR\into \fractionfield{\vectorparam{\freeparam}}\text{,}\) and \(\deg(X_1Q)=\deg(X_2Q)=1\) as before. The solution of the PDE for \(Q\) is</p>
+<div class="displaymath">
+\begin{equation*}
+Q = \frac{1}{2}\freeparam_{21}x_1^2 + \freeparam_{22}x_1x_2 - \frac{1}{2}\freeparam_{12}x_2^2 -(\freeparam_{11}+\freeparam_{22})x_{12}\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">The abnormal polynomials \(\abnormalpolynomial{112}{\covector},\abnormalpolynomial{212}{\covector}\) are exactly the same as in <a class="xref" data-knowl="./knowl/eq-P112.html" title="Equation 5.2">(5.2)</a> and <a class="xref" data-knowl="./knowl/eq-P212.html" title="Equation 5.3">(5.3)</a>, and the difference polynomial coefficients \(R_{i,a,b,c}(\covector,\factorcoefficient{i})\) are again defined by <a class="xref" data-knowl="./knowl/eq-Ri.html" title="Equation 5.5">(5.5)</a>.</p>
+<p id="p-131">Step <a class="xref" data-knowl="./knowl/algorithm-6-linear-system.html" title="Item 6">6</a> The solution space in the Lie algebra \(\freelie{2,11}/[\lowercentralseriesterm{\freelie{2,11}}{3},\lowercentralseriesterm{\freelie{2,11}}{3}]\) of nilpotency step 11 is a 31 dimensional space over \(\fractionfield{\vectorparam{\freeparam}}\text{.}\) The simplest solutions are found already in step \(s'=7\text{.}\) In \(\freelie{2,7}/[\lowercentralseriesterm{\freelie{2,7}}{3},\lowercentralseriesterm{\freelie{2,7}}{3}]\text{,}\) the solution space is 2 dimensional and an example solution has the nonzero coefficients</p>
+<div class="displaymath">
+\begin{align*}
+\covector_{(1)^{4}(112)} \amp= 3  \freeparam_{21}^2  (6\freeparam_{11}^2 - 5\freeparam_{12}\freeparam_{21} + 13\freeparam_{11}\freeparam_{22} + 2\freeparam_{22}^2)\\
+\covector_{(2)(1)^{3}(112)} \amp= 3  \freeparam_{21}  (\freeparam_{11}\freeparam_{12}\freeparam_{21} + 5\freeparam_{11}^2\freeparam_{22} - 3\freeparam_{12}\freeparam_{21}\freeparam_{22} + 11\freeparam_{11}\freeparam_{22}^2 + 2\freeparam_{22}^3)\\
+\covector_{(2)^{2}(1)^{2}(112)} \amp= -4\freeparam_{11}^2\freeparam_{12}\freeparam_{21} + 3\freeparam_{12}^2\freeparam_{21}^2 - 3\freeparam_{11}\freeparam_{12}\freeparam_{21}\freeparam_{22}\\
+\amp+ 8\freeparam_{11}^2\freeparam_{22}^2 - 2\freeparam_{12}\freeparam_{21}\freeparam_{22}^2 + 18\freeparam_{11}\freeparam_{22}^3 + 4\freeparam_{22}^4\\
+\covector_{(2)^{3}(1)(112)} \amp= -3  \freeparam_{12}  (\freeparam_{11}\freeparam_{12}\freeparam_{21} + 3\freeparam_{11}^2\freeparam_{22} - \freeparam_{12}\freeparam_{21}\freeparam_{22} + 5\freeparam_{11}\freeparam_{22}^2)\\
+\covector_{(2)^{4}(112)} \amp= -3  \freeparam_{12}^2  (-2\freeparam_{11}^2 + \freeparam_{12}\freeparam_{21} - \freeparam_{11}\freeparam_{22} + 2\freeparam_{22}^2)\\
+\covector_{(12)(1)^{2}(112)} \amp= \freeparam_{21}  (\freeparam_{11} + \freeparam_{22})  (-4\freeparam_{11}^2 + 3\freeparam_{12}\freeparam_{21} - 9\freeparam_{11}\freeparam_{22} - 2\freeparam_{22}^2)\\
+\covector_{(12)(2)(1)(112)} \amp= - (\freeparam_{11} + \freeparam_{22})  (\freeparam_{11}\freeparam_{12}\freeparam_{21} + 3\freeparam_{11}^2\freeparam_{22} - \freeparam_{12}\freeparam_{21}\freeparam_{22} + 7\freeparam_{11}\freeparam_{22}^2 + 2\freeparam_{22}^3)\\
+\covector_{(12)(2)^{2}(112)} \amp= \freeparam_{12}  (\freeparam_{11} + \freeparam_{22})  (2\freeparam_{11}^2 - \freeparam_{12}\freeparam_{21} + 3\freeparam_{11}\freeparam_{22})\\
+\covector_{(12)^{2}(112)} \amp= -(\freeparam_{11} + \freeparam_{22})^2  (-2\freeparam_{11}^2 + \freeparam_{12}\freeparam_{21} - 5\freeparam_{11}\freeparam_{22} - 2\freeparam_{22}^2)\\
+\covector_{(2)^{4}(212)} \amp= 12  (\freeparam_{11} + \freeparam_{22})  \freeparam_{12}^3\\
+\covector_{(12)(2)^{2}(212)} \amp= 2  \freeparam_{12}^2  (\freeparam_{11} + \freeparam_{22})^2
+\end{align*}
+</div>
+<p id="p-132">For some specializations \(\vectorparam{\freeparam}\in\RR^4\) such as \(\freeparam_{11}=-2\text{,}\) \(\freeparam_{12}=\freeparam_{21}=0\text{,}\) \(\freeparam_{21}=1\text{,}\) the above covector vanishes and hence is not a valid abnormal covector. Nonetheless the existence of a generic solution implies that solutions exist also for every other choice of the parameters by the following brief argument:</p>
+<article class="lemma theorem-like" id="lemma-kernel-of-specialization"><h6 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">5.6</span><span class="period">.</span>
+</h6>
+<p id="p-133">If a matrix with coefficients in a polynomial ring \(\polyring{a_1,\ldots,\freeparam_k}\) has a nontrivial kernel over the fraction field \(\fractionfield{\freeparam_1,\ldots,\freeparam_k}\text{,}\) then it has a nontrivial kernel for any specialization of \(\freeparam_1,\ldots,\freeparam_k\) in \(\RR\text{.}\)</p></article><article class="hiddenproof" id="proof-13"><a data-knowl="" class="id-ref original" data-refid="hk-proof-13"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-13"><article class="hiddenproof"><p id="p-134">The kernel of a matrix \(A\) is nontrivial if and only if the matrix \(A^TA\) has zero determinant. Let \(A\) be a matrix with coefficients in \(\polyring{\freeparam_1,\ldots,\freeparam_k}\text{.}\) If \(A\) has a nontrivial kernel over \(\fractionfield{\freeparam_1,\ldots,\freeparam_k}\text{,}\) then</p>
+<div class="displaymath">
+\begin{equation*}
+\det(A^TA) = 0\in\polyring{\freeparam_1,\ldots,\freeparam_k}.
+\end{equation*}
+</div>
+<p data-braille="continuation">Consequently for any specialization \(\vectorparam{\freeparam}\in\RR^k\)</p>
+<div class="displaymath">
+\begin{equation*}
+\det(A(\vectorparam{\freeparam})^TA(\vectorparam{\freeparam})) = \det(A^TA)(\vectorparam{\freeparam}) = 0\in\RR,
+\end{equation*}
+</div>
+<p data-braille="continuation">so the specialized matrix \(A(\vectorparam{\freeparam})\) also has a nontrivial kernel.</p></article></div>
+<p id="p-135">The above shows that for any choice of parameters \(\freeparam_{11},\freeparam_{12},\freeparam_{21},\freeparam_{22}\in\RR\text{,}\) all trajectories to the origin for the linear ODE <a class="xref" data-knowl="./knowl/eq-linear-ode.html" title="Equation 5.6">(5.6)</a> lift to abnormals in the free Carnot group of rank 2 and step 7.</p>
+<p id="p-136">Finding an explicit covector also in the cases where the generic one vanishes would require a more careful look at the computation to solve the linear system over the fraction field \(\fractionfield{\vectorparam{\freeparam}}\text{.}\) In the standard Gauss-Jordan algorithm, each attempted division by a nonconstant polynomial \(P\) splits the consideration into two cases: the points within the variety \(P=0\) and those outside. Inside the variety, the polynomial is replaced by zero and the Gauss-Jordan procedure continues. Outside the variety, the polynomial \(P\) can freely be used as a denominator. Expanding away the denominators in the end leads to finitely many different reduced echelon forms in distinct semialgebraic varieties, with each echelon form consisting of coefficients in the polynomial ring \(\polyring{\vectorparam{\freeparam}}\text{.}\) Nontrivial elements of the solution space can then be read off from the echelon form, again splitting into cases based on the vanishing of the coefficients. This procedure defines an admissible abnormal covector \(\covector\) as a semialgebraic function \(\covector(\vectorparam{\freeparam})\text{.}\)</p>
+<p id="p-137">However even in the relatively simple case of the linear ODE <a class="xref" data-knowl="./knowl/eq-linear-ode.html" title="Equation 5.6">(5.6)</a>, solving the resulting \(44\times 45\) system in nilpotency step 7 as described above leads to a rather cumbersome expression, and this will not be pursued here.</p></section><section class="subsection" id="example-the-hawaiian-earring"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.3</span> <span class="title">The Hawaiian earring (r2s13)</span>
+</h3>
+<figure class="figure figure-like" id="figure-hawaiian-earring"><div class="image-box" style="width: 35%; margin-left: 32.5%; margin-right: 32.5%;"><img src="images/hawaiian-earring.svg" style="width: 100%; height: auto;" alt="The Hawaiian earring"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.7<span class="period">.</span></span><span class="space"> </span>The Hawaiian earring</figcaption></figure><p id="p-138">The Hawaiian earring is a countable union \(E=\bigcup_{n\in\NN}E_n\) of circles \(E_n = S^1((0,1/n),1/n)\) all with a common tangency point at 0. The punctured circles \(E_n\setminus\{(0,0)\}\) have parametrizations that are trajectories of the complex ODE \(\dot{z}=z^2\text{,}\) i.e., the planar quadratic ODE</p>
+<div class="displaymath">
+\begin{align*}
+\dot{x}_1 \amp= x_1^2-x_2^2,\qquad\\
+\dot{x}_2 \amp= 2x_1x_2\text{.}
+\end{align*}
+</div>
+<p id="p-139">Since all the punctured circles are trajectories of the same ODE and have a common point in their closure, the construction of <a class="xref" data-knowl="./knowl/algorithm-abnormal-trajectory.html" title="Algorithm 5.1">Algorithm 5.1</a> implies they all have the same covector. The concatenation resulting in the full Hawaiian earring will be shown to lift to an abnormal curve in the free Carnot group of rank 2 and step 13.</p>
+<p id="p-140">Step <a class="xref" data-knowl="./knowl/algorithm-1-orthogonal-poly.html" title="Item 1">1</a> Set \(X_1Q:=2x_1x_2\) and \(X_2Q:=-x_1^2+x_2^2\text{.}\)</p>
+<p id="p-141">Step <a class="xref" data-knowl="./knowl/algorithm-2-nonzero-derivatives.html" title="Item 2">2</a> The nonzero commutators are</p>
+<div class="displaymath">
+\begin{align*}
+X_{12}Q \amp = [X_1,X_2]Q = X_1(X_2Q)-X_2(X_1Q) = -4x_1\\
+X_{112}Q \amp = [X_1,X_{12}]Q = X_1(X_{12}Q)-X_{12}(X_1Q) = -4\text{.}
+\end{align*}
+</div>
+<p id="p-142">Step <a class="xref" data-knowl="./knowl/algorithm-3-pde-integration.html" title="Item 3">3</a> The <a class="xref" data-knowl="./knowl/definition-free-lie-action-on-polynomials.html" title="Definition 2.15">action</a> \(\freelie{2}\acts \polyring{x_1,x_2,x_{12},x_{112}}\) is</p>
+<div class="displaymath">
+\begin{align*}
+X_1 \amp= \partial_1,\amp
+X_2 \amp= \partial_2+x_1\partial_{12}+\frac{1}{2}x_1^2\partial_{112},\amp
+X_{12} \amp= \partial_{12}+x_1\partial_{112},\amp
+X_{112} \amp= \partial_{112}\text{.}
+\end{align*}
+</div>
+<p data-braille="continuation">Integrating in \(x_{112}\) and then \(x_2\) and \(x_1\) gives the solution</p>
+<div class="displaymath">
+\begin{equation*}
+Q = x_1^2x_2+\frac{1}{3}x_2^3 - 4x_{112}\text{.}
+\end{equation*}
+</div>
+<p id="p-143">Step <a class="xref" data-knowl="./knowl/algorithm-4-sufficient-step.html" title="Item 4">4</a> Set \(m=4\text{.}\) The dimensions of the first four layers \(\freelielayer{r}{k}\) are \(2,1,2,3\text{.}\) The generating function determining the step upper bound is</p>
+<div class="displaymath">
+\begin{align*}
+\Delta(t) \amp = \frac{(1-3(1-t^3))t^3}{(1-t)^2(1-t^2)(1-t^3)^2}\\
+\amp=-2 t^{4} - \cdots -20 t^{30} +45 t^{31} + \cdots +930 t^{38} + \cdots\text{.}
+\end{align*}
+</div>
+<p data-braille="continuation">This series has the partial sums \(\sum_{k=0}^{37}\differenceinteger{k} = -205\) and \(\sum_{k=0}^{38}\differenceinteger{k} = 725\text{,}\) so the naive upper bound for the abnormality step is \(s=38\text{.}\)</p>
+<p id="p-144">Step <a class="xref" data-knowl="./knowl/algorithm-5-abnormal-polys.html" title="Item 5">5</a> Since the upper bound \(s=38\) is so large, it is more practical to solve the system in step \(s'\lt s\) and keep increasing \(s'\) until a nontrivial solution is found. Let \(\mathfrak{g}\) be the quotient \(\mathfrak{g}=\freelie{2,s'}/[\lowercentralseriesterm{\freelie{2,s'}}{4},\lowercentralseriesterm{\freelie{2,s'}}{4}]\text{.}\) As before, the <a class="xref" data-knowl="./knowl/definition-abnormal-polynomial.html" title="Definition 2.1">abnormal polynomials</a> are computed by computing normal forms for the brackets</p>
+<div class="displaymath">
+\begin{equation*}
+\ad{X_{212}}^e\ad{X_{112}}^d\ad{X_{12}}^c\ad{X_2}^b\ad{X_1}^aX_{w_{i}},\quad i=1,2,3\text{,}
+\end{equation*}
+</div>
+<p data-braille="continuation">where \(w_{1}=1112\text{,}\) \(w_{2}=2112\) and \(w_{3}=2212\) are the <a class="xref" data-knowl="./knowl/definition-deg-left-right-hall-set.html" title="Definition 2.8">deg-left-right Hall words</a> of degree 4. The normal forms are computed using the represention \(\ad{}\colon\mathfrak{g}\to\mathfrak{gl}(\lowercentralseriesterm{\mathfrak{g}}{4})\text{,}\) where the only nontrivial commutators come from \([X_1,X_2]=X_{12}\text{,}\) \([X_1,X_{12}]=X_{112}\) and \([X_2,X_{12}]=X_{212}\text{.}\)</p>
+<p id="p-145">Step <a class="xref" data-knowl="./knowl/algorithm-6-linear-system.html" title="Item 6">6</a> The first nontrivial solution is found in step \(s'=13\text{.}\) The result is that the Hawaiian earring has an abnormal lift in the free Carnot group of rank 2 and step 13 with the covector \(\covector\) whose nonzero components are</p>
+<div class="displaymath">
+\begin{align*}
+\covector_{(2)^4(1)^5(1112)} \amp = 210\amp
+\covector_{(112)^2(2)^2(1)(1112)} \amp = 2\\
+\covector_{(2)^6(1)^3(1112)} \amp = 150\amp
+\covector_{(2)^9(2112)} \amp = 280\\
+\covector_{(2)^8(1)(1112)} \amp = 140\amp
+\covector_{(112)(2)^6(2112)} \amp = -15\\
+\covector_{(112)(2)^3(1)^3(1112)} \amp = -15\amp
+\covector_{(112)^2(2)^3(2112)} \amp = 2\\
+\covector_{(112)(2)^5(1)(1112)} \amp = -10\amp
+\covector_{(112)^3(2112)} \amp = -2\text{.}
+\end{align*}
+</div>
+<p data-braille="continuation">The resulting <a class="xref" data-knowl="./knowl/definition-abnormal-polynomial.html" title="Definition 2.1">abnormal polynomials</a> have the factorizations</p>
+<div class="displaymath">
+\begin{align*}
+\abnormalpolynomial{1112}{\covector} \amp = -\frac{1}{96} x_{1}  x_{2}^{2} (-7 x_{1}^{2} x_{2} - x_{2}^{3} + 12 x_{112})Q\\
+\abnormalpolynomial{2112}{\covector} \amp = \frac{1}{432} (-x_{2}^{3} + 3 x_{112}) (-15 x_{1}^{2} x_{2} - x_{2}^{3} + 12 x_{112})Q\\
+\abnormalpolynomial{2212}{\covector} \amp = -\frac{1}{288} x_{1} (3 x_{1}^{4} x_{2} - x_{1}^{2} x_{2}^{3} - 6 x_{2}^{5} - 24 x_{1}^{2} x_{112} + 36 x_{2}^{2} x_{112})Q\text{.}
+\end{align*}
+</div></section><section class="subsection" id="example-lorenz-butterfly"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.4</span> <span class="title">The Lorenz butterfly (r3s13)</span>
+</h3>
+<figure class="figure figure-like" id="figure-lorenz-trajectory"><div class="sidebyside"><div class="sbsrow" style="margin-left:0.166666666666667%;margin-right:0.166666666666667%;">
+<div class="sbspanel" style="width:33.1103678929766%;justify-content:center;"><img src="images/lorenz_010.svg" style="width: 100%; height: auto;" alt="Trajectory on the interval \([0,10]\)"></div>
+<div class="sbspanel" style="width:33.1103678929766%;justify-content:center;"><img src="images/lorenz_030.svg" style="width: 100%; height: auto;" alt="Trajectory on the interval \([0,30]\)"></div>
+<div class="sbspanel" style="width:33.1103678929766%;justify-content:center;"><img src="images/lorenz_100.svg" style="width: 100%; height: auto;" alt="Trajectory on the interval \([0,100]\)"></div>
+</div></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">5.8<span class="period">.</span></span><span class="space"> </span>The trajectory of the Lorenz system starting from \((1,0,0)\) on the time interval \([0,T]\) for \(T=10\text{,}\) \(T=30\text{,}\) and \(T=100\text{.}\)</figcaption></figure><p id="p-146">The Lorenz system</p>
+<div class="displaymath">
+\begin{align*}
+\dot{x}_1 \amp= 10(x_2-x_1)\\
+\dot{x}_2 \amp= 28x_1-x_2-x_1x_3\\
+\dot{x}_3 \amp= x_1x_2-\frac{8}{3}x_3
+\end{align*}
+</div>
+<p data-braille="continuation">is a classical example of a polynomial ODE system that exhibits chaotic behavior. Consider the trajectory starting from the point \((x_1,x_2,x_3)=(1,0,0)\text{,}\) see <a class="xref" data-knowl="./knowl/figure-lorenz-trajectory.html" title="Figure 5.8">Figure 5.8</a> for a visualization. Following <a class="xref" data-knowl="./knowl/algorithm-abnormal-trajectory.html" title="Algorithm 5.1">Algorithm 5.1</a> will show that this trajectory lifts to an abnormal curve in the free Carnot group of rank 3 and step 13. Translating the initial point of the trajectory to the origin means that the ODE to study is</p>
+<div class="displaymath">
+\begin{align*}
+\dot{x}_1 \amp= -10x_1+10x_2+10\\
+\dot{x}_2 \amp= -x_1x_3+28x_1-x_2+x_3-28\\
+\dot{x}_3 \amp= x_1x_2-x_2-\frac{8}{3}x_3\text{.}
+\end{align*}
+</div>
+<p id="p-147">Step <a class="xref" data-knowl="./knowl/algorithm-1-orthogonal-poly.html" title="Item 1">1</a> In rank bigger than 2 there is more freedom to find a polynomial \(Q\in\polyring{\hallset}\) whose horizontal gradient is orthogonal to the ODE. One possible choice is</p>
+<div class="displaymath">
+\begin{align*}
+X_1Q\amp:=-x_1x_3 + 28x_1 - x_2 + x_3 - 28\\
+X_2Q\amp:=10x_1 - 10x_2 - 10\\
+X_3Q\amp:=0\text{.}
+\end{align*}
+</div>
+<p id="p-148">Step <a class="xref" data-knowl="./knowl/algorithm-2-nonzero-derivatives.html" title="Item 2">2</a> The <a class="xref" data-knowl="./knowl/definition-free-lie-action-on-polynomials.html" title="Definition 2.15">action</a> \(\freelie{3}\acts\polyring{x_1,x_2,x_3}\) on the horizontal variables is again \(X_1=\partial_1\text{,}\) \(X_2=\partial_2\text{,}\) \(X_3=\partial_3\text{,}\) and all other elements give the zero derivation. The nonzero higher order derivatives of \(Q\) are</p>
+<div class="displaymath">
+\begin{align*}
+X_{12}Q \amp = X_1(X_2Q)-X_2(X_1Q) = 11\\
+X_{13}Q \amp = X_1(X_3Q)-X_3(X_1Q) = x_1-1\\
+X_{113}Q \amp = [X_1,X_{13}]Q = X_1(X_{13}Q)-X_{13}(X_1Q) = 1\text{.}
+\end{align*}
+</div>
+<p id="p-149">Step <a class="xref" data-knowl="./knowl/algorithm-3-pde-integration.html" title="Item 3">3</a> The <a class="xref" data-knowl="./knowl/definition-free-lie-action-on-polynomials.html" title="Definition 2.15">action</a> \(\freelie{3}\acts \polyring{x_1,x_2,x_{12},x_{13},x_{113}}\) is</p>
+<div class="displaymath">
+\begin{align*}
+X_1 \amp= \partial_1
+\amp X_{12} \amp= \partial_{12}\\
+X_2 \amp= \partial_2+x_1\partial_{12}
+\amp X_{13} \amp= \partial_{13}+x_1\partial_{113}\\
+X_3 \amp= \partial_3+x_1\partial_{13}+\frac{1}{2}x_1^2\partial_{113}
+\amp X_{113} \amp= \partial_{113}\text{.}
+\end{align*}
+</div>
+<p data-braille="continuation">Integrating the variables in the order \(x_{113},x_{13},x_{12},x_3,x_2,x_1\) gives the solution</p>
+<div class="displaymath">
+\begin{equation*}
+Q = -\frac{1}{2}x_1^2x_3 + x_{113} + 14x_1^2 - x_1x_2 - 5x_2^2 + x_1x_3 + 11x_{12} - x_{13} - 28x_1 - 10x_2\text{.}
+\end{equation*}
+</div>
+<p id="p-150">Step <a class="xref" data-knowl="./knowl/algorithm-4-sufficient-step.html" title="Item 4">4</a> The dimensions of the first four layers of the free Lie algebra \(\freelie{3}\) are \(3,3,8,18\text{.}\) The generating function</p>
+<div class="displaymath">
+\begin{equation*}
+\Delta(t) = \frac{(1-18(1-t^3))t^4}{(1-t)^3(1-t^2)^3(1-t^3)^8}
+\end{equation*}
+</div>
+<p data-braille="continuation">gives the a priori bound of step \(s=724\) for when a lift becomes abnormal.</p>
+<p id="p-151">Step <a class="xref" data-knowl="./knowl/algorithm-5-abnormal-polys.html" title="Item 5">5</a> With the unreasonably large nilpotency step \(s=724\text{,}\) it is better to solve the system in step \(s'\lt s\) and keep increasing \(s'\) until a nontrivial solution is found. In the quotient \(\mathfrak{g}=\freelie{3,s'}/[\lowercentralseriesterm{\freelie{3,s'}}{4},\lowercentralseriesterm{\freelie{3,s'}}{4}]\text{,}\) the <a class="xref" data-knowl="./knowl/definition-abnormal-polynomial.html" title="Definition 2.1">abnormal polynomials</a> can be computed via normal forms for Lie brackets using the smaller family of commutation rules of the restricted adjoint representation \(\ad{}\colon\mathfrak{g}\to\mathfrak{gl}(\lowercentralseriesterm{\mathfrak{g}}{4})\) as in the previous examples.</p>
+<p id="p-152">Step <a class="xref" data-knowl="./knowl/algorithm-6-linear-system.html" title="Item 6">6</a> The first solution exists in step \(s=13\text{,}\) so the trajectory starting from \((1,0,0)\) of the Lorenz system is abnormal in the free Carnot group of rank 3 and step 13. In rank 3 and step 13 the linear system consists of 81360 equations in 34465 variables \(\covector\) and 9918 variables \(\factorcoefficient{}\text{.}\) The solutions are however relatively sparse, with an example solution having 476 nonzero coefficients out of the possible 34465, suggesting that further simplifications using more refined quotient Lie algebras could be possible.</p></section></section></div></main>
+</div>
+</body>
+</html>

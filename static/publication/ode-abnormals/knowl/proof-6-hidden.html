@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-06-17T11:42:41+02:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><article class="hiddenproof"><p>Define a linear map \(\varphi\colon\freelie{r}\to\polyring{\hallset}\) recursively by</p>
+<div class="displaymath">
+\begin{align}
+\varphi(X_i) \amp = Q_{i},\quad i=1,\ldots,r\notag\\
+\varphi([X,Y]) \amp = X\varphi(Y)-Y\varphi(X)\text{,}\tag{3.1}
+\end{align}
+</div>
+<p data-braille="continuation">where \(X\varphi(Y)\) and \(Y\varphi(X)\) are determined by the derivation action \(\freelie{r}\acts\polyring{\hallset}\) as defined in <a class="xref" data-knowl="./knowl/definition-free-lie-action-on-polynomials.html" title="Definition 2.15">Definition 2.15</a>. A routine computation with the recursion formula <a class="xref" data-knowl="./knowl/eq-recursive-def-varphi.html" title="Equation 3.1">(3.1)</a> shows that \(\varphi([X,Y])=-\varphi([Y,X])\) and</p>
+<div class="displaymath">
+\begin{equation*}
+\varphi([X,[Y,Z]])+\varphi([Y,[Z,X]])+\varphi([Z,[X,Y]])=0\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">Since there are no relations in the free Lie algebra except for anticommutativity and the Jacobi identity, it follows that the map \(\varphi\) is well defined.</p>
+<p>The action \(\freelie{r}\acts\polyring{\hallset}\) is by derivations, so polynomials \(X\varphi(Y)\) are of lower (weighted) degree than polynomials \(\varphi(Y)\text{.}\) In particular, \(\varphi(\freelielayer{r}{k})=0\) for all \(k\gt \max_i\deg(Q_i)+1\text{.}\) Let \(s\geq 1\) be the minimal index such that \(\varphi(\freelielayer{r}{k})=0\) for all \(k\gt s\text{.}\)</p>
+<p> By the choice of the step \(s\text{,}\) the map \(\varphi\) induces a well defined linear map \(\freelie{r,s}\to\polyring{x_{w_{1}},\ldots,x_{w_{n}}}\text{,}\) where \(\freelie{r,s}\) is the free nilpotent Lie algebra of rank \(r\) and step \(s\text{,}\) and \(w_{1},\ldots,w_{n}\) is the complete list of Hall words of degrees \(1,\ldots,s\text{.}\) For ease of notation, the restricted map will also be denoted by \(\varphi\text{.}\)</p>
+<p>In the free Carnot group \(\freecarnot{r,s}\) of rank \(r\) and step \(s\text{,}\) consider the differential one-form \(\omega\) such that for any left-invariant vector field \(\tilde{X}(g) = (L_{g})_*X\text{,}\) the function \(g\mapsto \omega(\tilde{X}(g))\) is exactly the function \(\varphi(X)\) when computed in exponential coordinates <a class="xref" data-knowl="./knowl/definition-hall-exponential-coordinates.html" title="Definition 2.12">adapted</a> to the Hall set. That is, in these coordinates the one-form is defined for any vector \(X\in T_x\freecarnot{r,s}\) by</p>
+<div class="displaymath">
+\begin{equation*}
+\omega_{x}(X) := \varphi((L_{x^{-1}})_*X)(x)\text{.}
+\end{equation*}
+</div>
+<p>For vector fields \(\tilde{X},\tilde{Y}\colon \freecarnot{r,s}\to T\freecarnot{r,s}\text{,}\) the classical formula for the differential of a one-form states that</p>
+<div class="displaymath">
+\begin{equation*}
+d\omega(\tilde{X},\tilde{Y}) = \tilde{X}\omega(\tilde{Y})-\tilde{Y}\omega(\tilde{X})-\omega([\tilde{X},\tilde{Y}])\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">For left-invariant vector fields \(\tilde{X}(x)=(L_x)_*X\) and \(\tilde{Y}(x)=(L_x)_*Y\) the above simplifies to</p>
+<div class="displaymath">
+\begin{equation*}
+d\omega(\tilde{X},\tilde{Y}) = X\varphi(Y)-Y\varphi(X)-\varphi([X,Y])\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">By the recursive definition <a class="xref" data-knowl="./knowl/eq-recursive-def-varphi.html" title="Equation 3.1">(3.1)</a> of the map \(\varphi\text{,}\) it follows that \(d\omega = 0\text{,}\) i.e., the form \(\omega\) is closed. Since \(\freecarnot{r,s}\) is simply connected as a Carnot group, the closed form \(\omega\) is exact, so there exists a smooth function \(Q\colon\freecarnot{r,s}\to\RR\) such that \(dQ = \omega\text{.}\) The coefficients of the one-form \(\omega\) are all polynomial, so the smooth function \(Q\) is a polynomial. Moreover, the polynomial \(Q\) has the desired property</p>
+<div class="displaymath">
+\begin{equation*}
+X_iQ = dQ(\tilde{X}_i) = \omega(\tilde{X}_i) = \varphi(X_i) = Q_{i}\text{.}
+\end{equation*}
+</div></article></body>
+</html>
