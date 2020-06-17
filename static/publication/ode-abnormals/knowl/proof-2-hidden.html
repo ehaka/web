@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-06-17T11:42:41+02:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><article class="hiddenproof"><p>The claim that the Hall words factor as in the statement is straightforward. If \(h=(h_1,h_2)\) is a Hall tree of degree \(\geq 2\text{,}\) then by <a class="xref" data-knowl="./knowl/definition-hall-set.html" title="Definition 2.6">Definition 2.6</a> \(h_1\lt h_2\) and if \(h_2=(h_{21},h_{22})\text{,}\) then \(h_1\geq h_{21}\text{.}\) Then \(w(h)\) admits the factorization \(w(h) = w(h_1)w(h_2)\) and \(\ad{X_{w(h_1)}}X_{w(h_2)}\) is the corresponding Lie bracket.</p>
+<p>For the converse claim, let \(h\) be the binary tree described by a Lie bracket \(\ad{X_{w_{k}}}^{i_k}\cdots \ad{X_{w_{1}}}^{i_1}X_{w}\) with the words \(w_1,\ldots,w_k\text{,}\) and \(w\) satisfying the conditions <a class="xref" data-knowl="./knowl/enum-deg-left-rightwords-exponents.html" title="Item i">i</a>–<a class="xref" data-knowl="./knowl/enum-deg-left-rightwords-final-bracket.html" title="Item iii">iii</a>. Write the \(\ad{}\)-sequence without exponents as</p>
+<div class="displaymath">
+\begin{equation*}
+\ad{X_{w_{k}}}^{i_k}\cdots \ad{X_{w_{1}}}^{i_1}X_{w} = \ad{Y_{n}}\cdots\ad{Y_{1}}X_{w}\text{,}
+\end{equation*}
+</div>
+<p data-braille="continuation">where \(n=i_1+\cdots+i_k\text{,}\) \(Y_1=\ldots=Y_{i_1}=X_{w_{1}}\) and so on. For each \(i=1,\ldots,k\text{,}\) let \(h_i\) be the Hall tree corresponding to the Lie algebra element \(Y_i\) and let \(h_0\) be the Hall tree for the element \(X_{w}\text{,}\) so that \(h=(h_n,(h_{n-1},(\ldots,(h_1,h_0)\ldots)))\text{.}\) The claim that \(h\) is a Hall tree will follow by induction showing that every tree \(\bar{h}_i:=(h_i,(\ldots(h_1,h_0)\ldots))\) is a Hall tree. The case \(i=0\) holds by the choice of \(h_0=\bar{h}_0\text{.}\)</p>
+<p>In the case \(i=1\text{,}\) assumption <a class="xref" data-knowl="./knowl/enum-deg-left-rightwords-increasing-sequence.html" title="Item ii">ii</a> implies that \(h_1\lt h_0\text{.}\) If \(\deg(w)\gt 1\text{,}\) let \(h'\) and \(h''\) be the Hall trees corresponding to the Hall words \(w'\) and \(w''\text{,}\) so that \(h_0=(h',h'')\text{.}\) Then assumption <a class="xref" data-knowl="./knowl/enum-deg-left-rightwords-final-bracket.html" title="Item iii">iii</a> implies that \(h_1\geq h'\text{.}\) By assumption the order is compatible with the degree, so \(h_1\lt (h_1,h_0)=\bar{h}_1\text{.}\) Hence the tree \(\bar{h}_1=(h_1,h_0)\) satisfies all the order constraints of <a class="xref" data-knowl="./knowl/definition-hall-set.html" title="Definition 2.6">Definition 2.6</a> and is a Hall tree.</p>
+<p>Suppose the claim holds up to some \(i\geq 1\text{.}\) The tree \(\bar{h}_{i+1} = (h_{i+1},(h_i,\bar{h}_{i-1}))\) then consists of Hall trees.  The degree first comparison guarantees that \(h_{i+1}\lt \bar{h}_{i}\lt \bar{h}_{i+1}\text{.}\) Combined with assumption <a class="xref" data-knowl="./knowl/enum-deg-left-rightwords-increasing-sequence.html" title="Item ii">ii</a>, this guarantees that all of the order constraints \(h_{i+1}\lt (h_i,\bar{h}_{i-1})\text{,}\) \(h_{i+1}\lt \bar{h}_{i+1}\text{,}\) and \(h_i\leq h_{i+1}\) are satisfied, so \(\bar{h}_{i+1}\) is a Hall tree. By induction it follows that the tree \(h=\bar{h}_n\) is a Hall tree, proving the claim.</p></article></body>
+</html>

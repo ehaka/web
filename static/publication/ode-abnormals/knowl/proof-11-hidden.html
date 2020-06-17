@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-06-17T11:42:41+02:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><article class="hiddenproof"><p>By the expansion of the vector field \(P\) in the left-invariant frame, if \(x\colon(a,b)\to G\) is a horizontal trajectory of the vector field \(P\text{,}\) then the derivative of the trajectory is</p>
+<div class="displaymath">
+\begin{equation}
+\frac{d}{dt}x(t) = P(x(t)) = \sum_{i=1}^r P_i(x(t))\tilde{X}_i(x(t))\text{.}\tag{4.1}
+\end{equation}
+</div>
+<p>Since the statement of the theorem only concerns horizontal trajectories there is no loss of generality in assuming that the other coefficients \(P_{r+1},\ldots,P_n\) are all zero. Then the vector field \(P\) has a well defined lift from \(G\) to a horizontal vector field \(\tilde{P}\) in the free Carnot group of rank \(r\) and step equal to the step of \(G\text{,}\) and all horizontal trajectories of \(P\) lift to trajectories of the vector field \(\tilde{P}\text{.}\) Hence the claim holds if and only if the claim holds when \(G\) is a free Carnot group. In particular, there is no loss of generality in assuming that \(G\) is a Carnot group that is <a class="xref" data-knowl="./knowl/definition-carnot-group-compatible-with-hall-basis.html" title="Definition 2.11">compatible</a> with the <a class="xref" data-knowl="./knowl/definition-deg-left-right-hall-set.html" title="Definition 2.8">deg-left-right Hall set</a> \(\hallset\text{.}\) By considering coordinates <a class="xref" data-knowl="./knowl/definition-hall-exponential-coordinates.html" title="Definition 2.12">adapted</a> to the Hall set \(\hallset\text{,}\) the polynomials \(P_1,\ldots,P_r\) are identified with elements of <a class="xref" data-knowl="./knowl/definition-polynomial-in-free-lie-algebra.html" title="Definition 2.13">\(\polyring{\hallset}\)</a>.</p>
+<p>Let \(Q_{1},\ldots,Q_{r}\in\polyring{\hallset}\) be polynomials such that not all \(Q_{i}\) are zero, \(\sum P_iQ_{i} = 0\text{,}\) and \(\max_i\deg(Q_{i})\leq \max_i\deg(P_i)\leq d\text{.}\) By <a class="xref" data-knowl="./knowl/lemma-vector-of-polynomials-as-derivatives-in-free-lie-algebra.html" title="Lemma 3.1">Lemma 3.1</a>, there exists a polynomial \(Q\in\polyring{\hallset}\) such that \(X_iQ=Q_{i}\text{.}\) Let \(x(t)\) be a horizontal trajectory of \(P\) whose closure contains the identity. Since \(\sum P_i(X_iQ)=0\text{,}\) the identity <a class="xref" data-knowl="./knowl/eq-horizontal-trajectory.html" title="Equation 4.1">(4.1)</a> implies that the polynomial \(Q\) is constant along the horizontal trajectory \(x(t)\text{.}\) Adding in a constant if necessary, there is no loss of generality in assuming that \(Q(x(t))\equiv 0\text{.}\)</p>
+<p>From the construction of <a class="xref" data-knowl="./knowl/lemma-vector-of-polynomials-as-derivatives-in-free-lie-algebra.html" title="Lemma 3.1">Lemma 3.1</a>, it follows that the polynomial \(Q\) only contains variables of degrees at most \(\max_i\deg(Q_{i})+1\leq d+1\) and the degree \(\deg(Q)\) is bounded by the same quantity. Let \(m:=d+2\text{.}\) By <a class="xref" data-knowl="./knowl/proposition-existence-of-polynomial-factor.html" title="Proposition 3.6">Proposition 3.6</a>, there exists some high enough step \(s\geq m\) and a covector \(\covector\in\freelie{r,s}^*\) such that the polynomial \(Q\) is a common factor for all abnormal polynomials \(\abnormalpolynomial{X}{\covector}\) for \(X\in\freelielayer{r,s}{m}\text{.}\) Since the closure of the trajectory \(x(t)\) by assumption contains the identity, <a class="xref" data-knowl="./knowl/lemma-curves-annihilating-higher-order-abnormal-polynomials.html" title="Lemma 3.2">Lemma 3.2</a> implies that the trajectory \(x(t)\) has an abnormal lift in the free Carnot group \(\freecarnot{r,s}\text{.}\)</p>
+<p>For an arbitrary horizontal trajectory \(x(t)\) of the vector field \(P\) in \(G\text{,}\) let \(z\in G\) be any point in the closure of the trajectory, and let \(y(t):=L_{z^-1}x(t)\) be the left translation of the trajectory \(x(t)\text{.}\) The derivative of the translated trajectory is</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{d}{dt}y(t) = \sum_{i=1}^r P_i(x(t))\Big((L_{z^{-1}})_*\tilde{X}_i(x(t))\Big)
+= \sum_{i=1}^r P_i(L_{z}y(t))\tilde{X}_i(y(t))\text{.}
+\end{equation*}
+</div>
+<p>Since left translations preserve the degrees of polynomials, the earlier argument implies that there exists a polynomial \(Q_z\in\polyring{\hallset}\) such that \(Q_z(y(t))\equiv 0\) and the degree of \(Q_z\) and maximum degree of variables of \(Q_z\) is again strictly less than \(m\text{.}\) Repeating the rest of the argument, <a class="xref" data-knowl="./knowl/proposition-existence-of-polynomial-factor.html" title="Proposition 3.6">Proposition 3.6</a> implies that the trajectory \(y(t)\) also has an abnormal lift in the free Carnot group \(\freecarnot{r,s}\) for the same step \(s\geq m\) as before. Since abnormality is preserved under left translation, it follows that the original horizontal trajectory \(x(t)\) of \(P\colon \freecarnot{r,s}\to T\freecarnot{r,s}\) lifts to an abnormal curve in \(F\text{,}\) proving the claim.</p></article></body>
+</html>

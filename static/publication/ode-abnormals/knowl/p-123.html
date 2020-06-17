@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-06-17T11:42:41+02:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<h6 class="heading"><span class="type">Paragraph</span></h6>
+<p>The abnormal polynomial \(\abnormalpolynomial{212}{\covector}\) is not as simple, since the Lie bracket \(\ad{X_{12}}^c\ad{X_2}^b\ad{X_1}^aX_{212}\) is a <a class="xref" data-knowl="./knowl/definition-deg-left-right-hall-set.html" title="Definition 2.8">deg-left-right Hall tree</a> only when \(a=0\) by the characterization of <a class="xref" data-knowl="./knowl/lemma-hall-words-for-deg-left-right-order.html" title="Lemma 2.9">Lemma 2.9</a>. For \(a\gt 0\text{,}\) a normal form may be computed by considering the restricted adjoint representation \(\ad{}\colon\mathfrak{g}\to\mathfrak{gl}(\lowercentralseriesterm{\mathfrak{g}}{3})\text{.}\) By the construction of the quotient \(\mathfrak{g}\text{,}\) the only nontrivial commutator in \(\mathfrak{gl}(\lowercentralseriesterm{\mathfrak{g}}{3})\) is \([\ad{X_1},\ad{X_2}] = \ad{X_{12}}\text{.}\) That is, a normal form may be computed using only the relation</p>
+<div class="displaymath">
+\begin{equation*}
+\ad{X_1}\ad{X_2} = \ad{X_2}\ad{X_1} + \ad{X_{12}}\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">Applying the above \(a\) times, the resulting normal form for \(a\gt 0\) is</p>
+<div class="displaymath">
+\begin{align*}
+\ad{X_{12}}^c\ad{X_2}^b\ad{X_1}^aX_{212} \amp= \ad{X_{12}}^c\ad{X_2}^b\ad{X_1}^a\ad{X_2}X_{12}\\
+\amp= \ad{X_{12}}^c\ad{X_2}^{b+1}\ad{X_1}^aX_{12} + (a-1)\ad{X_{12}}^{c+1}\ad{X_2}^{b}\ad{X_1}^{a-1}X_{12}\text{.}
+\end{align*}
+</div>
+<p data-braille="continuation"><a class="xref" data-knowl="./knowl/lemma-abnormal-polynomials-in-exponential-coordinates.html" title="Lemma 2.5">Lemma 2.5</a> then gives the explicit expression</p>
+<div class="displaymath">
+\begin{align}
+\abnormalpolynomial{212}{\covector}\amp(x_1,x_2,x_{12})
+= \sum_{b+2c\leq 8}\frac{\covector_{(12)^c(2)^{b+1}12}}{b!c!}x_2^bx_{12}^c\tag{5.3}\\
+\amp+ \sum_{\substack{a+b+2c\leq 8\\a\geq 1}}\frac{\covector_{(12)^c(2)^{b+1}(1)^{a+1}2}+(a-1)\covector_{(12)^{c+1}(2)^b(1)^a2}}{a!b!c!}x_1^ax_2^bx_{12}^c\text{.}\notag
+\end{align}
+</div>
+<span class="incontext"><a href="section-examples.html#p-123">in-context</a></span>
+</body>
+</html>

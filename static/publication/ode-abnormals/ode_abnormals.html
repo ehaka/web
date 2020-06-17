@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-06-17T11:42:40+02:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ODE trajectories as abnormal curves in Carnot groups</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body id="hakavuori-ode" class="mathbook-article has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+
+\newcommand{\freecarnot}[1]{F_{#1}}
+\newcommand{\freelie}[1]{\mathfrak{f}_{#1}}
+\newcommand{\lielayer}[2]{#1^{[#2]}}
+\newcommand{\freelielayer}[2]{\lielayer{\freelie{#1}}{#2}}
+\newcommand{\lowercentralseriesterm}[2]{\lielayer{#1}{\geq #2}}
+
+\newcommand{\abnormalpolynomial}[2]{P_{#1}^{#2}}
+\newcommand{\Ad}[1]{\operatorname{Ad}_{#1}}
+\newcommand{\ad}[1]{\operatorname{ad}_{#1}}
+\newcommand{\abs}[1]{\left\vert #1\right\vert}
+\newcommand{\freelieaction}{D}
+\newcommand{\acts}{\curvearrowright}
+\newcommand{\into}{\hookrightarrow}
+\newcommand{\identity}[1]{e}
+
+\newcommand{\hallset}{\mathcal{H}}
+\newcommand{\polyring}[1]{\RR[#1]}
+\newcommand{\fractionfield}[1]{\RR(#1)}
+\newcommand{\polyringextended}[2]{\fractionfield{#1}[#2]}
+
+\newcommand{\covector}{\lambda}
+\newcommand{\covectorb}{\eta}
+\newcommand{\differenceinteger}[1]{C_{#1}}
+\newcommand{\poincare}{P}
+\newcommand{\vectorparam}[1]{\boldsymbol{#1}}
+\newcommand{\freeparam}{\alpha}
+\newcommand{\factorpolynomial}[1]{S^{#1}}
+\newcommand{\factorcoefficient}[1]{\nu_{#1}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="ode_abnormals.html"><span class="title">ODE trajectories as abnormal curves in Carnot groups</span></a></h1>
+<p class="byline">Eero Hakavuori</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><span id="previousbutton" class="previous-button button toolbar-item disabled">Prev</span><span id="upbutton" class="up-button button disabled toolbar-item">Up</span><a id="nextbutton" class="next-button button toolbar-item" href="frontmatter-1.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><span class="previous-button button toolbar-item disabled">Prev</span><span class="up-button button disabled toolbar-item">Up</span><a class="next-button button toolbar-item" href="frontmatter-1.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="section-introduction.html" data-scroll="section-introduction"><span class="codenumber">1</span> <span class="title">Introduction</span></a><ul><li><a href="section-introduction.html#subsection-1" data-scroll="subsection-1">Structure of the paper</a></li></ul>
+</li>
+<li class="link">
+<a href="section-abnormal-polynomials.html" data-scroll="section-abnormal-polynomials"><span class="codenumber">2</span> <span class="title">Abnormal polynomials</span></a><ul>
+<li><a href="section-abnormal-polynomials.html#subsection-abnormal-polynomials" data-scroll="subsection-abnormal-polynomials">Abnormal curves and polynomials</a></li>
+<li><a href="section-abnormal-polynomials.html#subsection-hall-sets" data-scroll="subsection-hall-sets">Hall sets</a></li>
+<li><a href="section-abnormal-polynomials.html#subsection-polynomials-in-free-lie-algebras" data-scroll="subsection-polynomials-in-free-lie-algebras">Polynomials in free Lie algebras</a></li>
+<li><a href="section-abnormal-polynomials.html#subsection-poincare-series" data-scroll="subsection-poincare-series">Poincaré series</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="section-abnormality-of-ode-trajectories.html" data-scroll="section-abnormality-of-ode-trajectories"><span class="codenumber">3</span> <span class="title">Common factors of abnormal polynomials</span></a><ul>
+<li><a href="section-abnormality-of-ode-trajectories.html#subsection-reduction-to-searching-polynomial-factors" data-scroll="subsection-reduction-to-searching-polynomial-factors">Link between ODEs and polynomial factors</a></li>
+<li><a href="section-abnormality-of-ode-trajectories.html#subsection-a-quotient-eliminating-higher-degree-variables" data-scroll="subsection-a-quotient-eliminating-higher-degree-variables">A quotient eliminating higher degree variables</a></li>
+<li><a href="section-abnormality-of-ode-trajectories.html#subsection-existence-of-arbitrary-polynomial-factors" data-scroll="subsection-existence-of-arbitrary-polynomial-factors">The linear system for abnormal polynomial factors</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="section-main-proofs.html" data-scroll="section-main-proofs"><span class="codenumber">4</span> <span class="title">Proofs of the main theorems</span></a><ul>
+<li><a href="section-main-proofs.html#subsection-conclusion-of-the-proof-of-abnormality" data-scroll="subsection-conclusion-of-the-proof-of-abnormality">Abnormality of ODE trajectories</a></li>
+<li><a href="section-main-proofs.html#subsection-concatenation-of-abnormals" data-scroll="subsection-concatenation-of-abnormals">Concatenation of abnormals</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="section-examples.html" data-scroll="section-examples"><span class="codenumber">5</span> <span class="title">Examples</span></a><ul>
+<li><a href="section-examples.html#example-rank-2-spirals" data-scroll="example-rank-2-spirals">A logarithmic spiral (r2s7)</a></li>
+<li><a href="section-examples.html#example-parametric-families-of-odes" data-scroll="example-parametric-families-of-odes">Planar linear ODEs (r2s7)</a></li>
+<li><a href="section-examples.html#example-the-hawaiian-earring" data-scroll="example-the-hawaiian-earring">The Hawaiian earring (r2s13)</a></li>
+<li><a href="section-examples.html#example-lorenz-butterfly" data-scroll="example-lorenz-butterfly">The Lorenz butterfly (r3s13)</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="appendix-1.html" data-scroll="appendix-1"><span class="codenumber">A</span> <span class="title">Notation</span></a></li>
+<li class="link"><a href="section-references.html" data-scroll="section-references"><span class="title">References</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="article" id="ode_abnormals"><nav class="summary-links"><ul>
+<li><a href="frontmatter-1.html"><span class="title">Front Matter</span></a></li>
+<li><a href="section-introduction.html"><span class="codenumber">1</span> <span class="title">Introduction</span></a></li>
+<li><a href="section-abnormal-polynomials.html"><span class="codenumber">2</span> <span class="title">Abnormal polynomials</span></a></li>
+<li><a href="section-abnormality-of-ode-trajectories.html"><span class="codenumber">3</span> <span class="title">Common factors of abnormal polynomials</span></a></li>
+<li><a href="section-main-proofs.html"><span class="codenumber">4</span> <span class="title">Proofs of the main theorems</span></a></li>
+<li><a href="section-examples.html"><span class="codenumber">5</span> <span class="title">Examples</span></a></li>
+<li><a href="backmatter-1.html"><span class="title">Back Matter</span></a></li>
+</ul></nav></section></div></main>
+</div>
+</body>
+</html>

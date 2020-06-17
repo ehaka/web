@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-06-17T11:42:40+02:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Abnormal polynomials</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body id="hakavuori-ode" class="mathbook-article has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+
+\newcommand{\freecarnot}[1]{F_{#1}}
+\newcommand{\freelie}[1]{\mathfrak{f}_{#1}}
+\newcommand{\lielayer}[2]{#1^{[#2]}}
+\newcommand{\freelielayer}[2]{\lielayer{\freelie{#1}}{#2}}
+\newcommand{\lowercentralseriesterm}[2]{\lielayer{#1}{\geq #2}}
+
+\newcommand{\abnormalpolynomial}[2]{P_{#1}^{#2}}
+\newcommand{\Ad}[1]{\operatorname{Ad}_{#1}}
+\newcommand{\ad}[1]{\operatorname{ad}_{#1}}
+\newcommand{\abs}[1]{\left\vert #1\right\vert}
+\newcommand{\freelieaction}{D}
+\newcommand{\acts}{\curvearrowright}
+\newcommand{\into}{\hookrightarrow}
+\newcommand{\identity}[1]{e}
+
+\newcommand{\hallset}{\mathcal{H}}
+\newcommand{\polyring}[1]{\RR[#1]}
+\newcommand{\fractionfield}[1]{\RR(#1)}
+\newcommand{\polyringextended}[2]{\fractionfield{#1}[#2]}
+
+\newcommand{\covector}{\lambda}
+\newcommand{\covectorb}{\eta}
+\newcommand{\differenceinteger}[1]{C_{#1}}
+\newcommand{\poincare}{P}
+\newcommand{\vectorparam}[1]{\boldsymbol{#1}}
+\newcommand{\freeparam}{\alpha}
+\newcommand{\factorpolynomial}[1]{S^{#1}}
+\newcommand{\factorcoefficient}[1]{\nu_{#1}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="ode_abnormals.html"><span class="title">ODE trajectories as abnormal curves in Carnot groups</span></a></h1>
+<p class="byline">Eero Hakavuori</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-introduction.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ode_abnormals.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-abnormality-of-ode-trajectories.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-introduction.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ode_abnormals.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-abnormality-of-ode-trajectories.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="section-introduction.html" data-scroll="section-introduction"><span class="codenumber">1</span> <span class="title">Introduction</span></a><ul><li><a href="section-introduction.html#subsection-1" data-scroll="subsection-1">Structure of the paper</a></li></ul>
+</li>
+<li class="link active">
+<a href="section-abnormal-polynomials.html" data-scroll="section-abnormal-polynomials"><span class="codenumber">2</span> <span class="title">Abnormal polynomials</span></a><ul>
+<li><a href="section-abnormal-polynomials.html#subsection-abnormal-polynomials" data-scroll="subsection-abnormal-polynomials">Abnormal curves and polynomials</a></li>
+<li><a href="section-abnormal-polynomials.html#subsection-hall-sets" data-scroll="subsection-hall-sets">Hall sets</a></li>
+<li><a href="section-abnormal-polynomials.html#subsection-polynomials-in-free-lie-algebras" data-scroll="subsection-polynomials-in-free-lie-algebras">Polynomials in free Lie algebras</a></li>
+<li><a href="section-abnormal-polynomials.html#subsection-poincare-series" data-scroll="subsection-poincare-series">Poincaré series</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="section-abnormality-of-ode-trajectories.html" data-scroll="section-abnormality-of-ode-trajectories"><span class="codenumber">3</span> <span class="title">Common factors of abnormal polynomials</span></a><ul>
+<li><a href="section-abnormality-of-ode-trajectories.html#subsection-reduction-to-searching-polynomial-factors" data-scroll="subsection-reduction-to-searching-polynomial-factors">Link between ODEs and polynomial factors</a></li>
+<li><a href="section-abnormality-of-ode-trajectories.html#subsection-a-quotient-eliminating-higher-degree-variables" data-scroll="subsection-a-quotient-eliminating-higher-degree-variables">A quotient eliminating higher degree variables</a></li>
+<li><a href="section-abnormality-of-ode-trajectories.html#subsection-existence-of-arbitrary-polynomial-factors" data-scroll="subsection-existence-of-arbitrary-polynomial-factors">The linear system for abnormal polynomial factors</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="section-main-proofs.html" data-scroll="section-main-proofs"><span class="codenumber">4</span> <span class="title">Proofs of the main theorems</span></a><ul>
+<li><a href="section-main-proofs.html#subsection-conclusion-of-the-proof-of-abnormality" data-scroll="subsection-conclusion-of-the-proof-of-abnormality">Abnormality of ODE trajectories</a></li>
+<li><a href="section-main-proofs.html#subsection-concatenation-of-abnormals" data-scroll="subsection-concatenation-of-abnormals">Concatenation of abnormals</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="section-examples.html" data-scroll="section-examples"><span class="codenumber">5</span> <span class="title">Examples</span></a><ul>
+<li><a href="section-examples.html#example-rank-2-spirals" data-scroll="example-rank-2-spirals">A logarithmic spiral (r2s7)</a></li>
+<li><a href="section-examples.html#example-parametric-families-of-odes" data-scroll="example-parametric-families-of-odes">Planar linear ODEs (r2s7)</a></li>
+<li><a href="section-examples.html#example-the-hawaiian-earring" data-scroll="example-the-hawaiian-earring">The Hawaiian earring (r2s13)</a></li>
+<li><a href="section-examples.html#example-lorenz-butterfly" data-scroll="example-lorenz-butterfly">The Lorenz butterfly (r3s13)</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="appendix-1.html" data-scroll="appendix-1"><span class="codenumber">A</span> <span class="title">Notation</span></a></li>
+<li class="link"><a href="section-references.html" data-scroll="section-references"><span class="title">References</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-abnormal-polynomials"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2</span> <span class="title">Abnormal polynomials</span>
+</h2>
+<section class="subsection" id="subsection-abnormal-polynomials"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.1</span> <span class="title">Abnormal curves and polynomials</span>
+</h3>
+<p id="p-16">In addition to the characterization as singular points of the endpoint map, abnormal curves can also be defined as characteristic curves of the canonical symplectic form on the cotangent bundle <a class="xref" data-knowl="./knowl/Hsu-1992-calc_var_via_griffiths_formalism.html" title="Bibliographic Entry 14: Calculus of variations via the Griffiths formalism">[14]</a>, see also Section 4.3.2 of <a class="xref" data-knowl="./knowl/ABB-2020-subriemannian_geometry.html" title="Bibliographic Entry 1: A comprehensive introduction to sub-Riemannian geometry">[1]</a>. In the setting of Carnot groups, right-trivialization of the cotangent bundle transfers this characterization from the cotangent bundle to the following description in terms of the Lie algebra, see Section 2.3 of <a class="xref" data-knowl="./knowl/LMOPV-2016-sard.html" title="Bibliographic Entry 17: Sard property for the endpoint map on some Carnot groups">[17]</a>.</p>
+<article class="definition definition-like" id="definition-abnormal-polynomial"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1</span><span class="period">.</span>
+</h6>
+<p id="p-17">Let \(G\) be a Carnot group and \(\mathfrak{g}\) its Lie algebra. Let \(X\in\mathfrak{g}\) be a vector and \(\covector\in\mathfrak{g}^*\) a covector. The polynomial</p>
+<div class="displaymath">
+\begin{equation*}
+\abnormalpolynomial{X}{\covector}\colon G\to\RR,\quad \abnormalpolynomial{X}{\covector}(g) = \covector(\Ad{g}X)
+\end{equation*}
+</div>
+<p data-braille="continuation">is called an <dfn class="terminology">abnormal polynomial</dfn>. Here \(\Ad{g}\in \mathrm{GL}(\mathfrak{g})\) is the adjoint map, i.e. the differential of the conjugation map \(G\to G\text{,}\) \(h\mapsto ghg^{-1}\text{.}\)</p></article><p id="p-18">The abnormal polynomials were introduced with a different presentation in <a class="xref" data-knowl="./knowl/LLMV-2013-extremal_curves.html" title="Bibliographic Entry 15: Extremal curves in nilpotent Lie groups">[15]</a> and <a class="xref" data-knowl="./knowl/LLMV-2018-extremal_polynomials.html" title="Bibliographic Entry 16: Extremal polynomials in stratified groups">[16]</a> under the name “extremal polynomial” for the purpose of characterizing abnormal curves. The presentation using the adjoint map was introduced in <a class="xref" data-knowl="./knowl/LMOPV-2016-sard.html" title="Bibliographic Entry 17: Sard property for the endpoint map on some Carnot groups">[17]</a>. The characterization in Theorem 1.1 of <a class="xref" data-knowl="./knowl/LLMV-2013-extremal_curves.html" title="Bibliographic Entry 15: Extremal curves in nilpotent Lie groups">[15]</a> and Corollary 2.14 of <a class="xref" data-knowl="./knowl/LMOPV-2016-sard.html" title="Bibliographic Entry 17: Sard property for the endpoint map on some Carnot groups">[17]</a> is the following.</p>
+<article class="lemma theorem-like" id="lemma-curves-in-abnormal-variety-are-abnormal"><h6 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">2.2</span><span class="period">.</span>
+</h6>
+<p id="p-19">A <a class="xref" data-knowl="./knowl/paragraph-carnot.html" title="Paragraph">horizontal curve</a> \(\gamma\) is abnormal if and only if there exists a nonzero \(\covector\in\mathfrak{g}^*\) such that \(\abnormalpolynomial{X}{\covector}\circ\gamma\equiv 0\) for all horizontal vectors \(X\in\lielayer{\mathfrak{g}}{1}\text{.}\)</p></article><p id="p-20">An important notion for curves in Carnot groups is the horizontal lift. This allows transferring curves between different Carnot groups of equal rank.</p>
+<article class="definition definition-like" id="definition-projection"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.3</span><span class="period">.</span>
+</h6>
+<p id="p-21">Let \(G\) and \(F\) be two Carnot groups and \(\mathfrak{g}\) and \(\mathfrak{f}\) their Lie algebras. A Lie group homomorphism \(\pi\colon F\to G\) is a <dfn class="terminology">Carnot group homomorphism</dfn> if \(\pi_*(\lielayer{\mathfrak{f}}{1})\subset \lielayer{\mathfrak{g}}{1}\text{.}\)</p></article><article class="definition definition-like" id="definition-lifted-curve"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.4</span><span class="period">.</span>
+</h6>
+<p id="p-22">Let \(G\) and \(F\) be Carnot groups and let \(\pi\colon F\to G\) be a <a class="xref" data-knowl="./knowl/definition-projection.html" title="Definition 2.3">Carnot group homomorphism</a>. Let \(\gamma\colon(a,b)\to G\) be a horizontal curve in \(G\text{.}\) A curve \(\tilde{\gamma}\colon (a,b)\to F\) is called a <dfn class="terminology">horizontal lift</dfn> of the curve \(\gamma\text{,}\) if \(\tilde{\gamma}\) is horizontal in \(F\) and \(\pi\circ\tilde{\gamma}=\gamma\text{.}\)</p></article><p id="p-23">An important fact is that the horizontal lifts of abnormal curves are themselves also abnormal curves, see Proposition 2.27 of <a class="xref" data-knowl="./knowl/LMOPV-2016-sard.html" title="Bibliographic Entry 17: Sard property for the endpoint map on some Carnot groups">[17]</a>.</p>
+<p id="p-24">The proof of the main result <a class="xref" data-knowl="./knowl/theorem-every-ode-trajectory-is-abnormal.html" title="Theorem 1.1">Theorem 1.1</a> will involve manipulating the abstract abnormal polynomials \(\abnormalpolynomial{X}{\covector}(g) = \covector(\Ad{g}X)\) in coordinates as concrete multivariate polynomials of a polynomial ring \(\polyring{x_1,\ldots,x_n}\text{.}\) Since the adjoint map \(\Ad{}\colon G\to \mathrm{GL}(\mathfrak{g})\) is a Lie group homomorphism, a convenient system of coordinates is given by <dfn class="terminology">exponential coordinates of the second kind</dfn>. For a basis \(X_1,\ldots,X_n\) of the Lie algebra \(\mathfrak{g}\text{,}\) the exponential coordinates of the second kind are</p>
+<div class="displaymath">
+\begin{equation*}
+\RR^n\to G,\quad (x_1,\ldots,x_n)\mapsto \exp(x_nX_n)\cdots\exp(x_1X_1)\text{.}
+\end{equation*}
+</div>
+<article class="lemma theorem-like" id="lemma-abnormal-polynomials-in-exponential-coordinates"><h6 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">2.5</span><span class="period">.</span>
+</h6>
+<p id="p-25">In exponential coordinates of the second kind with respect to the basis \(X_1,\dots,X_n\text{,}\) the <a class="xref" data-knowl="./knowl/definition-abnormal-polynomial.html" title="Definition 2.1">abnormal polynomial</a> \(\abnormalpolynomial{X}{\covector}\) has the formula</p>
+<div class="displaymath">
+\begin{equation*}
+\abnormalpolynomial{X}{\covector}(x_1,\dots,x_n) = \sum_{i_1,\ldots,i_n}\frac{1}{i_1!\cdots i_n!}\covector\Big(\ad{X_{n}}^{i_n}\cdots \ad{X_{1}}^{i_1}X\Big)x_1^{i_1}\ldots x_n^{i_n}
+\end{equation*}
+</div></article><article class="hiddenproof" id="proof-1"><a data-knowl="" class="id-ref original" data-refid="hk-proof-1"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-1"><article class="hiddenproof"><p id="p-26">The claim follows directly by applying the two formulas</p>
+<div class="displaymath">
+\begin{equation*}
+\Ad{\exp(X_i)\exp(X_j)} = \Ad{\exp(X_i)}\Ad{\exp(X_j)}
+\end{equation*}
+</div>
+<p data-braille="continuation">and</p>
+<div class="displaymath">
+\begin{equation*}
+\Ad{\exp(x_jX_{j})} = e^{\ad{x_jX_{j}}} = \sum_i\frac{1}{i!}x_j^i\ad{X_{j}}^i
+\end{equation*}
+</div>
+<p data-braille="continuation">to expand the expression \(\abnormalpolynomial{X}{\covector}(x_1,\ldots,x_n) = \covector(\Ad{\exp(x_nX_n)\cdots\exp(x_1X_1)}X)\text{.}\)</p></article></div></section><section class="subsection" id="subsection-hall-sets"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.2</span> <span class="title">Hall sets</span>
+</h3>
+<p id="p-27">The coordinate formula of <a class="xref" data-knowl="./knowl/lemma-abnormal-polynomials-in-exponential-coordinates.html" title="Lemma 2.5">Lemma 2.5</a> for the <a class="xref" data-knowl="./knowl/definition-abnormal-polynomial.html" title="Definition 2.1">abnormal polynomials</a> depends on the choice of the basis \(X_1,\ldots,X_n\) of the Lie algebra. In the case of free Lie algebras, possible bases are well understood in terms of <dfn class="terminology">Hall sets</dfn>, see the original construction in <a class="xref" data-knowl="./knowl/Hall-1950-basis_for_free_lie_rings.html" title="Bibliographic Entry 12: A basis for free Lie rings and higher commutators in free groups">[12]</a>. The following definition is the one in Section 4.1 of <a class="xref" data-knowl="./knowl/Reutenauer-1993-free_lie_algebras.html" title="Bibliographic Entry 22: Free Lie algebras">[22]</a>, but with the trees structured as in Ch II, §2.10 of <a class="xref" data-knowl="./knowl/Bourbaki-1975-lie_chapter_1-3.html" title="Bibliographic Entry 7: Lie groups and Lie algebras. Chapters 1--3">[7]</a>.</p>
+<article class="definition definition-like" id="definition-hall-set"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.6</span><span class="period">.</span>
+</h6>
+<p id="p-28">Let \(\mathcal{A}\) be a finite set and let \(M(\mathcal{A})\) be the free magma on \(\mathcal{A}\text{,}\) i.e., the set of all binary trees with leaves in \(\mathcal{A}\text{.}\) For \(h_1,h_2\in M(\mathcal{A})\text{,}\) denote by \((h_1,h_2)\in M(\mathcal{A})\) the binary tree whose left subtree is \(h_1\) and right subtree is \(h_2\text{.}\)</p>
+<p id="p-29">A <dfn class="terminology">Hall set</dfn> on \(\mathcal{A}\) is a totally ordered set \(\hallset\subset M(\mathcal{A})\) with the following properties:</p>
+<ol class="lower-roman">
+<li id="hall-def-singletons">All elements \(a\in \mathcal{A}\) are in \(\hallset\text{.}\)</li>
+<li id="hall-def-pairs">Every tree \(h=(h_1,h_2)\in \hallset\) satisfies \(h_1,h_2\in\hallset\) and \(h_1\lt h_2\) and \(h_1\lt h\text{.}\)</li>
+<li id="hall-def-triples">Every tree \((h_1,(h_{21},h_{22}))\in \hallset\) satisfies \(h_{21}\leq h_1\text{.}\)</li>
+<li id="hall-def-completness">Every tree \(h\in M(\mathcal{A})\) with the properties of <a class="xref" data-knowl="./knowl/hall-def-pairs.html" title="Item ii">ii</a> and <a class="xref" data-knowl="./knowl/hall-def-triples.html" title="Item iii">iii</a> is contained in \(\hallset\text{.}\)</li>
+</ol>
+<p data-braille="continuation">The elements of \(\hallset\) are called <dfn class="terminology">Hall trees</dfn>. The <dfn class="terminology">degree</dfn> \(\deg(h)\) of a tree \(h\) is its number of leaves.</p></article><article class="remark remark-like" id="remark-hall-order"><h6 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.7</span><span class="period">.</span>
+</h6>
+<p id="p-30">The order constraint \(h_1\lt h\) in <a class="xref" data-knowl="./knowl/hall-def-pairs.html" title="Item ii">ii</a> is sometimes imposed in the stronger form that \(\deg(h')\lt \deg(h)\) implies that \(h'\lt h\) for all \(h,h'\in\hallset\text{.}\) This stronger condition is used in much of the older literature, such as the original construction of <a class="xref" data-knowl="./knowl/Hall-1950-basis_for_free_lie_rings.html" title="Bibliographic Entry 12: A basis for free Lie rings and higher commutators in free groups">[12]</a> and in <a class="xref" data-knowl="./knowl/Bourbaki-1975-lie_chapter_1-3.html" title="Bibliographic Entry 7: Lie groups and Lie algebras. Chapters 1--3">[7]</a>. See the discussion in Section 4.5 of <a class="xref" data-knowl="./knowl/Reutenauer-1993-free_lie_algebras.html" title="Bibliographic Entry 22: Free Lie algebras">[22]</a> for the history and reasons behind these different conditions.</p></article><p id="p-31">Viewing the elements \(\mathcal{A}\) as the generators of a free Lie algebra, each Hall tree specifies some iterated Lie bracket of the generators and hence an element of the free Lie algebra.  By Theorem 4.9 of <a class="xref" data-knowl="./knowl/Reutenauer-1993-free_lie_algebras.html" title="Bibliographic Entry 22: Free Lie algebras">[22]</a>, any Hall set on \(\mathcal{A}\) defines a basis of the free Lie algebra on \(\mathcal{A}\text{.}\)</p>
+<p id="p-32">Fixing a total order on the free magma \(M(\mathcal{A})\text{,}\) a Hall set can be defined by a recursively enumerating the trees satisfying the conditions of <a class="xref" data-knowl="./knowl/definition-hall-set.html" title="Definition 2.6">Definition 2.6</a>, see Proposition 4.1 of <a class="xref" data-knowl="./knowl/Reutenauer-1993-free_lie_algebras.html" title="Bibliographic Entry 22: Free Lie algebras">[22]</a>. The only requirement on the total order on the free magma is that \(h_1\lt h\) for any tree \(h=(h_1,h_2)\text{.}\) For the purposes of this article, the order will also need to be compatible with the degree. The following recursively defined order will be used in the rest of the paper.</p>
+<article class="definition definition-like" id="definition-deg-left-right-hall-set"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.8</span><span class="period">.</span>
+</h6>
+<p id="p-33">Let \((\mathcal{A},\lt)\) be a totally ordered set and let \(M(\mathcal{A})\) be the set of binary trees with leaves in \(\mathcal{A}\text{.}\) The <dfn class="terminology">deg-left-right order</dfn> on \(M(\mathcal{A})\) is the total order extending \(\lt\) such that \(h\lt h'\) for \(h,h'\in M(\mathcal{A})\) if any of the following hold:</p>
+<ol class="lower-roman">
+<li id="li-7">\(\deg(h)\lt\deg(h')\text{,}\)</li>
+<li id="li-8">\(\deg(h)=\deg(h')\) and \(h_1\lt h_1'\text{,}\) or</li>
+<li id="li-9">\(\deg(h)=\deg(h')\) and \(h_1=h_1'\) and \(h_2\lt h_2'\text{,}\)</li>
+</ol>
+<p data-braille="continuation">where</p>
+<div class="displaymath">
+\begin{equation*}
+h=\begin{cases}(h_1,h_2),\amp \text{if }\deg(h)\geq 2\\h_1,\amp \text{if }\deg(h)=1\end{cases}
+\end{equation*}
+</div>
+<p data-braille="continuation">and \(h_1',h_2'\) are similarly the left and right subtrees for \(h'\text{.}\)</p>
+<p id="p-34">The <dfn class="terminology">deg-left-right Hall set</dfn> for the free Lie algebra of rank \(r\) is the <a class="xref" data-knowl="./knowl/definition-hall-set.html" title="Definition 2.6">Hall set</a> constructed with the deg-left-right order on \(M(\{1,2,\dots,r\})\text{,}\) where \(1\lt 2\lt\cdots \lt r\) is ordered in the standard way.</p></article><p id="p-35"> Each <a class="xref" data-knowl="./knowl/definition-hall-set.html" title="Definition 2.6">Hall tree</a> \(h\in\hallset\subset M(\mathcal{A})\) has a corresponding <dfn class="terminology">Hall word</dfn> \(w(h)\text{,}\) which is a word with letters in \(A\text{.}\) The Hall words are defined recursively for \(h=(h_1,h_2)\) by concatenations \(w(h) = w(h_1)w(h_2)\) starting from \(w(a)=a\) for each \(a\in \mathcal{A}\text{.}\) The Hall words are in one to one correspondence with Hall trees, see Corollary 4.5 of <a class="xref" data-knowl="./knowl/Reutenauer-1993-free_lie_algebras.html" title="Bibliographic Entry 22: Free Lie algebras">[22]</a>. This correspondence defines the deg-left-right order on the deg-left-right Hall words.</p>
+<article class="lemma theorem-like" id="lemma-hall-words-for-deg-left-right-order"><h6 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">2.9</span><span class="period">.</span>
+</h6>
+<p id="p-36">Let \(\hallset\) be any <a class="xref" data-knowl="./knowl/definition-hall-set.html" title="Definition 2.6">Hall set</a> such that the order is compatible with the degree, i.e., such that \(\deg(h)\lt \deg(h')\) implies \(h\lt h'\text{.}\) Then the Hall words of degree \(\geq 2\) are exactly the words that factor as</p>
+<div class="displaymath">
+\begin{equation*}
+(w_{k})^{i_k}(w_{k-1})^{i_{k-1}}\cdots (w_{1})^{i_1}w\text{,}
+\end{equation*}
+</div>
+<p data-braille="continuation">where</p>
+<ol class="lower-roman">
+<li id="enum-deg-left-rightwords-exponents">\(i_1,\ldots,i_k\in \ZZ_+\) are arbitrary exponents, and</li>
+<li id="enum-deg-left-rightwords-increasing-sequence">\(w_{1}\lt w_{2}\lt \cdots \lt w_{k}\lt w\) are Hall words of lower degree.</li>
+<li id="enum-deg-left-rightwords-final-bracket">either \(\deg(w) = 1\) or there are Hall words \(w',w''\) such that \(w=w'w''\text{,}\) \(w'\lt w''\) and \(w_{1}\geq w'\text{.}\)</li>
+</ol>
+<p data-braille="continuation">Moreover, the <a class="xref" data-knowl="./knowl/definition-hall-set.html" title="Definition 2.6">Hall tree</a> for the Hall word \((w_{k})^{i_k}(w_{k-1})^{i_{k-1}}\cdots (w_{1})^{i_1}w\) describes the Lie bracket</p>
+<div class="displaymath">
+\begin{equation*}
+\ad{X_{w_{k}}}^{i_k}\cdots \ad{X_{w_{1}}}^{i_1}X_{w}\text{.}
+\end{equation*}
+</div></article><article class="hiddenproof" id="proof-2"><a data-knowl="" class="id-ref original" data-refid="hk-proof-2"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-2"><article class="hiddenproof"><p id="p-37">The claim that the Hall words factor as in the statement is straightforward. If \(h=(h_1,h_2)\) is a Hall tree of degree \(\geq 2\text{,}\) then by <a class="xref" data-knowl="./knowl/definition-hall-set.html" title="Definition 2.6">Definition 2.6</a> \(h_1\lt h_2\) and if \(h_2=(h_{21},h_{22})\text{,}\) then \(h_1\geq h_{21}\text{.}\) Then \(w(h)\) admits the factorization \(w(h) = w(h_1)w(h_2)\) and \(\ad{X_{w(h_1)}}X_{w(h_2)}\) is the corresponding Lie bracket.</p>
+<p id="p-38">For the converse claim, let \(h\) be the binary tree described by a Lie bracket \(\ad{X_{w_{k}}}^{i_k}\cdots \ad{X_{w_{1}}}^{i_1}X_{w}\) with the words \(w_1,\ldots,w_k\text{,}\) and \(w\) satisfying the conditions <a class="xref" data-knowl="./knowl/enum-deg-left-rightwords-exponents.html" title="Item i">i</a>–<a class="xref" data-knowl="./knowl/enum-deg-left-rightwords-final-bracket.html" title="Item iii">iii</a>. Write the \(\ad{}\)-sequence without exponents as</p>
+<div class="displaymath">
+\begin{equation*}
+\ad{X_{w_{k}}}^{i_k}\cdots \ad{X_{w_{1}}}^{i_1}X_{w} = \ad{Y_{n}}\cdots\ad{Y_{1}}X_{w}\text{,}
+\end{equation*}
+</div>
+<p data-braille="continuation">where \(n=i_1+\cdots+i_k\text{,}\) \(Y_1=\ldots=Y_{i_1}=X_{w_{1}}\) and so on. For each \(i=1,\ldots,k\text{,}\) let \(h_i\) be the Hall tree corresponding to the Lie algebra element \(Y_i\) and let \(h_0\) be the Hall tree for the element \(X_{w}\text{,}\) so that \(h=(h_n,(h_{n-1},(\ldots,(h_1,h_0)\ldots)))\text{.}\) The claim that \(h\) is a Hall tree will follow by induction showing that every tree \(\bar{h}_i:=(h_i,(\ldots(h_1,h_0)\ldots))\) is a Hall tree. The case \(i=0\) holds by the choice of \(h_0=\bar{h}_0\text{.}\)</p>
+<p id="p-39">In the case \(i=1\text{,}\) assumption <a class="xref" data-knowl="./knowl/enum-deg-left-rightwords-increasing-sequence.html" title="Item ii">ii</a> implies that \(h_1\lt h_0\text{.}\) If \(\deg(w)\gt 1\text{,}\) let \(h'\) and \(h''\) be the Hall trees corresponding to the Hall words \(w'\) and \(w''\text{,}\) so that \(h_0=(h',h'')\text{.}\) Then assumption <a class="xref" data-knowl="./knowl/enum-deg-left-rightwords-final-bracket.html" title="Item iii">iii</a> implies that \(h_1\geq h'\text{.}\) By assumption the order is compatible with the degree, so \(h_1\lt (h_1,h_0)=\bar{h}_1\text{.}\) Hence the tree \(\bar{h}_1=(h_1,h_0)\) satisfies all the order constraints of <a class="xref" data-knowl="./knowl/definition-hall-set.html" title="Definition 2.6">Definition 2.6</a> and is a Hall tree.</p>
+<p id="p-40">Suppose the claim holds up to some \(i\geq 1\text{.}\) The tree \(\bar{h}_{i+1} = (h_{i+1},(h_i,\bar{h}_{i-1}))\) then consists of Hall trees.  The degree first comparison guarantees that \(h_{i+1}\lt \bar{h}_{i}\lt \bar{h}_{i+1}\text{.}\) Combined with assumption <a class="xref" data-knowl="./knowl/enum-deg-left-rightwords-increasing-sequence.html" title="Item ii">ii</a>, this guarantees that all of the order constraints \(h_{i+1}\lt (h_i,\bar{h}_{i-1})\text{,}\) \(h_{i+1}\lt \bar{h}_{i+1}\text{,}\) and \(h_i\leq h_{i+1}\) are satisfied, so \(\bar{h}_{i+1}\) is a Hall tree. By induction it follows that the tree \(h=\bar{h}_n\) is a Hall tree, proving the claim.</p></article></div>
+<article class="example example-like" id="example-rank-2-deg-left-right-hall-set"><a data-knowl="" class="id-ref original" data-refid="hk-example-rank-2-deg-left-right-hall-set"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.10</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-rank-2-deg-left-right-hall-set"><article class="example example-like"><p id="p-41">In rank 2, the deg-left-right Hall words up to degree 6 are</p>
+<div class="displaymath">
+\begin{align*}
+1\amp\lt 2\lt 12\lt 112\lt 212\lt 1112\lt 2112\lt 2212\\
+\amp\lt 11112\lt 21112\lt 22112\lt 22212\lt 12112\lt 12212\\
+\amp\lt 111112\lt 211112\lt 221112\lt 222112\lt 222212\\
+\amp\lt 121112\lt 122112\lt 122212\lt 112212\text{.}
+\end{align*}
+</div>
+<p data-braille="continuation">For the words of degree 6, the longest possible factorizations in the form of <a class="xref" data-knowl="./knowl/lemma-hall-words-for-deg-left-right-order.html" title="Lemma 2.9">Lemma 2.9</a> are</p>
+<div class="displaymath">
+\begin{align*}
+111112 \amp= (1)^5(2)\amp
+222112 \amp= (2)^3(1)(12)\amp
+122112 \amp= (12)(2)(112)\\
+211112 \amp= (2)(1)^3(12)\amp
+222212 \amp= (2)^4(12)\amp
+122212 \amp= (12)(2)(212)\\
+221112 \amp= (2)^2(1)^2(12)\amp
+121112 \amp= (12)(1)(112)\amp
+112212 \amp= (112)(212)\text{.}
+\end{align*}
+</div></article></div></section><section class="subsection" id="subsection-polynomials-in-free-lie-algebras"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.3</span> <span class="title">Polynomials in free Lie algebras</span>
+</h3>
+<p id="p-42">In the proof of <a class="xref" data-knowl="./knowl/theorem-every-ode-trajectory-is-abnormal.html" title="Theorem 1.1">Theorem 1.1</a> it will be convenient to consider <a class="xref" data-knowl="./knowl/definition-abnormal-polynomial.html" title="Definition 2.1">abnormal polynomials</a> not as polynomials in a single Carnot group \(G\text{,}\) but as abstract multivariate polynomials that admit realizations as abnormal polynomials in several Carnot groups. Fixing a basis \(X_1,\ldots,X_n\) of the Lie algebra \(\mathfrak{g}\text{,}\) the coordinate formula of <a class="xref" data-knowl="./knowl/lemma-abnormal-polynomials-in-exponential-coordinates.html" title="Lemma 2.5">Lemma 2.5</a> realizes the identification of abnormal polynomials as multivariate polynomials \(\abnormalpolynomial{}{}\in \polyring{x_1,\ldots,x_n}\text{.}\) Fixing a <a class="xref" data-knowl="./knowl/definition-hall-set.html" title="Definition 2.6">Hall set</a> \(\hallset=\{w_{1},w_{2},\ldots\}\) for the free Lie algebra \(\freelie{r}\) of rank \(r\) then allows viewing multivariate polynomials \(\abnormalpolynomial{}{}\in\polyring{x_{w_{1}},x_{w_{2}},\ldots}\) as polynomials in several Carnot groups of rank \(r\) at once, as will be described next.</p>
+<article class="definition definition-like" id="definition-carnot-group-compatible-with-hall-basis"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.11</span><span class="period">.</span>
+</h6>
+<p id="p-43">Let \(\hallset\) be a <a class="xref" data-knowl="./knowl/definition-hall-set.html" title="Definition 2.6">Hall set</a> for the free Lie algebra \(\freelie{r}\) of rank \(r\text{.}\) Let \(G\) be a Carnot group of rank \(r\text{,}\) so its Lie algebra is the quotient \(\mathfrak{g}=\freelie{r}/I\) of the free Lie algebra \(\freelie{r}\) by some ideal \(I\subset\freelie{r}\text{.}\) The Carnot group \(G\) is said to be <dfn class="terminology">compatible with the Hall set \(\hallset\)</dfn>, if the ideal \(I\) has a basis consisting of elements of the Hall set.</p></article><article class="definition definition-like" id="definition-hall-exponential-coordinates"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.12</span><span class="period">.</span>
+</h6>
+<p id="p-44">Let \(\hallset\) be a <a class="xref" data-knowl="./knowl/definition-hall-set.html" title="Definition 2.6">Hall set</a> for a free Lie algebra \(\freelie{r}\) and let \(G\) be a Carnot group of rank \(r\) that is <a class="xref" data-knowl="./knowl/definition-carnot-group-compatible-with-hall-basis.html" title="Definition 2.11">compatible</a> with the Hall set \(\hallset\text{.}\) Let \(w_{1},\dots,w_{n}\) be the complementary Hall words to the ideal defining \(\mathfrak{g}\text{,}\) so that \(\mathfrak{g}=\operatorname{span}\{X_{w_{1}},\dots,X_{w_{n}}\}\text{.}\) The exponential coordinates of the second kind</p>
+<div class="displaymath">
+\begin{equation*}
+\RR^n\to G,\quad (x_1,\dots,x_n) \mapsto \exp(x_nX_{w_{n}})\cdots\exp(x_1X_{w_{1}})
+\end{equation*}
+</div>
+<p data-braille="continuation">are said to be <dfn class="terminology">adapted to the Hall set</dfn> if \(w_{n}\gt\ldots\gt w_{1}\text{.}\)</p></article><article class="definition definition-like" id="definition-polynomial-in-free-lie-algebra"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.13</span><span class="period">.</span>
+</h6>
+<p id="p-45">Let \(\hallset=\{w_{1},w_{2},\ldots\}\) be a <a class="xref" data-knowl="./knowl/definition-hall-set.html" title="Definition 2.6">Hall set</a> for a free Lie algebra \(\freelie{r}\text{.}\) Let \(\polyring{\hallset}:=\polyring{x_{w_{1}},x_{w_{2}},\ldots}\) be the weighted polynomial ring with a countable number of generators, where the weight of the variable \(x_{w_{i}}\) is the degree of the Hall word \(w_{i}\text{.}\)</p></article><p id="p-46">The above definitions allow identifying each polynomial in a Carnot group compatible with a Hall set \(\hallset\) with a unique polynomial in \(\polyring{\hallset}\text{.}\) <a class="xref" data-knowl="./knowl/definition-abnormal-polynomial.html" title="Definition 2.1">Abnormal polynomials</a> are not completely arbitrary polynomials however, so it will be relevant that the coordinate form of abnormal polynomials is preserved by lifting to higher step groups.</p>
+<article class="lemma theorem-like" id="lemma-lifting-quotient-abnormal-polynomials"><h6 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">2.14</span><span class="period">.</span>
+</h6>
+<p id="p-47">Let \(\mathfrak{f}\) be a stratified Lie algebra with a basis \(X_1,\ldots, X_n\text{.}\) Let \(\mathfrak{g}\) be a stratified Lie algebra defined as a quotient of \(\mathfrak{f}\) by an ideal \(I = \operatorname{span}\{X_{m+1},\ldots,X_n\}\text{.}\) Let \(F\) and \(G\) be Carnot groups with Lie algebras \(\mathfrak{f}\) and \(\mathfrak{g}\) respectively. Then for every vector \(X\in\mathfrak{g}\) and covector \(\covector\in \mathfrak{g}^*\) there exist lifts \(\tilde{X}\in\mathfrak{f}\) and \(\tilde{\covector}\in\mathfrak{f}^*\) such that the <a class="xref" data-knowl="./knowl/definition-abnormal-polynomial.html" title="Definition 2.1">abnormal polynomials</a> \(\abnormalpolynomial{X}{\covector}\) in \(G\) and \(\abnormalpolynomial{\tilde{X}}{\tilde{\covector}}\) in \(F\) have identical <a class="xref" data-knowl="./knowl/lemma-abnormal-polynomials-in-exponential-coordinates.html" title="Lemma 2.5">coordinate expressions</a> in exponential coordinates of the second kind with respect to the bases \(X_1,\ldots,X_n\) and \(\pi(X_1),\ldots,\pi(X_m)\text{.}\)</p></article><article class="hiddenproof" id="proof-3"><a data-knowl="" class="id-ref original" data-refid="hk-proof-3"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-3"><article class="hiddenproof"><p id="p-48">The lift of the covector is the pullback \(\tilde{\covector}:=\pi^*\covector\text{.}\) The vector \(X\) is lifted by setting the coefficients of the elements \(X_{m+1},\ldots,X_n\) to zero. That is, if \(X = \sum_{i=1}^{m}x_i\pi(X_i)\text{,}\) then the lift is \(\tilde{X} = \sum_{i=1}^{m}x_iX_i\text{.}\)</p>
+<p id="p-49">The projection \(\pi\colon\mathfrak{f}\to\mathfrak{g}\) is a Lie algebra homomorphism, so the definitions of the lifts imply that</p>
+<div class="displaymath">
+\begin{equation*}
+\tilde{\covector}\Big(\ad{X_{n}}^{i_n}\cdots \ad{X_{1}}^{i_1}\tilde{X}\Big)
+= \covector\Big(\ad{\pi(X_{n})}^{i_n}\cdots \ad{\pi(X_{1})}^{i_1}X\Big)\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">Since \(\pi(X_{n})=\ldots=\pi(X_{m+1})=0\text{,}\) the formula of <a class="xref" data-knowl="./knowl/lemma-abnormal-polynomials-in-exponential-coordinates.html" title="Lemma 2.5">Lemma 2.5</a> implies that the abnormal polynomial \(\abnormalpolynomial{\tilde{X}}{\tilde{\covector}}\) in \(G\) only contains monomials with variables \(x_1,\ldots,x_m\text{.}\) Moreover by the same formula, the coefficient of each monomial containing only variables \(x_1,\ldots,x_m\) is exactly the coefficient of the same monomial in the abnormal polynomial \(\abnormalpolynomial{X}{\covector}\) in \(H\text{.}\)</p></article></div>
+<p id="p-50">In a Carnot group \(G\text{,}\) there is a natural action \(\mathfrak{g}\acts C^\infty(G)\) of the Lie algebra \(\mathfrak{g}\) on the space of smooth functions \(G\to\RR\text{,}\) defined by extending a vector \(X\in\mathfrak{g}\) to a left-invariant vector field \(\tilde{X}(g) = (L_{g})_*X\) and using the action of vector fields as derivations on the space of smooth functions. In coordinates this defines an action \(\mathfrak{g}\acts \polyring{x_1,\ldots,x_n}\) by derivations also on the space of polynomials.</p>
+<article class="definition definition-like" id="definition-free-lie-action-on-polynomials"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.15</span><span class="period">.</span>
+</h6>
+<p id="p-51">Let \(\hallset\) be a <a class="xref" data-knowl="./knowl/definition-hall-set.html" title="Definition 2.6">Hall set</a> for a free Lie algebra \(\freelie{r}\text{.}\) Define an action \(\freelieaction\colon \freelie{r}\acts\polyring{\hallset}\) via derivations by extending all the actions \(\mathfrak{g}\acts \polyring{x_1,\ldots,x_n}\) as follows:</p>
+<p id="p-52">Let \(X\in\freelie{r}\) be a vector and \(P\in\polyring{\hallset}\) a polynomial. Let \(x_{w_{1}},\ldots,x_{w_{k}}\) be all the variables of \(P\) and let \(G\) be any Carnot group <a class="xref" data-knowl="./knowl/definition-carnot-group-compatible-with-hall-basis.html" title="Definition 2.11">compatible</a> with the Hall set \(\hallset\) such that none of the basis elements \(X_{w_{1}},\ldots,X_{w_{k}}\) are quotiented away. Fix exponential coordinates \(\RR^n\to G\) <a class="xref" data-knowl="./knowl/definition-hall-exponential-coordinates.html" title="Definition 2.12">adapted</a> to the Hall set \(\hallset\text{,}\) and let \(\iota\colon\polyring{x_1,\ldots,x_n}\into \polyring{\hallset}\) be the identification of polynomials in \(G\) in coordinates with polynomials in \(\polyring{\hallset}\text{.}\) The action \(\freelieaction\colon \freelie{r}\acts\polyring{\hallset}\) is defined by</p>
+<div class="displaymath">
+\begin{equation*}
+\freelieaction\colon\freelie{r}\times\polyring{\hallset}\to\polyring{\hallset},\quad \freelieaction(X,P) := \iota\Big(\pi(X)\iota^{-1}(P)\Big)\text{,}
+\end{equation*}
+</div>
+<p data-braille="continuation">where \(\pi\colon \freelie{r}\to\mathfrak{g}\) is the quotient projection, and \(\pi(X)\iota^{-1}(P)\) is defined by the action \(\mathfrak{g}\acts C^\infty(G)\text{.}\)</p></article><p id="p-53">The well-posedness of <a class="xref" data-knowl="./knowl/definition-free-lie-action-on-polynomials.html" title="Definition 2.15">Definition 2.15</a> critically relies on the assumption that all the coordinates on the Carnot groups involved are adapted to a single fixed <a class="xref" data-knowl="./knowl/definition-hall-set.html" title="Definition 2.6">Hall set</a>. Without this assumption, the coordinate expressions of the actions \(\mathfrak{g}\acts\polyring{x_1,\ldots,x_n}\) are in general incompatible with each other.</p>
+<p id="p-54">An extremely useful feature of the abnormal polynomials is how their behavior under the action \(\mathfrak{g}\acts\polyring{x_1,\ldots,x_n}\) is linked with the structure of the Lie algebra \(\mathfrak{g}\text{.}\) The following result is a rephrasing of Theorem 1.1 of <a class="xref" data-knowl="./knowl/LLMV-2018-extremal_polynomials.html" title="Bibliographic Entry 16: Extremal polynomials in stratified groups">[16]</a> and Proposition 2.22 of <a class="xref" data-knowl="./knowl/LMOPV-2016-sard.html" title="Bibliographic Entry 17: Sard property for the endpoint map on some Carnot groups">[17]</a> using the linearity of the abnormal polynomials \(\abnormalpolynomial{Y}{\covector}\) in the vector \(Y\text{.}\)</p>
+<article class="lemma theorem-like" id="lemma-derivatives-of-abnormal-polynomials"><h6 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">2.16</span><span class="period">.</span>
+</h6>
+<p id="p-55">Let \(G\) be a Carnot group and \(\mathfrak{g}\) its Lie algebra. Then for every covector \(\covector\in\mathfrak{g}^*\) and all vectors \(X,Y\in\mathfrak{g}\text{,}\) the \(X\)-derivative of the <a class="xref" data-knowl="./knowl/definition-abnormal-polynomial.html" title="Definition 2.1">abnormal polynomial</a> \(\abnormalpolynomial{Y}{\covector}\) is the abnormal polynomial \(X\abnormalpolynomial{Y}{\covector} = \abnormalpolynomial{[X,Y]}{\covector}\text{.}\)</p></article><p id="p-56">In the proof of <a class="xref" data-knowl="./knowl/theorem-every-ode-trajectory-is-abnormal.html" title="Theorem 1.1">Theorem 1.1</a> it will be necessary to further simplify the monomial coefficients of abnormal polynomials given by the formula of <a class="xref" data-knowl="./knowl/lemma-abnormal-polynomials-in-exponential-coordinates.html" title="Lemma 2.5">Lemma 2.5</a>. The following lemma is a criterion for when these coefficients are as simple as possible for the deg-left-right Hall set.</p>
+<article class="lemma theorem-like" id="lemma-free-monomials-of-abnormal-polynomials"><h6 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">2.17</span><span class="period">.</span>
+</h6>
+<p id="p-57">Let \(w\) be a <a class="xref" data-knowl="./knowl/definition-deg-left-right-hall-set.html" title="Definition 2.8">deg-left-right Hall word</a> with factorization \(w=w'w''\) and let \(x^I = x_{v_1}^{i_1}\ldots x_{v_\ell}^{i_\ell}\) be a monomial in \(\polyring{\hallset}\) such that \(v_1\lt\ldots\lt v_\ell\lt w\) and \(v_1\geq w'\text{.}\) Then \(vw:=(v_\ell)^{i_\ell}\cdots (v_1)^{i_1}w\) is a deg-left-right Hall word and in exponential coordinates <a class="xref" data-knowl="./knowl/definition-hall-exponential-coordinates.html" title="Definition 2.12">adapted</a> to the deg-left-right order the coefficient of the monomial \(x^I\) in the <a class="xref" data-knowl="./knowl/definition-abnormal-polynomial.html" title="Definition 2.1">abnormal polynomial</a> \(\abnormalpolynomial{w}{\covector}\) is \(\frac{1}{i_1!\cdots i_\ell!}\covector_{vw}\text{.}\)</p></article><article class="hiddenproof" id="proof-4"><a data-knowl="" class="id-ref original" data-refid="hk-proof-4"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-4"><article class="hiddenproof"><p id="p-58"> By the explicit formula of <a class="xref" data-knowl="./knowl/lemma-abnormal-polynomials-in-exponential-coordinates.html" title="Lemma 2.5">Lemma 2.5</a> the coefficient of the monomial \(x^I\) in the abnormal polynomial \(\abnormalpolynomial{w}{\covector}\) is</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{1}{i_1!\cdots i_\ell!}\covector\Big(\ad{X_{v_\ell}}^{i_\ell}\cdots \ad{X_{v_1}}^{i_1}X_{w}\Big)\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">By <a class="xref" data-knowl="./knowl/lemma-hall-words-for-deg-left-right-order.html" title="Lemma 2.9">Lemma 2.9</a>, the assumption that \(v_1\lt\ldots\lt v_\ell\lt w\) and \(v_1\geq w'\) guarantees that \(vw\) is a deg-left-right Hall word. The second part of the lemma states the bracket \(\ad{X_{v_\ell}}^{i_\ell}\cdots \ad{X_{v_1}}^{i_1}X_{w}\) is exactly the Hall basis element \(X_{vw}\text{,}\) so</p>
+<div class="displaymath">
+\begin{equation*}
+\covector\Big(\ad{X_{v_\ell}}^{i_\ell}\cdots \ad{X_{v_1}}^{i_1}X_{w}\Big) = \covector(X_{vw}) = \covector_{vw}\text{.}
+\end{equation*}
+</div></article></div></section><section class="subsection" id="subsection-poincare-series"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.4</span> <span class="title">Poincaré series</span>
+</h3>
+<p id="p-59">The proof of <a class="xref" data-knowl="./knowl/theorem-every-ode-trajectory-is-abnormal.html" title="Theorem 1.1">Theorem 1.1</a> involves counting the number of monomials of a given degree depending on some subset of the variables \(x_{w}\) in \(\polyring{\hallset}\text{.}\)  A convenient form to manipulate these quantities will be in terms of generating functions, i.e., in terms of Poincaré series.</p>
+<article class="definition definition-like" id="definition-poincare-series"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.18</span><span class="period">.</span>
+</h6>
+<p id="p-60">Let \(W = \bigoplus_{i=0}^\infty W_i\) be a graded vector space with all components \(W_i\) finite dimensional. The <dfn class="terminology">Poincaré series</dfn> of the graded vector space \(W\) is the formal power series</p>
+<div class="displaymath">
+\begin{equation*}
+\poincare(t) = \sum_{k=0}^\infty (\dim W_k)t^k\text{.}
+\end{equation*}
+</div></article><p id="p-61">The Poincaré series of a weighted polynomial ring has a rather simple expression as a rational function depending on the weights.</p>
+<article class="lemma theorem-like" id="lemma-poincare-series-for-monomials-of-bounded-degree"><h6 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">2.19</span><span class="period">.</span>
+</h6>
+<p id="p-62">Let \(r\in\NN\) and \(d\in\NN\text{.}\) Let \(w_{1}\lt\dots\lt w_{n}\) be all the <a class="xref" data-knowl="./knowl/definition-hall-set.html" title="Definition 2.6">Hall words</a> of degree up to \(d\) in the free Lie algebra \(\freelie{r}\) of rank \(r\text{,}\) and let \(d_{k}:=\deg(w_{k})\text{.}\) The Poincaré series for the weighted polynomial ring \(\polyring{x_{w_{1}},\ldots,x_{w_{n}}}\) with weights \(d_{1},\ldots,d_{n}\) is given by the rational function</p>
+<div class="displaymath">
+\begin{equation*}
+\poincare(t) = 1/\prod_{k=1}^{n} (1-t^{d_{k}}) = 1/\prod_{k=1}^d (1-t^k)^{\dim\freelielayer{r}{k}}\text{.}
+\end{equation*}
+</div></article><article class="hiddenproof" id="proof-5"><a data-knowl="" class="id-ref original" data-refid="hk-proof-5"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-5"><article class="hiddenproof"><p id="p-63">By Ch. V, §5.1, Proposition 1 of <a class="xref" data-knowl="./knowl/Bourbaki-1968-lie_chapitre_4-6.html" title="Bibliographic Entry 6: Éléments de mathématique. Fasc. XXXIV. Groupes et algèbres de Lie. Chapitre IV: Groupes de Coxeter et systèmes de Tits. Chapitre V: Groupes engendrés par des réflexions. Chapitre VI: systèmes de racines">[6]</a>, the Poincaré series for the weighted polynomial ring is given by the first formula \(\poincare(t) = 1/\prod_{k=1}^{n} (1-t^{d_{k}})\text{.}\) Since there are exactly \(\dim\freelielayer{r}{k}\) Hall words of degree \(k\text{,}\) the second formula follows by grouping terms.</p></article></div></section></section></div></main>
+</div>
+</body>
+</html>

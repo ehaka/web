@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-06-17T11:42:40+02:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Common factors of abnormal polynomials</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body id="hakavuori-ode" class="mathbook-article has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\newcommand{\RR}{\mathbb{R}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\ZZ}{\mathbb{Z}}
+
+\newcommand{\freecarnot}[1]{F_{#1}}
+\newcommand{\freelie}[1]{\mathfrak{f}_{#1}}
+\newcommand{\lielayer}[2]{#1^{[#2]}}
+\newcommand{\freelielayer}[2]{\lielayer{\freelie{#1}}{#2}}
+\newcommand{\lowercentralseriesterm}[2]{\lielayer{#1}{\geq #2}}
+
+\newcommand{\abnormalpolynomial}[2]{P_{#1}^{#2}}
+\newcommand{\Ad}[1]{\operatorname{Ad}_{#1}}
+\newcommand{\ad}[1]{\operatorname{ad}_{#1}}
+\newcommand{\abs}[1]{\left\vert #1\right\vert}
+\newcommand{\freelieaction}{D}
+\newcommand{\acts}{\curvearrowright}
+\newcommand{\into}{\hookrightarrow}
+\newcommand{\identity}[1]{e}
+
+\newcommand{\hallset}{\mathcal{H}}
+\newcommand{\polyring}[1]{\RR[#1]}
+\newcommand{\fractionfield}[1]{\RR(#1)}
+\newcommand{\polyringextended}[2]{\fractionfield{#1}[#2]}
+
+\newcommand{\covector}{\lambda}
+\newcommand{\covectorb}{\eta}
+\newcommand{\differenceinteger}[1]{C_{#1}}
+\newcommand{\poincare}{P}
+\newcommand{\vectorparam}[1]{\boldsymbol{#1}}
+\newcommand{\freeparam}{\alpha}
+\newcommand{\factorpolynomial}[1]{S^{#1}}
+\newcommand{\factorcoefficient}[1]{\nu_{#1}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="ode_abnormals.html"><span class="title">ODE trajectories as abnormal curves in Carnot groups</span></a></h1>
+<p class="byline">Eero Hakavuori</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-abnormal-polynomials.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="ode_abnormals.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-main-proofs.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-abnormal-polynomials.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="ode_abnormals.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-main-proofs.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></li>
+<li class="link">
+<a href="section-introduction.html" data-scroll="section-introduction"><span class="codenumber">1</span> <span class="title">Introduction</span></a><ul><li><a href="section-introduction.html#subsection-1" data-scroll="subsection-1">Structure of the paper</a></li></ul>
+</li>
+<li class="link">
+<a href="section-abnormal-polynomials.html" data-scroll="section-abnormal-polynomials"><span class="codenumber">2</span> <span class="title">Abnormal polynomials</span></a><ul>
+<li><a href="section-abnormal-polynomials.html#subsection-abnormal-polynomials" data-scroll="subsection-abnormal-polynomials">Abnormal curves and polynomials</a></li>
+<li><a href="section-abnormal-polynomials.html#subsection-hall-sets" data-scroll="subsection-hall-sets">Hall sets</a></li>
+<li><a href="section-abnormal-polynomials.html#subsection-polynomials-in-free-lie-algebras" data-scroll="subsection-polynomials-in-free-lie-algebras">Polynomials in free Lie algebras</a></li>
+<li><a href="section-abnormal-polynomials.html#subsection-poincare-series" data-scroll="subsection-poincare-series">Poincaré series</a></li>
+</ul>
+</li>
+<li class="link active">
+<a href="section-abnormality-of-ode-trajectories.html" data-scroll="section-abnormality-of-ode-trajectories"><span class="codenumber">3</span> <span class="title">Common factors of abnormal polynomials</span></a><ul>
+<li><a href="section-abnormality-of-ode-trajectories.html#subsection-reduction-to-searching-polynomial-factors" data-scroll="subsection-reduction-to-searching-polynomial-factors">Link between ODEs and polynomial factors</a></li>
+<li><a href="section-abnormality-of-ode-trajectories.html#subsection-a-quotient-eliminating-higher-degree-variables" data-scroll="subsection-a-quotient-eliminating-higher-degree-variables">A quotient eliminating higher degree variables</a></li>
+<li><a href="section-abnormality-of-ode-trajectories.html#subsection-existence-of-arbitrary-polynomial-factors" data-scroll="subsection-existence-of-arbitrary-polynomial-factors">The linear system for abnormal polynomial factors</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="section-main-proofs.html" data-scroll="section-main-proofs"><span class="codenumber">4</span> <span class="title">Proofs of the main theorems</span></a><ul>
+<li><a href="section-main-proofs.html#subsection-conclusion-of-the-proof-of-abnormality" data-scroll="subsection-conclusion-of-the-proof-of-abnormality">Abnormality of ODE trajectories</a></li>
+<li><a href="section-main-proofs.html#subsection-concatenation-of-abnormals" data-scroll="subsection-concatenation-of-abnormals">Concatenation of abnormals</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="section-examples.html" data-scroll="section-examples"><span class="codenumber">5</span> <span class="title">Examples</span></a><ul>
+<li><a href="section-examples.html#example-rank-2-spirals" data-scroll="example-rank-2-spirals">A logarithmic spiral (r2s7)</a></li>
+<li><a href="section-examples.html#example-parametric-families-of-odes" data-scroll="example-parametric-families-of-odes">Planar linear ODEs (r2s7)</a></li>
+<li><a href="section-examples.html#example-the-hawaiian-earring" data-scroll="example-the-hawaiian-earring">The Hawaiian earring (r2s13)</a></li>
+<li><a href="section-examples.html#example-lorenz-butterfly" data-scroll="example-lorenz-butterfly">The Lorenz butterfly (r3s13)</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="appendix-1.html" data-scroll="appendix-1"><span class="codenumber">A</span> <span class="title">Notation</span></a></li>
+<li class="link"><a href="section-references.html" data-scroll="section-references"><span class="title">References</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-abnormality-of-ode-trajectories"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">3</span> <span class="title">Common factors of abnormal polynomials</span>
+</h2>
+<section class="subsection" id="subsection-reduction-to-searching-polynomial-factors"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.1</span> <span class="title">Link between ODEs and polynomial factors</span>
+</h3>
+<p id="p-64">The <a class="xref" data-knowl="./knowl/lemma-curves-in-abnormal-variety-are-abnormal.html" title="Lemma 2.2">characterization</a> of abnormal curves in Carnot groups as curves contained in the abnormal varieties leads to a strategy to prove <a class="xref" data-knowl="./knowl/theorem-every-ode-trajectory-is-abnormal.html" title="Theorem 1.1">Theorem 1.1</a> about abnormality of ODE trajectories by searching for common factors in abnormal polynomials. The first part is <a class="xref" data-knowl="./knowl/lemma-vector-of-polynomials-as-derivatives-in-free-lie-algebra.html" title="Lemma 3.1">Lemma 3.1</a>, which states that given an arbitrary set of polynomials \(Q_{1},\ldots,Q_{r}\text{,}\) there exists some polynomial \(Q\) in high enough step whose horizontal derivatives are \(X_iQ=Q_{i}\text{.}\) This gives a method to construct a polynomial first integral \(Q\) for any polynomial ODE.</p>
+<p id="p-65">The second part is <a class="xref" data-knowl="./knowl/lemma-curves-annihilating-higher-order-abnormal-polynomials.html" title="Lemma 3.2">Lemma 3.2</a>, which states that for an arbitrary layer \(m\lt s\text{,}\) annihilating all abnormal polynomials \(\abnormalpolynomial{X}{\covector}\) with \(X\in \lielayer{\mathfrak{g}}{m}\) is a sufficient criterion for abnormality. Hence if all the abnormal polynomials of a given layer have a common factor \(Q\text{,}\) then all trajectories within the variety \(Q=0\) are abnormal.</p>
+<article class="lemma theorem-like" id="lemma-vector-of-polynomials-as-derivatives-in-free-lie-algebra"><h6 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">3.1</span><span class="period">.</span>
+</h6>
+<p id="p-66">Let \(\hallset\) be a <a class="xref" data-knowl="./knowl/definition-hall-set.html" title="Definition 2.6">Hall set</a> for the free Lie algebra \(\freelie{r}\) of rank \(r\) and let \(X_1,\ldots,X_r\) be the generators of \(\freelie{r}\text{.}\) Then for every collection of polynomials \(Q_{1},\ldots,Q_{r}\in\polyring{\hallset}\) there exists a polynomial \(Q\in\polyring{\hallset}\) such that \(X_iQ = Q_{i}\) for all \(i=1,\ldots,r\text{.}\)</p></article><article class="hiddenproof" id="proof-6"><a data-knowl="" class="id-ref original" data-refid="hk-proof-6"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-6"><article class="hiddenproof"><p id="p-67">Define a linear map \(\varphi\colon\freelie{r}\to\polyring{\hallset}\) recursively by</p>
+<div class="displaymath">
+\begin{align}
+\varphi(X_i) \amp = Q_{i},\quad i=1,\ldots,r\notag\\
+\varphi([X,Y]) \amp = X\varphi(Y)-Y\varphi(X)\text{,}\label{eq-recursive-def-varphi}\tag{3.1}
+\end{align}
+</div>
+<p data-braille="continuation">where \(X\varphi(Y)\) and \(Y\varphi(X)\) are determined by the derivation action \(\freelie{r}\acts\polyring{\hallset}\) as defined in <a class="xref" data-knowl="./knowl/definition-free-lie-action-on-polynomials.html" title="Definition 2.15">Definition 2.15</a>. A routine computation with the recursion formula <a class="xref" data-knowl="./knowl/eq-recursive-def-varphi.html" title="Equation 3.1">(3.1)</a> shows that \(\varphi([X,Y])=-\varphi([Y,X])\) and</p>
+<div class="displaymath">
+\begin{equation*}
+\varphi([X,[Y,Z]])+\varphi([Y,[Z,X]])+\varphi([Z,[X,Y]])=0\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">Since there are no relations in the free Lie algebra except for anticommutativity and the Jacobi identity, it follows that the map \(\varphi\) is well defined.</p>
+<p id="p-68">The action \(\freelie{r}\acts\polyring{\hallset}\) is by derivations, so polynomials \(X\varphi(Y)\) are of lower (weighted) degree than polynomials \(\varphi(Y)\text{.}\) In particular, \(\varphi(\freelielayer{r}{k})=0\) for all \(k\gt \max_i\deg(Q_i)+1\text{.}\) Let \(s\geq 1\) be the minimal index such that \(\varphi(\freelielayer{r}{k})=0\) for all \(k\gt s\text{.}\)</p>
+<p id="p-69"> By the choice of the step \(s\text{,}\) the map \(\varphi\) induces a well defined linear map \(\freelie{r,s}\to\polyring{x_{w_{1}},\ldots,x_{w_{n}}}\text{,}\) where \(\freelie{r,s}\) is the free nilpotent Lie algebra of rank \(r\) and step \(s\text{,}\) and \(w_{1},\ldots,w_{n}\) is the complete list of Hall words of degrees \(1,\ldots,s\text{.}\) For ease of notation, the restricted map will also be denoted by \(\varphi\text{.}\)</p>
+<p id="p-70">In the free Carnot group \(\freecarnot{r,s}\) of rank \(r\) and step \(s\text{,}\) consider the differential one-form \(\omega\) such that for any left-invariant vector field \(\tilde{X}(g) = (L_{g})_*X\text{,}\) the function \(g\mapsto \omega(\tilde{X}(g))\) is exactly the function \(\varphi(X)\) when computed in exponential coordinates <a class="xref" data-knowl="./knowl/definition-hall-exponential-coordinates.html" title="Definition 2.12">adapted</a> to the Hall set. That is, in these coordinates the one-form is defined for any vector \(X\in T_x\freecarnot{r,s}\) by</p>
+<div class="displaymath">
+\begin{equation*}
+\omega_{x}(X) := \varphi((L_{x^{-1}})_*X)(x)\text{.}
+\end{equation*}
+</div>
+<p id="p-71">For vector fields \(\tilde{X},\tilde{Y}\colon \freecarnot{r,s}\to T\freecarnot{r,s}\text{,}\) the classical formula for the differential of a one-form states that</p>
+<div class="displaymath">
+\begin{equation*}
+d\omega(\tilde{X},\tilde{Y}) = \tilde{X}\omega(\tilde{Y})-\tilde{Y}\omega(\tilde{X})-\omega([\tilde{X},\tilde{Y}])\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">For left-invariant vector fields \(\tilde{X}(x)=(L_x)_*X\) and \(\tilde{Y}(x)=(L_x)_*Y\) the above simplifies to</p>
+<div class="displaymath">
+\begin{equation*}
+d\omega(\tilde{X},\tilde{Y}) = X\varphi(Y)-Y\varphi(X)-\varphi([X,Y])\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">By the recursive definition <a class="xref" data-knowl="./knowl/eq-recursive-def-varphi.html" title="Equation 3.1">(3.1)</a> of the map \(\varphi\text{,}\) it follows that \(d\omega = 0\text{,}\) i.e., the form \(\omega\) is closed. Since \(\freecarnot{r,s}\) is simply connected as a Carnot group, the closed form \(\omega\) is exact, so there exists a smooth function \(Q\colon\freecarnot{r,s}\to\RR\) such that \(dQ = \omega\text{.}\) The coefficients of the one-form \(\omega\) are all polynomial, so the smooth function \(Q\) is a polynomial. Moreover, the polynomial \(Q\) has the desired property</p>
+<div class="displaymath">
+\begin{equation*}
+X_iQ = dQ(\tilde{X}_i) = \omega(\tilde{X}_i) = \varphi(X_i) = Q_{i}\text{.}
+\end{equation*}
+</div></article></div>
+<article class="lemma theorem-like" id="lemma-curves-annihilating-higher-order-abnormal-polynomials"><h6 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">3.2</span><span class="period">.</span>
+</h6>
+<p id="p-72">Let \(G\) be a Carnot group of step \(s\) and let \(1\leq m\lt s\text{.}\) Let \(\gamma\colon (a,b)\to G\) be a horizontal curve whose closure \(\overline{\gamma((a,b))}\subset G\) contains the identity \(\identity{G}\) of the group \(G\text{.}\) If there exists a covector \(\covector\in\mathfrak{g}^*\) such that \(\abnormalpolynomial{X}{\covector}\circ\gamma\equiv 0\) for all \(X\in \lielayer{\mathfrak{g}}{m}\) and at least one of the <a class="xref" data-knowl="./knowl/definition-abnormal-polynomial.html" title="Definition 2.1">abnormal polynomials</a> \(\abnormalpolynomial{X}{\covector}\) is nonzero, then the curve \(\gamma\) is abnormal.</p></article><article class="hiddenproof" id="proof-7"><a data-knowl="" class="id-ref original" data-refid="hk-proof-7"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-7"><article class="hiddenproof"><p id="p-73">The claim will be proved by induction on the layer \(m\text{.}\) The base case \(m=1\) follows from the <a class="xref" data-knowl="./knowl/lemma-curves-in-abnormal-variety-are-abnormal.html" title="Lemma 2.2">characterization</a> of abnormality by abnormal polynomials. Suppose that the claim holds up to some layer \(m\lt s-1\) and suppose that</p>
+<div class="displaymath">
+\begin{equation}
+\abnormalpolynomial{X}{\covector}\circ\gamma\equiv 0\label{eq-abnormal-vanishing-layer}\tag{3.2}
+\end{equation}
+</div>
+<p data-braille="continuation">for every \(X\in \lielayer{\mathfrak{g}}{m+1}\text{,}\) and that at least one of the polynomials \(\abnormalpolynomial{X}{\covector}\) is nonzero.</p>
+<p id="p-74">By the explicit formula of <a class="xref" data-knowl="./knowl/lemma-abnormal-polynomials-in-exponential-coordinates.html" title="Lemma 2.5">Lemma 2.5</a>, the abnormal polynomials \(\abnormalpolynomial{X}{\covector}\) for \(X\in \lielayer{\mathfrak{g}}{m+1}\) do not depend on the components of degree less than \(m+1\) of the covector \(\covector\text{.}\) Hence without loss of generality it will be assumed that \(\covector(\lielayer{\mathfrak{g}}{m}) = 0\text{.}\)</p>
+<p id="p-75">Fix an arbitrary \(Y\in\lielayer{\mathfrak{g}}{m}\text{.}\) By <a class="xref" data-knowl="./knowl/lemma-derivatives-of-abnormal-polynomials.html" title="Lemma 2.16">Lemma 2.16</a>, the horizontal derivatives for \(X\in\lielayer{\mathfrak{g}}{1}\) of the abnormal polynomial \(\abnormalpolynomial{Y}{\covector}\) are abnormal polynomials \(\abnormalpolynomial{[X,Y]}{\covector}\text{.}\) Since \([X,Y]\in \lielayer{\mathfrak{g}}{m+1}\text{,}\) assumption <a class="xref" data-knowl="./knowl/eq-abnormal-vanishing-layer.html" title="Equation 3.2">(3.2)</a> implies that the abnormal polynomial \(\abnormalpolynomial{Y}{\covector}\) is constant along the horizontal curve \(\gamma\text{.}\)</p>
+<p id="p-76">The property \(\covector(\lielayer{\mathfrak{g}}{m}) = 0\) implies that \(\abnormalpolynomial{Y}{\covector}(\identity{G}) = 0\text{.}\) Moreover, by assumption \(\identity{G}\in\overline{\gamma((a,b))}\text{,}\) so by continuity of the polynomial \(\abnormalpolynomial{Y}{\covector}\text{,}\) it follows that \(\abnormalpolynomial{Y}{\covector}\circ\gamma\equiv 0\text{.}\) Since \(Y\in\lielayer{\mathfrak{g}}{m}\) was arbitrary, the inductive step is complete, and the claim follows.</p></article></div>
+<article class="remark remark-like" id="remark-nonzero-polynomial-vs-covector"><h6 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.3</span><span class="period">.</span>
+</h6>
+<p id="p-77">The condition in <a class="xref" data-knowl="./knowl/lemma-curves-annihilating-higher-order-abnormal-polynomials.html" title="Lemma 3.2">Lemma 3.2</a> that at least one of the <a class="xref" data-knowl="./knowl/definition-abnormal-polynomial.html" title="Definition 2.1">abnormal polynomials</a> \(\abnormalpolynomial{X}{\covector}\) for \(X\in\lielayer{\mathfrak{g}}{m}\) is nonzero can be equivalently rephrased as the requirement that \(\covector(\lowercentralseriesterm{\mathfrak{g}}{m})\neq 0\text{,}\) where \(\lowercentralseriesterm{\mathfrak{g}}{m} = \lielayer{\mathfrak{g}}{m}\oplus\cdots\oplus\lielayer{\mathfrak{g}}{s}\) is the \(m\text{:}\)th term of the lower central series of \(\mathfrak{g}\text{.}\)</p></article></section><section class="subsection" id="subsection-a-quotient-eliminating-higher-degree-variables"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.2</span> <span class="title">A quotient eliminating higher degree variables</span>
+</h3>
+<p id="p-78">Not all monomials appear in every <a class="xref" data-knowl="./knowl/definition-abnormal-polynomial.html" title="Definition 2.1">abnormal polynomial</a> even in arbitrarily high step. For instance, the coefficient of the monomial \(x_1\) in \(\abnormalpolynomial{X_1}{\covector}\) is always \(\covector(\ad{X_1}X_1) = 0\text{.}\) For a vector \(X\) in layer \(m\) of a free Carnot group of step \(s\text{,}\) every monomial of degree at most \(s-m\) containing only variables of degrees \(1,\ldots,m-1\) appears in the abnormal polynomial \(\abnormalpolynomial{X}{\covector}\) for some covector \(\covector\text{.}\) For monomials involving variables of degree \(m\) and above there is no such guarantee. For this reason, the variables of degree \(m\) and above will not be useful for the search of common factors in abnormal polynomials, and it will be more convenient to eliminate them completely.</p>
+<article class="lemma theorem-like" id="lemma-quotient-by-higher-variables"><h6 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">3.4</span><span class="period">.</span>
+</h6>
+<p id="p-79">Let \(\freelie{r,s}\) be the free nilpotent Lie algebra of rank \(r\) and step \(s\text{.}\) Let \(m\in\NN\) and let \(\mathfrak{g}\) be the stratified Lie algebra defined by quotienting \(\freelie{r,s}\) by the ideal \([\lowercentralseriesterm{\freelie{r,s}}{m},\lowercentralseriesterm{\freelie{r,s}}{m}]\text{,}\) where \(\lowercentralseriesterm{\freelie{r,s}}{m} = \freelielayer{r,s}{m}\oplus \freelielayer{r,s}{m+1} \oplus \cdots \freelielayer{r,s}{s}\) is the \(m\text{:}\)th term of the lower central series of \(\freelie{r,s}\text{.}\) Then in the Carnot group \(G\) with Lie algebra \(\mathfrak{g}\text{,}\) every <a class="xref" data-knowl="./knowl/definition-abnormal-polynomial.html" title="Definition 2.1">abnormal polynomial</a> \(\abnormalpolynomial{X}{\covector}\) with \(X\in\lielayer{\mathfrak{g}}{m}\) depends only on the variables of degrees \(1,\ldots, m-1\text{.}\)</p></article><article class="hiddenproof" id="proof-8"><a data-knowl="" class="id-ref original" data-refid="hk-proof-8"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-8"><article class="hiddenproof"><p id="p-80">By the formula of <a class="xref" data-knowl="./knowl/lemma-abnormal-polynomials-in-exponential-coordinates.html" title="Lemma 2.5">Lemma 2.5</a>, if some abnormal polynomial \(\abnormalpolynomial{X}{\covector}\) contains a monomial \(x^I=x_1^{i_1}\cdots x_n^{i_n}\text{,}\) then there exists a nonzero bracket</p>
+<div class="displaymath">
+\begin{equation*}
+\ad{X_{n}}^{i_n}\cdots \ad{X_{1}}^{i_1}X \neq 0
+\end{equation*}
+</div>
+<p data-braille="continuation">in the Lie algebra \(\mathfrak{g}\text{.}\)</p>
+<p id="p-81">Let \(x^I\) be any monomial that contains a variable \(x_j\) of degree \(\deg(x_j)\geq m\text{,}\) so \(i_j\gt 0\text{.}\) By assumption \(X_j\in \lowercentralseriesterm{\mathfrak{g}}{m}\) and \(X\in \lielayer{\mathfrak{g}}{m}\text{,}\) so</p>
+<div class="displaymath">
+\begin{equation*}
+\ad{X_j}\ad{X_{j-1}}^{i_{j-1}}\cdots\ad{X_{1}}^{i_1}X = [X_j,\ad{X_{j-1}}^{i_{j-1}}\cdots\ad{X_{1}}^{i_1}X]\in [\lowercentralseriesterm{\mathfrak{g}}{m},\lowercentralseriesterm{\mathfrak{g}}{m}]\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">By the construction of the Lie algebra \(\mathfrak{g}\text{,}\) the above bracket must vanish. But then the longer bracket \(\ad{X_{n}}^{i_n}\cdots \ad{X_{1}}^{i_1}X\) is also zero, so the monomial \(x^I\) cannot appear in any abnormal polynomial \(\abnormalpolynomial{X}{\covector}\) with \(X\in\lielayer{\mathfrak{g}}{m}\text{.}\)</p></article></div></section><section class="subsection" id="subsection-existence-of-arbitrary-polynomial-factors"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.3</span> <span class="title">The linear system for abnormal polynomial factors</span>
+</h3>
+<p id="p-82">For a fixed polynomial \(Q\) and layer \(m\in\NN\text{,}\) the existence of a covector \(\covector\in\mathfrak{g}^*\) such that \(Q\) is a common factor for all the <a class="xref" data-knowl="./knowl/definition-abnormal-polynomial.html" title="Definition 2.1">abnormal polynomials</a> \(\abnormalpolynomial{X}{\covector}\text{,}\) \(X\in \lielayer{\mathfrak{g}}{m}\text{,}\) defines a linear system as will be described in the proof of <a class="xref" data-knowl="./knowl/proposition-existence-of-polynomial-factor.html" title="Proposition 3.6">Proposition 3.6</a>. The linear system can be reduced to a form where the number of equations grows slower than the number of variables when increasing the step. Hence for a large enough step, the resulting linear system is underdetermined and has nontrivial solutions.</p>
+<p id="p-83">One reason for the slower increase of the number of equations is the following lemma showing that at least one of the abnormal polynomials in each layer can be freely chosen.</p>
+<article class="lemma theorem-like" id="lemma-free-abnormal-polynomial"><h6 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">3.5</span><span class="period">.</span>
+</h6>
+<p id="p-84">Let \(m\geq 2\) be a fixed layer and \(s\in\NN\) a fixed step. Let \(w\) be the minimal <a class="xref" data-knowl="./knowl/definition-deg-left-right-hall-set.html" title="Definition 2.8">deg-left-right Hall word</a> of degree \(m\text{,}\) i.e., the Hall word \(w=1^{m-1}2\text{.}\) Let \(G\) be the Carnot group whose Lie algebra is the quotient \(\mathfrak{g} = \freelie{r,s}/[\lowercentralseriesterm{\freelie{r,s}}{m},\lowercentralseriesterm{\freelie{r,s}}{m}]\) eliminating variables of degree \(m\) and higher. Then for every polynomial \(P\colon G\to\RR\) of degree at most \(s-m\) involving only variables of degrees \(1,\ldots,m-1\text{,}\) there exists a covector \(\covector\in\mathfrak{g}^*\) such that \(\abnormalpolynomial{w}{\covector} = P\text{.}\)</p></article><article class="hiddenproof" id="proof-9"><a data-knowl="" class="id-ref original" data-refid="hk-proof-9"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-9"><article class="hiddenproof"><p id="p-85">For each monomial \(x^I\text{,}\) let \(x_{v_1}^{i_1}\cdots x_{v_\ell}^{i_\ell} = x^I\) be the decomposition such that \(v_1\lt\cdots\lt v_\ell\text{.}\) Denote by \(v(I) := (v_\ell)^{i_\ell}\cdots (v_1)^{i_1}\) the resulting word. The factorization of the minimal Hall word \(w=1^{m-1}2\) into two Hall words is \(w=(1)(1^{m-2}2)\text{.}\) Since \(1\) is the minimal deg-left-right Hall word, every monomial \(x^I\) satisfies the condition in <a class="xref" data-knowl="./knowl/lemma-free-monomials-of-abnormal-polynomials.html" title="Lemma 2.17">Lemma 2.17</a>. Therefore for every monomial \(x^I\text{,}\) the word \(v(I)w\) is a Hall word, and the <a class="xref" data-knowl="./knowl/definition-abnormal-polynomial.html" title="Definition 2.1">abnormal polynomial</a> \(\abnormalpolynomial{w}{\covector}\) has the particularly simple form</p>
+<div class="displaymath">
+\begin{equation*}
+\abnormalpolynomial{w}{\covector}(x) = \sum_{I}\frac{1}{I!}\covector_{v(I)w}x^{I}\text{,}
+\end{equation*}
+</div>
+<p data-braille="continuation">where \(I!=i_1!\cdots i_\ell!\) for each tuple \(I=(i_1,\ldots,i_\ell)\text{.}\) Since the coefficients \(\covector_{v(I)w}\) are all distinct, the required covector is defined by the monomial coefficients of the target polynomial \(P\text{.}\)</p></article></div>
+<article class="proposition theorem-like" id="proposition-existence-of-polynomial-factor"><h6 class="heading">
+<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">3.6</span><span class="period">.</span>
+</h6>
+<p id="p-86">Let \(\hallset\) be the deg-left-right Hall set on the free Lie algebra of rank \(r\text{.}\) Let \(Q\in\polyring{\hallset}\) be a nonzero polynomial containing only variables of degrees at most \(m-1\text{.}\) Then there exists a step \(s\geq m\) and a covector \(\covector\in\freelie{r,s}^*\) such that \(Q\) is a common factor of all <a class="xref" data-knowl="./knowl/definition-abnormal-polynomial.html" title="Definition 2.1">abnormal polynomials</a> \(\abnormalpolynomial{X}{\covector}\) for \(X\in\freelielayer{r,s}{m}\text{,}\) and at least one of these abnormal polynomials is nonzero. Moreover, the step \(s\) only depends on the rank \(r\text{,}\) the integer \(m\text{,}\) and the degree of \(Q\text{,}\) but not on the polynomial \(Q\) itself.</p></article><article class="hiddenproof" id="proof-10"><a data-knowl="" class="id-ref original" data-refid="hk-proof-10"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-10"><article class="hiddenproof"><p id="p-87">Fix a step \(s\geq m\text{,}\) which will be specified more precisely later. Consider the Carnot group of step \(s\) whose Lie algebra is the quotient \(\mathfrak{g} = \freelie{r,s}/[\lowercentralseriesterm{\freelie{r,s}}{m},\lowercentralseriesterm{\freelie{r,s}}{m}]\) eliminating variables of degree \(m\) and higher. Then by <a class="xref" data-knowl="./knowl/lemma-quotient-by-higher-variables.html" title="Lemma 3.4">Lemma 3.4</a>, all abnormal polynomials \(\abnormalpolynomial{X}{\covector}\) for \(X\in\lielayer{\mathfrak{g}}{m}\) in \(G\) only depend on the monomials with terms \(x_w\) of degree at most \(\deg(w)\leq m\text{.}\) Moreover, by <a class="xref" data-knowl="./knowl/lemma-lifting-quotient-abnormal-polynomials.html" title="Lemma 2.14">Lemma 2.14</a>, if the claim of the proposition holds in the quotient Carnot group \(G\text{,}\) then the claim also holds in the free Carnot group of rank \(r\) and step \(s\text{.}\)</p>
+<p id="p-88">Denote \(d:=\dim\lielayer{\mathfrak{g}}{m}\) and let \(w_{1}\lt\ldots\lt w_{d}\) be all the <a class="xref" data-knowl="./knowl/definition-deg-left-right-hall-set.html" title="Definition 2.8">deg-left-right Hall words</a> of degree \(m\text{.}\) Denote \(q:=\deg(Q)\) and define for each Hall word \(w_{i}\) a generic polynomial</p>
+<div class="displaymath">
+\begin{equation*}
+\factorpolynomial{\factorcoefficient{i}} := \sum_{\abs{I}\leq s-m-q}\factorcoefficient{i,I}x^I
+\end{equation*}
+</div>
+<p data-braille="continuation">of (weighted) degree \(s-m-q\) with indeterminate coefficients \(\factorcoefficient{i,I}\text{.}\) Consider the homogeneous linear system</p>
+<div class="displaymath">
+\begin{equation*}
+\abnormalpolynomial{w_{i}}{\covector} = \factorpolynomial{\factorcoefficient{i}}Q,\quad i=1,\ldots,d
+\end{equation*}
+</div>
+<p data-braille="continuation">in the variables \(\covector,\factorcoefficient{}\text{.}\)</p>
+<p id="p-89">By <a class="xref" data-knowl="./knowl/lemma-free-abnormal-polynomial.html" title="Lemma 3.5">Lemma 3.5</a>, the abnormal polynomial \(\abnormalpolynomial{w_{1}}{\covector}\) for the minimal deg-left-right Hall word \(w_{1}=1^{m-1}2\) can be freely chosen. This defines some of the unknowns \(\covector_{w}\) in terms of the indeterminates \(\factorcoefficient{1,I}\text{.}\) Adding in an arbitrary substitution of the rest of the \(\covector_{w}\) variables from other equations of the system gives a substitution \(\covector = \covector(\factorcoefficient{})\) such that at least the identity \(\abnormalpolynomial{w_{1}}{\covector(\factorcoefficient{})} = \factorpolynomial{\factorcoefficient{1}}Q\) becomes trivial. Hence the substitution leads to a reduced system in the variables \(\factorcoefficient{}\) and the equations</p>
+<div class="displaymath">
+\begin{equation}
+\abnormalpolynomial{w_{i}}{\covector(\factorcoefficient{})} = \factorpolynomial{\factorcoefficient{i}}Q,\quad i=2,\ldots,d\text{.}\label{eq-abnormal-factor-system}\tag{3.3}
+\end{equation}
+</div>
+<p id="p-90">Since the system is homogeneous, it always has the zero solution. The existence of a nontrivial solution in a large enough step \(s\) will be proved by counting the number equations and variables. For each \(i=2,\ldots,d\text{,}\) every monomial \(x^I\) appearing in the polynomial \(\abnormalpolynomial{w_{i}}{\covector(\factorcoefficient{})} - \factorpolynomial{\factorcoefficient{i}}Q\) contributes one constraint on the variables \(\factorcoefficient{}\text{.}\) Hence the number of equations is at most \(d-1\) times the number of monomials of degree up to \(\deg(\abnormalpolynomial{w_{i}}{\covector(\factorcoefficient{})} - \factorpolynomial{\factorcoefficient{i}}Q) \leq s-m\text{.}\) The number of variables is instead \(d\) times the number of monomials of degree up to \(\deg(\factorpolynomial{\factorcoefficient{i}}) = s-m-q\text{.}\)</p>
+<p id="p-91">By <a class="xref" data-knowl="./knowl/lemma-poincare-series-for-monomials-of-bounded-degree.html" title="Lemma 2.19">Lemma 2.19</a>, the Poincaré series for the number of monomials in the variables of degrees \(1,\ldots,m-1\) is</p>
+<div class="displaymath">
+\begin{equation*}
+\poincare(t) = 1/\prod_{k=1}^{m-1}(1-t^k)^{\dim\freelielayer{r}{k}} =: \sum_{k=0}N_kt^k\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">In terms of the series coefficients \(N_k\text{,}\) the number of equations is at most</p>
+<div class="displaymath">
+\begin{equation*}
+E_s := (d-1)\sum_{k=0}^{s-m}N_k = \sum_{k=m}^s(d-1)N_{k-m}
+\end{equation*}
+</div>
+<p data-braille="continuation">and the number of variables is</p>
+<div class="displaymath">
+\begin{equation*}
+V_s := d\sum_{k=0}^{s-m-q}N_k = \sum_{k=m+q}^sdN_{k-m-q}\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">A telescoping argument gives the identities</p>
+<div class="displaymath">
+\begin{equation*}
+(d-1)t^m\poincare(t) = \sum_{k=m}^\infty (d-1)N_{k-m}t^{k} = \sum_{k=0}^\infty (E_{k}-E_{k-1})t^{k}
+\end{equation*}
+</div>
+<p data-braille="continuation">and</p>
+<div class="displaymath">
+\begin{equation*}
+dt^{m+q}\poincare(t) = \sum_{k=m+q}^\infty dN_{k-m-q}t^{k} = \sum_{k=0}^\infty (V_{k}-V_{k-1})t^{k}.
+\end{equation*}
+</div>
+<p data-braille="continuation">That is, the difference \(V_s-E_s\) is the partial sum \(\sum_{k=0}^s\differenceinteger{k}\) of the coefficients of the series</p>
+<div class="displaymath">
+\begin{align*}
+\Delta(t) = \sum_{k=0}^\infty \differenceinteger{k}t^k \amp := dt^{m+q}\poincare(t)-(d-1)t^m\poincare(t)\\
+\amp = t^m\poincare(t) - dt^m(1-t^q)\poincare(t)\text{.}
+\end{align*}
+</div>
+<p id="p-92">The rational function \(\poincare(t)\) has a pole at \(t=1\) with \(\lim_{t\to 1-}\poincare(t)=\infty\text{.}\) Since \((1-t^q)\poincare(t)\simeq (1-t)\poincare(t)\) is of higher order than \(\poincare(t)\) at \(t=1\text{,}\) it follows that \(\Delta(t)\simeq \poincare(t)\) near \(t=1\text{.}\) In particular</p>
+<div class="displaymath">
+\begin{equation*}
+\sum_{k=0}^\infty \differenceinteger{k}=\lim_{t\to 1-}\Delta(t) = \infty\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">That is, the partial sums \(V_s-E_s = \sum_{k=0}^s \differenceinteger{k}\) tend to infinity, so there exists some large enough \(s\in \NN\) for which the number of variables \(V_s\) is strictly bigger than the upper bound \(E_s\) for the number of equations.</p>
+<p id="p-93">For such a step \(s\text{,}\) the linear system <a class="xref" data-knowl="./knowl/eq-abnormal-factor-system.html" title="Equation 3.3">(3.3)</a> is underdetermined and has a nontrivial solution \(\overline{\factorcoefficient{}}\neq 0\text{,}\) defining a solution covector \(\covector(\overline{\factorcoefficient{}})\in\mathfrak{g}^*\text{.}\) Since \(\overline{\factorcoefficient{}}\neq 0\text{,}\) at least one of the polynomials \(\factorpolynomial{\overline{\factorcoefficient{i}}}\) is nonzero. By assumption \(Q\) is nonzero, so it follows that at least one abnormal polynomial \(\abnormalpolynomial{w_{i}}{\covector(\overline{\factorcoefficient{}})} = \factorpolynomial{\overline{\factorcoefficient{i}}}Q\) is nonzero.</p>
+<p id="p-94">The final claim on the dependence of \(s\) follows from the construction of the coefficients \(\differenceinteger{k}\) through the generating function \(\Delta\text{.}\) The rational function \(\Delta\) was determined by the integers \(r\text{,}\) \(m\text{,}\) \(q=\deg(Q)\text{,}\) and the dimensions of the layers \(\freelielayer{r}{1},\ldots,\freelielayer{r}{m}\) of the free Lie algebra of rank \(r\text{.}\) The dimensions of the layers are completely determined by \(r\text{,}\) so the claim follows.</p></article></div></section></section></div></main>
+</div>
+</body>
+</html>

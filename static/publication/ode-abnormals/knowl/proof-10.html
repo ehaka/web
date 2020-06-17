@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-06-17T11:42:41+02:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<article class="hiddenproof"><h6 class="heading"><span class="type">Proof</span></h6>
+<p>Fix a step \(s\geq m\text{,}\) which will be specified more precisely later. Consider the Carnot group of step \(s\) whose Lie algebra is the quotient \(\mathfrak{g} = \freelie{r,s}/[\lowercentralseriesterm{\freelie{r,s}}{m},\lowercentralseriesterm{\freelie{r,s}}{m}]\) eliminating variables of degree \(m\) and higher. Then by <a class="xref" data-knowl="./knowl/lemma-quotient-by-higher-variables.html" title="Lemma 3.4">Lemma 3.4</a>, all abnormal polynomials \(\abnormalpolynomial{X}{\covector}\) for \(X\in\lielayer{\mathfrak{g}}{m}\) in \(G\) only depend on the monomials with terms \(x_w\) of degree at most \(\deg(w)\leq m\text{.}\) Moreover, by <a class="xref" data-knowl="./knowl/lemma-lifting-quotient-abnormal-polynomials.html" title="Lemma 2.14">Lemma 2.14</a>, if the claim of the proposition holds in the quotient Carnot group \(G\text{,}\) then the claim also holds in the free Carnot group of rank \(r\) and step \(s\text{.}\)</p>
+<p>Denote \(d:=\dim\lielayer{\mathfrak{g}}{m}\) and let \(w_{1}\lt\ldots\lt w_{d}\) be all the <a class="xref" data-knowl="./knowl/definition-deg-left-right-hall-set.html" title="Definition 2.8">deg-left-right Hall words</a> of degree \(m\text{.}\) Denote \(q:=\deg(Q)\) and define for each Hall word \(w_{i}\) a generic polynomial</p>
+<div class="displaymath">
+\begin{equation*}
+\factorpolynomial{\factorcoefficient{i}} := \sum_{\abs{I}\leq s-m-q}\factorcoefficient{i,I}x^I
+\end{equation*}
+</div>
+<p data-braille="continuation">of (weighted) degree \(s-m-q\) with indeterminate coefficients \(\factorcoefficient{i,I}\text{.}\) Consider the homogeneous linear system</p>
+<div class="displaymath">
+\begin{equation*}
+\abnormalpolynomial{w_{i}}{\covector} = \factorpolynomial{\factorcoefficient{i}}Q,\quad i=1,\ldots,d
+\end{equation*}
+</div>
+<p data-braille="continuation">in the variables \(\covector,\factorcoefficient{}\text{.}\)</p>
+<p>By <a class="xref" data-knowl="./knowl/lemma-free-abnormal-polynomial.html" title="Lemma 3.5">Lemma 3.5</a>, the abnormal polynomial \(\abnormalpolynomial{w_{1}}{\covector}\) for the minimal deg-left-right Hall word \(w_{1}=1^{m-1}2\) can be freely chosen. This defines some of the unknowns \(\covector_{w}\) in terms of the indeterminates \(\factorcoefficient{1,I}\text{.}\) Adding in an arbitrary substitution of the rest of the \(\covector_{w}\) variables from other equations of the system gives a substitution \(\covector = \covector(\factorcoefficient{})\) such that at least the identity \(\abnormalpolynomial{w_{1}}{\covector(\factorcoefficient{})} = \factorpolynomial{\factorcoefficient{1}}Q\) becomes trivial. Hence the substitution leads to a reduced system in the variables \(\factorcoefficient{}\) and the equations</p>
+<div class="displaymath">
+\begin{equation}
+\abnormalpolynomial{w_{i}}{\covector(\factorcoefficient{})} = \factorpolynomial{\factorcoefficient{i}}Q,\quad i=2,\ldots,d\text{.}\tag{3.3}
+\end{equation}
+</div>
+<p>Since the system is homogeneous, it always has the zero solution. The existence of a nontrivial solution in a large enough step \(s\) will be proved by counting the number equations and variables. For each \(i=2,\ldots,d\text{,}\) every monomial \(x^I\) appearing in the polynomial \(\abnormalpolynomial{w_{i}}{\covector(\factorcoefficient{})} - \factorpolynomial{\factorcoefficient{i}}Q\) contributes one constraint on the variables \(\factorcoefficient{}\text{.}\) Hence the number of equations is at most \(d-1\) times the number of monomials of degree up to \(\deg(\abnormalpolynomial{w_{i}}{\covector(\factorcoefficient{})} - \factorpolynomial{\factorcoefficient{i}}Q) \leq s-m\text{.}\) The number of variables is instead \(d\) times the number of monomials of degree up to \(\deg(\factorpolynomial{\factorcoefficient{i}}) = s-m-q\text{.}\)</p>
+<p>By <a class="xref" data-knowl="./knowl/lemma-poincare-series-for-monomials-of-bounded-degree.html" title="Lemma 2.19">Lemma 2.19</a>, the Poincaré series for the number of monomials in the variables of degrees \(1,\ldots,m-1\) is</p>
+<div class="displaymath">
+\begin{equation*}
+\poincare(t) = 1/\prod_{k=1}^{m-1}(1-t^k)^{\dim\freelielayer{r}{k}} =: \sum_{k=0}N_kt^k\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">In terms of the series coefficients \(N_k\text{,}\) the number of equations is at most</p>
+<div class="displaymath">
+\begin{equation*}
+E_s := (d-1)\sum_{k=0}^{s-m}N_k = \sum_{k=m}^s(d-1)N_{k-m}
+\end{equation*}
+</div>
+<p data-braille="continuation">and the number of variables is</p>
+<div class="displaymath">
+\begin{equation*}
+V_s := d\sum_{k=0}^{s-m-q}N_k = \sum_{k=m+q}^sdN_{k-m-q}\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">A telescoping argument gives the identities</p>
+<div class="displaymath">
+\begin{equation*}
+(d-1)t^m\poincare(t) = \sum_{k=m}^\infty (d-1)N_{k-m}t^{k} = \sum_{k=0}^\infty (E_{k}-E_{k-1})t^{k}
+\end{equation*}
+</div>
+<p data-braille="continuation">and</p>
+<div class="displaymath">
+\begin{equation*}
+dt^{m+q}\poincare(t) = \sum_{k=m+q}^\infty dN_{k-m-q}t^{k} = \sum_{k=0}^\infty (V_{k}-V_{k-1})t^{k}.
+\end{equation*}
+</div>
+<p data-braille="continuation">That is, the difference \(V_s-E_s\) is the partial sum \(\sum_{k=0}^s\differenceinteger{k}\) of the coefficients of the series</p>
+<div class="displaymath">
+\begin{align*}
+\Delta(t) = \sum_{k=0}^\infty \differenceinteger{k}t^k \amp := dt^{m+q}\poincare(t)-(d-1)t^m\poincare(t)\\
+\amp = t^m\poincare(t) - dt^m(1-t^q)\poincare(t)\text{.}
+\end{align*}
+</div>
+<p>The rational function \(\poincare(t)\) has a pole at \(t=1\) with \(\lim_{t\to 1-}\poincare(t)=\infty\text{.}\) Since \((1-t^q)\poincare(t)\simeq (1-t)\poincare(t)\) is of higher order than \(\poincare(t)\) at \(t=1\text{,}\) it follows that \(\Delta(t)\simeq \poincare(t)\) near \(t=1\text{.}\) In particular</p>
+<div class="displaymath">
+\begin{equation*}
+\sum_{k=0}^\infty \differenceinteger{k}=\lim_{t\to 1-}\Delta(t) = \infty\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">That is, the partial sums \(V_s-E_s = \sum_{k=0}^s \differenceinteger{k}\) tend to infinity, so there exists some large enough \(s\in \NN\) for which the number of variables \(V_s\) is strictly bigger than the upper bound \(E_s\) for the number of equations.</p>
+<p>For such a step \(s\text{,}\) the linear system <a class="xref" data-knowl="./knowl/eq-abnormal-factor-system.html" title="Equation 3.3">(3.3)</a> is underdetermined and has a nontrivial solution \(\overline{\factorcoefficient{}}\neq 0\text{,}\) defining a solution covector \(\covector(\overline{\factorcoefficient{}})\in\mathfrak{g}^*\text{.}\) Since \(\overline{\factorcoefficient{}}\neq 0\text{,}\) at least one of the polynomials \(\factorpolynomial{\overline{\factorcoefficient{i}}}\) is nonzero. By assumption \(Q\) is nonzero, so it follows that at least one abnormal polynomial \(\abnormalpolynomial{w_{i}}{\covector(\overline{\factorcoefficient{}})} = \factorpolynomial{\overline{\factorcoefficient{i}}}Q\) is nonzero.</p>
+<p>The final claim on the dependence of \(s\) follows from the construction of the coefficients \(\differenceinteger{k}\) through the generating function \(\Delta\text{.}\) The rational function \(\Delta\) was determined by the integers \(r\text{,}\) \(m\text{,}\) \(q=\deg(Q)\text{,}\) and the dimensions of the layers \(\freelielayer{r}{1},\ldots,\freelielayer{r}{m}\) of the free Lie algebra of rank \(r\text{.}\) The dimensions of the layers are completely determined by \(r\text{,}\) so the claim follows.</p></article><span class="incontext"><a href="section-abnormality-of-ode-trajectories.html#proof-10">in-context</a></span>
+</body>
+</html>

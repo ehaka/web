@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-06-17T11:42:41+02:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<h6 class="heading"><span class="type">Paragraph</span></h6>
+<p>Input: a polynomial ODE \(\dot{x}=P(x)\) as a vector of polynomials \((P_1,\ldots,P_r)\text{.}\) Output: a step \(s\) and a covector \(\covector\) such that trajectories of the ODE through the identity are abnormal with covector \(\covector\) in the free Carnot group \(\freecarnot{r,s}\) of rank \(r\) and step \(s\text{.}\)</p>
+<ol class="decimal">
+<li>Choose a nonzero vector of polynomials \((Q_{1},\ldots,Q_{r})\) orthogonal to \((P_1,\ldots,P_r)\text{.}\) Let \(Q\in\polyring{\hallset}\) be an (abstract) polynomial such that \(X_iQ=Q_{i}\text{.}\)</li>
+<li>Compute all nonzero higher order derivatives \(X_{w_{i}}Q\) for <a class="xref" data-knowl="./knowl/definition-deg-left-right-hall-set.html" title="Definition 2.8">deg-left-right Hall words</a> \(w_{i}\) of degree \(\geq 2\text{.}\)</li>
+<li>Solve the resulting PDE for the polynomial \(Q\) by sequentially integrating in each variable \(x_{w_{i}}\) in decreasing deg-left-right Hall order. Let \(m\geq 2\) be such that \(Q\) only contains variables \(x_{w}\) of degrees at most \(m-1\text{.}\)</li>
+<li>Find a step \(s\geq m\) such that \(\sum_{k=0}^{s}\differenceinteger{k} \geq 1\text{,}\) where the integers \(\differenceinteger{k}\) are determined by the generating function<div class="displaymath">
+\begin{equation*}
+\Delta(t) = \sum_{k=0}^\infty \differenceinteger{k}t^k = \frac{\Big(1-(\dim \freelielayer{r}{m})(1-t^{\deg(Q)})\Big)t^m}{\prod_{k=1}^{m-1}(1-t^k)^{\dim\freelielayer{r}{k}}}\text{.}
+\end{equation*}
+</div>
+</li>
+<li>
+<p>Compute the polynomials \(R_i := \abnormalpolynomial{w_{i}}{\covector}-\factorpolynomial{\factorcoefficient{i}}Q\text{,}\) where</p>
+<ul class="disc">
+<li>\(w_{1},\ldots,w_{\dim \freelielayer{r}{m}}\) are all the deg-left-right Hall words of degree \(m\text{,}\)</li>
+<li>\(\covector\in\mathfrak{g}^*\) is a covector in the dual of the quotient \(\mathfrak{g} = \freelie{r,s}/[\lowercentralseriesterm{\freelie{r,s}}{m},\lowercentralseriesterm{\freelie{r,s}}{m}]\) with indeterminate coefficients \(\covector_{w}\text{,}\) and</li>
+<li>\(\factorpolynomial{\factorcoefficient{i}}\) are generic polynomials of degree \(s-m-\deg(Q)\) whose coefficients are indeterminates \(\factorcoefficient{i,I}.\)</li>
+</ul>
+</li>
+<li>Solve the linear system \(R_i=0\text{,}\) \(i=1,\ldots,\dim \freelielayer{r}{m}\) in the variables \(\covector,\factorcoefficient{}\text{.}\) The \(\covector\) component of any solution  is a covector for which trajectories reaching zero of the ODE \(\dot{x}=P(x)\) lift to abnormals in the free Carnot group \(\freecarnot{r,s}\text{.}\)</li>
+</ol>
+<span class="incontext"><a href="section-examples.html#p-111">in-context</a></span>
+</body>
+</html>
