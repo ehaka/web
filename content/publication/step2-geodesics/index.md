@@ -31,10 +31,10 @@ links:
 #   url: ""
 - name: "SIAM Journal on Control and Optimization"
   url: "https://doi.org/10.1137/19M1271166"
-- name: "Online"
-  url: "publication/step2-geodesics/step2_infinite_geodesics.html"
 - name: "arXiv"
   url: "https://arxiv.org/abs/1905.03214"
+- name: "Online"
+  url: "publication/step2-geodesics/step2_infinite_geodesics.html"
 url_pdf: "publication/step2_infinite_geodesics-2019-11-19.pdf"
 url_code: ''
 url_dataset: ''
