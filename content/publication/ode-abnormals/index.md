@@ -29,6 +29,8 @@ featured: false
 links:
 # - name: ""
 #   url: ""
+- name: "arXiv"
+  url: "https://arxiv.org/abs/2006.09783"
 - name: "Online"
   url: "publication/ode-abnormals/ode_abnormals.html"
 url_pdf: "publication/ode_abnormals-2020-06-17.pdf"
