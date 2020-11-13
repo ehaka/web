@@ -34,7 +34,7 @@ links:
 - name: "arXiv"
   url: "https://arxiv.org/abs/1905.03214"
 - name: "Online"
-  url: "publication/step2-geodesics/frontmatter-1.html"
+  url: "publication/web/step2-geodesics/frontmatter-1.html"
 url_pdf: "publication/step2_infinite_geodesics-2019-11-19.pdf"
 url_code: ''
 url_dataset: ''

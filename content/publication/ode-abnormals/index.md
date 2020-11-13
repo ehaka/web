@@ -32,7 +32,7 @@ links:
 - name: "arXiv"
   url: "https://arxiv.org/abs/2006.09783"
 - name: "Online"
-  url: "publication/ode-abnormals/frontmatter-1.html"
+  url: "publication/web/ode-abnormals/frontmatter-1.html"
 url_pdf: "publication/ode_abnormals-2020-06-17.pdf"
 url_code: "https://github.com/ehaka/ode-abnormals"
 url_dataset: ''

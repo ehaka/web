@@ -34,7 +34,7 @@ links:
 # - name: ""
 #   url: ""
 - name: "Online"
-  url: "publication/gradings/frontmatter-1.html"
+  url: "publication/web/gradings/frontmatter-1.html"
 url_pdf: "publication/gradings-2020-11-13.pdf"
 url_code: "https://github.com/ehaka/lie-algebra-gradings"
 url_dataset: ''
