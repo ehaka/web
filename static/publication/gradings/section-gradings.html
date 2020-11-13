@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-11-13T12:10:22+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Gradings</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body id="gradings" class="mathbook-article has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\newcommand{\abs}[1]{\left\lvert#1\right\rvert}
+\newcommand{\restr}[2]{\left.#1\right\vert_{#2}}
+\newcommand{\der}{\operatorname{der}}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand{\ad}{\operatorname{ad}}
+\newcommand{\Ad}{\operatorname{Ad}}
+\newcommand{\positiveset}{\mathbf{A}_+}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="gradings.html"><span class="title">Gradings for nilpotent Lie algebras</span></a></h1>
+<p class="byline">Eero Hakavuori, Ville Kivioja, Terhi Moisala, Francesca Tripaldi</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-introduction.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="gradings.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-constructions.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-introduction.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="gradings.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-constructions.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a><ul><li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1">Acknowledgements</a></li></ul>
+</li>
+<li class="link">
+<a href="section-introduction.html" data-scroll="section-introduction"><span class="codenumber">1</span> <span class="title">Introduction</span></a><ul>
+<li><a href="section-introduction.html#subsection-1" data-scroll="subsection-1">Overview</a></li>
+<li><a href="section-introduction.html#subsection-2" data-scroll="subsection-2">Main results</a></li>
+<li><a href="section-introduction.html#subsection-3" data-scroll="subsection-3">Structure of the paper</a></li>
+</ul>
+</li>
+<li class="link active">
+<a href="section-gradings.html" data-scroll="section-gradings"><span class="codenumber">2</span> <span class="title">Gradings</span></a><ul>
+<li><a href="section-gradings.html#ssec-gradings-and-equivalences" data-scroll="ssec-gradings-and-equivalences">Gradings and equivalences</a></li>
+<li><a href="section-gradings.html#ssec-univ-gradings" data-scroll="ssec-univ-gradings">Universal gradings</a></li>
+<li><a href="section-gradings.html#sec-gradings-by-tori" data-scroll="sec-gradings-by-tori">Gradings induced by tori</a></li>
+<li><a href="section-gradings.html#section-maximal-gradings" data-scroll="section-maximal-gradings">Maximal gradings</a></li>
+<li><a href="section-gradings.html#subsection-torsion-free" data-scroll="subsection-torsion-free">Enumeration of torsion-free gradings</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="section-constructions.html" data-scroll="section-constructions"><span class="codenumber">3</span> <span class="title">Constructions</span></a><ul>
+<li><a href="section-constructions.html#section-stratifications" data-scroll="section-stratifications">Stratifications</a></li>
+<li><a href="section-constructions.html#sssec-pos-gradings" data-scroll="sssec-pos-gradings">Positive gradings</a></li>
+<li><a href="section-constructions.html#section-maximal-construction" data-scroll="section-maximal-construction">Maximal gradings</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="section-applications.html" data-scroll="section-applications"><span class="codenumber">4</span> <span class="title">Applications</span></a><ul>
+<li><a href="section-applications.html#applications-structure" data-scroll="applications-structure">Structure from maximal gradings</a></li>
+<li><a href="section-applications.html#applications-classification" data-scroll="applications-classification">Classification of gradings in low dimension</a></li>
+<li><a href="section-applications.html#applications-heintze" data-scroll="applications-heintze">Enumerating Heintze groups</a></li>
+<li><a href="section-applications.html#applications-lpq" data-scroll="applications-lpq">Bounds for non-vanishing \(\ell^{q,p}\) cohomology</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="section-positive-gradings.html" data-scroll="section-positive-gradings"><span class="codenumber">A</span> <span class="title">Existence of a positive realization</span></a></li>
+<li class="link">
+<a href="appendix-classification.html" data-scroll="appendix-classification"><span class="codenumber">B</span> <span class="title">Complete classification in low dimension</span></a><ul>
+<li><a href="appendix-classification.html#classification-overview" data-scroll="classification-overview">Overview</a></li>
+<li><a href="classification-dim2.html">Dimension 2</a></li>
+<li><a href="classification-dim3.html">Dimension 3</a></li>
+<li><a href="classification-dim4.html">Dimension 4</a></li>
+<li><a href="classification-dim5.html">Dimension 5</a></li>
+<li><a href="classification-dim6.html">Dimension 6</a></li>
+<li><a href="classification-dim7.html">Dimension 7</a></li>
+</ul>
+</li>
+<li class="link"><a href="appendix-3.html" data-scroll="appendix-3"><span class="codenumber">C</span> <span class="title">Notation</span></a></li>
+<li class="link"><a href="section-references.html" data-scroll="section-references"><span class="title">References</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-gradings"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2</span> <span class="title">Gradings</span>
+</h2>
+<section class="introduction" id="introduction-1"><p id="p-26">The contents of this section can, up to some modifications, be found in Section 3-4 of <a class="xref" data-knowl="./knowl/Kochetov-2009-gradings_on_simple_lie_algebras_survey.html" title="Bibliographic Entry 22: Gradings on finite-dimensional simple Lie algebras">[22]</a>. We nonetheless give here a self-contained presentation to better fit our constructive approach.</p></section><section class="subsection" id="ssec-gradings-and-equivalences"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.1</span> <span class="title">Gradings and equivalences</span>
+</h3>
+<p id="p-27">In this section we define some key notions related to gradings of Lie algebras, including <a class="xref" data-knowl="./knowl/def-equivalent-gradings.html" title="Definition 2.9">equivalence</a>, <a class="xref" data-knowl="./knowl/def-push-forward-grading.html" title="Definition 2.5">push-forwards</a> and <a class="xref" data-knowl="./knowl/def-same-layers.html" title="Definition 2.6">coarsenings</a>. We also make a distinction between two different notions of <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">grading</a>, with the difference being whether the indexing plays a role  or not.</p>
+<article class="definition definition-like" id="def-grading"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1</span><span class="period">.</span>
+</h6>
+<p id="p-28">A <dfn class="terminology">grading</dfn> of a Lie algebra \(\mathfrak{g}\) is a direct sum decomposition \(\mathcal V : \mathfrak{g}=\bigoplus_{\alpha\in S}V_\alpha\) such that for each \(\alpha,\beta\in S\) either \([V_\alpha,V_\beta]=0\) or there exists a unique \(\gamma\in S\) such that \([V_\alpha,V_\beta]\subset V_{\gamma}\text{.}\) When \(S\) is an abelian group \(A\) such that the unique element \(\gamma\) is given by \(\gamma=a+b\text{,}\) we say that the grading \(\mathcal{V}\) is <dfn class="terminology">over \(A\)</dfn>, or that \(\mathcal{V}\) is an <dfn class="terminology">\(A\)-grading</dfn>. In this case, \(A\) is the <dfn class="terminology">grading group</dfn> of the grading \(\mathcal{V}\text{.}\)</p>
+<p id="p-29">The subspaces \(V_\alpha\) are called the <dfn class="terminology">layers</dfn> of the grading \(\mathcal{V}\) and the elements \(\alpha \in S\) such that \(V_\alpha\neq 0\) are called the <dfn class="terminology">weights</dfn> of \(\mathcal V\text{.}\) We will usually denote the set of weights by \(\Omega\text{.}\) A basis of \(\mathfrak g\) is said to be <dfn class="terminology">adapted to \(\mathcal V\)</dfn> if every element of the basis is contained in some layer of \(\mathcal V\text{.}\)</p></article><article class="definition definition-like" id="def-realization"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2</span><span class="period">.</span>
+</h6>
+<p id="p-30">Suppose the indexing set \(S\) of a <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">grading</a> \(\mathcal V : \mathfrak{g}=\bigoplus_{\alpha\in S}V_\alpha\) can be embedded into an abelian group \(A\) such that \([V_\alpha,V_\beta]\subset V_{\alpha+\beta}\) for all \(\alpha,\beta\in A\text{,}\) where we define \(V_\alpha=0\) for \(\alpha\notin S\text{.}\) Then the resulting \(A\)-grading is called a <dfn class="terminology">realization</dfn> of the grading \(\mathcal V\text{.}\)</p></article><article class="definition definition-like" id="def-torsion-free-grading"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.3</span><span class="period">.</span>
+</h6>
+<p id="p-31">A <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">grading</a> is called <dfn class="terminology">torsion-free</dfn> if it admits a <a class="xref" data-knowl="./knowl/def-realization.html" title="Definition 2.2">realization</a> over a torsion-free (abelian) group.</p></article><p id="par-span-brackets"> In this paper, the notation \(\langle X\rangle\) always refers to the span of \(X\) in the appropriate sense.</p>
+<article class="example example-like" id="example-non-pos-grading-for-heisenberg"><a data-knowl="" class="id-ref original" data-refid="hk-example-non-pos-grading-for-heisenberg"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-non-pos-grading-for-heisenberg"><article class="example example-like"><p id="p-33">Consider the 6-dimensional Lie algebra spanned by the vectors \(X_1,Y_1,Z_1,X_2,Y_2,Z_2 \) with the non-trivial bracket relations</p>
+<div class="displaymath">
+\begin{equation*}
+[X_1,Y_1] = Z_1 \qquad [X_2,Y_2] = Z_2\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">The subspace decomposition</p>
+<div class="displaymath">
+\begin{align*}
+V_{a} \amp = \langle X_1\rangle,\amp
+V_{b} \amp = \langle X_2\rangle,\amp
+V_{c} \amp = \langle Y_1,Z_2\rangle,\amp
+V_{d} \amp = \langle Z_1,Y_2\rangle
+\end{align*}
+</div>
+<p data-braille="continuation">defines a <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">grading</a>. It can <a class="xref" data-knowl="./knowl/def-realization.html" title="Definition 2.2">realized</a> over \(\mathbb{Z}^2\) with the embedding</p>
+<div class="displaymath">
+\begin{align*}
+a\amp\mapsto (1,0),\amp
+b\amp\mapsto (-1,0),\amp
+c\amp\mapsto (0,1),\amp
+d\amp\mapsto(1,1)\text{.}
+\end{align*}
+</div></article></div>
+<article class="definition definition-like" id="def-push-forward-grading"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.5</span><span class="period">.</span>
+</h6>
+<p id="p-34">Let \(\mathcal V : \mathfrak g = \bigoplus_{\alpha \in A}V_\alpha \) be an <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">\(A\)-grading</a> for some abelian group \(A\text{.}\) Given an automorphism \(\Phi \in \Aut(\mathfrak g )\text{,}\) an abelian group \(B \) and a homomorphism \(f \colon A \to B \text{,}\) we define the <dfn class="terminology">push-forward grading</dfn> \(f_* \Phi(\mathcal V) : \mathfrak g =  \bigoplus_{\beta \in B}W_\beta \) over \(B\text{,}\) where</p>
+<div class="displaymath">
+\begin{equation*}
+W_\beta= \bigoplus_{\alpha \in f^{-1}(\beta)} \Phi(V_{\alpha}).
+\end{equation*}
+</div>
+<p data-braille="continuation">When \(\Phi=\operatorname{Id}\text{,}\) we simply denote \(f_* \operatorname{Id} (\mathcal{V}) = f_* \mathcal{V}\text{.}\)</p></article><p id="p-35">It is readily checked that the push-forward grading is indeed a \(B\)-grading in the sense of <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">Definition 2.1</a>.</p>
+<article class="definition definition-like" id="def-same-layers"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.6</span><span class="period">.</span>
+</h6>
+<p id="p-36">Let \(\mathfrak{g}\) be a Lie algebra and let \(\mathcal V : \mathfrak{g}=\bigoplus_{\alpha\in S_1}V_\alpha\) and \(\mathcal W: \mathfrak{g}=\bigoplus_{\beta\in S_2}W_\beta\) be two <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">gradings</a>. If for every \(\alpha\in S_1\) there exists \(\beta\in S_2\) such that \(V_\alpha\subset W_\beta\text{,}\) then we say that \(\mathcal V\) is a <dfn class="terminology">refinement</dfn> of \(\mathcal W\text{,}\) and that \(\mathcal W\)  is a <dfn class="terminology">coarsening</dfn> of \(\mathcal V\text{.}\)</p></article><article class="remark remark-like" id="rmk-push-forward"><h6 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.7</span><span class="period">.</span>
+</h6>
+<p id="p-37">If \(\mathcal W = {f}_*\mathcal V\) for some homomorphism \(f\text{,}\) then \(\mathcal W \) is a <a class="xref" data-knowl="./knowl/def-same-layers.html" title="Definition 2.6">coarsening</a> of \(\mathcal V\text{.}\) Such a map \(f\) is injective on the <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">weights</a> if and only if \(\mathcal V\) and \(\mathcal W\) are <a class="xref" data-knowl="./knowl/def-realization.html" title="Definition 2.2">realizations</a> of the same grading.</p></article><p id="p-38">There are several different notions of equivalence of gradings in the literature. The two that we shall use are distinguished as <dfn class="terminology">equivalence</dfn> and <dfn class="terminology">group-equivalence</dfn> in <a class="xref" data-knowl="./knowl/Kochetov-2009-gradings_on_simple_lie_algebras_survey.html" title="Bibliographic Entry 22: Gradings on finite-dimensional simple Lie algebras">[22]</a>. For brevity, we will refer to both notions as equivalence. Stated in terms of push-forwards, the group-equivalence notion of <a class="xref" data-knowl="./knowl/Kochetov-2009-gradings_on_simple_lie_algebras_survey.html" title="Bibliographic Entry 22: Gradings on finite-dimensional simple Lie algebras">[22]</a> takes the following form:</p>
+<article class="definition definition-like" id="def-equivalent-group-gradings"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.8</span><span class="period">.</span>
+</h6>
+<p id="p-39">An <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">\(A\)-grading</a> \(\mathcal V\) and a \(B\)-grading \(\mathcal W\) are said to be <dfn class="terminology">equivalent</dfn> if there exist an automorphism \(\Phi \in \Aut(\mathfrak g)\) and a group isomorphism \(f \colon A \to B \) such that \(\mathcal W = f_* \Phi(\mathcal V)\text{.}\)</p></article><p id="p-40">For gradings that admit realizations, the equivalence notion of <a class="xref" data-knowl="./knowl/Kochetov-2009-gradings_on_simple_lie_algebras_survey.html" title="Bibliographic Entry 22: Gradings on finite-dimensional simple Lie algebras">[22]</a> can be rephrased through the previous notion as follows.</p>
+<article class="definition definition-like" id="def-equivalent-gradings"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.9</span><span class="period">.</span>
+</h6>
+<p id="p-41">A <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">grading</a> \(\mathfrak{g}=\bigoplus_{\alpha\in S_1}V_\alpha\) and a grading \(\mathfrak{g}=\bigoplus_{\beta\in S_2}W_\beta\) over arbitrary indexing sets \(S_1,S_2\) are said to be <dfn class="terminology">equivalent</dfn> if they admit <a class="xref" data-knowl="./knowl/def-realization.html" title="Definition 2.2">realizations</a> as an \(A\)-grading and a \(B\)-grading that are equivalent in the sense of <a class="xref" data-knowl="./knowl/def-equivalent-group-gradings.html" title="Definition 2.8">Definition 2.8</a>.</p></article><article class="example example-like" id="example-difference-of-equivalences"><a data-knowl="" class="id-ref original" data-refid="hk-example-difference-of-equivalences"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.10</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-difference-of-equivalences"><article class="example example-like"><p id="p-42">Consider two <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">gradings</a> \(V_1 \oplus V_2\) and \(V_1\oplus V_3\) of \(\mathbb{R}^2\) over \(\mathbb{Z}\) with the same one-dimensional layers. The two gradings are <a class="xref" data-knowl="./knowl/def-equivalent-gradings.html" title="Definition 2.9">equivalent</a> in the sense of <a class="xref" data-knowl="./knowl/def-equivalent-gradings.html" title="Definition 2.9">Definition 2.9</a>, since the former is a <a class="xref" data-knowl="./knowl/def-realization.html" title="Definition 2.2">realization</a> of the second by the embedding \(\{1,3\}\hookrightarrow\{1,2\}\subset\mathbb{Z}\text{,}\) but they are not <a class="xref" data-knowl="./knowl/def-equivalent-group-gradings.html" title="Definition 2.8">equivalent</a> as \(\mathbb{Z}\)-gradings in the sense of <a class="xref" data-knowl="./knowl/def-equivalent-group-gradings.html" title="Definition 2.8">Definition 2.8</a> as there does not exist an automorphism of \(\mathbb{Z}\) mapping \(\{1,3\} \to \{1,2\}\text{.}\)</p></article></div>
+<p id="p-43">In the following lemma we demonstrate that, after possibly shrinking the grading groups, an \(A\)-grading and a \(B\)-grading are equivalent if and only if they are push-forwards of each other.</p>
+<article class="lemma theorem-like" id="lemma-pf-with-generating-weights"><h6 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">2.11</span><span class="period">.</span>
+</h6>
+<p id="p-44">Let \(\mathcal V : \mathfrak g = \bigoplus_{\alpha \in A}V_\alpha \) be an <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">\(A\)-grading</a> and \(\mathcal W : \mathfrak g = \bigoplus_{\beta \in B}W_\beta \) be a \(B\)-grading such that the <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">weights</a> of \(\mathcal V \) and \(\mathcal W\) generate the abelian groups \(A\) and \(B\text{,}\) respectively. If there exist homomorphisms \(f \colon A \to B \) and \(g\colon B \to A\) such that \(\mathcal W = f_*\mathcal V\) and \(\mathcal V = g_*\mathcal W\text{,}\) then \(\mathcal V\) and \(\mathcal W\) are <a class="xref" data-knowl="./knowl/def-equivalent-group-gradings.html" title="Definition 2.8">equivalent</a>.</p></article><article class="hiddenproof" id="proof-1"><a data-knowl="" class="id-ref original" data-refid="hk-proof-1"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-1"><article class="hiddenproof"><p id="p-45">Let us denote by \(\Omega_A\) and \(\Omega_B\) the sets of weights of \(\mathcal V\) and \(\mathcal W\text{.}\) Notice first that by definition of the <a class="xref" data-knowl="./knowl/def-push-forward-grading.html" title="Definition 2.5">push-forward</a>, \(f(\Omega_A) = \Omega_B\) and \(g(\Omega_B) = \Omega_A\text{,}\) so both \(f\) and \(g\) are injective on weights. Moreover, we have for every \(\alpha \in \Omega_A\) and \(\beta \in \Omega_B\) the correspondence</p>
+<div class="displaymath">
+\begin{equation*}
+V_\alpha = W_{f(\alpha)} = V_{g(f(\alpha))} \qquad \text{and} \qquad W_\beta = V_{g(\beta)} = W_{f(g(\beta))}.
+\end{equation*}
+</div>
+<p data-braille="continuation">Hence \(f\colon \Omega_A \to \Omega_B \) is a bijection and \(f^{-1} = g\) on \(\Omega_B\text{.}\) Since \(\Omega_A\) and \(\Omega_B\) generate \(A \) and \(B\) as groups, we get that \(f^{-1} = g\) on whole \(B\text{.}\)</p></article></div>
+<p id="p-46">Notice that the assumption that the weights generate is indeed necessary: for instance, the gradings \(\mathbb{R} = V_1 \) over \(\mathbb{Z}\) and \(\mathbb{R} = V_{(1,0)} \) over \(\mathbb{Z}^2\) are push-forward gradings of each other, but they are not equivalent.</p></section><section class="subsection" id="ssec-univ-gradings"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.2</span> <span class="title">Universal gradings</span>
+</h3>
+<p id="p-47">We do not in general require that the <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">weights of an \(A\)-grading</a> generate the grading group \(A\) in order to include e.g. gradings over \(A=\mathbb{R}\) in the discussion. Moreover, weights of a grading may have additional relations coming from the ambient group structure, even when the corresponding layers are unrelated, see for instance <a class="xref" data-knowl="./knowl/example-heisenberg-torus-extension.html" title="Example 3.13">Example 3.13</a>. To build a satisfactory theory using homomorphisms between grading groups, we consider the notion of an (abelian) <a class="xref" data-knowl="./knowl/def-universal-realization.html" title="Definition 2.12">universal realization</a>, see Section 3.3 of <a class="xref" data-knowl="./knowl/Kochetov-2009-gradings_on_simple_lie_algebras_survey.html" title="Bibliographic Entry 22: Gradings on finite-dimensional simple Lie algebras">[22]</a>.</p>
+<article class="definition definition-like" id="def-universal-realization"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.12</span><span class="period">.</span>
+</h6>
+<p id="p-48">Let \(\mathcal V \) be a <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">grading</a> of \(\mathfrak g\text{.}\) A <dfn class="terminology">universal realization</dfn> of \(\mathcal V\) is a <a class="xref" data-knowl="./knowl/def-realization.html" title="Definition 2.2">realization</a>  \(\widetilde {\mathcal V}\) as an \(A\)-grading such that for every realization of \(\mathcal{V}\) as a \(B\)-grading with \(B\) abelian, there exists a unique homomorphism \(f \colon A \to B\) such that the \(B\)-grading is the <a class="xref" data-knowl="./knowl/def-push-forward-grading.html" title="Definition 2.5">push-forward grading</a>  \(f_*\widetilde {\mathcal V}\text{.}\)</p></article><p id="p-49">Observe that by <a class="xref" data-knowl="./knowl/lemma-pf-with-generating-weights.html" title="Lemma 2.11">Lemma 2.11</a>, the universal realization of a grading is unique up to equivalence.</p>
+<p id="p-50">If a grading admits a realization, then it also admits a universal realization. The universal realization can be constructed by considering the free abelian group generated by the weights and quotienting out the grading relations, as described by the following algorithm.</p>
+<article class="algorithm theorem-like" id="algorithm-integer-vector-grading"><h6 class="heading">
+<span class="type">Algorithm</span><span class="space"> </span><span class="codenumber">2.13</span><span class="period">.</span><span class="space"> </span><span class="title">Universal realization.</span>
+</h6>
+<p id="p-51">Input: a <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">grading</a> \(\mathcal V\) that has a <a class="xref" data-knowl="./knowl/def-realization.html" title="Definition 2.2">realization</a>. Output: a <a class="xref" data-knowl="./knowl/def-universal-realization.html" title="Definition 2.12">universal realization</a> \(\widetilde {\mathcal V}\) of \(\mathcal V \text{.}\)</p>
+<ol class="decimal">
+<li id="alg-grading-relations">Let \(\Omega = \{\alpha_1,\dots,\alpha_n \}\) be the set of <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">weights</a> of \(\mathcal V\) and let \(B = \{e_1,\dots,e_n \}\) be the canonical basis of \(\mathbb{Z}^n\text{.}\) Set \(R = \emptyset\text{.}\)</li>
+<li id="alg-grading-relations2">Repeat for all pairs \(\alpha_i, \alpha_j \in \Omega\text{:}\) If \(0 \neq [V_{\alpha_i}, V_{\alpha_j}] \subseteq V_{\alpha_k} \) for some \(\alpha_k \in \Omega\text{,}\) extend \(R\) by \(e_i + e_j - e_k \text{.}\)</li>
+<li id="li-5">For all \(i=1,\dots,n\text{,}\) set \(\widetilde V_{\pi(e_i)} = V_{\alpha_i}\text{,}\) where \(\pi \colon \mathbb{Z}^n \to \mathbb{Z}^n/\langle R\rangle\) is the projection. Return the obtained \(\mathbb{Z}^n/\langle R\rangle\)-grading.</li>
+</ol></article><article class="hiddenproof" id="proof-2"><a data-knowl="" class="id-ref original" data-refid="hk-proof-2"><h6 class="heading"><span class="title">Proof of correctness.</span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-2"><article class="hiddenproof">Consider a realization of \(\mathcal V\) over an abelian group \(A\) and the homomorphism \(\phi \colon \mathbb{Z}^n \to A\) defined by \(\phi(e_i)=\alpha_i\) for all \(1 \le i \le n\text{.}\) Observe that by construction \(R \subset \ker(\phi)\text{.}\) Then the grading \(\widetilde {\mathcal V}\) is well-defined: if \(\pi(e_i)=\pi(e_j)\text{,}\) then \(e_i-e_j \in \langle R\rangle\) and we have \(\alpha_i=\phi(e_i)=\phi(e_j)=\alpha_j\text{.}\) Moreover, the obtained \(\mathbb{Z}^n/\langle R\rangle\)-grading is a universal realization of \(\mathcal V\) by the universal property of quotients and arbitrariness of \(A\text{.}\)</article></div>
+<p id="p-52">In the rest of the paper we will focus on gradings that admit torsion-free realizations. For such gradings, the universal realizations are gradings over some \(\mathbb{Z}^k\text{,}\) as demonstrated by the following lemma.</p>
+<article class="lemma theorem-like" id="lemma-universal-realization-Zk"><h6 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">2.14</span><span class="period">.</span>
+</h6>
+<p id="p-53">If \(\mathcal V\) is a <a class="xref" data-knowl="./knowl/def-torsion-free-grading.html" title="Definition 2.3">torsion-free grading</a>, then the <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">grading group</a>  of the <a class="xref" data-knowl="./knowl/def-universal-realization.html" title="Definition 2.12">universal realization</a>  of \(\mathcal V\) is isomorphic to some \(\mathbb{Z}^k\text{.}\)</p></article><article class="hiddenproof" id="proof-3"><a data-knowl="" class="id-ref original" data-refid="hk-proof-3"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-3"><article class="hiddenproof"><p id="p-54">Let \(\widetilde{\mathcal{V}}\) be the  universal realization of \(\mathcal{V}\text{.}\) By <a class="xref" data-knowl="./knowl/algorithm-integer-vector-grading.html" title="Algorithm 2.13: Universal realization">Algorithm 2.13</a>, \(\widetilde{\mathcal{V}}\) is a \(\mathbb{Z}^n/\langle R\rangle\)-grading for some subset \(R\subset \mathbb{Z}^n\text{.}\) The quotient \(\mathbb{Z}^n/\langle R\rangle\) is isomorphic to a group \(\mathbb{Z}^k \times G_t\text{,}\) where \(G_t\) is some torsion group.</p>
+<p id="p-55">By assumption there exists a realization of \(\mathcal{V}\) as an \(A\)-grading with \(A\) torsion-free. Since the image of \(G_t\) under a homomorphism must vanish in \(A\text{,}\) we conclude that there are no non-zero <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">weights</a> in \(G_t\text{.}\) Since a universal realization is generated by its weights, we conclude that \(G_t=0\text{,}\) and \(\widetilde{\mathcal{V}}\) is a \(\mathbb{Z}^k\)-grading.</p></article></div>
+<p id="p-56">The following lemma is a part of Proposition 3.15 of <a class="xref" data-knowl="./knowl/Kochetov-2009-gradings_on_simple_lie_algebras_survey.html" title="Bibliographic Entry 22: Gradings on finite-dimensional simple Lie algebras">[22]</a>, and we record it for later usage.</p>
+<article class="lemma theorem-like" id="lemma-universal-of-coarsening"><h6 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">2.15</span><span class="period">.</span>
+</h6>
+<p id="p-57">If a <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">grading</a> \(\mathcal V\) is a <a class="xref" data-knowl="./knowl/def-same-layers.html" title="Definition 2.6">coarsening</a> of a grading \(\mathcal W \text{,}\) then every <a class="xref" data-knowl="./knowl/def-realization.html" title="Definition 2.2">realization</a> of \(\mathcal V\) is a <a class="xref" data-knowl="./knowl/def-push-forward-grading.html" title="Definition 2.5">push-forward grading</a> of the <a class="xref" data-knowl="./knowl/def-universal-realization.html" title="Definition 2.12">universal realization</a> of \(\mathcal W\text{.}\)</p></article></section><section class="subsection" id="sec-gradings-by-tori"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.3</span> <span class="title">Gradings induced by tori</span>
+</h3>
+<p id="par-tori-intro"> In this subsection we describe the correspondence between <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">gradings</a> of a Lie algebra \(\mathfrak{g}\) and the <a class="xref" data-knowl="./knowl/def-torus.html" title="Definition 2.16">split tori</a> of its derivation algebra \(\der(\mathfrak{g})\text{.}\) In general, gradings of a Lie algebra \(\mathfrak{g}\) are in one-to-one correspondence with algebraic quasitori, see Section 4 of <a class="xref" data-knowl="./knowl/Kochetov-2009-gradings_on_simple_lie_algebras_survey.html" title="Bibliographic Entry 22: Gradings on finite-dimensional simple Lie algebras">[22]</a>. However, in this study we are only interested in cases when \(\mathfrak{g}\) is a finite-dimensional Lie algebra over a field of characteristic zero and the <a class="xref" data-knowl="./knowl/def-torsion-free-grading.html" title="Definition 2.3">gradings are over torsion-free abelian groups</a>. In this setting, the characterization of gradings in terms of algebraic quasitori can be reduced to studying algebraic subtori of the derivation algebra \(\der(\mathfrak{g})\text{.}\)</p>
+<p id="p-59">For computational reasons, we will drop the algebraicity requirement for the subalgebras of \(\der(\mathfrak{g})\text{.}\) This means we lose the one-to-one correspondence described in <a class="xref" data-knowl="./knowl/Kochetov-2009-gradings_on_simple_lie_algebras_survey.html" title="Bibliographic Entry 22: Gradings on finite-dimensional simple Lie algebras">[22]</a>, but the less restrictive definition will be sufficient for our purposes. In particular, it will simplify the explicit construction of <a class="xref" data-knowl="./knowl/def-maximal-grading.html" title="Definition 2.21">maximal gradings</a> in terms of tori, see <a href="section-constructions.html#section-maximal-construction" class="internal" title="Subsection 3.3: Maximal gradings">Subsection 3.3</a>.</p>
+<p id="p-60">We start by defining split tori and <a class="xref" data-knowl="./knowl/def-grading-induced-by-torus.html" title="Definition 2.18">gradings induced</a> by them in the sense of <a class="xref" data-knowl="./knowl/Favre-1973-system_de_poids.html" title="Bibliographic Entry 15: Système de poids sur une algèbre de Lie nilpotente">[15]</a>.</p>
+<article class="definition definition-like" id="def-torus"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.16</span><span class="period">.</span>
+</h6>
+<p id="p-61">An abelian subalgebra \(\mathfrak{t}\) of semisimple derivations of \(\mathfrak{g}\) is called a <dfn class="terminology">torus</dfn> of \(\der(\mathfrak g)\text{.}\) If the torus \(\mathfrak{t}\) is diagonalizable over the base field of \(\mathfrak{g}\text{,}\) it is called a <dfn class="terminology">split torus</dfn>.</p></article><article class="lemma theorem-like" id="lemma-gradings-induced"><h6 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">2.17</span><span class="period">.</span>
+</h6>
+<p id="p-62">Let \(\mathfrak t\) be a <a class="xref" data-knowl="./knowl/def-torus.html" title="Definition 2.16">split torus</a> of \(\der(\mathfrak g)\) and let \(\mathfrak{t}^*\) be its dual as a vector space. For each \(\alpha\in\mathfrak{t}^*\) define the subspace</p>
+<div class="displaymath">
+\begin{equation*}
+V_\alpha=\{X\in\mathfrak{g}: \delta(X)=\alpha(\delta)X\,\forall \delta\in\mathfrak{t}\}\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">Then \(\mathfrak{g}=\bigoplus_{\alpha\in\mathfrak{t}^*}V_\alpha\) is a <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">\(\mathfrak{t}^*\)-grading</a>.</p></article><article class="hiddenproof" id="proof-4"><a data-knowl="" class="id-ref original" data-refid="hk-proof-4"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-4"><article class="hiddenproof"><p id="p-63">Let \(X_1,\ldots,X_n\) be a basis of \(\mathfrak{g}\) that diagonalizes \(\mathfrak{t}\text{.}\) Since each vector \(X_i\) is an eigenvector of every derivation \(\delta\in\mathfrak{t}\text{,}\) there are well defined linear maps \(\alpha_1,\ldots,\alpha_n\in\mathfrak{t}^*\) determined by</p>
+<div class="displaymath">
+\begin{equation*}
+\delta(X_i) = \alpha_i(\delta)X_i,\quad i=1,\ldots,n\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">By construction \(X_i\in V_{\alpha_i}\text{,}\) so the direct sum \(\bigoplus_{\alpha\in\mathfrak{t}^*}V_\alpha\) spans all of the Lie algebra \(\mathfrak{g}\text{.}\) The inclusion \([V_\alpha,V_\beta]\subset V_{\alpha+\beta}\) follows by linearity from the Leibniz rule \(\delta([X,Y]) = [\delta(X),Y]+[X,\delta(Y)]\) for all derivations \(\delta\in\mathfrak{t}\) and vectors \(X\in V_\alpha\) and \(Y\in V_\beta\text{.}\)</p></article></div>
+<article class="definition definition-like" id="def-grading-induced-by-torus"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.18</span><span class="period">.</span>
+</h6>
+<p id="p-64">The <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">\(\mathfrak{t}^*\)-grading</a> of \(\mathfrak{g}\) defined in <a class="xref" data-knowl="./knowl/lemma-gradings-induced.html" title="Lemma 2.17">Lemma 2.17</a> is called the <dfn class="terminology">grading induced by the split torus \(\mathfrak{t}\)</dfn>.</p></article><p id="p-65">See <a class="xref" data-knowl="./knowl/example-heisenberg-torus-extension.html" title="Example 3.13">Example 3.13</a> for some gradings induced by tori in the Heisenberg Lie algebra.</p>
+<p id="p-66">For the purposes of <a href="section-gradings.html#section-maximal-gradings" class="internal" title="Subsection 2.4: Maximal gradings">Subsection 2.4</a>, we need the following two lemmas. In <a class="xref" data-knowl="./knowl/lemma-conjugates-and-subtori.html" title="Lemma 2.19">Lemma 2.19</a> we link <a class="xref" data-knowl="./knowl/def-equivalent-group-gradings.html" title="Definition 2.8">equivalences</a> and <a class="xref" data-knowl="./knowl/def-push-forward-grading.html" title="Definition 2.5">push-forwards</a> of gradings to relations between the inducing tori.</p>
+<article class="lemma theorem-like" id="lemma-conjugates-and-subtori"><h6 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">2.19</span><span class="period">.</span>
+</h6>
+<p id="p-67">Let \(\mathfrak{t}_1\) and \(\mathfrak{t}_2\) be two <a class="xref" data-knowl="./knowl/def-torus.html" title="Definition 2.16">split tori</a> of \(\der(\mathfrak{g})\) with respective <a class="xref" data-knowl="./knowl/def-grading-induced-by-torus.html" title="Definition 2.18">induced</a> <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">\(\mathfrak{t}_1^*\)-grading</a> \(\mathcal V\) and <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">\(\mathfrak{t}_2^*\)-grading</a> \(\mathcal W\text{.}\)</p>
+<ol class="lower-roman">
+<li id="enum-conj">If there exists an automorphism \(\Phi \in \Aut(\mathfrak{g})\) such that \(\Phi \circ \mathfrak t_1 \circ \Phi^{-1} = \mathfrak t_2\text{,}\) then \(\mathcal V\) and \(\mathcal W\) are <a class="xref" data-knowl="./knowl/def-equivalent-group-gradings.html" title="Definition 2.8">equivalent</a>.</li>
+<li id="enum-subtori">If \(\mathfrak t_1 \subset \mathfrak t_2\text{,}\) then there exists a homomorphism \(f\) so that <a class="xref" data-knowl="./knowl/def-push-forward-grading.html" title="Definition 2.5">\(\mathcal V = f_* \mathcal W\)</a>.</li>
+</ol></article><article class="hiddenproof" id="proof-5"><a data-knowl="" class="id-ref original" data-refid="hk-proof-5"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-5"><article class="hiddenproof"><p id="p-68">To show <a class="xref" data-knowl="./knowl/enum-conj.html" title="Item i">i</a>, suppose that \(\Ad_{\Phi}\mathfrak{t}_1=\Phi\circ\mathfrak{t}_1\circ\Phi^{-1}=\mathfrak{t}_2\) for some automorphism \(\Phi\in\Aut(\mathfrak{g})\text{.}\) Let \(f\colon\mathfrak{t}_1^*\to\mathfrak{t}_2^*\) be the linear isomorphism \(f=\Ad_{\Phi^{-1}}^*\) given by \(f(\alpha)(\delta) = \alpha(\Phi^{-1}\circ\delta\circ\Phi)\text{.}\) Then</p>
+<div class="displaymath">
+\begin{align*}
+\Phi(V_\alpha) \amp= \{\Phi(X): \delta(X)=\alpha(\delta)X\,\forall \delta\in\mathfrak{t}_1 \}\\
+\amp= \{Y: \Phi\circ\delta\circ\Phi^{-1}(Y)=\alpha(\delta)Y\,\forall \delta\in\mathfrak{t}_1 \}\\
+\amp= \{Y: \eta(Y)=f(\alpha)(\eta)Y\,\forall \eta\in\mathfrak{t}_2 \} = W_{f(\alpha)}\text{.}
+\end{align*}
+</div>
+<p data-braille="continuation">Hence the gradings \(\mathcal{V}\) and \(\mathcal{W}\) are equivalent, as claimed.</p>
+<p id="p-69">Regarding <a class="xref" data-knowl="./knowl/enum-subtori.html" title="Item ii">ii</a>, suppose that  \(\mathfrak t_1 \subset \mathfrak t_2\text{.}\) We claim that \(\mathcal{V}=g_*\mathcal{W}\) through the restriction map \(g\colon \mathfrak{t}_2^*\to \mathfrak{t}_1^*\text{,}\) \(g(\beta)=\restr{\beta}{\mathfrak{t}_1}\text{.}\) Indeed, fix a basis \(X_1,\ldots,X_n\) of \(\mathfrak{g}\) that diagonalizes the split torus \(\mathfrak{t}_2\) (and hence also the subtorus \(\mathfrak{t}_1\)). Let \(\beta_1,\ldots,\beta_n\in\mathfrak{t}_2^*\) be the maps defined by \(\delta(X_i)=\beta_i(\delta)X_i\) and define \(\alpha_i = \beta_i|_{\mathfrak{t_1}}\text{.}\) By construction \(X_i\in W_{\beta_i}\text{,}\) \(X_i\in V_{\alpha_i}\text{,}\) and \(g(\beta_i)=\alpha_i\text{,}\) proving that \(\mathcal{V}=g_*\mathcal{W}\text{.}\)</p></article></div>
+<p id="p-70">Finally, we observe that any <a class="xref" data-knowl="./knowl/def-torsion-free-grading.html" title="Definition 2.3">torsion-free grading</a> has a <a class="xref" data-knowl="./knowl/def-realization.html" title="Definition 2.2">realization</a> induced by a split torus.</p>
+<article class="lemma theorem-like" id="lemma-torus-grading-correspondence"><h6 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">2.20</span><span class="period">.</span>
+</h6>
+<p id="p-71">Let \(\mathcal V\) be a <a class="xref" data-knowl="./knowl/def-torsion-free-grading.html" title="Definition 2.3">torsion-free grading</a>. Then there exists a <a class="xref" data-knowl="./knowl/def-torus.html" title="Definition 2.16">split torus</a> \(\mathfrak{t}\) whose <a class="xref" data-knowl="./knowl/def-grading-induced-by-torus.html" title="Definition 2.18">induced \(\mathfrak{t}^*\)-grading</a> is a <a class="xref" data-knowl="./knowl/def-realization.html" title="Definition 2.2">realization</a> of \(\mathcal{V}\text{.}\)</p></article><article class="hiddenproof" id="proof-6"><a data-knowl="" class="id-ref original" data-refid="hk-proof-6"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-6"><article class="hiddenproof"><p id="p-72">Let \(\mathcal{V}\colon \mathfrak{g}=\bigoplus_{\alpha\in A}V_\alpha\) be a realization of \(\mathcal{V}\) over a torsion-free abelian group \(A\) and let \(A^*\) be the space of homomorphisms \(A\to F\text{,}\) where \(F\) is the base field of \(\mathfrak{g}\text{.}\) By reducing to the subgroup generated by the <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">weights</a>, we may assume \(A \) is isomorphic to \(\mathbb{Z}^m\) for some \(m \ge 1\text{.}\) For each \(\varphi\in A^*\) define the linear map</p>
+<div class="displaymath">
+\begin{equation*}
+\delta_\varphi\colon\mathfrak{g}\to\mathfrak{g},\quad \delta_\varphi(X) = \varphi(\alpha)X\quad\forall X\in V_\alpha\text{.}
+\end{equation*}
+</div>
+<p data-braille="continuation">We claim that \(\mathfrak t = \{\delta_\varphi : \varphi \in A^*\} \) is a split torus that induces a realization for \(\mathcal V\text{.}\) Indeed, a direct computation shows that all the maps \(\delta_\varphi\) are derivations. They are diagonalizable since by construction they are multiples of the identity on each layer \(V_\alpha\text{.}\) Hence \(\mathfrak t\) is a split torus.</p>
+<p id="p-73">Let then \(\mathcal W :\mathfrak{g}=\bigoplus_{\beta\in \mathfrak t^*}W_\beta\) be the <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">\(\mathfrak{t}^*\)-grading</a> induced by \(\mathfrak t\text{.}\) Denote by \(\Omega\) the set of weights of \(\mathcal V\text{,}\) and define a map \(f \colon  \Omega \to \mathfrak t^*\) by \(f(\alpha)(\delta_\varphi) = \varphi(\alpha)\text{.}\) Then \(f\) is well-defined: if \(\varphi, \phi \in A^*\) are such that \(\delta_\varphi = \delta_\phi\text{,}\) then by the definition of \(\mathfrak t\) we have \(\varphi(\alpha) = \phi(\alpha)\) for all weights \(\alpha \in \Omega\text{.}\)</p>
+<p id="p-74">First, we show that \(V_\alpha\subset W_{f(\alpha)}\) for every \(\alpha \in A\text{.}\) By the construction of the torus \(\mathfrak t\text{,}\) for each \(X\in V_\alpha\) we have that</p>
+<div class="displaymath">
+\begin{equation*}
+\delta_\varphi(X) = \varphi(\alpha)X = f(\alpha)(\delta_\varphi)X \quad \forall \delta_\varphi \in \mathfrak t.
+\end{equation*}
+</div>
+<p data-braille="continuation">By the definition of the grading \(\mathcal W\text{,}\) we then have \(X\in W_{f(\alpha)}\) and so \(V_\alpha\subset W_{f(\alpha)}\text{.}\)</p>
+<p id="p-75">Next, we show that the map \(f\) is injective, which would prove that \(V_\alpha = W_{f(\alpha)}\) for all \(\alpha\in \Omega\) and so \(\mathcal W\) would be a realization of \(\mathcal V \text{,}\) as claimed. Note that since \(A \) is isomorphic to \(\mathbb{Z}^m\text{,}\) for every non-zero \(\alpha \in A\) there exists a homomorphism \(\varphi \in A^*\) such that \(\varphi(\alpha)\neq 0\text{.}\) Therefore, if \(\alpha, \alpha' \in \Omega\) are such that \(f(\alpha) = f(\alpha')\text{,}\) then by the construction of the map \(f\) we have</p>
+<div class="displaymath">
+\begin{equation*}
+\varphi(\alpha-\alpha') = \varphi(\alpha)-\varphi(\alpha') = f(\alpha)(\delta_\varphi)-f(\alpha')(\delta_\varphi) = 0
+\end{equation*}
+</div>
+<p data-braille="continuation">for every homomorphism \(\varphi\colon A\to F\text{.}\) So \(\alpha = \alpha'\) and \(f\) is injective, proving that \(\mathcal W\) is a realization of \(\mathcal V \text{.}\)</p></article></div></section><section class="subsection" id="section-maximal-gradings"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.4</span> <span class="title">Maximal gradings</span>
+</h3>
+<p id="p-76">We now present the notion of <a class="xref" data-knowl="./knowl/def-maximal-grading.html" title="Definition 2.21">maximal grading</a> using maximal <a class="xref" data-knowl="./knowl/def-torus.html" title="Definition 2.16">split tori</a> and prove that a maximal grading has the <a class="xref" data-knowl="./knowl/prop-max-grading.html" title="Proposition 2.23">universal property</a> of push-forwards (see <a class="xref" data-knowl="./knowl/prop-max-grading.html" title="Proposition 2.23">Proposition 2.23</a>). The formulation through the derivation algebra will be convenient in the construction of maximal grading in <a href="section-constructions.html#section-maximal-construction" class="internal" title="Subsection 3.3: Maximal gradings">Subsection 3.3</a>. The universal property will be exploited in <a href="section-gradings.html#subsection-torsion-free" class="internal" title="Subsection 2.5: Enumeration of torsion-free gradings">Subsection 2.5</a> where we give a method to construct all <a class="xref" data-knowl="./knowl/def-torsion-free-grading.html" title="Definition 2.3">gradings over torsion-free abelian groups</a> of a Lie algebra from a given maximal grading.</p>
+<article class="definition definition-like" id="def-maximal-grading"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.21</span><span class="period">.</span>
+</h6>
+<p id="p-77">Let \(\mathfrak g\) be a Lie algebra. A <dfn class="terminology">maximal grading</dfn> of \(\mathfrak g\) is the <a class="xref" data-knowl="./knowl/def-universal-realization.html" title="Definition 2.12">universal realization</a> of the <a class="xref" data-knowl="./knowl/def-grading-induced-by-torus.html" title="Definition 2.18">grading induced</a> by a maximal <a class="xref" data-knowl="./knowl/def-torus.html" title="Definition 2.16">split torus</a> of \(\der(\mathfrak g)\text{.}\)</p></article><article class="remark remark-like" id="rmk-max-grading-unique"><h6 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.22</span><span class="period">.</span>
+</h6>
+<p id="p-78">The <a class="xref" data-knowl="./knowl/def-maximal-grading.html" title="Definition 2.21">maximal grading</a> of a Lie algebra is unique up to <a class="xref" data-knowl="./knowl/def-equivalent-group-gradings.html" title="Definition 2.8">equivalence</a>, since maximal <a class="xref" data-knowl="./knowl/def-torus.html" title="Definition 2.16">split tori</a> are all conjugate (see for instance, Theorem 15.2.6. of <a class="xref" data-knowl="./knowl/springer-book.html" title="Bibliographic Entry 29: Linear algebraic groups">[29]</a>). Indeed, by <a class="xref" data-knowl="./knowl/lemma-conjugates-and-subtori.html" title="Lemma 2.19">Lemma 2.19</a><a class="xref" data-knowl="./knowl/enum-conj.html" title="Item i">i</a> the conjugacy implies that any two maximal split tori induce equivalent gradings, so also their universal realizations are equivalent.</p></article><article class="proposition theorem-like" id="prop-max-grading"><h6 class="heading">
+<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">2.23</span><span class="period">.</span>
+</h6>
+<p id="p-79">Let \(\mathcal W\) be a <a class="xref" data-knowl="./knowl/def-maximal-grading.html" title="Definition 2.21">maximal grading</a> of \(\mathfrak{g}\) and \(\mathcal{V}\) a grading of \(\mathfrak{g}\text{.}\) Then every <a class="xref" data-knowl="./knowl/def-torsion-free-grading.html" title="Definition 2.3">torsion-free</a> <a class="xref" data-knowl="./knowl/def-realization.html" title="Definition 2.2">realization</a> of \(\mathcal{V}\) is a <a class="xref" data-knowl="./knowl/def-push-forward-grading.html" title="Definition 2.5">push-forward</a> of \(\mathcal W\text{.}\)</p></article><article class="hiddenproof" id="proof-7"><a data-knowl="" class="id-ref original" data-refid="hk-proof-7"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-7"><article class="hiddenproof"><p id="p-80">Let \(\mathcal{V}'\) be the realization of \(\mathcal V\) as a <a class="xref" data-knowl="./knowl/def-grading-induced-by-torus.html" title="Definition 2.18">\(\mathfrak{t}^*\)-grading</a> induced by a <a class="xref" data-knowl="./knowl/def-torus.html" title="Definition 2.16">split torus</a> \(\mathfrak{t}\) given by <a class="xref" data-knowl="./knowl/lemma-torus-grading-correspondence.html" title="Lemma 2.20">Lemma 2.20</a>.  Let also \(\mathfrak{t}'\supset \mathfrak t \) be a maximal split torus in \(\der(\mathfrak{g})\) with the induced grading \(\mathcal W'\text{.}\) By <a class="xref" data-knowl="./knowl/lemma-conjugates-and-subtori.html" title="Lemma 2.19">Lemma 2.19</a>.<a class="xref" data-knowl="./knowl/enum-subtori.html" title="Item ii">ii</a>, the grading \(\mathcal{V'}\) is a push-forward of \(\mathcal W'\text{.}\) In particular, \(\mathcal V\) is a <a class="xref" data-knowl="./knowl/def-same-layers.html" title="Definition 2.6">coarsening</a> of \(\mathcal W'\text{.}\)</p>
+<p id="p-81">Since the maximal grading is unique up to equivalence by <a class="xref" data-knowl="./knowl/rmk-max-grading-unique.html" title="Remark 2.22">Remark 2.22</a>, we may assume that \(\mathcal W\) is the universal realization of \(\mathcal W'\text{.}\) Therefore, by <a class="xref" data-knowl="./knowl/lemma-universal-of-coarsening.html" title="Lemma 2.15">Lemma 2.15</a> every <a class="xref" data-knowl="./knowl/def-realization.html" title="Definition 2.2">realization</a> of \(\mathcal{V}\) is a push-forward grading of \(\mathcal{W}\text{.}\)</p></article></div>
+<article class="remark remark-like" id="remark-3"><h6 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.24</span><span class="period">.</span>
+</h6>
+<p id="p-82">It follows from <a class="xref" data-knowl="./knowl/prop-max-grading.html" title="Proposition 2.23">Proposition 2.23</a> and the discussion in Section 3.6 of <a class="xref" data-knowl="./knowl/Kochetov-2009-gradings_on_simple_lie_algebras_survey.html" title="Bibliographic Entry 22: Gradings on finite-dimensional simple Lie algebras">[22]</a> that <a class="xref" data-knowl="./knowl/def-maximal-grading.html" title="Definition 2.21">maximal gradings</a> are <a class="xref" data-knowl="./knowl/def-universal-realization.html" title="Definition 2.12">universal realizations</a> of fine gradings. In Definition 3.18 of <a class="xref" data-knowl="./knowl/Cornulier-2016-gradings.html" title="Bibliographic Entry 6: Gradings on Lie algebras, systolic growth, and cohopfian properties of nilpotent groups">[6]</a>, maximal gradings are defined as the <a class="xref" data-knowl="./knowl/def-grading-induced-by-torus.html" title="Definition 2.18">gradings induced</a> by maximal split tori in the automorphism group \(\Aut(\mathfrak{g})\text{.}\) Proposition 3.20 of <a class="xref" data-knowl="./knowl/Cornulier-2016-gradings.html" title="Bibliographic Entry 6: Gradings on Lie algebras, systolic growth, and cohopfian properties of nilpotent groups">[6]</a> states that maximal gradings in the sense of <a class="xref" data-knowl="./knowl/Cornulier-2016-gradings.html" title="Bibliographic Entry 6: Gradings on Lie algebras, systolic growth, and cohopfian properties of nilpotent groups">[6]</a> have a universal property equivalent to <a class="xref" data-knowl="./knowl/prop-max-grading.html" title="Proposition 2.23">Proposition 2.23</a>, so by <a class="xref" data-knowl="./knowl/lemma-pf-with-generating-weights.html" title="Lemma 2.11">Lemma 2.11</a> any such grading is maximal also in the sense of <a class="xref" data-knowl="./knowl/def-maximal-grading.html" title="Definition 2.21">Definition 2.21</a>. The maximal gradings considered in <a class="xref" data-knowl="./knowl/Favre-1973-system_de_poids.html" title="Bibliographic Entry 15: Système de poids sur une algèbre de Lie nilpotente">[15]</a> are the gradings induced by maximal split tori.</p></article></section><section class="subsection" id="subsection-torsion-free"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.5</span> <span class="title">Enumeration of torsion-free gradings</span>
+</h3>
+<p id="p-83">Following the method suggested in Section 3.7 of <a class="xref" data-knowl="./knowl/Kochetov-2009-gradings_on_simple_lie_algebras_survey.html" title="Bibliographic Entry 22: Gradings on finite-dimensional simple Lie algebras">[22]</a>, we now give a simple way to enumerate a complete (and finite) set of <a class="xref" data-knowl="./knowl/def-universal-realization.html" title="Definition 2.12">universal realizations</a> of <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">gradings</a> of a Lie algebra using the <a class="xref" data-knowl="./knowl/def-maximal-grading.html" title="Definition 2.21">maximal grading</a>. This reduces the proof of <a class="xref" data-knowl="./knowl/theorem-enumeration-of-gradings.html" title="Theorem 1.4">Theorem 1.4</a> to the construction of a maximal grading, which we cover in <a href="section-constructions.html#section-maximal-construction" class="internal" title="Subsection 3.3: Maximal gradings">Subsection 3.3</a>.</p>
+<p id="p-84">For the rest of this section, let \(\mathfrak g\) be a Lie algebra and let \(\mathcal W : \mathfrak g = \bigoplus_{n\in \mathbb{Z}^k}W_n \) be a <a class="xref" data-knowl="./knowl/def-maximal-grading.html" title="Definition 2.21">maximal grading</a>  of \(\mathfrak g\) with <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">weights</a> \(\Omega\text{.}\) Denote by \(\Omega-\Omega\) the difference set \(\Omega- \Omega = \{n-m \,\mid\, n,m\in \Omega\}\text{.}\) For a subset \(I \subset \Omega-\Omega \text{,}\) let</p>
+<div class="displaymath">
+\begin{equation*}
+\pi_I \colon \mathbb{Z}^k \to \mathbb{Z}^k/\langle I\rangle
+\end{equation*}
+</div>
+<p data-braille="continuation">be the canonical projection. We define the finite set</p>
+<div class="displaymath">
+\begin{equation*}
+\Gamma = \{{(\pi_I)_*\mathcal W}\mid I \subset \Omega - \Omega, \;\mathbb{Z}^k/\langle I\rangle\text{ is torsion-free} \}.
+\end{equation*}
+</div>
+<article class="proposition theorem-like" id="prop-Quot-gradings-are-everything"><h6 class="heading">
+<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">2.25</span><span class="period">.</span>
+</h6>
+<p id="p-85">The set \(\Gamma\) is, up to <a class="xref" data-knowl="./knowl/def-equivalent-group-gradings.html" title="Definition 2.8">equivalence</a>, a complete set of <a class="xref" data-knowl="./knowl/def-universal-realization.html" title="Definition 2.12">universal realizations</a> of <a class="xref" data-knowl="./knowl/def-torsion-free-grading.html" title="Definition 2.3">torsion-free gradings</a>  of \(\mathfrak g\text{.}\)</p></article><article class="hiddenproof" id="proof-8"><a data-knowl="" class="id-ref original" data-refid="hk-proof-8"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-8"><article class="hiddenproof"><p id="p-86">Let \(\mathcal{V}\) be the universal realization of some torsion-free grading. Due to <a class="xref" data-knowl="./knowl/lemma-universal-realization-Zk.html" title="Lemma 2.14">Lemma 2.14</a>, the <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">grading group</a> of \(\mathcal V\) is some \(\mathbb{Z}^m\text{.}\) By <a class="xref" data-knowl="./knowl/prop-max-grading.html" title="Proposition 2.23">Proposition 2.23</a>, there exists a homomorphism \(f\colon \mathbb{Z}^k\to \mathbb{Z}^m \) and an automorphism \(\Phi \in \Aut(\mathfrak g)\) such that \(\mathcal V= f_*\Phi(\mathcal W) \text{.}\) Let</p>
+<div class="displaymath">
+\begin{equation*}
+I = \ker(f)\cap (\Omega-\Omega).
+\end{equation*}
+</div>
+<p data-braille="continuation">We are going to show that \(\mathcal V' = (\pi_I)_*(\mathcal W) \) is equivalent to \(\mathcal{V}\text{.}\) Then, a posteriori, \(\mathbb{Z}^k/\langle I\rangle\) is torsion-free and we have \(\mathcal V' \in \Gamma\text{,}\) proving the claim.</p>
+<p id="p-87">First, since \(\ker(\pi_I) = \langle I\rangle \subseteq \ker(f)\text{,}\) by the universal property of quotients there exists a unique homomorphism \(\phi \colon  \mathbb{Z}^k/\langle I\rangle  \to \mathbb{Z}^m \) such that \(f = \phi \circ \pi_I\text{.}\) In particular,</p>
+<div class="displaymath">
+\begin{equation*}
+\mathcal V = f_*\Phi(\mathcal W) = \phi_*(\pi_I)_*\Phi(\mathcal W) = \phi_*\Phi(\mathcal V')\text{,}
+\end{equation*}
+</div>
+<p data-braille="continuation">so \(\mathcal V\) is a push-forward grading of \(\mathcal V'\text{.}\)</p>
+<p id="p-88">Secondly, since also \(\ker(f)\cap (\Omega-\Omega) = I \subseteq \ker(\pi_I)\cap (\Omega-\Omega) \text{,}\) we deduce that \(\mathcal V \) and \(\Phi(\mathcal V')\) are realizations of the same grading. Since \(\mathcal V\) is a universal realization, it follows that \(\Phi(\mathcal V')\) is a <a class="xref" data-knowl="./knowl/def-push-forward-grading.html" title="Definition 2.5">push-forward</a>  grading of \(\mathcal V\text{.}\) Consequently, \(\mathcal V'\) is a push-forward grading of \(\mathcal V\text{.}\) Since the grading group of a universal realization is generated by the weights, we get that the gradings \(\mathcal V\) and \(\mathcal V'\) are equivalent  by <a class="xref" data-knowl="./knowl/lemma-pf-with-generating-weights.html" title="Lemma 2.11">Lemma 2.11</a>, as wanted.</p></article></div>
+<p id="p-89">Notice that some of the \(\mathbb{Z}^k/\langle I\rangle\)-gradings in \(\Gamma\) are typically equivalent to each other. From the classification point of view, a more challenging task is to determine the equivalence classes once the set \(\Gamma\) is obtained. In low dimensions, naive methods are enough to separate non-equivalent gradings, and for equivalent ones the connecting automorphism can be found rather easily.</p>
+<p id="p-90">In <a class="xref" data-knowl="./knowl/software-lie_algebra_gradings.html" title="Bibliographic Entry 19: ehaka/lie-algebra-gradings: v1.0">[19]</a> we give a representative from each equivalence class of \(\Gamma\) for every 6-dimensional nilpotent Lie algebra over \(\mathbb{C}\) and for an extensive class of 7-dimensional Lie algebras over \(\mathbb{C}\text{.}\) The results and the methods for distinguishing the equivalence classes of the obtained gradings are described in more detail in <a href="section-applications.html#applications-classification" class="internal" title="Subsection 4.2: Classification of gradings in low dimension">Subsection 4.2</a>.</p></section></section></div></main>
+</div>
+</body>
+</html>

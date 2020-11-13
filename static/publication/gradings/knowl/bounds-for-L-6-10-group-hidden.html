@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-11-13T12:10:24+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body><article class="example example-like"><p>Let us consider the non-stratifiable Lie group \(G\) of dimension 6, whose Lie algebra is denoted as \(L_{6,10}\) in <a class="xref" data-knowl="./knowl/deGraaf-2007-dim_6_nilpotent_lie_algebras.html" title="Bibliographic Entry 11: Classification of 6-dimensional nilpotent Lie algebras over fields of characteristic not 2">[11]</a>, with the non-trivial brackets</p>
+<div class="displaymath">
+\begin{equation*}
+[X_1,X_2]=X_3\;,\;[X_1,X_3]=[X_5,X_6]=X_4\text{.}
+\end{equation*}
+</div>
+<p>The space of Rumin forms in \(G\) is</p>
+<div class="displaymath">
+\begin{align*}
+E_0^1\amp=\langle\theta_1,\theta_2,\theta_5,\theta_6\rangle;\\
+E_0^2\amp=\langle\theta_{5,6}-\theta_{1,3},\theta_{1,5},\theta_{1,6},\theta_{2,3},\theta_{2,5},\theta_{2,6}\rangle;\\
+E_0^3\amp=\langle\theta_{2,5,6}+\theta_{1,2,3},\theta_{2,3,5},\theta_{2,3,6},\theta_{1,3,4}-\theta_{4,5,6},\theta_{1,4,5},\theta_{1,4,6}\rangle.
+\end{align*}
+</div>
+<p>For the Lie algebra \(L_{6,10}\text{,}\) the <a class="xref" data-knowl="./knowl/def-maximal-grading.html" title="Definition 2.21">maximal grading</a> is over \(\mathbb{Z}^3\) with the <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">layers</a></p>
+<div class="displaymath">
+\begin{align*}
+V_{(0,1,0)}\amp=\langle X_1\rangle,\amp
+V_{(0,0,1)}\amp=\langle X_2\rangle,\amp
+V_{(0,1,1)}\amp=\langle X_3\rangle\\
+V_{(0,2,1)}\amp=\langle X_4\rangle,\amp
+V_{(1,0,0)}\amp=\langle X_5\rangle,\amp
+V_{(-1,2,1)}\amp=\langle X_6\rangle\text{.}
+\end{align*}
+</div>
+<p data-braille="continuation">The family of projections \(\pi^{\mathbf{a}} \colon \mathbb{Z}^3 \to \mathbb{R}\) giving positive gradings is parametrized by \((a_1,a_2,a_3)=\mathbf{a}\in\positiveset\) as in <a class="xref" data-knowl="./knowl/eq-positive-set.html" title="Equation 4.4">(4.4)</a>. The <a class="xref" data-knowl="./knowl/def-weights-of-forms.html" title="Definition 4.17">weights</a> of left-invariant 1-forms are</p>
+<div class="displaymath">
+\begin{align*}
+w(\theta_1)_{\mathbf{a}}\amp=\pi^{\mathbf{a}}(0,1,0)=a_2;\\
+w(\theta_2)_{\mathbf{a}}\amp=\pi^{\mathbf{a}}(0,0,1)=a_3;\\
+w(\theta_3)_{\mathbf{a}}\amp=\pi^{\mathbf{a}}(0,1,1)=a_2+a_3;\\
+w(\theta_4)_{\mathbf{a}}\amp=\pi^{\mathbf{a}}(0,2,1)=2a_2+a_3;\\
+w(\theta_5)_{\mathbf{a}}\amp=\pi^{\mathbf{a}}(1,0,0)=a_1;\\
+w(\theta_6)_{\mathbf{a}}\amp=\pi^{\mathbf{a}}(-1,2,1)=2a_2+a_3-a_1\text{.}
+\end{align*}
+</div>
+<p data-braille="continuation">From this computation we get the explicit expression</p>
+<div class="displaymath">
+\begin{equation*}
+\positiveset = \{\mathbf{a}\in\mathbb{R}^3: a_1\gt 0,\,a_2\gt 0,\,a_3\gt 0,\,-a_1+2a_2+a_3\gt 0 \}
+\end{equation*}
+</div>
+<p data-braille="continuation">and the homogeneous dimension \(Q_{\mathbf{a}}=6a_2+4a_3\text{.}\)</p>
+<p>Let us first consider the bound for non-vanishing cohomology in degree 1. We express</p>
+<div class="displaymath">
+\begin{gather*}
+\max_{\mathbf{a}\in\positiveset}\bigg\{\frac{\delta N_{\min}(1)}{Q_{\mathbf{a}}}\bigg\}=\max_{\mathbf{a}\in\positiveset}\bigg\{\frac{\min\{a_1,a_2,a_3,2a_2+a_3-a_1\}}{6a_2+4a_3}\bigg\}\text{.}
+\end{gather*}
+</div>
+<p data-braille="continuation">as the linear optimization problem</p>
+<div class="displaymath">
+\begin{align*}
+\text{Maximize}\quad \amp x\\
+\text{subject to}\quad x\amp\le a_1,\;
+x\leq a_2,\;
+x\leq a_3,\\
+x\amp\leq 2a_2+a_3-a_1,\\
+1\amp=6a_2+4a_3,\\
+a_1\amp,a_2,a_3\gt 0,\; 2a_2+a_3-a_1\gt 0\text{.}
+\end{align*}
+</div>
+<p data-braille="continuation">A solver finds the solution \(\frac{1}{10}\text{,}\) which is obtained by choosing \(a_1=a_2=a_3=\frac{1}{10}\text{.}\) Since the quantity \(\frac{\delta N_{\min}(1)}{Q_{\mathbf{a}}}\) is scaling invariant, we find that the grading defined by \(a_1=a_2=a_3=1\) gives \(\ell^{q,p}H^1(G)\neq 0\) with the optimal bound \(\frac{1}{p}-\frac{1}{q}\lt \frac{1}{10}\text{.}\)</p>
+<p>Similarly, once we re-express</p>
+<div class="displaymath">
+\begin{gather*}
+\max_{\mathbf{a}\in\positiveset}\bigg\{\frac{\delta N_{\min}(2)}{Q_{\mathbf{a}}}\bigg\} \text{.}
+\end{gather*}
+</div>
+<p data-braille="continuation">as a linear optimization problem and feed it into a solver, we get the result \(\frac{1}{10}\text{,}\) obtained (up to rescaling) by taking \(a_2=a_3=2\) and \(a_1=3\text{.}\) Therefore \(\ell^{q,p}H^2(G)\neq 0\) for \(\frac{1}{p}-\frac{1}{q}\lt\frac{1}{10}\text{.}\)</p>
+<p>Likewise, we obtain the optimal bound \(\frac{1}{p}-\frac{1}{q}\lt\frac{1}{10}\) for \(\ell^{q,p}H^3(G)\neq 0\) by taking \(a_1=a_2=a_3=1\text{.}\)</p>
+<p>Finally, by Hodge duality, see Theorem 7.3 of <a class="xref" data-knowl="./knowl/Tripaldi-2020-rumin_complex.html" title="Bibliographic Entry 30: The Rumin complex on nilpotent Lie groups">[30]</a>, we obtain the optimal bounds for \(\ell^{q,p}\) cohomology in complementary degree, that is \(\ell^{q,p}H^4(G)\neq 0\text{,}\) \(\ell^{q,p}H^5(G)\neq 0\text{,}\) and \(\ell^{q,p}H^6(G)\neq 0\text{,}\) for \(\frac{1}{p}-\frac{1}{q}\lt\frac{1}{10}\text{.}\)</p></article></body>
+</html>

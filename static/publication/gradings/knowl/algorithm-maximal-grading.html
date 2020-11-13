@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-11-13T12:10:24+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<article class="algorithm theorem-like"><h6 class="heading">
+<span class="type">Algorithm</span><span class="space"> </span><span class="codenumber">3.12</span><span class="period">.</span><span class="space"> </span><span class="title">Maximal grading.</span>
+</h6>
+<p>Input: A Lie algebra \(\mathfrak{g}\) over an algebraically closed field \(F\text{.}\) Output: A <a class="xref" data-knowl="./knowl/def-maximal-grading.html" title="Definition 2.21">maximal grading</a> of \(\mathfrak{g}\text{.}\)</p>
+<ol class="decimal">
+<li>Compute a basis for the derivation algebra \(\der(\mathfrak{g})\text{.}\) Set \(B= \emptyset\text{.}\)</li>
+<li>Determine the \(\mathfrak{t}^*\)-grading \(\mathcal{V}:\mathfrak{g}=\bigoplus_\lambda V_\lambda\) <a class="xref" data-knowl="./knowl/def-grading-induced-by-torus.html" title="Definition 2.18">induced by the torus</a> \(\mathfrak{t}=\langle B\rangle\text{.}\)</li>
+<li>Compute a basis \(A_1,\ldots,A_n\) for the centralizer \(C(\mathfrak{t})\subset \der(\mathfrak{g})\text{.}\)</li>
+<li>Compute the adjoint representation \(\ad\colon C(\mathfrak{t})\to \bigoplus_{\lambda}\mathfrak{gl}(\mathfrak{gl}(V_\lambda))\text{.}\)</li>
+<li>Compute a basis \(K_1,\ldots,K_m\) for \(\ker(\ad)\subset C(\mathfrak{t})\text{.}\) If \(K_{i}\notin \mathfrak{t}\) for some \(i=1,\ldots,m\text{,}\) extend \(\mathfrak{t}\) by \(K_{i}\) and go back to step <a class="xref" data-knowl="./knowl/maxalg-2-eigenspace-grading.html" title="Item 2">2</a>.</li>
+<li>Repeat for each \(A=A_i\) and \(A=A_i+A_j\text{,}\) \(i,j=1,\ldots,n\text{:}\) compute the Jordan decomposition \(A=A_s+A_n\text{.}\) If \(A_s\notin \mathfrak{t}\text{,}\) extend \(\mathfrak{t}\) by \(A_s\) and go back to step <a class="xref" data-knowl="./knowl/maxalg-2-eigenspace-grading.html" title="Item 2">2</a>.</li>
+<li>Compute and return the <a class="xref" data-knowl="./knowl/def-universal-realization.html" title="Definition 2.12">universal realization</a> of the grading \(\mathcal{V}\text{.}\)</li>
+</ol></article><span class="incontext"><a href="section-constructions.html#algorithm-maximal-grading">in-context</a></span>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-11-13T12:10:24+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<h6 class="heading"><span class="type">Paragraph</span></h6>
+<p>Let \(Y_1,\ldots,Y_n\) be a basis of \(\mathfrak{g}\) that diagonalizes \(\delta\text{.}\) Fix some \(Y=Y_i\) and let \(w_Y\) and \(w_X\) be the eigenvalues of the eigenvectors \(Y\) and \(X\text{.}\) Since \(\delta\) is a derivation and \(X\) and \(Y\) are eigenvectors, the vectors \(\ad_X^kY\) are also eigenvectors, and have the eigenvalues \(kw_X+w_Y\text{.}\) Using this fact, and recalling that \(\Ad_{\exp(X)} = e^{\ad_X}\text{,}\) see Proposition 1.91 of <a class="xref" data-knowl="./knowl/knapp-beyond-introduction.html" title="Bibliographic Entry 21: Lie groups beyond an introduction">[21]</a>, we compute</p>
+<div class="displaymath">
+\begin{align*}
+\delta\circ\Ad_{\exp(-X)}(Y) \amp= \delta\Big(\sum_{k=0}^\infty \frac{1}{k!}\ad_{-X}^kY\Big)\\
+\amp= \sum_{k=0}^\infty\frac{1}{k!}(kw_X+w_Y)\ad_{-X}^kY\\
+\amp= \sum_{k=1}^\infty\frac{1}{(k-1)!}\ad_{-X}^{k-1}[-w_XX,Y]+\sum_{k=0}^\infty\frac{1}{k!}\ad_{-X}^k(w_YY)\\
+\amp=\sum_{k=0}^\infty\frac{1}{k!}\ad_{-X}^k(-[w_XX,Y]+w_YY)\\
+\amp=\Ad_{\exp(-X)}(-\ad_{\delta(X)}Y+\delta(Y))\text{.}
+\end{align*}
+</div>
+<p data-braille="continuation">By cancellation of \(\Ad_{\exp(X)}\) and \(\Ad_{\exp(-X)}\text{,}\) the claimed formula follows.</p>
+<span class="incontext"><a href="section-applications.html#p-173">in-context</a></span>
+</body>
+</html>

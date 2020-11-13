@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2020-11-13T12:10:24+01:00    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<h6 class="heading"><span class="type">Paragraph</span></h6>
+<p>A problem of this form can be converted into a linear optimization problem as follows:</p>
+<ol class="decimal">
+<li>replace \(\min_{\theta\in E_0^h} w(\theta)_\mathbf{a}\) with a new variable \(x\text{,}\) and add the constraint \(x\le w(\theta)_\mathbf{a}\) for each \(\theta\in E_0^h\text{;}\)</li>
+<li>replace \(\max_{\tilde{\theta}\in E_0^{h-1}}w(\tilde{\theta})\) with a new variable \(y\text{,}\) and add the constraint \(y\ge w(\tilde{\theta})_\mathbf{a}\) for each \(\tilde{\theta}\in E_0^{h-1}\text{;}\)</li>
+<li>normalize the expression by imposing \(Q_\mathbf{a}=1.\)</li>
+</ol>
+<p data-braille="continuation">We are then left with the following expression for our original maximization problem</p>
+<div class="displaymath">
+\begin{align*}
+\text{Maximize}\quad \amp x-y\\
+\text{subject to}\quad x\amp\le w(\theta)_\mathbf{a}\quad \forall\,\theta\in E_0^h,\\
+y\amp\ge w(\tilde{\theta})_\mathbf{a}\quad \forall \tilde{\theta}\in E_0^{h-1},\\
+Q_\mathbf{a}\amp=1,\quad
+\mathbf{a}\in\positiveset
+\end{align*}
+</div>
+<p data-braille="continuation">which can easily be solved by a computer, yielding the optimal bound for non-vanishing cohomology using the method of <a class="xref" data-knowl="./knowl/thm-nonvanishing-lpq-bounds.html" title="Theorem 4.18">Theorem 4.18</a>.</p>
+<span class="incontext"><a href="section-applications.html#conversion-into-linear-optimizatio-problem">in-context</a></span>
+</body>
+</html>
