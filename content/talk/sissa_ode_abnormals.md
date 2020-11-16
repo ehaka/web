@@ -2,7 +2,7 @@
 title: Carnot groups and abnormal dynamics
 event: SISSA Geometric structures seminar
 event_url: https://sites.google.com/view/geometric-structures/
-location: Trieste, Italy (online)
+location: Online
 summary: ""
 abstract: "The existence of so called abnormal curves is one of the features distinguishing sub-Riemannian geometry from Riemannian geometry. The need to understand (or avoid) abnormal curves appears in many sub-Riemannian problems, such as the regularity of length-minimizing curves and the Sard problem. Some recent progress in both of these problems has been obtained by studying abnormal curves as trajectories of dynamical systems. In this talk, I will present some of the story of abnormal dynamics in the setting of Carnot groups. In particular, I will cover how to lift an arbitrary trajectory of an arbitrary polynomial ODE to an abnormal curve in some Carnot group."
 
