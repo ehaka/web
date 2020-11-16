@@ -33,6 +33,8 @@ featured: false
 links:
 # - name: ""
 #   url: ""
+- name: "arXiv"
+  url: "https://arxiv.org/abs/2011.06871"
 - name: "Online"
   url: "publication/web/gradings/frontmatter-1.html"
 url_pdf: "publication/gradings-2020-11-13.pdf"
