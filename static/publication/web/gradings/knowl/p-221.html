@@ -1,40 +1,26 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-11-13T12:10:25+01:00    *-->
-<!--*                                    *-->
-<!--*      https://pretextbook.org       *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-05-19T10:12:56+03:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-<h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Gradings are named as \(r.d_1d_2\ldots d_nl\text{,}\) where \(r\) is the rank of the grading, \(d_1,\ldots,d_n\) are the dimensions of the layers (in increasing order) and \(l\) is a letter \(a,b,c,\ldots\) used to distinguish non-<a class="xref" data-knowl="./knowl/def-equivalent-group-gradings.html" title="Definition 2.8">equivalent</a> gradings with the same rank and <a class="xref" data-knowl="./knowl/par-rank-and-type.html" title="Paragraph">type</a>. For example consider the Heisenberg Lie algebra \(L_{3,2}\) in the basis \(Y_1,Y_2,Y_3\) with the Lie bracket defined by \([Y_1,Y_2]=Y_3\text{.}\) The maximal grading is a rank 2 grading</p>
-<div class="displaymath">
-\begin{equation*}
-V_{(1,0)} = \langle Y_1\rangle,\quad
-V_{(0,1)} = \langle Y_2\rangle,\quad
-V_{(1,1)} = \langle Y_3\rangle,\quad
-\end{equation*}
-</div>
-<p data-braille="continuation">with 3 layers of dimension 1 and is classified as grading 2.3a of \(L_{3,2}\text{.}\) The <a class="xref" data-knowl="./knowl/def-stratification.html" title="Definition 3.1">stratification</a></p>
-<div class="displaymath">
-\begin{equation*}
-V_{1} = \langle Y_1,Y_2\rangle,\quad
-V_{2} = \langle Y_3\rangle
-\end{equation*}
-</div>
-<p data-braille="continuation">is a rank 1 grading with layers of dimensions 1 and 2 and is classified as 1.11b to distinguish it from the grading</p>
-<div class="displaymath">
-\begin{equation*}
-V_{0} = \langle Y_1\rangle,\quad
-V_{1} = \langle Y_2,Y_3\rangle\text{.}
-\end{equation*}
-</div>
-<span class="incontext"><a href="appendix-classification.html#p-221">in-context</a></span>
+<h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
+<p>Input: A <a class="xref" data-knowl="./knowl/def-grading.html" title="Definition 2.1">grading</a> \(\mathcal{V}\) of a Lie algebra \(\mathfrak{g}\text{.}\) Output: Decision if \(\mathcal{V}\) admits a <a class="xref" data-knowl="./knowl/def-positive-grading.html" title="Definition 3.6">positive</a> <a class="xref" data-knowl="./knowl/def-realization.html" title="Definition 2.6">realization</a>.</p>
+<ol class="decimal">
+<li>Form the \(N \times k\) matrix <a class="xref" data-knowl="./knowl/par-def-of-A.html" title="Paragraph">\(A\)</a> associated with the problem and set \(\mathbf{b}=(-1,\ldots,-1)\in\mathbb{R}^{N}\text{.}\)</li>
+<li>For each invertible \(N\times N\) matrix \(B\) formed from the columns of the matrix \(A\) do the following: Compute \(\mathbf{x}=B^{-1}(\mathbf{b})\text{.}\) If \(\mathbf{x} \ge 0\text{,}\) then the grading admits a positive realization.</li>
+<li>Otherwise, the grading has no positive realization.</li>
+</ol>
+<span class="incontext"><a href="section-positive-gradings.html#p-221">in-context</a></span>
 </body>
 </html>

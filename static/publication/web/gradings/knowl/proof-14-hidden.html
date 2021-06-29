@@ -1,25 +1,50 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-11-13T12:10:24+01:00    *-->
-<!--*                                    *-->
-<!--*      https://pretextbook.org       *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-06-29T12:15:05+02:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body><article class="hiddenproof"><p>Let \(Y_1,\ldots,Y_n\) be a basis of \(\mathfrak{g}\) that diagonalizes \(\delta\text{.}\) Fix some \(Y=Y_i\) and let \(w_Y\) and \(w_X\) be the eigenvalues of the eigenvectors \(Y\) and \(X\text{.}\) Since \(\delta\) is a derivation and \(X\) and \(Y\) are eigenvectors, the vectors \(\ad_X^kY\) are also eigenvectors, and have the eigenvalues \(kw_X+w_Y\text{.}\) Using this fact, and recalling that \(\Ad_{\exp(X)} = e^{\ad_X}\text{,}\) see Proposition 1.91 of <a class="xref" data-knowl="./knowl/knapp-beyond-introduction.html" title="Bibliographic Entry 21: Lie groups beyond an introduction">[21]</a>, we compute</p>
-<div class="displaymath">
-\begin{align*}
-\delta\circ\Ad_{\exp(-X)}(Y) \amp= \delta\Big(\sum_{k=0}^\infty \frac{1}{k!}\ad_{-X}^kY\Big)\\
-\amp= \sum_{k=0}^\infty\frac{1}{k!}(kw_X+w_Y)\ad_{-X}^kY\\
-\amp= \sum_{k=1}^\infty\frac{1}{(k-1)!}\ad_{-X}^{k-1}[-w_XX,Y]+\sum_{k=0}^\infty\frac{1}{k!}\ad_{-X}^k(w_YY)\\
-\amp=\sum_{k=0}^\infty\frac{1}{k!}\ad_{-X}^k(-[w_XX,Y]+w_YY)\\
-\amp=\Ad_{\exp(-X)}(-\ad_{\delta(X)}Y+\delta(Y))\text{.}
-\end{align*}
+<body><article class="hiddenproof"><p>Iterating the Leibniz-rule, one finds that the derivation \(\delta\) satisfies</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+[\delta, \ad_X^n] = \sum_{k=0}^{n-1} \ad_X^k \circ \ad_{\delta(X)} \circ \ad_X^{n-k-1} \text{.}
+\end{equation*}
 </div>
-<p data-braille="continuation">By cancellation of \(\Ad_{\exp(X)}\) and \(\Ad_{\exp(-X)}\text{,}\) the claimed formula follows.</p></article></body>
+<p class="continuation">The assumption \([\delta(X),X]=0\) implies by the Jacobi identity that the maps \(\ad_{\delta(X)}\) and \(\ad_X\) commute, so the above formula simplifies to</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+[\delta, \ad_X^n] = n \ad_{\delta(X)} \circ \ad_X^n\text{.}
+\end{equation*}
+</div>
+<p class="continuation">If \(P\) is a polynomial and \(P'\) denotes its derivative polynomial, the above formula implies that</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+[\delta,P(\ad_X)] = \ad_{\delta(X)} \circ P'(\ad_X)\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Going to the limit one finds</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+[\delta,e^{-\ad_X}] = \ad_{\delta(-X)} \circ e^{-\ad_X}
+\end{equation*}
+</div>
+<p class="continuation">and consequently</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+e^{\ad_X} \circ \delta \circ e^{-\ad_X}
+=
+e^{\ad_X} \circ  \ad_{\delta(-X)} \circ  e^{- \ad_X}
++ \delta\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Recalling that \(\Ad_{\exp(X)} = e^{\ad_X}\text{,}\) see Proposition 1.91 of <a class="xref" data-knowl="./knowl/knapp-beyond-introduction.html" title="Bibliographic Entry 22: Lie groups beyond an introduction">[22]</a>, we conclude using <a class="xref" data-knowl="./knowl/lemma-adjoint-conjugation-of-ad.html" title="Lemma 4.11">Lemma 4.11</a> and observing that \(e^{\ad_X}(\delta(X))= \delta(X)\) due to the assumption \([\delta(X),X]=0\text{.}\)</p></article></body>
 </html>

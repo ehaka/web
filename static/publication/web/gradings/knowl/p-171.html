@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-11-13T12:10:24+01:00    *-->
-<!--*                                    *-->
-<!--*      https://pretextbook.org       *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-06-29T12:15:05+02:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-<h6 class="heading"><span class="type">Paragraph</span></h6>
-<p>Before proving <a class="xref" data-knowl="./knowl/prop-noneqgradings-produce-diff-heintze.html" title="Proposition 4.10">Proposition 4.10</a>, we need the following lemmas.</p>
+<h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
+<p>Iterating the Leibniz-rule, one finds that the derivation \(\delta\) satisfies</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+[\delta, \ad_X^n] = \sum_{k=0}^{n-1} \ad_X^k \circ \ad_{\delta(X)} \circ \ad_X^{n-k-1} \text{.}
+\end{equation*}
+</div>
+<p class="continuation">The assumption \([\delta(X),X]=0\) implies by the Jacobi identity that the maps \(\ad_{\delta(X)}\) and \(\ad_X\) commute, so the above formula simplifies to</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+[\delta, \ad_X^n] = n \ad_{\delta(X)} \circ \ad_X^n\text{.}
+\end{equation*}
+</div>
+<p class="continuation">If \(P\) is a polynomial and \(P'\) denotes its derivative polynomial, the above formula implies that</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+[\delta,P(\ad_X)] = \ad_{\delta(X)} \circ P'(\ad_X)\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Going to the limit one finds</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+[\delta,e^{-\ad_X}] = \ad_{\delta(-X)} \circ e^{-\ad_X}
+\end{equation*}
+</div>
+<p class="continuation">and consequently</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+e^{\ad_X} \circ \delta \circ e^{-\ad_X}
+=
+e^{\ad_X} \circ  \ad_{\delta(-X)} \circ  e^{- \ad_X}
++ \delta\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Recalling that \(\Ad_{\exp(X)} = e^{\ad_X}\text{,}\) see Proposition 1.91 of <a class="xref" data-knowl="./knowl/knapp-beyond-introduction.html" title="Bibliographic Entry 22: Lie groups beyond an introduction">[22]</a>, we conclude using <a class="xref" data-knowl="./knowl/lemma-adjoint-conjugation-of-ad.html" title="Lemma 4.11">Lemma 4.11</a> and observing that \(e^{\ad_X}(\delta(X))= \delta(X)\) due to the assumption \([\delta(X),X]=0\text{.}\)</p>
 <span class="incontext"><a href="section-applications.html#p-171">in-context</a></span>
 </body>
 </html>

@@ -1,25 +1,60 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-11-13T12:10:24+01:00    *-->
-<!--*                                    *-->
-<!--*      https://pretextbook.org       *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-06-29T12:15:05+02:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-<article class="hiddenproof"><h6 class="heading"><span class="type">Proof</span></h6>
-<p>Since the map \(\Ad_{\exp(X)}\) is a Lie algebra homomorphism and is the inverse of \(\Ad_{\exp(-X)}\text{,}\) we have</p>
-<div class="displaymath">
+<article class="hiddenproof"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Proof</span></h6>
+<p>For a vector \(X\in\mathfrak{g}\text{,}\) denote by \(C_X\colon\der(\mathfrak{g})\to\der(\mathfrak{g})\) the conjugation map</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\Ad_{\exp(X)}[Y,\Ad_{\exp(-X)}Z]
-= [\Ad_{\exp(X)}Y,Z]
+C_X(\eta) = \Ad_{\exp(X)}\circ \eta \circ \Ad_{\exp(-X)}\text{.}
 \end{equation*}
 </div>
-<p data-braille="continuation">for every \(Z\in\mathfrak{g}\text{.}\)</p></article><span class="incontext"><a href="section-applications.html#proof-15">in-context</a></span>
+<p class="continuation">Let \(X_1,\ldots,X_n\) be a basis of \(\mathfrak{g}\) that diagonalizes \(\delta\text{.}\) Consider the map</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\Phi\colon \mathbb{R}^n\to \der(\mathfrak{g}),\quad \Phi(x_1,\ldots,x_n)=C_{x_nX_n}\circ\cdots\circ C_{x_1X_1}(\delta)\text{.}
+\end{equation*}
+</div>
+<p class="continuation">By repeated application of <a class="xref" data-knowl="./knowl/lemma-adjoint-conjugation-of-derivation.html" title="Lemma 4.12">Lemma 4.12</a> and <a class="xref" data-knowl="./knowl/lemma-adjoint-conjugation-of-ad.html" title="Lemma 4.11">Lemma 4.11</a>, it follows that \(\Phi(x) = \delta - \ad_{\phi(x)}\text{,}\) where \(\phi\colon \mathbb{R}^n\to\mathfrak{g}\) is the map</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align}
+\phi(x_1,\amp\ldots,x_n) = \delta(x_nX_n) + \Ad_{\exp(x_nX_n)}\delta(x_{n-1}X_{n-1})+\cdots\tag{4.2}\\
+\amp+ \Ad_{\exp(x_nX_n)}\Ad_{\exp(x_{n-1}X_{n-1})}\cdots\Ad_{\exp(x_2X_2)}\delta(x_{1}X_{1})\text{.}\notag
+\end{align}
+</div>
+<p class="continuation">Since the composition of conjugations is a conjugation, it suffices to prove that the map \(\phi\) is surjective.</p>
+<p>Let \(w_1,\ldots,w_n\gt 0\) be the eigenvalues of the vectors \(X_1,\ldots,X_n\) for the derivation \(\delta\text{.}\) Since the maps \(x_i\mapsto \operatorname{sign}(x_i)\abs{x_i}^{w_i}\) are all invertible, the map \(\phi\colon \mathbb{R}^n\to\mathfrak{g}\) is surjective if and only if the map \(\tilde{\phi}\colon \mathbb{R}^n\to\mathfrak{g}\) defined by</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation}
+\tilde{\phi}(x_1,\ldots,x_n)=\phi(\operatorname{sign}(x_1)\abs{x_1}^{w_1},\ldots,\operatorname{sign}(x_n)\abs{x_n}^{w_n})\tag{4.3}
+\end{equation}
+</div>
+<p class="continuation">is surjective.</p>
+<p>Let \(D_\lambda\in\Aut(\mathfrak{g})\text{,}\) \(\lambda\gt 0\text{,}\) be the one-parameter family of dilations defined by the derivation \(\delta\text{,}\) i.e., \(D_\lambda = \exp(\delta \log \lambda)\text{.}\) Then for each \(i=1,\ldots,n\) the dilation is given by \(D_\lambda(X_i)=\lambda^{w_i}X_i\) and we have the dilation equivariance</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\Ad_{\exp(\lambda^{w_i} X_i)}\circ D_\lambda = D_{\lambda}\circ\Ad_{\exp(X_i)}\text{.}
+\end{equation*}
+</div>
+<p xmlns:svg="http://www.w3.org/2000/svg">Applying the above equivariance to the definition <a class="xref" data-knowl="./knowl/eq-rescaled-adjoint-sum.html" title="Equation 4.3">(4.3)</a> we find that the map \(\tilde{\phi}\) is \(D_\lambda\)-homogeneous, i.e., \(\tilde{\phi}(\lambda x) = D_\lambda(\tilde{\phi}(x))\) for all \(x\in\mathbb{R}^n\) and \(\lambda\gt 0\text{.}\) Since \(\bigcup_{\lambda &gt; 0} D_\lambda(U) = \mathfrak g\) for any neighborhood \(U\) of the identity it follows that the map \(\tilde{\phi}\) is surjective if and only if it is open at zero. Since the change of parameters in <a class="xref" data-knowl="./knowl/eq-rescaled-adjoint-sum.html" title="Equation 4.3">(4.3)</a> is a homeomorphism, the same is true also for the map \(\phi\text{.}\)</p>
+<p>By the definition <a class="xref" data-knowl="./knowl/eq-def-adjoint-sum.html" title="Equation 4.2">(4.2)</a>, the map \(\phi\) is smooth. The derivative of each summand \(\Ad_{\exp(x_nX_n)}\cdots\Ad_{\exp(x_{i+1}X_{i+1})}\delta(x_iX_i)\) at zero is the map \(x\mapsto \delta(x_iX_i)\text{,}\) so the derivative \(D_0\phi\) of the map \(\phi\) at zero is</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+D_0\phi(x_1,\ldots,x_n) = \delta(x_1X_1+\cdots+x_nX_n)\text{.}
+\end{equation*}
+</div>
+<p class="continuation">By the strictly positive eigenvalue assumption, the map \(\delta\) is invertible. Since \(X_1,\ldots,X_n\) is a basis of \(\mathfrak{g}\text{,}\) it follows that the map \(\phi\) is open at zero, concluding the proof.</p></article><span class="incontext"><a href="section-applications.html#proof-15">in-context</a></span>
 </body>
 </html>

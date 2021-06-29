@@ -1,22 +1,89 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-11-13T12:10:24+01:00    *-->
-<!--*                                    *-->
-<!--*      https://pretextbook.org       *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-06-29T12:15:04+02:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body><article class="hiddenproof"><p>Let us consider the natural embedding of \(\mathbb{Z}^m\) into \(\mathbb{Q}^m\text{.}\) Using the canonical inner product \(\langle\cdot,\cdot\rangle\) on \(\mathbb{Q}^m\text{,}\) we define for each vector \(v \in \mathbb{Q}^m\text{,}\) the corresponding open half-space</p>
-<div class="displaymath">
+<body><article class="hiddenproof"><p>If the grading \(\mathcal{V}\) has a positive realization, then it is a <a class="xref" data-knowl="./knowl/def-push-forward-grading.html" title="Definition 2.4">push-forward grading</a> of the universal realization by some homomorphism \(f\colon \mathbb{Z}^k\to\mathbb{R}\) satisfying the inequalities \(f(\alpha_i)\gt 0\) and \(f(\alpha_i)\neq f(\alpha_j)\) for all \(i\neq j\text{.}\) Since the inequalities all have integer coefficients, the existence of such a homomorphism is equivalent to the existence of a homomorphism \(f\colon \mathbb{Z}^k\to\mathbb{Z}\) with the same properties. We may always write such a homomorphism in the form \(f(\cdot)=\braket{w,\cdot}\) for some \(w\in\mathbb{Z}^k\text{.}\) To prove the correctness of the algorithm, we need to show that the linear programming problem <a class="xref" data-knowl="./knowl/eq-pos-linprog-optimization.html" title="Equation 3.6">(3.6)</a>–<a class="xref" data-knowl="./knowl/eq-pos-linprog-disjoint2.html" title="Equation 3.9">(3.9)</a> has a solution if and only if there exists \(w\in\mathbb{Z}^k\) such that</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align}
+\braket{w,\alpha_i}\amp\geq 1\tag{3.10}\\
+\braket{w,\alpha_i-\alpha_j}\amp\neq 0\tag{3.11}
+\end{align}
+</div>
+<p class="continuation">and that this solution has the smallest possible \(\max_i \braket{w,\alpha_i}\text{.}\) Furthermore we claim, that if a suitable \(w\in\mathbb{Z}^k\) exists, then there also exists one with</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation}
+\abs{\braket{w,\alpha_i-\alpha_j}}\leq C\tag{3.12}
+\end{equation}
+</div>
+<p class="continuation">where \(C\) is the constant defined in step <a class="xref" data-knowl="./knowl/alg-pos-apriori-bound.html" title="Item 2">2</a>. We prove this claim later.</p>
+<p>The smallest maximal weight property is equivalent to <a class="xref" data-knowl="./knowl/eq-pos-linprog-optimization.html" title="Equation 3.6">(3.6)</a> and the first half of <a class="xref" data-knowl="./knowl/eq-pos-linprog-positivity.html" title="Equation 3.7">(3.7)</a>, since a solution will necessarily satisfy \(z = \max_i \braket{w,\alpha_i}\text{.}\) The latter half of <a class="xref" data-knowl="./knowl/eq-pos-linprog-positivity.html" title="Equation 3.7">(3.7)</a> is exactly the condition <a class="xref" data-knowl="./knowl/eq-positive.html" title="Equation 3.10">(3.10)</a>. The inequalities <a class="xref" data-knowl="./knowl/eq-disjoint.html" title="Equation 3.11">(3.11)</a> and <a class="xref" data-knowl="./knowl/eq-bounded-abs-diff.html" title="Equation 3.12">(3.12)</a> are encoded in the inequalities <a class="xref" data-knowl="./knowl/eq-pos-linprog-disjoint1.html" title="Equation 3.8">(3.8)</a> and <a class="xref" data-knowl="./knowl/eq-pos-linprog-disjoint2.html" title="Equation 3.9">(3.9)</a> using the auxiliary binary variables \(b_{ij}\text{.}\) Indeed, if we have \(b_{ij}=0\text{,}\) then the inequalities reduce to</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-M_v = \{x\in \mathbb{Q}^m : \langle v, x \rangle &gt; 0 \}\text{.}
+-C\leq \braket{w,\alpha_i-\alpha_j}\leq -1
 \end{equation*}
 </div>
-<p>Denote by \(\Omega= \{\alpha_1,\ldots,\alpha_N\}\) the set of weights of \(\mathcal{V}\text{.}\) Recall that the convex hull of a set is the intersection of all the affine half-spaces containing the set. Hence, because the convex hull of \(\Omega\) does not contain the origin, it is contained in an open half-space \(M_{v_0} \subset \mathbb{Q}^m\text{.}\) Moreover, there exists a neighborhood \(B\) of \(v_0\) such that the convex hull of \(\Omega\) is contained in every half-space \(M_v\) with \(v\in B\text{.}\)</p>
-<p>By construction all the inner products \(\langle v, \alpha_i \rangle\) with \(\alpha_i \in \Omega\) and \(v\in B\) are strictly positive. Since \(B\) has non-empty interior, we may choose some \(v\in B\) such that all the numbers \(\langle v, \alpha_1 \rangle , \ldots, \langle v, \alpha_N \rangle \) are strictly positive and distinct. Rescaling \(v\) to eliminate denominators, we obtain a vector \(\tilde{v} \in \mathbb{Z}^m\text{,}\) and the map \(f(\cdot)=\langle \tilde{v}, \cdot \rangle\) is the required homomorphism \(\mathbb{Z}^m \to \mathbb{Z}\text{.}\) Concretely, a valid vector \(\tilde{v}\) can be found directly by just enumerating the points of \(\mathbb{Z}^k\) with increasing distance from the origin and testing one by one if all the inner products with the weights are positive and distinct.</p></article></body>
+<p class="continuation">and if \(b_{ij}=1\) then the inequalities reduce to</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+1\leq \braket{w,\alpha_i-\alpha_j}\leq C\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Therefore it remains to prove the claim about  the additional condition <a class="xref" data-knowl="./knowl/eq-bounded-abs-diff.html" title="Equation 3.12">(3.12)</a>.</p>
+<p>First we show that disregarding the other constraints, the system <a class="xref" data-knowl="./knowl/eq-positive.html" title="Equation 3.10">(3.10)</a> has a solution if and only if there exists a solution with \(\abs{\braket{w,\alpha_i}} \leq 1+N2^N\text{.}\) The normal form of the system <a class="xref" data-knowl="./knowl/eq-positive.html" title="Equation 3.10">(3.10)</a> is given by switching to the variables \(x_i = \braket{w,\alpha_i}-1\text{,}\) resulting in the system</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation}
+Ax=d,\quad x\geq 0\text{,}\tag{3.13}
+\end{equation}
+</div>
+<p class="continuation">where the matrix \(A\) is the matrix whose rows are \(e_i+e_j-e_k\in\mathbb{Z}^N\) for each linear relation \(\alpha_i+\alpha_j=\alpha_k\) (dropping linearly dependent conditions) and the right-hand-side vector is \(d=(-1,\ldots,-1)\text{.}\)</p>
+<p>The non-zero components of the basic feasible solutions of the normal form system <a class="xref" data-knowl="./knowl/eq-pos-linprog-normal-form.html" title="Equation 3.13">(3.13)</a> are determined by \(B^{-1}d\) where \(B\) is some invertible square submatrix of \(A\text{.}\) Writing</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+B^{-1} = \frac{1}{\det B}\operatorname{Adj}(B)\text{,}
+\end{equation*}
+</div>
+<p class="continuation">where \(\operatorname{Adj}(B)\) is the adjugate matrix of \(B\text{,}\) we see that integer solutions are determined by the vectors \(\operatorname{Adj}(B)d\text{.}\) Since each row of \(A\) has the norm bound \(\norm{e_i+e_j-e_k}_\infty\leq 2\) every minor of \(A\) is bounded by \(2^N\text{.}\) Hence we can bound the norms of integer basic feasible solutions to <a class="xref" data-knowl="./knowl/eq-pos-linprog-normal-form.html" title="Equation 3.13">(3.13)</a> by</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\norm{x}_\infty = \norm{\operatorname{Adj}(B)d}_\infty \leq N2^N\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Consequently the original problem <a class="xref" data-knowl="./knowl/eq-positive.html" title="Equation 3.10">(3.10)</a> has a solution \(w\in\mathbb{Z}^k\) if and only if there exists a solution \(w\) with</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\abs{\braket{w,\alpha_i}} = \abs{x_i+1} \leq 1+N2^N\text{.}
+\end{equation*}
+</div>
+<p xmlns:svg="http://www.w3.org/2000/svg">Finally, if \(w\in\mathbb{Z}^k\) is as above, we claim that \(\tilde{w} = M^{k}w + (1,M,\ldots,M^{k-1})\) is a solution to <a class="xref" data-knowl="./knowl/eq-positive.html" title="Equation 3.10">(3.10)</a>–<a class="xref" data-knowl="./knowl/eq-bounded-abs-diff.html" title="Equation 3.12">(3.12)</a>.</p>
+<p>To see that \(\tilde{w}\) satisfies <a class="xref" data-knowl="./knowl/eq-positive.html" title="Equation 3.10">(3.10)</a>–<a class="xref" data-knowl="./knowl/eq-bounded-abs-diff.html" title="Equation 3.12">(3.12)</a>, we consider base-\(M\) expansions of the integers \(\braket{\tilde{w},\alpha_i}\) and \(\braket{\tilde{w},\alpha_i-\alpha_j}\text{.}\) Since \(\norm{\alpha_i}_\infty\lt M\text{,}\) we have</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\braket{\tilde{w},\alpha_i} = M^{k}\braket{w,\alpha_i} + \sum_{j=1}^{k}M^{j-1}\braket{e_j,\alpha_i}\geq M^{k} - \sum_{j=1}^{k}M^{j-1}\norm{\alpha_i}_\infty\geq 1.
+\end{equation*}
+</div>
+<p class="continuation">A similar computation using \(\norm{\alpha_i-\alpha_j}_\infty\lt M\) gives the bound</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+\abs{\braket{\tilde{w},\alpha_i-\alpha_j}} \amp\leq M^{k}\abs{\braket{w,\alpha_i}}+M^{k}\abs{\braket{w,\alpha_j}} + \sum_{j=1}^{k}M^{j-1}\norm{\alpha_i-\alpha_j}_\infty\\
+\amp\leq (2+N2^{N+1})M^{k} + M^{k}=C\text{,}
+\end{align*}
+</div>
+<p class="continuation">showing <a class="xref" data-knowl="./knowl/eq-bounded-abs-diff.html" title="Equation 3.12">(3.12)</a> so it remains to verify <a class="xref" data-knowl="./knowl/eq-disjoint.html" title="Equation 3.11">(3.11)</a>. Expanding in terms of powers of \(M\text{,}\) we have</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\braket{\tilde{w},\alpha_i-\alpha_j}  = \sum_{h=1}^{k}M^{h-1}\braket{e_h,\alpha_i-\alpha_j} \quad\mod{M^k}\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Since \(\abs{\braket{e_h,\alpha_i-\alpha_j}}\leq \norm{\alpha_i-\alpha_j}_\infty\lt M\) it follows that \(\braket{\tilde{w},\alpha_i-\alpha_j}\neq 0\) as soon as at least one \(\braket{e_h,\alpha_i-\alpha_j}\neq 0\text{.}\) Since \(\alpha_i\neq \alpha_j\text{,}\) this latter condition is always satisfied for some \(h\text{.}\)</p></article></body>
 </html>

@@ -5,11 +5,11 @@ authors:
 - Ville Kivioja
 - Terhi Moisala
 - Francesca Tripaldi
-date: "2020-11-13T00:00:00Z"
+date: "2021-06-29T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2020-11-13T00:00:00Z"
+publishDate: "2021-06-29T00:00:00Z"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -37,7 +37,7 @@ links:
   url: "https://arxiv.org/abs/2011.06871"
 - name: "Online"
   url: "publication/web/gradings/frontmatter-1.html"
-url_pdf: "publication/gradings-2020-11-13.pdf"
+url_pdf: "publication/gradings-2021-06-29.pdf"
 url_code: "https://github.com/ehaka/lie-algebra-gradings"
 url_dataset: ''
 url_poster: ''

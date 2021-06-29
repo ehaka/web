@@ -1,68 +1,66 @@
 <!DOCTYPE html>
-<!--**************************************-->
-<!--*    Generated from PreTeXt source   *-->
-<!--*    on 2020-11-13T12:10:23+01:00    *-->
-<!--*                                    *-->
-<!--*      https://pretextbook.org       *-->
-<!--*                                    *-->
-<!--**************************************-->
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-06-29T12:15:04+02:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Complete classification in low dimension</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [['\\(','\\)']]
-    },
-    asciimath2jax: {
-        ignoreClass: ".*",
-        processClass: "has_am"
-    },
-    jax: ["input/AsciiMath"],
-    extensions: ["asciimath2jax.js"],
-    TeX: {
-        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
-        // scrolling to fragment identifiers is controlled by other Javascript
-        positionToHash: false,
-        equationNumbers: { autoNumber: "none", useLabelIds: true, },
-        TagSide: "right",
-        TagIndent: ".8em",
-    },
-    // HTML-CSS output Jax to be dropped for MathJax 3.0
-    "HTML-CSS": {
-        scale: 88,
-        mtextFontInherit: true,
-    },
-    CommonHTML: {
-        scale: 88,
-        mtextFontInherit: true,
-    },
-});
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="classification-style.css">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="classification-style.css">
 
 
-<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
-<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link href="developer.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
 </head>
 <body id="gradings" class="mathbook-article has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\newcommand{\abs}[1]{\left\lvert#1\right\rvert}
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(\newcommand{\abs}[1]{\left\lvert#1\right\rvert}
 \newcommand{\restr}[2]{\left.#1\right\vert_{#2}}
 \newcommand{\der}{\operatorname{der}}
 \newcommand{\Aut}{\operatorname{Aut}}
 \newcommand{\ad}{\operatorname{ad}}
 \newcommand{\Ad}{\operatorname{Ad}}
 \newcommand{\positiveset}{\mathbf{A}_+}
+\newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
+\newcommand{\braket}[1]{\left\langle #1 \right\rangle}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -73,15 +71,15 @@ MathJax.Hub.Config({
 <p class="byline">Eero Hakavuori, Ville Kivioja, Terhi Moisala, Francesca Tripaldi</p>
 </div>
 </div></div>
-<nav id="primary-navbar" class="navbar"><div class="container">
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-positive-gradings.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="backmatter-1.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="appendix-3.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="backmatter-1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="backmatter-1.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="appendix-2.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-positive-gradings.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="backmatter-1.html" title="Up">Up</a><a class="next-button button toolbar-item" href="appendix-3.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="backmatter-1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="backmatter-1.html" title="Up">Up</a><a class="next-button button toolbar-item" href="appendix-2.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
-<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
 <nav id="toc"><ul>
 <li class="link frontmatter">
 <a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a><ul><li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1">Acknowledgements</a></li></ul>
@@ -89,21 +87,22 @@ MathJax.Hub.Config({
 <li class="link">
 <a href="section-introduction.html" data-scroll="section-introduction"><span class="codenumber">1</span> <span class="title">Introduction</span></a><ul>
 <li><a href="section-introduction.html#subsection-1" data-scroll="subsection-1">Overview</a></li>
-<li><a href="section-introduction.html#subsection-2" data-scroll="subsection-2">Main results</a></li>
+<li><a href="section-introduction.html#subsection-2" data-scroll="subsection-2">Implemented algorithms and applications</a></li>
 <li><a href="section-introduction.html#subsection-3" data-scroll="subsection-3">Structure of the paper</a></li>
 </ul>
 </li>
 <li class="link">
-<a href="section-gradings.html" data-scroll="section-gradings"><span class="codenumber">2</span> <span class="title">Gradings</span></a><ul>
-<li><a href="section-gradings.html#ssec-gradings-and-equivalences" data-scroll="ssec-gradings-and-equivalences">Gradings and equivalences</a></li>
-<li><a href="section-gradings.html#ssec-univ-gradings" data-scroll="ssec-univ-gradings">Universal gradings</a></li>
-<li><a href="section-gradings.html#sec-gradings-by-tori" data-scroll="sec-gradings-by-tori">Gradings induced by tori</a></li>
-<li><a href="section-gradings.html#section-maximal-gradings" data-scroll="section-maximal-gradings">Maximal gradings</a></li>
-<li><a href="section-gradings.html#subsection-torsion-free" data-scroll="subsection-torsion-free">Enumeration of torsion-free gradings</a></li>
+<a href="section-preliminaries.html" data-scroll="section-preliminaries"><span class="codenumber">2</span> <span class="title">Preliminaries</span></a><ul>
+<li><a href="section-preliminaries.html#ssec-base-fields" data-scroll="ssec-base-fields">On base fields</a></li>
+<li><a href="section-preliminaries.html#ssec-gradings-and-equivalences" data-scroll="ssec-gradings-and-equivalences">Gradings and equivalences</a></li>
+<li><a href="section-preliminaries.html#ssec-univ-gradings" data-scroll="ssec-univ-gradings">Universal realizations</a></li>
+<li><a href="section-preliminaries.html#sec-gradings-by-tori" data-scroll="sec-gradings-by-tori">Gradings induced by tori</a></li>
+<li><a href="section-preliminaries.html#section-maximal-gradings" data-scroll="section-maximal-gradings">Maximal gradings</a></li>
 </ul>
 </li>
 <li class="link">
 <a href="section-constructions.html" data-scroll="section-constructions"><span class="codenumber">3</span> <span class="title">Constructions</span></a><ul>
+<li><a href="section-constructions.html#subsection-torsion-free" data-scroll="subsection-torsion-free">Enumeration of torsion-free gradings</a></li>
 <li><a href="section-constructions.html#section-stratifications" data-scroll="section-stratifications">Stratifications</a></li>
 <li><a href="section-constructions.html#sssec-pos-gradings" data-scroll="sssec-pos-gradings">Positive gradings</a></li>
 <li><a href="section-constructions.html#section-maximal-construction" data-scroll="section-maximal-construction">Maximal gradings</a></li>
@@ -118,9 +117,8 @@ MathJax.Hub.Config({
 </ul>
 </li>
 <li class="link backmatter"><a href="backmatter-1.html" data-scroll="backmatter-1"><span class="title">Back Matter</span></a></li>
-<li class="link"><a href="section-positive-gradings.html" data-scroll="section-positive-gradings"><span class="codenumber">A</span> <span class="title">Existence of a positive realization</span></a></li>
 <li class="link active">
-<a href="appendix-classification.html" data-scroll="appendix-classification"><span class="codenumber">B</span> <span class="title">Complete classification in low dimension</span></a><ul>
+<a href="appendix-classification.html" data-scroll="appendix-classification"><span class="codenumber">A</span> <span class="title">Complete classification in low dimension</span></a><ul>
 <li><a href="appendix-classification.html#classification-overview" data-scroll="classification-overview">Overview</a></li>
 <li><a href="classification-dim2.html">Dimension 2</a></li>
 <li><a href="classification-dim3.html">Dimension 3</a></li>
@@ -130,11 +128,11 @@ MathJax.Hub.Config({
 <li><a href="classification-dim7.html">Dimension 7</a></li>
 </ul>
 </li>
-<li class="link"><a href="appendix-3.html" data-scroll="appendix-3"><span class="codenumber">C</span> <span class="title">Notation</span></a></li>
+<li class="link"><a href="appendix-2.html" data-scroll="appendix-2"><span class="codenumber">B</span> <span class="title">Notation</span></a></li>
 <li class="link"><a href="section-references.html" data-scroll="section-references"><span class="title">References</span></a></li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="pretext-content"><section class="appendix" id="appendix-classification"><h2 class="heading hide-type">
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="appendix" id="appendix-classification"><h2 class="heading hide-type">
 <span class="title">Dimension 6</span></h2>
 <details id="L6_1" class="lie-algebra carnot">
     <summary>L6_1</summary>
