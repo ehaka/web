@@ -1,24 +1,26 @@
 ---
-title: "ODE trajectories as abnormal curves in Carnot groups"
+title: "Cut time in the sub-Riemannian problem on the Cartan group"
 authors:
+- Andrei Ardentov
 - Eero Hakavuori
-date: "2021-11-05T00:00:00Z"
+date: "2021-07-14T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2021-08-17T00:00:00Z"
+publishDate: "2021-07-14T00:00:00Z"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["2"]
+publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: "In *Journal of Differential Equations*"
-publication_short: "In *J. Differential Equations*"
+publication: ""
+publication_short: ""
+math: true
 
-abstract: We prove that for every polynomial ODE there exists a Carnot group where the trajectories of the ODE lift to abnormal curves. The proof defines an explicit construction to determine a covector for the resulting abnormal curves. Using this method we give new examples of abnormal curves in Carnot groups of high step. As a byproduct of the argument, we also prove that concatenations of abnormal curves have abnormal lifts.
+abstract: We study the sub-Riemannian structure determined by a left-invariant distribution of rank 2 on a step 3 Carnot group of dimension 5. We prove the conjectured cut times of Yu. Sachkov for the sub-Riemannian Cartan problem. Along the proof, we obtain a comparison with the known cut times in the sub-Riemannian Engel group, and a sufficient (generic) condition for the uniqueness of the length minimizer between two points. Hence we reduce the optimal synthesis to solving a certain system of equations in elliptic functions.
 
 # Summary. An optional shortened abstract.
 summary: ""
@@ -29,14 +31,10 @@ featured: false
 links:
 # - name: ""
 #   url: ""
-- name: "Journal of Differential Equations"
-  url: "https://doi.org/10.1016/j.jde.2021.07.046"
 - name: "arXiv"
-  url: "https://arxiv.org/abs/2006.09783"
-- name: "Online"
-  url: "publication/web/ode-abnormals/frontmatter-1.html"
-url_pdf: "publication/ode_abnormals-2020-06-17.pdf"
-url_code: "https://github.com/ehaka/ode-abnormals"
+  url: "https://arxiv.org/abs/2107.06730"
+url_pdf: "publication/cartan_geodesics-2021-07-14.pdf"
+url_code: ''
 url_dataset: ''
 url_poster: ''
 url_project: ''
