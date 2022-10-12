@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-06-29T12:15:04+02:00       *-->
+<!--*       on 2021-12-03T14:35:58+01:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,22 +15,18 @@
 </head>
 <body>
 <article class="hiddenproof"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Proof</span></h6>
-<p>Denoting \(\mathfrak{t} = \mathfrak{t}_1 \times \mathfrak{t}_2\text{,}\) let \(D \in C(\mathfrak{t})\) be a diagonalizable derivation in the centralizer \(C(\mathfrak{t})\text{.}\) To show the maximality of \(\mathfrak{t}\text{,}\) it suffices to show that \(D \in \mathfrak{t}\text{.}\) In a basis adapted to the product we may represent</p>
+<p>A consequence of the assumption \([\delta(X),X]=0\) is that if \(P\) is a polynomial and \(P'\) denotes its derivative polynomial, then we have</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-D = \begin{bmatrix}
-E_1 \amp F_1 \\ F_2 \amp E_2
-\end{bmatrix}\text{,}
+[\delta,P(\ad(X))] = \ad({\delta(X)}) \circ P'(\ad(X))\text{.}
 \end{equation*}
 </div>
-<p class="continuation">where \(E_1\in \der(\mathfrak{g}_1)\text{,}\) \(E_2\in \der(\mathfrak{g}_2)\text{,}\) and \(F_1\colon \mathfrak{g}_2\to\mathfrak{g}_1\) and \(F_2\colon \mathfrak{g}_1\to \mathfrak{g}_2\) are some linear maps. We are going to demonstrate that \(E_1\in \mathfrak t_1\text{,}\) \(E_2\in \mathfrak t_2\) and \(F_1=F_2=0\text{,}\) which would prove that \(D = E_1\times E_2 \in \mathfrak t\text{.}\)</p>
-<p>Let \(D_1 \in \mathfrak t_1\text{.}\) By assumption \(D\) commutes with \(D_1\times 0 \in \mathfrak t\text{,}\) so a simple computation shows that \(E_1\) commutes with \(D_1\) and \(D_1 F_1 = 0\text{.}\) Since \(D_1\) is arbitrary, we obtain \(E_1 \in C(\mathfrak t_1) \text{.}\) From the fact that \(D_1F_1 = 0\) for every \(D_1 \in \mathfrak t_1\) we get</p>
+<p class="continuation">In the limit we obtain</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\operatorname{Im}(F_1) \subset  \bigcap_{D_1\in \mathfrak t_1} \ker(D_1) = \{0\},
+[\delta,e^{-\ad(X)}] = \ad({\delta(-X)}) \circ e^{-\ad(X)}.
 \end{equation*}
 </div>
-<p class="continuation">where the last equality follows from the non-degeneracy of \(\mathfrak t_1\text{.}\) Consequently, \(F_1 = 0\text{.}\)</p>
-<p xmlns:svg="http://www.w3.org/2000/svg">A similar argument shows that \(E_2 \in C(\mathfrak t_2)\) and \(F_2=0\text{.}\) Since \(D\) is assumed diagonalizable, it follows that \(E_1\) and \(E_2\) are diagonalizable. Then by maximality of \(\mathfrak t_1\) and \(\mathfrak t_2\) we have \(E_1\in \mathfrak t_1\) and \(E_2\in \mathfrak t_2\text{,}\) which shows that \(D = E_1\times E_2 \in \mathfrak t\text{.}\)</p></article><span class="incontext"><a href="section-applications.html#proof-12">in-context</a></span>
+<p class="continuation">Expanding out the bracket in \(e^{\ad(X)}[\delta,e^{-\ad(X)}]\) and reorganizing terms making use of the assumption \([\delta(X),X]=0\text{,}\) we obtain the desired formula. </p></article><span class="incontext"><a href="section-applications.html#proof-12">in-context</a></span>
 </body>
 </html>

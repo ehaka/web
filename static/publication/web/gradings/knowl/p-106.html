@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-06-29T12:15:04+02:00       *-->
+<!--*       on 2021-12-03T14:35:57+01:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,7 +15,13 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p xmlns:svg="http://www.w3.org/2000/svg">We next present and prove <a class="xref" data-knowl="./knowl/algorithm-positive-realization.html" title="Algorithm 3.9: Positive realization">Algorithm 3.9</a>. The idea behind the algorithm is rather simple: finding a positive realization can be seen as a linear programming problem. The purpose of the slightly cumbersome form of the linear programming problem in <a class="xref" data-knowl="./knowl/algorithm-positive-realization.html" title="Algorithm 3.9: Positive realization">Algorithm 3.9</a> is to guarantee that the weights of the positive realization are small. This method works well for problems in small dimensions, but does not scale well to large problems. If one does not care about the resulting positive weights, there is a simpler algorithm, see <a class="xref" data-knowl="./knowl/rmk-lightweight-positivity-algorithm.html" title="Remark 3.10">Remark 3.10</a>.</p>
+<p>First we show that disregarding the other constraints, the system <a class="xref" data-knowl="./knowl/eq-positive.html" title="Equation 3.10">(3.10)</a> has a solution if and only if there exists a solution with \(\abs{\braket{w,\alpha_i}} \leq 1+N2^N\text{.}\) The normal form of the system <a class="xref" data-knowl="./knowl/eq-positive.html" title="Equation 3.10">(3.10)</a> is given by switching to the variables \(x_i = \braket{w,\alpha_i}-1\text{,}\) resulting in the system</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation}
+Ax=d,\quad x\geq 0\text{,}\tag{3.13}
+\end{equation}
+</div>
+<p class="continuation">where the matrix \(A\) is the matrix whose rows are \(e_i+e_j-e_k\in\mathbb{Z}^N\) for each linear relation \(\alpha_i+\alpha_j=\alpha_k\) (dropping linearly dependent conditions) and the right-hand-side vector is \(d=(-1,\ldots,-1)\text{.}\)</p>
 <span class="incontext"><a href="section-constructions.html#p-106">in-context</a></span>
 </body>
 </html>

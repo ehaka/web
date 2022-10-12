@@ -15,8 +15,8 @@ publishDate: "2019-11-20T00:00:00Z"
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "In *SIAM Journal on Control and Optimization*"
-publication_short: "In *SIAM J. Control Optim.*"
+publication: "*SIAM Journal on Control and Optimization*"
+publication_short: "*SIAM J. Control Optim*"
 
 abstract: In the setting of step 2 sub-Finsler Carnot groups with strictly convex norms, we prove that all infinite geodesics are lines. It follows that for any other homogeneous distance, all geodesics are lines exactly when the induced norm on the horizontal space is strictly convex. As a further consequence, we show that all isometric embeddings between such homogeneous groups are affine. The core of the proof is an asymptotic study of the extremals given by the Pontryagin Maximum Principle.
 

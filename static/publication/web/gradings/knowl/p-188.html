@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-06-29T12:15:05+02:00       *-->
+<!--*       on 2021-12-03T14:35:58+01:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,7 +15,25 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p xmlns:svg="http://www.w3.org/2000/svg">A natural question that stems from these considerations is whether it is possible to identify which choice of positive grading will yield the best interval for non-vanishing cohomology. This problem can be easily presented in terms of maximising the value of the fraction \(\delta N_{\min}(h)/Q\) among all the possible positive gradings for a given Lie group \(G\text{.}\)</p>
+<p>Let us first consider the bound for non-vanishing cohomology in degree 1. We express</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{gather*}
+\max_{\mathbf{a}\in\positiveset}\bigg\{\frac{\delta N_{\min}(1)}{Q_{\mathbf{a}}}\bigg\}=\max_{\mathbf{a}\in\positiveset}\bigg\{\frac{\min\{a_1,a_2,a_3,2a_2+a_3-a_1\}}{6a_2+4a_3}\bigg\}
+\end{gather*}
+</div>
+<p class="continuation">as the linear optimization problem</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+\text{Maximize}\quad \amp x\\
+\text{subject to}\quad x\amp\le a_1,\;
+x\leq a_2,\;
+x\leq a_3,\\
+x\amp\leq 2a_2+a_3-a_1,\\
+1\amp=6a_2+4a_3,\\
+a_1\amp,a_2,a_3\gt 0,\; 2a_2+a_3-a_1\gt 0\text{.}
+\end{align*}
+</div>
+<p class="continuation">A solver finds the solution \(\frac{1}{10}\text{,}\) which is obtained by choosing \(a_1=a_2=a_3=\frac{1}{10}\text{.}\) Since the quantity \(\frac{\delta N_{\min}(1)}{Q_{\mathbf{a}}}\) is scaling invariant, we find that the grading defined by \(a_1=a_2=a_3=1\) gives \(\ell^{q,p}H^1(G)\neq 0\) with the optimal bound \(\frac{1}{p}-\frac{1}{q}\lt \frac{1}{10}\text{.}\)</p>
 <span class="incontext"><a href="section-applications.html#p-188">in-context</a></span>
 </body>
 </html>

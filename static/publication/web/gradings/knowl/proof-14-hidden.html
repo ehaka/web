@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-06-29T12:15:05+02:00       *-->
+<!--*       on 2021-12-03T14:35:58+01:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -13,38 +13,5 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body><article class="hiddenproof"><p>Iterating the Leibniz-rule, one finds that the derivation \(\delta\) satisfies</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-[\delta, \ad_X^n] = \sum_{k=0}^{n-1} \ad_X^k \circ \ad_{\delta(X)} \circ \ad_X^{n-k-1} \text{.}
-\end{equation*}
-</div>
-<p class="continuation">The assumption \([\delta(X),X]=0\) implies by the Jacobi identity that the maps \(\ad_{\delta(X)}\) and \(\ad_X\) commute, so the above formula simplifies to</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-[\delta, \ad_X^n] = n \ad_{\delta(X)} \circ \ad_X^n\text{.}
-\end{equation*}
-</div>
-<p class="continuation">If \(P\) is a polynomial and \(P'\) denotes its derivative polynomial, the above formula implies that</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-[\delta,P(\ad_X)] = \ad_{\delta(X)} \circ P'(\ad_X)\text{.}
-\end{equation*}
-</div>
-<p class="continuation">Going to the limit one finds</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-[\delta,e^{-\ad_X}] = \ad_{\delta(-X)} \circ e^{-\ad_X}
-\end{equation*}
-</div>
-<p class="continuation">and consequently</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-e^{\ad_X} \circ \delta \circ e^{-\ad_X}
-=
-e^{\ad_X} \circ  \ad_{\delta(-X)} \circ  e^{- \ad_X}
-+ \delta\text{.}
-\end{equation*}
-</div>
-<p class="continuation">Recalling that \(\Ad_{\exp(X)} = e^{\ad_X}\text{,}\) see Proposition 1.91 of <a class="xref" data-knowl="./knowl/knapp-beyond-introduction.html" title="Bibliographic Entry 22: Lie groups beyond an introduction">[22]</a>, we conclude using <a class="xref" data-knowl="./knowl/lemma-adjoint-conjugation-of-ad.html" title="Lemma 4.11">Lemma 4.11</a> and observing that \(e^{\ad_X}(\delta(X))= \delta(X)\) due to the assumption \([\delta(X),X]=0\text{.}\)</p></article></body>
+<body><article class="hiddenproof"><p xmlns:svg="http://www.w3.org/2000/svg">Rescaling the derivations by a scalar, we may assume that the smallest of the eigenvalues for both derivations is 1. Since the Heintze groups are assumed to be isomorphic, it is straightforward to see that there is a vector \(X \in \mathfrak{g}\) such that the derivation \(\alpha\) is conjugate by a Lie algebra automorphism of \(\mathfrak{g}\) to the derivation \(\beta + \ad(X)\text{.}\) By <a class="xref" data-knowl="./knowl/proposition-derivation-plus-ad-is-conjugate.html" title="Lemma 4.12">Lemma 4.12</a>, it follows that \(\alpha\) and \(\beta\) are conjugate. Applying <a class="xref" data-knowl="./knowl/lemma-conjugates-and-subtori.html" title="Lemma 2.14">Lemma 2.14</a><a class="xref" data-knowl="./knowl/enum-conj.html" title="Item i">i</a> to the <a class="xref" data-knowl="./knowl/def-torus.html" title="Definition 2.11">split tori</a> spanned by \(\alpha\) and \(\beta\) gives the desired result.</p></article></body>
 </html>

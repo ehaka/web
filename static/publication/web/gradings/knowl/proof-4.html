@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-06-29T12:15:04+02:00       *-->
+<!--*       on 2021-12-03T14:35:57+01:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,12 +15,15 @@
 </head>
 <body>
 <article class="hiddenproof"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Proof</span></h6>
-<p>Let \(X_1,\ldots,X_n\) be a basis of \(\mathfrak{g}\) that diagonalizes \(\mathfrak{t}\text{.}\) Since each vector \(X_i\) is an eigenvector of every derivation \(\delta\in\mathfrak{t}\text{,}\) there are well defined linear maps \(\alpha_1,\ldots,\alpha_n\in\mathfrak{t}^*\) determined by</p>
+<p>To show <a class="xref" data-knowl="./knowl/enum-conj.html" title="Item i">i</a>, suppose that \(\Ad_{\Phi}\mathfrak{t}_1=\Phi\circ\mathfrak{t}_1\circ\Phi^{-1}=\mathfrak{t}_2\) for some automorphism \(\Phi\in\Aut(\mathfrak{g})\text{.}\) Let \(g\colon\mathfrak{t}_1^*\to\mathfrak{t}_2^*\) be the linear isomorphism \(g=\Ad_{\Phi^{-1}}^*\) given by \(g(\alpha)(\delta) = \alpha(\Phi^{-1}\circ\delta\circ\Phi)\text{.}\) Then</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-\delta(X_i) = \alpha_i(\delta)X_i,\quad i=1,\ldots,n\text{.}
-\end{equation*}
+\begin{align*}
+\Phi(V_\alpha) \amp= \{\Phi(X): \delta(X)=\alpha(\delta)X\,\forall \delta\in\mathfrak{t}_1 \}\\
+\amp= \{Y: \Phi\circ\delta\circ\Phi^{-1}(Y)=\alpha(\delta)Y\,\forall \delta\in\mathfrak{t}_1 \}\\
+\amp= \{Y: \eta(Y)=g(\alpha)(\eta)Y\,\forall \eta\in\mathfrak{t}_2 \} = W_{g(\alpha)}\text{.}
+\end{align*}
 </div>
-<p class="continuation">By construction \(X_i\in V_{\alpha_i}\text{,}\) so the direct sum \(\bigoplus_{\alpha\in\mathfrak{t}^*}V_\alpha\) spans all of the Lie algebra \(\mathfrak{g}\text{.}\) The inclusion \([V_\alpha,V_\beta]\subset V_{\alpha+\beta}\) follows by linearity from the Leibniz rule \(\delta([X,Y]) = [\delta(X),Y]+[X,\delta(Y)]\) for all derivations \(\delta\in\mathfrak{t}\) and vectors \(X\in V_\alpha\) and \(Y\in V_\beta\text{.}\)</p></article><span class="incontext"><a href="section-preliminaries.html#proof-4">in-context</a></span>
+<p class="continuation">Hence the gradings \(\mathcal{V}\) and \(\mathcal{W}\) are equivalent, as claimed.</p>
+<p xmlns:svg="http://www.w3.org/2000/svg">Regarding <a class="xref" data-knowl="./knowl/enum-subtori.html" title="Item ii">ii</a>, suppose that  \(\mathfrak t_1 \subset \mathfrak t_2\text{.}\) We claim that \(\mathcal{V}=f_*\mathcal{W}\) through the restriction map \(f\colon \mathfrak{t}_2^*\to \mathfrak{t}_1^*\text{,}\) \(f(\beta)=\restr{\beta}{\mathfrak{t}_1}\text{.}\) Indeed, fix a basis \(X_1,\ldots,X_n\) of \(\mathfrak{g}\) that diagonalizes the split torus \(\mathfrak{t}_2\) (and hence also the subtorus \(\mathfrak{t}_1\)). Let \(\beta_1,\ldots,\beta_n\in\mathfrak{t}_2^*\) be the maps defined by \(\delta(X_i)=\beta_i(\delta)X_i\) and define \(\alpha_i = \beta_i|_{\mathfrak{t_1}}\text{.}\) By construction \(X_i\in W_{\beta_i}\text{,}\) \(X_i\in V_{\alpha_i}\text{,}\) and \(f(\beta_i)=\alpha_i\text{,}\) proving that \(\mathcal{V}=f_*\mathcal{W}\text{.}\)</p></article><span class="incontext"><a href="section-preliminaries.html#proof-4">in-context</a></span>
 </body>
 </html>

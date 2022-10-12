@@ -3,21 +3,21 @@ title: "Cut time in the sub-Riemannian problem on the Cartan group"
 authors:
 - Andrei Ardentov
 - Eero Hakavuori
-date: "2021-07-14T00:00:00Z"
+date: "2022-02-14T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2021-07-14T00:00:00Z"
+publishDate: "2022-02-14T00:00:00Z"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["3"]
+publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
-publication_short: ""
+publication: "*ESAIM. Control, Optimisation and Calculus of Variations*"
+publication_short: "*ESAIM: COCV*"
 math: true
 
 abstract: We study the sub-Riemannian structure determined by a left-invariant distribution of rank 2 on a step 3 Carnot group of dimension 5. We prove the conjectured cut times of Yu. Sachkov for the sub-Riemannian Cartan problem. Along the proof, we obtain a comparison with the known cut times in the sub-Riemannian Engel group, and a sufficient (generic) condition for the uniqueness of the length minimizer between two points. Hence we reduce the optimal synthesis to solving a certain system of equations in elliptic functions.
@@ -31,6 +31,8 @@ featured: false
 links:
 # - name: ""
 #   url: ""
+- name: "ESAIM: COCV"
+  url: "https://doi.org/10.1051/cocv/2022006"
 - name: "arXiv"
   url: "https://arxiv.org/abs/2107.06730"
 url_pdf: "publication/cartan_geodesics-2021-07-14.pdf"

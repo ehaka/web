@@ -16,8 +16,8 @@ publishDate: "2019-05-09T00:00:00Z"
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: In *Inventiones Mathematicae*
-publication_short: In *Invent. Math.*
+publication: "*Inventiones Mathematicae*"
+publication_short: "*Invent. Math*"
 
 abstract: We give a short solution to one of the main open problems in subriemannian geometry. Namely, we prove that length minimizers do not have corner-type singularities. With this result we solve Problem II of Agrachev’s list, and provide the first general result toward the 30-year-old open problem of regularity of subriemannian geodesics.
 

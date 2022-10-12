@@ -2,7 +2,7 @@
 <html lang="en-US">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-06-29T12:15:04+02:00       *-->
+<!--*       on 2021-12-03T14:35:57+01:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -13,20 +13,21 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body><article class="hiddenproof"><p>First we claim that if \(S_i\in\mathfrak{t}\) for all \(i=1,\ldots,n\text{,}\) then the centralizer \(C(\mathfrak{t})\) is a nilpotent Lie algebra. By Engel's theorem the centralizer is nilpotent if and only if each map \(\ad(A_i)\colon C(\mathfrak{t})\to C(\mathfrak{t})\) is nilpotent. By definition \(\mathfrak{t}\) is central in \(C(\mathfrak{t})\text{,}\) so we have</p>
+<body><article class="hiddenproof"><p>Denoting \(\mathfrak{t} = \mathfrak{t}_1 \times \mathfrak{t}_2\text{,}\) let \(D \in C(\mathfrak{t})\) be a diagonalizable derivation in the centralizer \(C(\mathfrak{t})\text{.}\) To show the maximality of \(\mathfrak{t}\text{,}\) it suffices to show that \(D \in \mathfrak{t}\text{.}\) In a basis adapted to the product we may represent</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\ad(A_i)=\ad(S_i)+\ad(N_i) = \ad(N_i)\text{.}
+D = \begin{bmatrix}
+E_1 \amp F_1 \\ F_2 \amp E_2
+\end{bmatrix}\text{,}
 \end{equation*}
 </div>
-<p class="continuation">Since each \(N_i\in\der(\mathfrak{g})\) is nilpotent, so is \(\ad(N_i)\) and the claim follows.</p>
-<p>Next, we claim that the Jordan decomposition of a sum of basis elements is</p>
+<p class="continuation">where \(E_1\in \der(\mathfrak{g}_1)\text{,}\) \(E_2\in \der(\mathfrak{g}_2)\text{,}\) and \(F_1\colon \mathfrak{g}_2\to\mathfrak{g}_1\) and \(F_2\colon \mathfrak{g}_1\to \mathfrak{g}_2\) are some linear maps. We are going to demonstrate that \(E_1\in \mathfrak t_1\text{,}\) \(E_2\in \mathfrak t_2\) and \(F_1=F_2=0\text{,}\) which would prove that \(D = E_1\times E_2 \in \mathfrak t\text{.}\)</p>
+<p>Let \(D_1 \in \mathfrak t_1\text{.}\) By assumption \(D\) commutes with \(D_1\times 0 \in \mathfrak t\text{,}\) so a simple computation shows that \(E_1\) commutes with \(D_1\) and \(D_1 F_1 = 0\text{.}\) Since \(D_1\) is arbitrary, we obtain \(E_1 \in C(\mathfrak t_1) \text{.}\) From the fact that \(D_1F_1 = 0\) for every \(D_1 \in \mathfrak t_1\) we get</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation}
-A_i+A_j = (S_i+S_j) + (N_i+N_j)\text{.}\tag{3.14}
-\end{equation}
+\begin{equation*}
+\operatorname{Im}(F_1) \subset  \bigcap_{D_1\in \mathfrak t_1} \ker(D_1) = \{0\},
+\end{equation*}
 </div>
-<p class="continuation">By assumption \(S_i,S_j\in\mathfrak{t}\text{,}\) so also \(S_i+S_j\in\mathfrak{t}\) and hence the sum \(S_i+S_j\) is semisimple. Moreover since \(\mathfrak{t}\) is central, \([S_i+S_j,N_i+N_j]=0\text{,}\) so all that remains is to show that \(N_i+N_j\) is nilpotent.</p>
-<p xmlns:svg="http://www.w3.org/2000/svg">Since the centralizer \(C(\mathfrak{t})\) is nilpotent, it is also solvable. Since the field \(F\) is an algebraically closed field of characteristic zero, Lie's theorem implies that there exists a basis of \(\mathfrak{g}\) such that all the derivations \(A_i\) are represented by upper triangular matrices. Then \(N_i\) and \(N_j\) are both strictly upper triangular matrices, so also the sum \(N_i+N_j\) is strictly upper triangular, and hence nilpotent.</p>
-<p xmlns:svg="http://www.w3.org/2000/svg">The Jordan decompositions <a class="xref" data-knowl="./knowl/eq-jordan-decomp-of-sum.html" title="Equation 3.14">(3.14)</a> and the assumption that \(S_i\in\mathfrak{t}\) for all \(i=1,\ldots,n\) imply that the semisimple part of every linear combination of the elements \(A_i\) is also contained in \(\mathfrak{t}\text{.}\) Hence there cannot exist any semisimple elements in \(C(\mathfrak{t})\setminus\mathfrak{t}\text{.}\)</p></article></body>
+<p class="continuation">where the last equality follows from the non-degeneracy of \(\mathfrak t_1\text{.}\) Consequently, \(F_1 = 0\text{.}\)</p>
+<p xmlns:svg="http://www.w3.org/2000/svg">A similar argument shows that \(E_2 \in C(\mathfrak t_2)\) and \(F_2=0\text{.}\) Since \(D\) is assumed diagonalizable, it follows that \(E_1\) and \(E_2\) are diagonalizable. Then by maximality of \(\mathfrak t_1\) and \(\mathfrak t_2\) we have \(E_1\in \mathfrak t_1\) and \(E_2\in \mathfrak t_2\text{,}\) which shows that \(D = E_1\times E_2 \in \mathfrak t\text{.}\)</p></article></body>
 </html>

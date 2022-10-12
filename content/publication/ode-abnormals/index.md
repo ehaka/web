@@ -15,8 +15,8 @@ publishDate: "2021-08-17T00:00:00Z"
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "In *Journal of Differential Equations*"
-publication_short: "In *J. Differential Equations*"
+publication: "*Journal of Differential Equations*"
+publication_short: "*J. Differential Equations*"
 
 abstract: We prove that for every polynomial ODE there exists a Carnot group where the trajectories of the ODE lift to abnormal curves. The proof defines an explicit construction to determine a covector for the resulting abnormal curves. Using this method we give new examples of abnormal curves in Carnot groups of high step. As a byproduct of the argument, we also prove that concatenations of abnormal curves have abnormal lifts.
 
