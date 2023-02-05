@@ -1,6 +1,6 @@
 # ehaka.github.io
 
-Code and content for personal academic website.
+Code and content for a personal academic website.
 The academic theme for Hugo is courtesy of [George Cushen](https://georgecushen.com).
 
 ## Setup

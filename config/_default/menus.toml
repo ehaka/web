@@ -29,8 +29,8 @@
   weight = 5
 
 [[main]]
-  name = "Lie algebra builder"
-  url = "lie-algebra-builder"
+  name = "Interactive things"
+  url = "#interactive"
   weight = 6
 
  #Link to a PDF of your resume/CV from the menu.
