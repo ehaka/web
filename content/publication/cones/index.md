@@ -3,7 +3,7 @@ title: "Blowups and blowdowns of geodesics in Carnot groups"
 authors:
 - Eero Hakavuori
 - Enrico Le Donne
-date: "2022-01-17T00:00:00Z"
+date: "2023-02-01T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -16,8 +16,8 @@ publishDate: "2022-01-17T00:00:00Z"
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "To appear in *Journal of Differential Geometry*"
-publication_short: "To appear in *J. Differential Geom*"
+publication: "*Journal of Differential Geometry*"
+publication_short: "*J. Differential Geom*"
 
 abstract: This paper provides some partial regularity results for geodesics (i.e., isometric images of intervals) in arbitrary sub-Riemannian and sub-Finsler manifolds. Our strategy is to study infinitesimal and asymptotic properties of geodesics in Carnot groups equipped with arbitrary sub-Finsler metrics. We show that tangents of Carnot geodesics are geodesics in some groups of lower nilpotency step. Namely, every blowup curve of every geodesic in every Carnot group is still a geodesic in the group modulo its last layer. Then as a consequence we get that in every sub-Riemannian manifold any s times iterated tangent of any geodesic is a line, where s is the step of the sub-Riemannian manifold in question. With a similar approach, we also show that blowdown curves of geodesics in sub-Riemannian Carnot groups are contained in subgroups of lower rank. This latter result is also extended to rough geodesics.
 
@@ -30,9 +30,11 @@ featured: false
 links:
 # - name: ""
 #   url: ""
+- name: "Journal of Differential Geometry"
+  url: "https://doi.org/10.4310/jdg/1680883578"
 - name: "arXiv"
   url: "https://arxiv.org/abs/1806.09375"
-url_pdf: "publication/Hakavuori_LeDonne-Blowupanddown-22-01-17.pdf"
+url_pdf: "publication/Hakavuori_LeDonne-Blowupanddown-23-01-04.pdf"
 url_code: ''
 url_dataset: ''
 url_poster: ''
