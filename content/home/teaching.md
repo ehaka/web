@@ -4,7 +4,7 @@
 # To create more sections, duplicate this file and edit the values below as desired.
 widget = "custom"
 active = true
-date = 2018-01-04T00:00:00
+date = 2024-01-16T00:00:00
 
 # Note: a full width section format can be enabled by commenting out the `title` and `subtitle` with a `#`.
 title = "Teaching"
@@ -14,6 +14,9 @@ subtitle = ""
 weight = 60
 
 +++
+Current:
+
+- [MAST31005 Algebra II](algebra2) (Spring 2024)
 
 Previous courses at University of Jyväskylä:
 
