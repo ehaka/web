@@ -17,7 +17,7 @@ caption = ""
 <table>
 <tr><td>week</td><td>lecture (Tu)</td><td>exercise (Wed)</td><td>lecture (Thu)</td></tr>
 <tr><td>3</td>
-<td>16.01.</td>
+<td><a href="lecture01.pdf">16.01.</a></td>
 <td><a href="exercise_0.pdf">17.01.</a></td>
 <td>18.01.</td>
 </tr>
