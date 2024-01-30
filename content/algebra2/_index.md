@@ -22,18 +22,18 @@ caption = ""
 <td><a href="lecture02.pdf">18.01.</a></td>
 </tr>
 <tr><td>4</td>
-<td>23.01.</td>
+<td><a href="lecture03.pdf">23.01.</a></td>
 <td><a href="exercise_1.pdf">24.01.</a></td>
-<td>25.01.</td>
+<td><a href="lecture04.pdf">25.01.</a></td>
 </tr>
 <tr><td>5</td>
-<td>30.01.</td>
-<td>31.01.</td>
+<td><a href="lecture05.pdf">30.01.</a></td>
+<td><a href="exercise_2.pdf">31.01.</a></td>
 <td>01.02.</td>
 </tr>
 <tr><td>6</td>
 <td>06.02.</td>
-<td>07.02.</td>
+<td><a href="exercise_3.pdf">07.02.</a></td>
 <td>08.02.</td>
 </tr>
 <tr><td>7</td>
