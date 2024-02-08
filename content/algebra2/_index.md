@@ -29,16 +29,16 @@ caption = ""
 <tr><td>5</td>
 <td><a href="lecture05.pdf">30.01.</a></td>
 <td><a href="exercise_2.pdf">31.01.</a></td>
-<td>01.02.</td>
+<td><a href="lecture06.pdf">01.02.</a></td>
 </tr>
 <tr><td>6</td>
-<td>06.02.</td>
+<td><a href="lecture07.pdf">06.02.</a></td>
 <td><a href="exercise_3.pdf">07.02.</a></td>
 <td>08.02.</td>
 </tr>
 <tr><td>7</td>
 <td>13.02.</td>
-<td>14.02.</td>
+<td><a href="exercise_4.pdf">14.02.</a></td>
 <td>15.02.</td>
 </tr>
 <tr><td>8</td>
@@ -96,3 +96,6 @@ caption = ""
 <td>02.05.</td>
 </tr>
 </table>
+
+## Misc
+[Unoptimized origami circle intersection](origamicircle.html)
