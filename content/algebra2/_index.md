@@ -42,7 +42,7 @@ caption = ""
 <td><a href="lecture10.pdf">15.02.</a></td>
 </tr>
 <tr><td>8</td>
-<td>20.02.</td>
+<td><a href="lecture11.pdf">20.02.</a><br><a href="lecture11-sage-examples.html">Sage</a></td>
 <td><a href="exercise_5.pdf">21.02.</a></td>
 <td>22.02.</td>
 </tr>
