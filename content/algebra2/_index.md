@@ -59,11 +59,11 @@ caption = ""
 <tr><td>11</td>
 <td><a href="lecture15.pdf">12.03.</a></td>
 <td><a href="exercise_7.pdf">13.03.</a></td>
-<td>14.03.</td>
+<td><a href="lecture16.pdf">14.03.</a></td>
 </tr>
 <tr><td>12</td>
 <td>19.03.</td>
-<td>20.03.</td>
+<td><a href="exercise_8.pdf">20.03.</a></td>
 <td>21.03.</td>
 </tr>
 <tr><td>13</td>
