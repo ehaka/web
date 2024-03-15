@@ -1,0 +1,222 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Alexander maps</title>
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+<script>
+sagecell.makeSagecell({inputLocation:  '#triangulate', template: sagecell.templates.minimal, evalButtonText: 'Random triangulation', linked: true, linkKey: 'alexander'});
+sagecell.makeSagecell({inputLocation:  '#alexandermap', template: sagecell.templates.minimal, evalButtonText: 'Visualize', linked: true, linkKey: 'alexander'});
+sagecell.makeSagecell({inputLocation:  '#lineplot', template: sagecell.templates.minimal, evalButtonText: 'Select line segment', linked: true, linkKey: 'alexander'});
+</script>
+</head>
+<body>
+<h2>1. Define a two-colorable triangulation</h2>
+Generate a random triangulation (may take a while).
+<div id="triangulate"><script type="text/x-sage">
+GT = RealDistribution('gaussian', 1)
+def random_point():
+    return GT.get_random_element(),GT.get_random_element()
+def maxcos(P,tri):
+    a,b,c = (vector(P[i]) for i in tri)
+    mx = -1
+    for x,y,z in [(a,b,c),(b,c,a),(c,a,b)]:
+        v = y-x
+        w = z-x
+        v = v/v.norm()
+        w = w/w.norm()
+        cosvw = v.inner_product(w)
+        mx = max(mx,cosvw)
+    return mx
+alexander_components = []
+points = 8
+bestang = 1
+while True:
+    pointset = set([])
+    while len(pointset) < points:
+        pointset.add(random_point())
+    P = PointConfiguration(pointset,fine=True)
+    # find max min angle triangulation
+    minmaxcos = 1
+    best_T = None
+    best_G = None
+    for T in P.triangulations():
+        G = T.adjacency_graph()
+        if G.is_bipartite():
+            Tmaxcos = max(maxcos(P,tri) for tri in T)
+            if Tmaxcos < minmaxcos:
+                best_T = T
+                best_G = G
+                minmaxcos = Tmaxcos
+    if best_T is not None:
+        T = best_T
+        G = best_G
+        break
+
+g = G.vertices(sort=False)[0]
+a,b,c = [vector(P[i]) for i in g]
+if matrix([b-a,c-a]).det()<0:
+    T_plus = []
+    T_minus = [tuple(g)]
+else:
+    T_plus = [tuple(g)]
+    T_minus = []
+T_list = (T_plus,T_minus)
+
+remaining = G.min_spanning_tree(starting_vertex=g)
+while remaining:
+    for edge in remaining:
+        a,b,c = edge
+        sa = sorted(a)
+        sb = sorted(b)
+        for ta in T_plus:
+            sta = sorted(ta)
+            if sta == sa:
+                sign = 0
+                break
+            elif sta == sb:
+                sign = 0
+                b = a
+                break
+        else:
+            for ta in T_minus:
+                sta = sorted(ta)
+                if sta == sa:
+                    sign = 1
+                    break
+                elif sta == sb:
+                    sign = 1
+                    b = a
+                    break
+            else:
+                continue
+        remaining.remove(edge)
+        tb = [None,None,None]
+        missing_indices = [0,1,2]
+        for bi in b:
+            if bi in ta:
+                i = ta.index(bi)
+                tb[i] = bi
+                missing_indices.remove(i)
+            else:
+                new_elem = bi
+        tb[missing_indices[0]] = new_elem
+        T_list[1-sign].append(tuple(tb))
+        break
+
+for s in range(2):
+    for t in T_list[s]:
+        vertices = [vector(P[i]) for i in t]
+        ph = Polyhedron(vertices)
+
+        a,b,c = vertices
+        # solve components of the matrix mapping a,b,c --> e1,e2,e3
+        eqs = matrix([
+            [*(b-a),0,0,0,0], # e1 component of b-a --> e2-e1
+            [0,0,*(b-a),0,0], # e2 component of b-a --> e2-e1
+            [0,0,0,0,*(b-a)], # e3 component of b-a --> e2-e1
+            [*(c-a),0,0,0,0], # e1 component of c-a --> e3-e1
+            [0,0,*(c-a),0,0], # e2 component of c-a --> e3-e1
+            [0,0,0,0,*(c-a)], # e3 component of c-a --> e3-e1
+        ])
+        rhs = vector([-1,1,0,-1,0,1])
+        matrixcoeffs = eqs.solve_right(rhs)
+        A = matrix(3,2,matrixcoeffs)
+
+        # solve the translation vector of the affine map to get a --> e1
+        v = vector((1,0,0)) - A*a
+        alexander_components.append((ph,A,v,1-2*s))
+
+t = var('t')
+colors = ['lightgray','darkgray']
+gph_labeled = Graphics()
+for triangle,col in G.bipartite_color().items():
+    gph_labeled += polygon([P[i] for i in triangle],color=colors[col],axes=False)
+for i,p in enumerate(P):
+    gph_labeled += text(str(i),p,color='black',fontsize='large',fontweight='bold')
+gph_labeled.show()
+</script>
+</div>
+
+<h2>2. Draw a line on the triangulation</h2>
+Choose endpoints a,b for a line segment.
+<div id="lineplot"><script type="text/x-sage">
+x(t) = 0
+y(t) = 0
+t_min, t_max = 0, 1
+plot_points = 400 # number of points sampled uniformly from [t_min,t_max]
+@interact
+def p1(a=('a',slider(0,points-1,step_size=1)),b=('b',slider(0,points-1,step_size=1))):
+    global x
+    global y
+    x0,y0 = P[a]
+    x1,y1 = P[b]
+    x(t) = x0+t*(x1-x0)
+    y(t) = y0+t*(y1-y0)
+    curve_plot = line(((x(t=t_min),y(t=t_min)),(x(t=t_max),y(t=t_max))), color='red',thickness=3)
+    gph = gph_labeled + curve_plot
+    gph.show()</script></div>
+</body>
+
+<h2>3. Plot the curve on the sphere</h2>
+<div id="alexandermap"><script type="text/x-sage">
+def f_0(z): # Taylor expansion of sm(z) at z=0
+    return z - 1/6*z^4 + 2/63*z^7
+def f_1(z): # Taylor expansion of sm(z+pi_3/3)
+    return 1 + 1/3*z^3 + 1/18*z^6
+omega = CC(exp(2*pi*I/3))
+omega2 = CC(exp(4*pi*I/3))
+pi_33 = CC(1/sqrt(3)*gamma(1/3)^3/(2*pi))
+def sm_approximation(a,b,c):
+    z = (a+b*omega+c*omega^2)*pi_33
+    if a>2/3:
+        return f_1(z-pi_33)
+    elif b>2/3:
+        return omega*f_1(z-omega*pi_33)
+    elif c>2/3:
+        return omega^2*f_1(z-omega^2*pi_33)
+    else:
+        return f_0(z)
+def triangle_hemisphere_map(b,s):
+    z = sm_approximation(*b)
+    zx = z.real_part()
+    zy = z.imag_part()
+    sq = zx^2+zy^2
+    sqp = 1+sq
+    sphere_x = 2*zx/sqp
+    sphere_y = 2*zy/sqp
+    sphere_z = s*(1-sq)/sqp
+    return (sphere_x,sphere_y,sphere_z)
+
+from itertools import chain
+prev_triangle = 0
+def alexander_map(p):
+    global prev_triangle
+    n = len(alexander_components)
+    for i in chain(range(prev_triangle,n),range(0,prev_triangle)):
+        ph,A,v,s = alexander_components[i]
+        if p in ph:
+            prev_triangle = i
+            pvec = vector(p)
+            imvec = A*pvec+v
+            return triangle_hemisphere_map(imvec,s)
+
+imagecurve = []
+for k in range(plot_points):
+    tk = n(t_min + (t_max-t_min)*k/(plot_points-1))
+    ftk = [n(fi(t=tk)) for fi in [x,y]]
+    imftk = alexander_map(ftk)
+    imagecurve.append(imftk)
+
+t,s = var('t s')
+gph3d = line3d([(0,0,-1.2),(0,0,-1)],frame=False,color='black')
+gph3d += line3d([(0,0,1),(0,0,1.2)],color='black')
+gph3d += parametric_plot3d((cos(t)*cos(s),sin(t)*cos(s),sin(s)),(t,0,2*pi),(s,0,pi/2),opacity=0.3,color='black')
+gph3d += parametric_plot3d((cos(t)*cos(s),sin(t)*cos(s),-sin(s)),(t,0,2*pi),(s,0,pi/2),opacity=0.3,color='lightgrey')
+gph3d += parametric_plot3d((cos(t),sin(t),0),(t,0,2*pi),color='black')
+for k in range(3):
+    gph3d += point3d((cos(2*pi*k/3),sin(2*pi*k/3),0),size=10,color='black')
+gph3d += line3d(imagecurve,color='red',thickness=3)
+gph3d.show()
+</script></div>
+</html>
