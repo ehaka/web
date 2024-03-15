@@ -7,7 +7,7 @@
 <script>
 sagecell.makeSagecell({inputLocation:  '#triangulate', template: sagecell.templates.minimal, evalButtonText: 'Random triangulation', linked: true, linkKey: 'alexander'});
 sagecell.makeSagecell({inputLocation:  '#alexandermap', template: sagecell.templates.minimal, evalButtonText: 'Visualize', linked: true, linkKey: 'alexander'});
-sagecell.makeSagecell({inputLocation:  '#lineplot', template: sagecell.templates.minimal, evalButtonText: 'Select line segment', linked: true, linkKey: 'alexander'});
+sagecell.makeSagecell({inputLocation:  '#lineplot', template: sagecell.templates.minimal, evalButtonText: 'Select line segment', linked: true, linkKey: 'alexander', autoeval: false});
 </script>
 </head>
 <body>
@@ -139,14 +139,14 @@ gph_labeled.show()
 </div>
 
 <h2>2. Draw a line on the triangulation</h2>
-Choose endpoints a,b for a line segment.
+Choose endpoints for a line segment.
 <div id="lineplot"><script type="text/x-sage">
 x(t) = 0
 y(t) = 0
 t_min, t_max = 0, 1
 plot_points = 400 # number of points sampled uniformly from [t_min,t_max]
 @interact
-def p1(a=('a',slider(0,points-1,step_size=1)),b=('b',slider(0,points-1,step_size=1))):
+def p1(a=(' ',selector(range(points),buttons=True)),b=(' ',selector(range(points),buttons=True))):
     global x
     global y
     x0,y0 = P[a]
