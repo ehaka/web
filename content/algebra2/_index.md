@@ -67,7 +67,7 @@ caption = ""
 <td><a href="lecture18.pdf">21.03.</a></td>
 </tr>
 <tr><td>13</td>
-<td>26.03.</td>
+<td><a href="lecture19.pdf">26.03.</a></td>
 <td><a href="exercise_9.pdf">27.03.</a></td>
 <td>-</td>
 </tr>
