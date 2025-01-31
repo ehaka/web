@@ -71,7 +71,7 @@ email: ""
 # user_groups:
 ---
 
-I am an academy postdoc researcher at the [University of Helsinki](https://www.helsinki.fi/en/faculty-science/faculty/mathematics-and-statistics). Between 2019-2022 I was a postdoc at [SISSA](https://www.math.sissa.it/). I completed my PhD in 2019 at the [University of Jyväskylä](https://www.jyu.fi/science/en/maths) under the supervision of [Enrico Le Donne](https://sites.google.com/view/enricoledonne/).
+I am currently an academy postdoc researcher at the [University of Helsinki](https://www.helsinki.fi/en/faculty-science/faculty/mathematics-and-statistics) until August 2025. Between 2019-2022 I was a postdoc at [SISSA](https://www.math.sissa.it/). I completed my PhD in 2019 at the [University of Jyväskylä](https://www.jyu.fi/science/en/maths) under the supervision of [Enrico Le Donne](https://sites.google.com/view/enricoledonne/).
 
 My work mainly deals with sub-Riemannian geometry and computational mathematics. 
 On the sub-Riemannian side of things I am particularly interested in Carnot groups and everything related to the so called abnormal curves, whose properties are the topic of interest of open problems such as the regularity of geodesics and the Sard problem.

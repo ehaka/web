@@ -14,11 +14,11 @@ subtitle = ""
 weight = 60
 
 +++
-Current:
+University Helsinki:
 
 - [MAST31005 Algebra II](algebra2) (Spring 2024)
 
-Previous courses at University of Jyväskylä:
+University of Jyväskylä:
 
 - [MATS132 Lineaariset Lien ryhmät](mats132) (Spring 2018)
 
